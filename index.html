@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学习闯关乐园</title>
+  <link rel="icon" href="assets/mascot-idle.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="star">★</span><span>学习闯关乐园</span></div>
+    <div class="header-actions">
+      <button id="audio-test" class="ghost">音频测试</button>
+      <button id="settings-open" class="ghost">设置</button>
+      <button id="backup-open" class="ghost">存档</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <dialog id="settings-dialog">
+    <form method="dialog">
+      <h2>设置</h2>
+      <label>内容包
+        <select id="pack-select"></select>
+      </label>
+      <label>背景音乐 <input id="music-volume" type="range" min="0" max="100" value="0"></label>
+      <label>范读音频 <input id="speech-volume" type="range" min="0" max="100" value="80"></label>
+      <label>界面音效 <input id="effect-volume" type="range" min="0" max="100" value="60"></label>
+      <div class="dialog-actions">
+        <button value="cancel">取消</button>
+        <button id="settings-save" value="ok">保存</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="backup-dialog">
+    <form method="dialog">
+      <h2>本机存档</h2>
+      <p id="backup-summary"></p>
+      <div class="dialog-actions">
+        <button id="backup-export" type="button">导出备份</button>
+        <button id="backup-import" type="button">导入备份</button>
+        <button value="cancel">关闭</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

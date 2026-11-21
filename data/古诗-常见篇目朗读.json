@@ -1,0 +1,29 @@
+{
+  "id": "poem-morning",
+  "name": "古诗晨读 · 常见篇目",
+  "subject": "古诗",
+  "grade": 3,
+  "poems": [
+    {
+      "id": "poem-jingyesi",
+      "title": "静夜思",
+      "author": "李白",
+      "lines": ["床前明月光", "疑是地上霜", "举头望明月", "低头思故乡"],
+      "audio": "audio/zh/poem-jingyesi.wav",
+      "source": "public-domain",
+      "reviewed": true,
+      "games": ["beat", "battle"]
+    },
+    {
+      "id": "poem-chunxiao",
+      "title": "春晓",
+      "author": "孟浩然",
+      "lines": ["春眠不觉晓", "处处闻啼鸟", "夜来风雨声", "花落知多少"],
+      "audio": "audio/zh/poem-chunxiao.wav",
+      "source": "public-domain",
+      "reviewed": true,
+      "games": ["beat", "battle"]
+    }
+  ],
+  "items": []
+}

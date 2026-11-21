@@ -1,0 +1,18 @@
+{
+  "id": "g3-english-basic",
+  "name": "三年级英语 · 基础词汇听力",
+  "subject": "英语",
+  "grade": 3,
+  "items": [
+    { "id": "g3-en-01", "prompt": "苹果", "correct": "apple", "distractors": ["banana", "orange"], "audio": "audio/en/g3-en-01.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-02", "prompt": "书", "correct": "book", "distractors": ["bag", "pen"], "audio": "audio/en/g3-en-02.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-03", "prompt": "猫", "correct": "cat", "distractors": ["dog", "cow"], "audio": "audio/en/g3-en-03.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-04", "prompt": "狗", "correct": "dog", "distractors": ["cat", "duck"], "audio": "audio/en/g3-en-04.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-05", "prompt": "鸡蛋", "correct": "egg", "distractors": ["apple", "milk"], "audio": "audio/en/g3-en-05.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-06", "prompt": "鱼", "correct": "fish", "distractors": ["bird", "cat"], "audio": "audio/en/g3-en-06.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-07", "prompt": "女孩", "correct": "girl", "distractors": ["boy", "kid"], "audio": "audio/en/g3-en-07.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-08", "prompt": "男孩", "correct": "boy", "distractors": ["girl", "man"], "audio": "audio/en/g3-en-08.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-09", "prompt": "学校", "correct": "school", "distractors": ["class", "teacher"], "audio": "audio/en/g3-en-09.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true },
+    { "id": "g3-en-10", "prompt": "老师", "correct": "teacher", "distractors": ["student", "school"], "audio": "audio/en/g3-en-10.wav", "games": ["runner", "listen", "assemble", "memory"], "source": "self-authored", "reviewed": true }
+  ]
+}

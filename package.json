@@ -1,0 +1,19 @@
+{
+  "name": "learning-adventure-park",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline learning games for classroom and personal practice",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node tests/smoke.mjs",
+    "validate": "conda run -n GAME python tools/validate_content.py"
+  },
+  "devDependencies": {
+    "electron": "^37.10.3",
+    "electron-packager": "^17.1.2"
+  },
+  "allowScripts": {
+    "electron@37.10.3": true
+  }
+}
