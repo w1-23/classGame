@@ -1,4 +1,9 @@
 node_modules/
 dist-app/
+release/
+playwright-report/
+test-results/
+vendor/kenney/
+docs/video/page@*.webm
 *.log
 *.tmp

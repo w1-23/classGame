@@ -3,7 +3,6 @@ export const PROGRESS_KEY = 'learning-game-progress-v1';
 
 const defaultSettings = {
   pack: 'g3-english-basic',
-  musicVolume: 0,
   speechVolume: 0.8,
   effectVolume: 0.6
 };

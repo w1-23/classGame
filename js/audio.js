@@ -1,58 +1,88 @@
 const tracks = {
-  click: 'audio/sfx/click_001.ogg',
-  correct: 'audio/sfx/confirmation_001.ogg',
-  wrong: 'audio/sfx/error_001.ogg',
-  music: 'audio/music/jingles_PIZZI00.ogg'
+  click: 'audio/kenney/click_002.ogg',
+  correct: 'audio/kenney/confirmation_002.ogg',
+  wrong: 'audio/kenney/error_004.ogg',
+  result: 'audio/kenney/result.ogg'
 };
 
 export class AudioManager {
   constructor(settings) {
     this.settings = settings;
-    this.cache = new Map();
-    this.music = null;
+    this.context = null;
+    this.buffers = new Map();
+    this.speechSource = null;
   }
 
-  #track(name) {
-    const element = this.cache.get(name) || new Audio(tracks[name]);
-    this.cache.set(name, element);
-    return element;
+  #context() {
+    if (!this.context || this.context.state === 'closed') {
+      this.context = new AudioContext();
+    }
+    if (this.context.state === 'suspended') this.context.resume();
+    return this.context;
   }
 
-  effect(name) {
-    const track = this.#track(name).cloneNode();
-    track.volume = this.settings.effectVolume;
-    track.play().catch(() => {});
+  async #buffer(path) {
+    if (!this.buffers.has(path)) {
+      this.buffers.set(path, fetch(path)
+        .then(response => {
+          if (!response.ok) throw new Error(`Audio missing: ${path}`);
+          return response.arrayBuffer();
+        })
+        .then(data => this.#context().decodeAudioData(data)));
+    }
+    return this.buffers.get(path);
   }
 
-  async speech(path) {
-    const response = await fetch(path);
-    if (!response.ok) throw new Error(`Audio missing: ${path}`);
-    const buffer = await response.arrayBuffer();
-    const context = new AudioContext();
+  async play(path, volume) {
+    const context = this.#context();
+    const buffer = await this.#buffer(path);
+    if (!buffer) return;
     const source = context.createBufferSource();
-    source.buffer = await context.decodeAudioData(buffer);
     const gain = context.createGain();
-    gain.gain.value = this.settings.speechVolume;
+    source.buffer = buffer;
+    gain.gain.value = volume;
     source.connect(gain).connect(context.destination);
     source.start();
-    return new Promise(resolve => source.onended = () => {
-      context.close();
-      resolve();
+    await new Promise(resolve => {
+      source.onended = resolve;
     });
   }
 
-  startMusic() {
-    if (this.music) return;
-    this.music = this.#track('music');
-    this.music.loop = true;
-    this.music.volume = this.settings.musicVolume;
-    this.music.play().catch(() => {});
+  effect(name) {
+    const path = tracks[name];
+    if (path) this.play(path, this.settings.effectVolume).catch(() => {});
   }
 
-  stopMusic() {
-    if (!this.music) return;
-    this.music.pause();
-    this.music.currentTime = 0;
-    this.music = null;
+  async speech(path) {
+    this.stopSpeech();
+    const context = this.#context();
+    const buffer = await this.#buffer(path);
+    if (!buffer) return;
+    const source = context.createBufferSource();
+    const gain = context.createGain();
+    source.buffer = buffer;
+    gain.gain.value = this.settings.speechVolume;
+    source.connect(gain).connect(context.destination);
+    this.speechSource = source;
+    source.start();
+    await new Promise(resolve => {
+      source.onended = resolve;
+    });
+    if (this.speechSource === source) this.speechSource = null;
+  }
+
+  stopSpeech() {
+    if (!this.speechSource) return;
+    try {
+      this.speechSource.stop();
+    } catch {
+      // The source may already have ended.
+    }
+    this.speechSource = null;
+  }
+
+  destroy() {
+    this.stopSpeech();
+    if (this.context && this.context.state !== 'closed') this.context.close();
   }
 }

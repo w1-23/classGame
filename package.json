@@ -1,19 +1,94 @@
 {
   "name": "learning-adventure-park",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Offline learning games for classroom and personal practice",
+  "author": "classGame",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "node tests/smoke.mjs",
-    "validate": "conda run -n GAME python tools/validate_content.py"
+    "test": "node tests/smoke.mjs && playwright test",
+    "test:smoke": "node tests/smoke.mjs",
+    "test:e2e": "playwright test",
+    "test:visual": "playwright test tests/e2e/runner.spec.js",
+    "record:demo": "node tools/record_demo.mjs",
+    "validate": "conda run -n GAME python tools/validate_content.py",
+    "icon": "conda run --no-capture-output -n GAME python tools/make_icon.py",
+    "dist": "npm run icon && electron-builder --win nsis portable --x64",
+    "dist:dir": "npm run icon && electron-builder --win --dir --x64"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "electron": "^37.10.3",
-    "electron-packager": "^17.1.2"
+    "electron-builder": "^26.18.0",
+    "http-server": "^14.1.1"
   },
   "allowScripts": {
     "electron@37.10.3": true
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "build": {
+    "appId": "cn.classgame.learningpark",
+    "productName": "学习闯关乐园",
+    "asar": true,
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "index.html",
+      "main.js",
+      "preload.js",
+      "css/**/*",
+      "js/**/*",
+      "data/**/*",
+      "audio/**/*",
+      "assets/**/*",
+      "vendor/phaser/**/*",
+      "package.json",
+      "!**/*.map",
+      "!docs/**/*",
+      "!tests/**/*",
+      "!vendor/kenney/**/*",
+      "!release/**/*",
+      "!dist-app/**/*"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "学习闯关乐园",
+      "installerLanguages": [
+        "zh_CN"
+      ],
+      "language": "2052",
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "classGame-${version}-${arch}-setup.${ext}"
+    },
+    "portable": {
+      "artifactName": "classGame-${version}-${arch}-portable.${ext}"
+    }
   }
 }

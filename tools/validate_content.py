@@ -44,17 +44,25 @@ for pack_path in PACKS:
         check(len(poem.get("lines", [])) >= 2, f"{poem['id']}: poem lines incomplete")
 
 for required in [
-    "audio/sfx/click_001.ogg",
-    "audio/sfx/confirmation_001.ogg",
-    "audio/sfx/error_001.ogg",
-    "audio/music/jingles_PIZZI00.ogg",
-    "assets/mascot-idle.svg",
-    "assets/mascot-run.svg",
-    "assets/mascot-celebrate.svg",
-    "assets/mascot-jump.svg",
-    "assets/mascot-surprise.svg",
-    "assets/mascot-miss.svg",
-    "assets/mascot-wave.svg",
+    "vendor/phaser/phaser.min.js",
+    "assets/kenney/characters/adventurer-idle.png",
+    "assets/kenney/characters/adventurer-run1.png",
+    "assets/kenney/characters/adventurer-hurt.png",
+    "assets/kenney/characters/adventurer-cheer0.png",
+    "assets/kenney/platformer/background_color_trees.png",
+    "assets/kenney/platformer/terrain_grass_block_top.png",
+    "assets/kenney/ui/button-rectangle-blue.png",
+    "assets/kenney/particles/star.png",
+    "audio/kenney/switch_002.ogg",
+    "audio/kenney/confirmation_002.ogg",
+    "audio/kenney/error_004.ogg",
+    "audio/kenney/result.ogg",
+    "assets/kenney/licenses/Toon-Characters-License.txt",
+    "assets/kenney/licenses/New-Platformer-Pack-License.txt",
+    "assets/kenney/licenses/UI-Pack-License.txt",
+    "assets/kenney/licenses/Particle-Pack-License.txt",
+    "assets/kenney/licenses/Interface-Sounds-License.txt",
+    "assets/kenney/licenses/Music-Jingles-License.txt",
 ]:
     check((ROOT / required).exists(), f"missing asset {required}")
 
