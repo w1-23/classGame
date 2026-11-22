@@ -33,7 +33,7 @@ conda run --no-capture-output -n GAME python tools/validate_content.py
 
 已验证覆盖：
 
-- Playwright 36 项自动回归通过；内容校验 26 个内容包、4476 条学习内容通过。
+- Playwright 37 项自动回归通过；内容校验 26 个内容包、4476 条学习内容通过。
 - 1920×1080、1366×768、1280×800、1175×803、1024×768、390×844 六档视口下，六个玩法与跑酷结算页均无横向、纵向页面滚动。
 - 三车道变道、纸牌门透视缩放、道路内外几何检查、正确/错误自动换题、暂停冻结、真实时钟碰撞、连续关卡结算。
 - 六主题十八阶段场景的真实切换；地图六区域分别校验对应 SVG，场景主题、区域名和 HUD 随教材单元与关卡进度更新。
@@ -50,9 +50,11 @@ conda run --no-capture-output -n GAME python tools/validate_content.py
 
 ## Windows 交付物
 
-- 源码交付以 `master` 分支为准；0.5.0 本轮未重新生成安装包。
-- 历史 0.4.0 安装包和便携包仅作旧版本记录，不代表 0.5.0 已完成安装、卸载或断网验收。
-- 安装包尚未进行代码签名；Windows 可能显示未知发布者。真实希沃大屏的触控、全屏和扬声器验收仍需单独执行。
+- 源码交付以 `master` 分支为准。
+- 0.5.0 安装包：`release/classGame-0.5.0-x64-setup.exe`，同时发布在 [GitHub Release v0.5.0](https://github.com/w1-23/classGame/releases/tag/v0.5.0)。
+- 本轮只提供安装版，不提供便携版。
+- 本轮未执行安装、卸载、断网安装或希沃真机验收；不能据此宣称安装版已在教师电脑正常使用。
+- 安装包尚未进行代码签名，Windows 可能显示未知发布者。真实希沃大屏的触控、全屏和扬声器验收仍需单独执行。
 
 ## 证据
 
@@ -63,10 +65,11 @@ conda run --no-capture-output -n GAME python tools/validate_content.py
 - 0.2.0 历史发布校验：`docs/发布校验报告.md`
 - 开源许可：`docs/开源许可说明.md`
 - 地图资产来源：`docs/licenses/classgame-map-art.txt`、`docs/map-art-handoff/`。
+- 0.5.0 前端页面与构建验收报告：`docs/0.5.0前端页面与构建验收报告.md`
 - 关键截图：`docs/screenshots/`，包括地图六档视口、六区域地图、六主题十八阶段场景、暂停和结算。
-- 汇总截图：`docs/screenshots/map-six-themes-contact-sheet.png`、`docs/screenshots/runner-six-themes-contact-sheet.png`。
+- 汇总截图：`docs/screenshots/0.5.0-pages-overview.png`、`docs/screenshots/map-six-themes-contact-sheet.png`、`docs/screenshots/runner-six-themes-contact-sheet.png`。
 - 打包程序验证截图：`docs/screenshots/packaged-040-runner.png`
-- 交互录屏：`docs/video/classGame-runner-demo.webm`
+- 本轮未生成录屏。
 
 ## 内容与限制
 
@@ -75,4 +78,4 @@ conda run --no-capture-output -n GAME python tools/validate_content.py
 - 当前范读（含两首古诗的 8 段分句音频）由本机 Windows TTS 生成，仅供原型验证；正式发行前必须教师逐条试听。
 - 尚未在真实希沃 Windows 大屏验证触控、全屏和扬声器效果，不能据此宣称希沃真机兼容。
 - 现有 Kenney Toon Characters 包没有背向跑步动作；本轮使用正式角色素材的正面跑步帧，未伪造背向动画。
-- 录屏为静音视觉演示，音频播放已通过自动化状态日志和本机运行验证，未混入录屏音轨。
+- 本轮按交付要求只提供静态页面截图，不提供录屏。
