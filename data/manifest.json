@@ -1,0 +1,30 @@
+{
+  "packs": [
+    "data/1年级上英语-开源词表.json",
+    "data/1年级下英语-开源词表.json",
+    "data/2年级上英语-开源词表.json",
+    "data/2年级下英语-开源词表.json",
+    "data/3年级上英语-开源词表.json",
+    "data/3年级下英语-开源词表.json",
+    "data/4年级上英语-开源词表.json",
+    "data/4年级下英语-开源词表.json",
+    "data/5年级上英语-开源词表.json",
+    "data/5年级下英语-开源词表.json",
+    "data/6年级上英语-开源词表.json",
+    "data/6年级下英语-开源词表.json",
+    "data/G1-语文-拼音上册.json",
+    "data/G1-语文-上册.json",
+    "data/G1-语文-下册.json",
+    "data/G2-语文-上册.json",
+    "data/G2-语文-下册.json",
+    "data/G3-语文-上册.json",
+    "data/G3-语文-下册.json",
+    "data/G4-语文-上册.json",
+    "data/G4-语文-下册.json",
+    "data/G5-语文-上册.json",
+    "data/G5-语文-下册.json",
+    "data/G6-语文-上册.json",
+    "data/G6-语文-下册.json",
+    "data/古诗-常见篇目朗读.json"
+  ]
+}

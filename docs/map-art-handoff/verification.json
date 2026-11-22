@@ -1,0 +1,17 @@
+{
+  "checked": "2026-11-22",
+  "checks": {
+    "original_fragment_unchanged": true,
+    "javascript_syntax": true,
+    "svg_xml_valid": true,
+    "json_valid": true,
+    "offline_preview_has_no_remote_resource_tags": true,
+    "asset_catalog_entries": 13,
+    "asset_catalog_errors": 0
+  },
+  "not_performed": [
+    "New real-browser screenshot comparison",
+    "Windows installation/start/uninstall",
+    "Integration with current repository master"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "integrated": "2026-11-22",
+  "source_archive": "classGame_map_art_handoff_20261122.zip",
+  "source_sha256": "6C65F2FA72D6E7B339379D27B3FD54C5EBAE7F521DED4C808EFD8455D80520D8",
+  "runtime_directory": "assets/map-art/vector",
+  "phaser_raster_directory": "assets/map-art/raster",
+  "runtime_assets": [
+    "bridge-topdown.svg",
+    "cloud.svg",
+    "mountain.svg",
+    "mountain-snow.svg",
+    "pine.svg",
+    "pine-snow.svg",
+    "rock.svg",
+    "tree-autumn.svg",
+    "tree-round.svg",
+    "tree-slim.svg"
+  ],
+  "map_usage": "Trees, pines, rocks, mountains, clouds and the route-water bridge render from the imported SVG files.",
+  "game_usage": "The Phaser runner loads 2x PNG rasterizations of the same themed tree and pine assets for stable WebGL scenery and video capture.",
+  "verified_by": [
+    "tests/e2e/map.spec.js",
+    "tests/e2e/runner.spec.js",
+    "actual screenshots in docs/screenshots",
+    "recorded demo in docs/video/classGame-runner-demo.webm"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-22",
+  "reference_sha256": "84ed598448d153a4f0a756b2ae8ae37db3f405cd7ad34bcdbdc69ae46adc1eed",
+  "reference_note": "原始示意代码完整保留；含演示数据，不是正式游戏实现。",
+  "validation": [
+    "Original JS syntax checked",
+    "Interaction logic verified with a minimal DOM/timer harness in prior turn",
+    "No Windows installation test or new real-browser visual test performed for this handoff"
+  ]
+}

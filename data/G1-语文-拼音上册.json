@@ -1,0 +1,1050 @@
+{
+  "id": "g1-chinese-pinyin",
+  "name": "一年级上册语文 · 拼音（2024统编版）",
+  "subject": "语文",
+  "grade": 1,
+  "volume": "上册",
+  "edition": "2024 统编版",
+  "units": [
+    {
+      "id": "pinyin-unit-1",
+      "title": "拼音一 · 单韵母和声母",
+      "note": "2024 统编版语文一年级上册 · 拼音一 · 单韵母和声母",
+      "lessons": [
+        {
+          "id": "pinyin-01",
+          "title": "第 1 课 · a o e",
+          "items": [
+            {
+              "id": "py-u1-l1-01",
+              "prompt": "啊",
+              "correct": "a",
+              "distractors": [
+                "o",
+                "e"
+              ],
+              "audio": null,
+              "speechText": "张大嘴巴 a a a",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l1-02",
+              "prompt": "喔",
+              "correct": "o",
+              "distractors": [
+                "a",
+                "e"
+              ],
+              "audio": null,
+              "speechText": "圆圆嘴巴 o o o",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l1-03",
+              "prompt": "鹅",
+              "correct": "e",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "扁扁嘴巴 e e e",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-02",
+          "title": "第 2 课 · i u ü y w",
+          "items": [
+            {
+              "id": "py-u1-l2-01",
+              "prompt": "衣",
+              "correct": "i",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "穿新衣 i i i",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l2-02",
+              "prompt": "乌",
+              "correct": "u",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "乌鸦叫 u u u",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l2-03",
+              "prompt": "鱼",
+              "correct": "ü",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "小鱼吐泡 ü ü ü",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l2-04",
+              "prompt": "树杈 y y y",
+              "correct": "y",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "树杈 y y y",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l2-05",
+              "prompt": "屋顶 w w w",
+              "correct": "w",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "屋顶 w w w",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-03",
+          "title": "第 3 课 · b p m f",
+          "items": [
+            {
+              "id": "py-u1-l3-01",
+              "prompt": "听广播 b b b",
+              "correct": "b",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "听广播 b b b",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l3-02",
+              "prompt": "爬山坡 p p p",
+              "correct": "p",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "爬山坡 p p p",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l3-03",
+              "prompt": "两个门洞 m m m",
+              "correct": "m",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "两个门洞 m m m",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l3-04",
+              "prompt": "一根拐杖 f f f",
+              "correct": "f",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一根拐杖 f f f",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-04",
+          "title": "第 4 课 · d t n l",
+          "items": [
+            {
+              "id": "py-u1-l4-01",
+              "prompt": "马蹄声响 d d d",
+              "correct": "d",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "马蹄声响 d d d",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l4-02",
+              "prompt": "一把雨伞 t t t",
+              "correct": "t",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一把雨伞 t t t",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l4-03",
+              "prompt": "一个门洞 n n n",
+              "correct": "n",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一个门洞 n n n",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l4-04",
+              "prompt": "一根小棒 l l l",
+              "correct": "l",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一根小棒 l l l",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-05",
+          "title": "第 5 课 · g k h",
+          "items": [
+            {
+              "id": "py-u1-l5-01",
+              "prompt": "鸽子衔环 g g g",
+              "correct": "g",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "鸽子衔环 g g g",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l5-02",
+              "prompt": "蝌蚪游水 k k k",
+              "correct": "k",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "蝌蚪游水 k k k",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l5-03",
+              "prompt": "一把椅子 h h h",
+              "correct": "h",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一把椅子 h h h",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-06",
+          "title": "第 6 课 · j q x",
+          "items": [
+            {
+              "id": "py-u1-l6-01",
+              "prompt": "大母鸡 j j j",
+              "correct": "j",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "大母鸡 j j j",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l6-02",
+              "prompt": "气球上天 q q q",
+              "correct": "q",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "气球上天 q q q",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u1-l6-03",
+              "prompt": "一个叉叉 x x x",
+              "correct": "x",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一个叉叉 x x x",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pinyin-unit-2",
+      "title": "拼音二 · 平翘舌和复韵母",
+      "note": "2024 统编版语文一年级上册 · 拼音二 · 平翘舌和复韵母",
+      "lessons": [
+        {
+          "id": "pinyin-07",
+          "title": "第 7 课 · z c s",
+          "items": [
+            {
+              "id": "py-u2-l7-01",
+              "prompt": "像个 2 字 z z z",
+              "correct": "z",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "像个 2 字 z z z",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l7-02",
+              "prompt": "半个圆圈 c c c",
+              "correct": "c",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "半个圆圈 c c c",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l7-03",
+              "prompt": "蚕儿吐丝 s s s",
+              "correct": "s",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "蚕儿吐丝 s s s",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-08",
+          "title": "第 8 课 · zh ch sh r",
+          "items": [
+            {
+              "id": "py-u2-l8-01",
+              "prompt": "织毛衣 zh zh zh",
+              "correct": "zh",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "织毛衣 zh zh zh",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l8-02",
+              "prompt": "吃苹果 ch ch ch",
+              "correct": "ch",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "吃苹果 ch ch ch",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l8-03",
+              "prompt": "威风狮子 sh sh sh",
+              "correct": "sh",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "威风狮子 sh sh sh",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l8-04",
+              "prompt": "一轮红日 r r r",
+              "correct": "r",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一轮红日 r r r",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-09",
+          "title": "第 9 课 · ai ei ui",
+          "items": [
+            {
+              "id": "py-u2-l9-01",
+              "prompt": "挨",
+              "correct": "ai",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "挨在一起 ai ai ai",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l9-02",
+              "prompt": "欸",
+              "correct": "ei",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "用力砍柴 ei ei ei",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l9-03",
+              "prompt": "围",
+              "correct": "ui",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "围上围巾 ui ui ui",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-10",
+          "title": "第 10 课 · ao ou iu",
+          "items": [
+            {
+              "id": "py-u2-l10-01",
+              "prompt": "袄",
+              "correct": "ao",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "穿上棉袄 ao ao ao",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l10-02",
+              "prompt": "藕",
+              "correct": "ou",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "水里莲藕 ou ou ou",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u2-l10-03",
+              "prompt": "邮",
+              "correct": "iu",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "邮递员 iu iu iu",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pinyin-unit-3",
+      "title": "拼音三 · 前后鼻韵母",
+      "note": "2024 统编版语文一年级上册 · 拼音三 · 前后鼻韵母",
+      "lessons": [
+        {
+          "id": "pinyin-11",
+          "title": "第 11 课 · ie üe er",
+          "items": [
+            {
+              "id": "py-u3-l11-01",
+              "prompt": "椰",
+              "correct": "ie",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "椰树高高 ie ie ie",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l11-02",
+              "prompt": "月",
+              "correct": "üe",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "一轮弯月 üe üe üe",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l11-03",
+              "prompt": "耳",
+              "correct": "er",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "竖起耳朵 er er er",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-12",
+          "title": "第 12 课 · an en in un ün",
+          "items": [
+            {
+              "id": "py-u3-l12-01",
+              "prompt": "安",
+              "correct": "an",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "天安门 an an an",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l12-02",
+              "prompt": "摁",
+              "correct": "en",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "摁摁门铃 en en en",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l12-03",
+              "prompt": "荫",
+              "correct": "in",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "大树下面 in in in",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l12-04",
+              "prompt": "蚊",
+              "correct": "un",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "蚊子嗡嗡 un un un",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l12-05",
+              "prompt": "云",
+              "correct": "ün",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "朵朵白云 ün ün ün",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        },
+        {
+          "id": "pinyin-13",
+          "title": "第 13 课 · ang eng ing ong",
+          "items": [
+            {
+              "id": "py-u3-l13-01",
+              "prompt": "羊",
+              "correct": "ang",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "小羊上山 ang ang ang",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l13-02",
+              "prompt": "灯",
+              "correct": "eng",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "台灯发亮 eng eng eng",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l13-03",
+              "prompt": "鹰",
+              "correct": "ing",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "老鹰飞翔 ing ing ing",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            },
+            {
+              "id": "py-u3-l13-04",
+              "prompt": "钟",
+              "correct": "ong",
+              "distractors": [
+                "a",
+                "o"
+              ],
+              "audio": null,
+              "speechText": "钟声嗡嗡 ong ong ong",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "caopengfei/xuepinyin (MIT)",
+              "reviewed": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": []
+}

@@ -1,0 +1,155 @@
+{
+  "note": "自制矢量基件；桥为地图俯视专用，关卡内桥面由透视几何另绘。",
+  "assets": [
+    {
+      "id": "tree-round",
+      "path": "assets/vector/tree-round.svg",
+      "viewBox": [
+        0,
+        0,
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        140
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "tree-slim",
+      "path": "assets/vector/tree-slim.svg",
+      "viewBox": [
+        0,
+        0,
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        140
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "tree-autumn",
+      "path": "assets/vector/tree-autumn.svg",
+      "viewBox": [
+        0,
+        0,
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        140
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "pine",
+      "path": "assets/vector/pine.svg",
+      "viewBox": [
+        0,
+        0,
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        140
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "pine-snow",
+      "path": "assets/vector/pine-snow.svg",
+      "viewBox": [
+        0,
+        0,
+        128,
+        160
+      ],
+      "anchor": [
+        64,
+        140
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "rock",
+      "path": "assets/vector/rock.svg",
+      "viewBox": [
+        0,
+        0,
+        100,
+        80
+      ],
+      "anchor": [
+        45,
+        57
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "mountain",
+      "path": "assets/vector/mountain.svg",
+      "viewBox": [
+        0,
+        0,
+        160,
+        150
+      ],
+      "anchor": [
+        80,
+        140
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "mountain-snow",
+      "path": "assets/vector/mountain-snow.svg",
+      "viewBox": [
+        0,
+        0,
+        160,
+        150
+      ],
+      "anchor": [
+        80,
+        140
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "cloud",
+      "path": "assets/vector/cloud.svg",
+      "viewBox": [
+        0,
+        0,
+        160,
+        80
+      ],
+      "anchor": [
+        80,
+        52
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    },
+    {
+      "id": "bridge-topdown",
+      "path": "assets/vector/bridge-topdown.svg",
+      "viewBox": [
+        0,
+        0,
+        170,
+        100
+      ],
+      "anchor": [
+        85,
+        50
+      ],
+      "source": "Original vector primitives derived from the approved classGame map drawing rules"
+    }
+  ]
+}

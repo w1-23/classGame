@@ -5,9 +5,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKS = [
-    ROOT / "data" / "G1-语文-拼音识字.json",
-    ROOT / "data" / "G3-英语-基础词汇听力.json",
-    ROOT / "data" / "古诗-常见篇目朗读.json",
+    ROOT / path
+    for path in json.loads((ROOT / "data" / "manifest.json").read_text(encoding="utf-8"))["packs"]
 ]
 
 
@@ -33,6 +32,8 @@ def main():
     for pack_path in PACKS:
         pack = json.loads(pack_path.read_text(encoding="utf-8"))
         for item in pack.get("items", []):
+            if not item.get("audio"):
+                continue
             text = item["prompt"] if pack["id"].startswith("g1") else item["correct"]
             voice = "Microsoft Huihui Desktop" if pack["id"].startswith("g1") else "Microsoft Zira Desktop"
             synthesize(text, ROOT / item["audio"], voice)

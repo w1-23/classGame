@@ -1,0 +1,2420 @@
+{
+  "id": "en-book-09",
+  "name": "5年级上英语 · 开源同步词表",
+  "subject": "英语",
+  "grade": 5,
+  "volume": "上",
+  "edition": "开源同步词表（需按学校教材核对）",
+  "units": [
+    {
+      "id": "u01",
+      "title": "Unit 1 What's He Like?",
+      "note": "5年级上 · Unit 1 What's He Like?",
+      "lessons": [
+        {
+          "id": "u01-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "en-book-09-u01-w01",
+              "prompt": "老的",
+              "correct": "old",
+              "distractors": [
+                "young",
+                "funny"
+              ],
+              "audio": null,
+              "speechText": "old",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w02",
+              "prompt": "年轻的",
+              "correct": "young",
+              "distractors": [
+                "old",
+                "funny"
+              ],
+              "audio": null,
+              "speechText": "young",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w03",
+              "prompt": "滑稽的",
+              "correct": "funny",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "funny",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w04",
+              "prompt": "和蔼的",
+              "correct": "kind",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "kind",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w05",
+              "prompt": "严厉的",
+              "correct": "strict",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "strict",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w06",
+              "prompt": "有礼貌的",
+              "correct": "polite",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "polite",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            }
+          ]
+        },
+        {
+          "id": "u01-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "en-book-09-u01-w07",
+              "prompt": "勤奋的",
+              "correct": "hard-working",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "hard-working",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w08",
+              "prompt": "乐于助人的",
+              "correct": "helpful",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "helpful",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w09",
+              "prompt": "聪明的",
+              "correct": "clever",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "clever",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w10",
+              "prompt": "害羞的",
+              "correct": "shy",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "shy",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w11",
+              "prompt": "老师",
+              "correct": "teacher",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "teacher",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w12",
+              "prompt": "校长",
+              "correct": "head teacher",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "head teacher",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            }
+          ]
+        },
+        {
+          "id": "u01-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "en-book-09-u01-w13",
+              "prompt": "学生",
+              "correct": "student",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "student",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w14",
+              "prompt": "大学",
+              "correct": "university",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "university",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w15",
+              "prompt": "将要",
+              "correct": "will",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "will",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w16",
+              "prompt": "有时",
+              "correct": "sometimes",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "sometimes",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w17",
+              "prompt": "机器人",
+              "correct": "robot",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "robot",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w18",
+              "prompt": "他",
+              "correct": "him",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "him",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            }
+          ]
+        },
+        {
+          "id": "u01-l04",
+          "title": "词汇 4",
+          "items": [
+            {
+              "id": "en-book-09-u01-w19",
+              "prompt": "说",
+              "correct": "speak",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "speak",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "en-book-09-u01-w20",
+              "prompt": "完成",
+              "correct": "finish",
+              "distractors": [
+                "old",
+                "young"
+              ],
+              "audio": null,
+              "speechText": "finish",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02",
+      "title": "Unit 2 My Week",
+      "note": "5年级上 · Unit 2 My Week",
+      "lessons": [
+        {
+          "id": "u02-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "en-book-09-u02-w01",
+              "prompt": "周一",
+              "correct": "Monday",
+              "distractors": [
+                "Tuesday",
+                "Wednesday"
+              ],
+              "audio": null,
+              "speechText": "Monday",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w02",
+              "prompt": "周二",
+              "correct": "Tuesday",
+              "distractors": [
+                "Monday",
+                "Wednesday"
+              ],
+              "audio": null,
+              "speechText": "Tuesday",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w03",
+              "prompt": "周三",
+              "correct": "Wednesday",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "Wednesday",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w04",
+              "prompt": "周四",
+              "correct": "Thursday",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "Thursday",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w05",
+              "prompt": "周五",
+              "correct": "Friday",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "Friday",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w06",
+              "prompt": "周六",
+              "correct": "Saturday",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "Saturday",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            }
+          ]
+        },
+        {
+          "id": "u02-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "en-book-09-u02-w07",
+              "prompt": "周日",
+              "correct": "Sunday",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "Sunday",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w08",
+              "prompt": "周",
+              "correct": "week",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "week",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w09",
+              "prompt": "周末",
+              "correct": "weekend",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "weekend",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w10",
+              "prompt": "洗衣服",
+              "correct": "wash my clothes",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "wash my clothes",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w11",
+              "prompt": "看电视",
+              "correct": "watch TV",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "watch TV",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w12",
+              "prompt": "做作业",
+              "correct": "do homework",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "do homework",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            }
+          ]
+        },
+        {
+          "id": "u02-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "en-book-09-u02-w13",
+              "prompt": "读书",
+              "correct": "read books",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "read books",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w14",
+              "prompt": "踢足球",
+              "correct": "play football",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "play football",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w15",
+              "prompt": "公园",
+              "correct": "park",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "park",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w16",
+              "prompt": "累的",
+              "correct": "tired",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "tired",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w17",
+              "prompt": "做运动",
+              "correct": "play sports",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "play sports",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w18",
+              "prompt": "应该",
+              "correct": "should",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "should",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            }
+          ]
+        },
+        {
+          "id": "u02-l04",
+          "title": "词汇 4",
+          "items": [
+            {
+              "id": "en-book-09-u02-w19",
+              "prompt": "每个",
+              "correct": "every",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "every",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w20",
+              "prompt": "天",
+              "correct": "day",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "day",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "en-book-09-u02-w21",
+              "prompt": "时间表",
+              "correct": "schedule",
+              "distractors": [
+                "Monday",
+                "Tuesday"
+              ],
+              "audio": null,
+              "speechText": "schedule",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03",
+      "title": "Unit 3 What Would You Like?",
+      "note": "5年级上 · Unit 3 What Would You Like?",
+      "lessons": [
+        {
+          "id": "u03-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "en-book-09-u03-w01",
+              "prompt": "三明治",
+              "correct": "sandwich",
+              "distractors": [
+                "salad",
+                "hamburger"
+              ],
+              "audio": null,
+              "speechText": "sandwich",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w02",
+              "prompt": "沙拉",
+              "correct": "salad",
+              "distractors": [
+                "sandwich",
+                "hamburger"
+              ],
+              "audio": null,
+              "speechText": "salad",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w03",
+              "prompt": "汉堡包",
+              "correct": "hamburger",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "hamburger",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w04",
+              "prompt": "冰淇淋",
+              "correct": "ice cream",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "ice cream",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w05",
+              "prompt": "茶",
+              "correct": "tea",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "tea",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w06",
+              "prompt": "新鲜的",
+              "correct": "fresh",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "fresh",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            }
+          ]
+        },
+        {
+          "id": "u03-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "en-book-09-u03-w07",
+              "prompt": "健康的",
+              "correct": "healthy",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "healthy",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w08",
+              "prompt": "美味的",
+              "correct": "delicious",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "delicious",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w09",
+              "prompt": "辣的/热的",
+              "correct": "hot",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "hot",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w10",
+              "prompt": "甜的",
+              "correct": "sweet",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "sweet",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w11",
+              "prompt": "喝",
+              "correct": "drink",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "drink",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w12",
+              "prompt": "渴的",
+              "correct": "thirsty",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "thirsty",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            }
+          ]
+        },
+        {
+          "id": "u03-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "en-book-09-u03-w13",
+              "prompt": "最喜欢的",
+              "correct": "favourite",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "favourite",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w14",
+              "prompt": "食物",
+              "correct": "food",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "food",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w15",
+              "prompt": "亲爱的",
+              "correct": "dear",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "dear",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w16",
+              "prompt": "洋葱",
+              "correct": "onion",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "onion",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "en-book-09-u03-w17",
+              "prompt": "葡萄",
+              "correct": "grape",
+              "distractors": [
+                "sandwich",
+                "salad"
+              ],
+              "audio": null,
+              "speechText": "grape",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04",
+      "title": "Unit 4 What Can You Do?",
+      "note": "5年级上 · Unit 4 What Can You Do?",
+      "lessons": [
+        {
+          "id": "u04-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "en-book-09-u04-w01",
+              "prompt": "唱歌",
+              "correct": "sing",
+              "distractors": [
+                "dance",
+                "do kung fu"
+              ],
+              "audio": null,
+              "speechText": "sing",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w02",
+              "prompt": "跳舞",
+              "correct": "dance",
+              "distractors": [
+                "sing",
+                "do kung fu"
+              ],
+              "audio": null,
+              "speechText": "dance",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w03",
+              "prompt": "练功夫",
+              "correct": "do kung fu",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "do kung fu",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w04",
+              "prompt": "画漫画",
+              "correct": "draw cartoons",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "draw cartoons",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w05",
+              "prompt": "弹琵琶",
+              "correct": "play the pipa",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "play the pipa",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w06",
+              "prompt": "说英语",
+              "correct": "speak English",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "speak English",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            }
+          ]
+        },
+        {
+          "id": "u04-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "en-book-09-u04-w08",
+              "prompt": "打篮球",
+              "correct": "play basketball",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "play basketball",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w09",
+              "prompt": "打乒乓球",
+              "correct": "play ping-pong",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "play ping-pong",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w10",
+              "prompt": "游泳",
+              "correct": "swim",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "swim",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w11",
+              "prompt": "做饭",
+              "correct": "cook",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "cook",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w12",
+              "prompt": "说中文",
+              "correct": "speak Chinese",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "speak Chinese",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w13",
+              "prompt": "英语派对",
+              "correct": "English party",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "English party",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            }
+          ]
+        },
+        {
+          "id": "u04-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "en-book-09-u04-w14",
+              "prompt": "学习",
+              "correct": "learn",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "learn",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w15",
+              "prompt": "我们将",
+              "correct": "we'll",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "we'll",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w16",
+              "prompt": "没问题",
+              "correct": "no problem",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "no problem",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w17",
+              "prompt": "精彩的",
+              "correct": "wonderful",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "wonderful",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "en-book-09-u04-w18",
+              "prompt": "派对",
+              "correct": "party",
+              "distractors": [
+                "sing",
+                "dance"
+              ],
+              "audio": null,
+              "speechText": "party",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05",
+      "title": "Unit 5 There Is a Big Bed",
+      "note": "5年级上 · Unit 5 There Is a Big Bed",
+      "lessons": [
+        {
+          "id": "u05-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "en-book-09-u05-w01",
+              "prompt": "时钟",
+              "correct": "clock",
+              "distractors": [
+                "plant",
+                "water bottle"
+              ],
+              "audio": null,
+              "speechText": "clock",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w02",
+              "prompt": "植物",
+              "correct": "plant",
+              "distractors": [
+                "clock",
+                "water bottle"
+              ],
+              "audio": null,
+              "speechText": "plant",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w03",
+              "prompt": "水瓶",
+              "correct": "water bottle",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "water bottle",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w04",
+              "prompt": "自行车",
+              "correct": "bike",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "bike",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w05",
+              "prompt": "照片",
+              "correct": "photo",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "photo",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w07",
+              "prompt": "在...前面",
+              "correct": "in front of",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "in front of",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            }
+          ]
+        },
+        {
+          "id": "u05-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "en-book-09-u05-w08",
+              "prompt": "在...之间",
+              "correct": "between",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "between",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w09",
+              "prompt": "在...上面",
+              "correct": "above",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "above",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w10",
+              "prompt": "在...旁边",
+              "correct": "beside",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "beside",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w11",
+              "prompt": "在...后面",
+              "correct": "behind",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "behind",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w12",
+              "prompt": "许多",
+              "correct": "lot",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "lot",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w13",
+              "prompt": "花",
+              "correct": "flower",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "flower",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            }
+          ]
+        },
+        {
+          "id": "u05-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "en-book-09-u05-w14",
+              "prompt": "移动",
+              "correct": "move",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "move",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w15",
+              "prompt": "脏的",
+              "correct": "dirty",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "dirty",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w16",
+              "prompt": "到处",
+              "correct": "everywhere",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "everywhere",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w17",
+              "prompt": "老鼠",
+              "correct": "mouse",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "mouse",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w18",
+              "prompt": "居住",
+              "correct": "live",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "live",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "en-book-09-u05-w19",
+              "prompt": "自然界",
+              "correct": "nature",
+              "distractors": [
+                "clock",
+                "plant"
+              ],
+              "audio": null,
+              "speechText": "nature",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06",
+      "title": "Unit 6 In a Nature Park",
+      "note": "5年级上 · Unit 6 In a Nature Park",
+      "lessons": [
+        {
+          "id": "u06-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "en-book-09-u06-w01",
+              "prompt": "森林",
+              "correct": "forest",
+              "distractors": [
+                "river",
+                "lake"
+              ],
+              "audio": null,
+              "speechText": "forest",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w02",
+              "prompt": "河流",
+              "correct": "river",
+              "distractors": [
+                "forest",
+                "lake"
+              ],
+              "audio": null,
+              "speechText": "river",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w03",
+              "prompt": "湖泊",
+              "correct": "lake",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "lake",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w04",
+              "prompt": "山",
+              "correct": "mountain",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "mountain",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w05",
+              "prompt": "小山",
+              "correct": "hill",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "hill",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w06",
+              "prompt": "树",
+              "correct": "tree",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "tree",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            }
+          ]
+        },
+        {
+          "id": "u06-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "en-book-09-u06-w07",
+              "prompt": "建筑物",
+              "correct": "building",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "building",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w08",
+              "prompt": "桥",
+              "correct": "bridge",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "bridge",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w09",
+              "prompt": "房子",
+              "correct": "house",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "house",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w10",
+              "prompt": "村庄",
+              "correct": "village",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "village",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w11",
+              "prompt": "划船",
+              "correct": "boating",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "boating",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w12",
+              "prompt": "去划船",
+              "correct": "go boating",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "go boating",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            }
+          ]
+        },
+        {
+          "id": "u06-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "en-book-09-u06-w13",
+              "prompt": "兔子",
+              "correct": "rabbit",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "rabbit",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "en-book-09-u06-w14",
+              "prompt": "高的",
+              "correct": "high",
+              "distractors": [
+                "forest",
+                "river"
+              ],
+              "audio": null,
+              "speechText": "high",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": []
+}

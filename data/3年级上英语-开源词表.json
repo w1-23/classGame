@@ -1,0 +1,1787 @@
+{
+  "id": "g3-english-basic",
+  "name": "3年级上英语 · 开源同步词表",
+  "subject": "英语",
+  "grade": 3,
+  "volume": "上",
+  "edition": "开源同步词表（需按学校教材核对）",
+  "units": [
+    {
+      "id": "u01",
+      "title": "Unit 1 Hello!",
+      "note": "3年级上 · Unit 1 Hello!",
+      "lessons": [
+        {
+          "id": "u01-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "g3-english-basic-u01-w01",
+              "prompt": "钢笔",
+              "correct": "pen",
+              "distractors": [
+                "pencil",
+                "pencil box"
+              ],
+              "audio": null,
+              "speechText": "pen",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w02",
+              "prompt": "铅笔",
+              "correct": "pencil",
+              "distractors": [
+                "pen",
+                "pencil box"
+              ],
+              "audio": null,
+              "speechText": "pencil",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w03",
+              "prompt": "铅笔盒",
+              "correct": "pencil box",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "pencil box",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w04",
+              "prompt": "尺子",
+              "correct": "ruler",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "ruler",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w05",
+              "prompt": "橡皮",
+              "correct": "eraser",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "eraser",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w06",
+              "prompt": "书",
+              "correct": "book",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "book",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            }
+          ]
+        },
+        {
+          "id": "u01-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "g3-english-basic-u01-w07",
+              "prompt": "书包",
+              "correct": "bag",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "bag",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w08",
+              "prompt": "学校",
+              "correct": "school",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "school",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w09",
+              "prompt": "班级",
+              "correct": "class",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "class",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w10",
+              "prompt": "老师",
+              "correct": "teacher",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "teacher",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w11",
+              "prompt": "朋友",
+              "correct": "friend",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "friend",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w12",
+              "prompt": "名字",
+              "correct": "name",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "name",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            }
+          ]
+        },
+        {
+          "id": "u01-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "g3-english-basic-u01-w13",
+              "prompt": "好的",
+              "correct": "nice",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "nice",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w14",
+              "prompt": "见面",
+              "correct": "meet",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "meet",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            },
+            {
+              "id": "g3-english-basic-u01-w15",
+              "prompt": "也",
+              "correct": "too",
+              "distractors": [
+                "pen",
+                "pencil"
+              ],
+              "audio": null,
+              "speechText": "too",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02",
+      "title": "Unit 2 Colours",
+      "note": "3年级上 · Unit 2 Colours",
+      "lessons": [
+        {
+          "id": "u02-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "g3-english-basic-u02-w01",
+              "prompt": "红色",
+              "correct": "red",
+              "distractors": [
+                "green",
+                "yellow"
+              ],
+              "audio": null,
+              "speechText": "red",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w02",
+              "prompt": "绿色",
+              "correct": "green",
+              "distractors": [
+                "red",
+                "yellow"
+              ],
+              "audio": null,
+              "speechText": "green",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w03",
+              "prompt": "黄色",
+              "correct": "yellow",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "yellow",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w04",
+              "prompt": "蓝色",
+              "correct": "blue",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "blue",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w05",
+              "prompt": "黑色",
+              "correct": "black",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "black",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w06",
+              "prompt": "棕色",
+              "correct": "brown",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "brown",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            }
+          ]
+        },
+        {
+          "id": "u02-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "g3-english-basic-u02-w07",
+              "prompt": "白色",
+              "correct": "white",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "white",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w08",
+              "prompt": "橙色",
+              "correct": "orange",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "orange",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w09",
+              "prompt": "颜色",
+              "correct": "colour",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "colour",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w10",
+              "prompt": "好的",
+              "correct": "OK",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "OK",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w11",
+              "prompt": "妈妈",
+              "correct": "mum",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "mum",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            },
+            {
+              "id": "g3-english-basic-u02-w12",
+              "prompt": "好的",
+              "correct": "good",
+              "distractors": [
+                "red",
+                "green"
+              ],
+              "audio": null,
+              "speechText": "good",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03",
+      "title": "Unit 3 Look at Me!",
+      "note": "3年级上 · Unit 3 Look at Me!",
+      "lessons": [
+        {
+          "id": "u03-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "g3-english-basic-u03-w01",
+              "prompt": "脸",
+              "correct": "face",
+              "distractors": [
+                "ear",
+                "eye"
+              ],
+              "audio": null,
+              "speechText": "face",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w02",
+              "prompt": "耳朵",
+              "correct": "ear",
+              "distractors": [
+                "face",
+                "eye"
+              ],
+              "audio": null,
+              "speechText": "ear",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w03",
+              "prompt": "眼睛",
+              "correct": "eye",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "eye",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w04",
+              "prompt": "鼻子",
+              "correct": "nose",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "nose",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w05",
+              "prompt": "嘴巴",
+              "correct": "mouth",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "mouth",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w06",
+              "prompt": "手臂",
+              "correct": "arm",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "arm",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            }
+          ]
+        },
+        {
+          "id": "u03-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "g3-english-basic-u03-w07",
+              "prompt": "手",
+              "correct": "hand",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "hand",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w08",
+              "prompt": "头",
+              "correct": "head",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "head",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w09",
+              "prompt": "身体",
+              "correct": "body",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "body",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w10",
+              "prompt": "腿",
+              "correct": "leg",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "leg",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w11",
+              "prompt": "脚",
+              "correct": "foot",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "foot",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            },
+            {
+              "id": "g3-english-basic-u03-w13",
+              "prompt": "很好",
+              "correct": "fine",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "fine",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            }
+          ]
+        },
+        {
+          "id": "u03-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "g3-english-basic-u03-w14",
+              "prompt": "谢谢",
+              "correct": "thank",
+              "distractors": [
+                "face",
+                "ear"
+              ],
+              "audio": null,
+              "speechText": "thank",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04",
+      "title": "Unit 4 We Love Animals",
+      "note": "3年级上 · Unit 4 We Love Animals",
+      "lessons": [
+        {
+          "id": "u04-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "g3-english-basic-u04-w01",
+              "prompt": "狗",
+              "correct": "dog",
+              "distractors": [
+                "duck",
+                "bear"
+              ],
+              "audio": null,
+              "speechText": "dog",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w02",
+              "prompt": "鸭子",
+              "correct": "duck",
+              "distractors": [
+                "dog",
+                "bear"
+              ],
+              "audio": null,
+              "speechText": "duck",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w03",
+              "prompt": "熊",
+              "correct": "bear",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "bear",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w04",
+              "prompt": "猪",
+              "correct": "pig",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "pig",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w05",
+              "prompt": "猫",
+              "correct": "cat",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "cat",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w06",
+              "prompt": "大象",
+              "correct": "elephant",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "elephant",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            }
+          ]
+        },
+        {
+          "id": "u04-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "g3-english-basic-u04-w07",
+              "prompt": "猴子",
+              "correct": "monkey",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "monkey",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w08",
+              "prompt": "鸟",
+              "correct": "bird",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "bird",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w09",
+              "prompt": "老虎",
+              "correct": "tiger",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "tiger",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w10",
+              "prompt": "熊猫",
+              "correct": "panda",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "panda",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w11",
+              "prompt": "动物园",
+              "correct": "zoo",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "zoo",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            },
+            {
+              "id": "g3-english-basic-u04-w12",
+              "prompt": "滑稽的",
+              "correct": "funny",
+              "distractors": [
+                "dog",
+                "duck"
+              ],
+              "audio": null,
+              "speechText": "funny",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05",
+      "title": "Unit 5 Let's Eat!",
+      "note": "3年级上 · Unit 5 Let's Eat!",
+      "lessons": [
+        {
+          "id": "u05-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "g3-english-basic-u05-w01",
+              "prompt": "蛋糕",
+              "correct": "cake",
+              "distractors": [
+                "bread",
+                "rice"
+              ],
+              "audio": null,
+              "speechText": "cake",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w02",
+              "prompt": "面包",
+              "correct": "bread",
+              "distractors": [
+                "cake",
+                "rice"
+              ],
+              "audio": null,
+              "speechText": "bread",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w03",
+              "prompt": "米饭",
+              "correct": "rice",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "rice",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w04",
+              "prompt": "鸡蛋",
+              "correct": "egg",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "egg",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w05",
+              "prompt": "果汁",
+              "correct": "juice",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "juice",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w06",
+              "prompt": "牛奶",
+              "correct": "milk",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "milk",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            }
+          ]
+        },
+        {
+          "id": "u05-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "g3-english-basic-u05-w07",
+              "prompt": "水",
+              "correct": "water",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "water",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w08",
+              "prompt": "鱼",
+              "correct": "fish",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "fish",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w09",
+              "prompt": "饿的",
+              "correct": "hungry",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "hungry",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w10",
+              "prompt": "渴的",
+              "correct": "thirsty",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "thirsty",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w11",
+              "prompt": "吃",
+              "correct": "eat",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "eat",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            },
+            {
+              "id": "g3-english-basic-u05-w12",
+              "prompt": "喝",
+              "correct": "drink",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "drink",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            }
+          ]
+        },
+        {
+          "id": "u05-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "g3-english-basic-u05-w13",
+              "prompt": "切",
+              "correct": "cut",
+              "distractors": [
+                "cake",
+                "bread"
+              ],
+              "audio": null,
+              "speechText": "cut",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06",
+      "title": "Unit 6 Happy Birthday!",
+      "note": "3年级上 · Unit 6 Happy Birthday!",
+      "lessons": [
+        {
+          "id": "u06-l01",
+          "title": "词汇 1",
+          "items": [
+            {
+              "id": "g3-english-basic-u06-w01",
+              "prompt": "一",
+              "correct": "one",
+              "distractors": [
+                "two",
+                "three"
+              ],
+              "audio": null,
+              "speechText": "one",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w02",
+              "prompt": "二",
+              "correct": "two",
+              "distractors": [
+                "one",
+                "three"
+              ],
+              "audio": null,
+              "speechText": "two",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w03",
+              "prompt": "三",
+              "correct": "three",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "three",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w04",
+              "prompt": "四",
+              "correct": "four",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "four",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w05",
+              "prompt": "五",
+              "correct": "five",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "five",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w06",
+              "prompt": "六",
+              "correct": "six",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "six",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            }
+          ]
+        },
+        {
+          "id": "u06-l02",
+          "title": "词汇 2",
+          "items": [
+            {
+              "id": "g3-english-basic-u06-w07",
+              "prompt": "七",
+              "correct": "seven",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "seven",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w08",
+              "prompt": "八",
+              "correct": "eight",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "eight",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w09",
+              "prompt": "九",
+              "correct": "nine",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "nine",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w10",
+              "prompt": "十",
+              "correct": "ten",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "ten",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w11",
+              "prompt": "兄弟",
+              "correct": "brother",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "brother",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            },
+            {
+              "id": "g3-english-basic-u06-w12",
+              "prompt": "姐妹",
+              "correct": "sister",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "sister",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            }
+          ]
+        },
+        {
+          "id": "u06-l03",
+          "title": "词汇 3",
+          "items": [
+            {
+              "id": "g3-english-basic-u06-w13",
+              "prompt": "盘子",
+              "correct": "plate",
+              "distractors": [
+                "one",
+                "two"
+              ],
+              "audio": null,
+              "speechText": "plate",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "guanchunsheng/guanyiyi-english (MIT)",
+              "reviewed": false,
+              "lesson": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": []
+}

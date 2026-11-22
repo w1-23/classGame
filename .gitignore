@@ -1,4 +1,6 @@
 node_modules/
+build/ClassGameLauncher.exe
+build/ClassGameUninstaller.exe
 dist-app/
 release/
 playwright-report/
@@ -7,3 +9,4 @@ vendor/kenney/
 docs/video/page@*.webm
 *.log
 *.tmp
+.http-server-*.pid

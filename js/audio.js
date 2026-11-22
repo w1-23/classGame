@@ -2,10 +2,16 @@ const tracks = {
   click: 'audio/kenney/click_002.ogg',
   correct: 'audio/kenney/confirmation_002.ogg',
   wrong: 'audio/kenney/error_004.ogg',
-  result: 'audio/kenney/result.ogg'
+  result: 'audio/kenney/result.ogg',
+  retry: 'audio/kenney/retry.ogg'
 };
 const MUSIC_PATH = 'audio/music/runner-loop.ogg';
 const MUSIC_VOLUME = .16;
+const PASS_RATIO = .6;
+
+export function completionSound(score, total) {
+  return total > 0 && score / total >= PASS_RATIO ? 'result' : 'retry';
+}
 
 export class AudioManager {
   constructor(settings) {
@@ -16,6 +22,7 @@ export class AudioManager {
     this.musicSource = null;
     this.musicGain = null;
     this.musicToken = 0;
+    this.speechToken = 0;
   }
 
   #context() {
@@ -58,11 +65,25 @@ export class AudioManager {
     if (path) this.play(path, this.settings.effectVolume).catch(() => {});
   }
 
-  async speech(path) {
-    this.stopSpeech();
+  async speech(path, text, lang) {
+    const token = ++this.speechToken;
+    this.#stopSpeechSource();
     const context = this.#context();
-    const buffer = await this.#buffer(path);
-    if (!buffer) return;
+    let buffer = null;
+    if (path) {
+      try {
+        buffer = await this.#buffer(path);
+      } catch {
+        buffer = null;
+      }
+    }
+    if (!buffer) {
+      if (text && 'speechSynthesis' in window) {
+        this.#speakText(text, lang);
+      }
+      return;
+    }
+    if (!buffer || token !== this.speechToken) return;
     const source = context.createBufferSource();
     const gain = context.createGain();
     source.buffer = buffer;
@@ -76,7 +97,7 @@ export class AudioManager {
     if (this.speechSource === source) this.speechSource = null;
   }
 
-  stopSpeech() {
+  #stopSpeechSource() {
     if (!this.speechSource) return;
     try {
       this.speechSource.stop();
@@ -84,6 +105,24 @@ export class AudioManager {
       // The source may already have ended.
     }
     this.speechSource = null;
+  }
+
+  stopSpeech() {
+    this.speechToken += 1;
+    this.#stopSpeechSource();
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  }
+
+  #speakText(text, lang) {
+    try {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang || 'zh-CN';
+      utterance.volume = this.settings.speechVolume;
+      window.speechSynthesis.speak(utterance);
+    } catch {
+      // System speech is optional; a missing voice must not stop the game.
+    }
   }
 
   async startMusic() {

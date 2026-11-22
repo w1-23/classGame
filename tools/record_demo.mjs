@@ -57,8 +57,12 @@ try {
   await page.waitForSelector('[data-id="runner"]');
   await page.waitForTimeout(1200);
   await page.locator('[data-id="runner"]').click();
+  await page.locator('.adventure-page').waitFor();
+  await page.waitForTimeout(1200);
+  await page.screenshot({ path: 'docs/screenshots/runner-demo-map.png' });
+  await page.locator('#map-start').click();
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.runner));
-  await page.waitForTimeout(1700);
+  await page.waitForTimeout(4200);
 
   await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.31));
   await page.waitForTimeout(850);
@@ -76,7 +80,7 @@ try {
   await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.985));
   await page.waitForTimeout(280);
   await page.screenshot({ path: 'docs/screenshots/runner-demo-wrong.png' });
-  await page.waitForTimeout(2100);
+  await page.waitForTimeout(1900);
 
   const second = await page.evaluate(() => window.__learningGameDebug.runner.state());
   await page.evaluate(lane => {
@@ -89,18 +93,8 @@ try {
   await page.screenshot({ path: 'docs/screenshots/runner-demo-correct.png' });
   await page.waitForTimeout(900);
 
-  await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.14));
-  await page.waitForTimeout(320);
-  const coinState = await page.evaluate(() => window.__learningGameDebug.runner.state());
-  const coin = coinState.geometry.coins[0];
-  if (coin) {
-    await page.evaluate(lane => window.__learningGameDebug.runner.switchLane(lane), coin.lane);
-    await page.waitForTimeout(240);
-    await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.54));
-    await page.waitForTimeout(850);
-  }
-
-  for (let guard = 0; guard < 12; guard += 1) {
+  const capturedStages = new Set();
+  for (let guard = 0; guard < 24; guard += 1) {
     const current = await page.evaluate(() => window.__learningGameDebug.runner.state());
     if (current.phase === 'complete') break;
     if (current.phase === 'feedback') {
@@ -108,13 +102,21 @@ try {
       await page.waitForTimeout(180);
       continue;
     }
+    if ([1, 2].includes(current.stageIndex) && !capturedStages.has(current.stageIndex)) {
+      capturedStages.add(current.stageIndex);
+      await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.44));
+      await page.waitForTimeout(500);
+      await page.screenshot({
+        path: `docs/screenshots/runner-demo-stage${current.stageIndex}.png`
+      });
+    }
     await page.evaluate(lane => {
       window.__learningGameDebug.runner.switchLane(lane);
       window.__learningGameDebug.runner.collision();
     }, current.correctLane);
-    await page.waitForTimeout(220);
+    await page.waitForTimeout(420);
     await page.evaluate(() => window.__learningGameDebug.runner.continue());
-    await page.waitForTimeout(180);
+    await page.waitForTimeout(260);
   }
 
   await page.locator('#runner-prompt').filter({ hasText: '抵达终点' }).waitFor({ timeout: 15000 });

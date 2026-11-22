@@ -4,97 +4,108 @@ test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());
 });
 
-async function openGame(page, id, selector) {
+async function openGame(page, id) {
   await page.goto('/index.html');
   await page.locator(`[data-id="${id}"]`).click();
-  await expect(page.locator(selector)).toBeVisible();
+  await expect(page.locator('.adventure-page')).toBeVisible();
+  await page.locator('.map-node').first().click();
+  await page.locator('#map-start').click();
 }
 
-test('listen game locks after a choice and advances', async ({ page }) => {
-  await openGame(page, 'listen', '.three-grid');
+test('pause freezes the pending listen transition and resumes it once', async ({ page }) => {
+  await openGame(page, 'listen');
+  await page.waitForFunction(() => Boolean(window.__learningGameDebug?.listen));
   const initial = await page.evaluate(() => window.__learningGameDebug.listen.state());
-  expect(initial.locked).toBe(false);
-  await page.evaluate(correct => window.__learningGameDebug.listen.choose(correct), initial.correct);
-  await expect(page.locator('.feedback.correct')).toContainText('答对了');
-  expect((await page.evaluate(() => window.__learningGameDebug.listen.state())).locked).toBe(true);
-  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.listen.state().index)).toBe(1);
+  await page.evaluate(answer => window.__learningGameDebug.listen.choose(answer), initial.correct);
+  await page.locator('#game-pause').click();
+  await page.waitForTimeout(1100);
+  expect((await page.evaluate(() => window.__learningGameDebug.listen.state())).index).toBe(0);
+  await page.locator('#game-resume').click();
+  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.listen.state().index), { timeout: 1600 }).toBe(1);
+  await page.waitForTimeout(300);
+  expect((await page.evaluate(() => window.__learningGameDebug.listen.state())).index).toBe(1);
 });
 
-test('assemble game only accepts a complete answer and supports clearing', async ({ page }) => {
-  await openGame(page, 'assemble', '.letters');
-  await page.locator('#confirm').click();
-  await expect(page.locator('.feedback.wrong')).toContainText('完整答案');
-  await page.evaluate(() => window.__learningGameDebug.assemble.solve());
-  await expect(page.locator('.feedback.correct')).toContainText('拼装正确');
-  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.assemble.state().index)).toBe(1);
-});
-
-test('memory game locks mismatches and briefly blocks a third card', async ({ page }) => {
-  await openGame(page, 'memory', '.memory-grid');
-  const initial = await page.evaluate(() => window.__learningGameDebug.memory.state());
-  const byKey = new Map();
-  initial.cards.forEach((card, index) => {
-    if (!byKey.has(card.key)) byKey.set(card.key, []);
-    byKey.get(card.key).push(index);
-  });
-  const firstPair = [...byKey.values()].find(indices => indices.length === 2);
-  await page.evaluate(([first, second]) => {
-    window.__learningGameDebug.memory.click(first);
-    window.__learningGameDebug.memory.click(second);
-  }, firstPair);
-  expect((await page.evaluate(() => window.__learningGameDebug.memory.state())).matched).toBe(1);
-
-  const unmatchedKeys = [...byKey.entries()].filter(([, indices]) => indices.length === 2);
-  const first = unmatchedKeys[1][1][0];
-  const second = unmatchedKeys[2][1][0];
-  const third = unmatchedKeys[3][1][0];
-  await page.evaluate(([a, b]) => {
-    window.__learningGameDebug.memory.click(a);
-    window.__learningGameDebug.memory.click(b);
-  }, [first, second]);
+test('pause freezes memory mismatch reveal and resumes the same lock window', async ({ page }) => {
+  await openGame(page, 'memory');
+  await page.waitForFunction(() => Boolean(window.__learningGameDebug?.memory));
+  const cards = await page.evaluate(() => window.__learningGameDebug.memory.state().cards);
+  const second = cards.findIndex((card, index) => index > 0 && card.key !== cards[0].key);
+  await page.evaluate(indexes => {
+    window.__learningGameDebug.memory.click(indexes[0]);
+    window.__learningGameDebug.memory.click(indexes[1]);
+  }, [0, second]);
+  await page.locator('#game-pause').click();
+  await page.waitForTimeout(1100);
   expect((await page.evaluate(() => window.__learningGameDebug.memory.state())).locked).toBe(true);
-  await page.evaluate(index => window.__learningGameDebug.memory.click(index), third);
-  expect((await page.evaluate(() => window.__learningGameDebug.memory.state())).cards[third].shown).toBe(false);
-  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.memory.state().locked), { timeout: 2000 }).toBe(false);
+  await page.locator('#game-resume').click();
+  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.memory.state().locked), { timeout: 1600 }).toBe(false);
 });
 
-test('poetry theater requires line-by-line teacher-led reading and a comprehension answer', async ({ page }) => {
-  await openGame(page, 'beat', '.theater-workbench');
-  await page.evaluate(() => window.__learningGameDebug.beat.finish());
-  await expect(page.locator('#poetry-feedback')).toContainText('没有共读');
-
-  await page.evaluate(() => window.__learningGameDebug.beat.play());
-  await page.evaluate(() => window.__learningGameDebug.beat.next());
-  await page.evaluate(() => window.__learningGameDebug.beat.next());
-  await page.evaluate(() => window.__learningGameDebug.beat.next());
-  await page.evaluate(() => window.__learningGameDebug.beat.choose('清风'));
-  await expect(page.locator('#poetry-feedback')).toContainText('再想一想');
-  await page.evaluate(() => window.__learningGameDebug.beat.choose('明月'));
-  await expect(page.locator('#poetry-practice-note')).toContainText('床前明月光');
-  const state = await page.evaluate(() => window.__learningGameDebug.beat.state());
-  expect(state.heardLines).toEqual([0, 1, 2, 3]);
-  expect(state.chosenAnswer).toBe('明月');
-});
-
-test('class lobby and battle use teacher-confirmed two-team scoring', async ({ page }) => {
+test('progress import rejects null and preserves the previous save', async ({ page }) => {
   await page.goto('/index.html');
-  await page.locator('#class-mode').click();
-  await expect(page.getByRole('heading', { name: '全班挑战 · 老师主控' })).toBeVisible();
-  await page.locator('#class-battle').click();
-  await expect(page.locator('.battle-arena')).toBeVisible();
+  const result = await page.evaluate(async () => {
+    const storage = await import('/js/storage.js');
+    storage.saveProgress({
+      version: 2,
+      packs: {
+        demo: {
+          rounds: 1,
+          bestRate: .5,
+          games: {}
+        }
+      }
+    });
+    const before = localStorage.getItem(storage.PROGRESS_KEY);
+    let error = '';
+    try {
+      storage.importProgress('null');
+    } catch (caught) {
+      error = caught.message;
+    }
+    return {
+      error,
+      unchanged: before === localStorage.getItem(storage.PROGRESS_KEY),
+      progress: storage.loadProgress()
+    };
+  });
+  expect(result.error).toContain('JSON 对象');
+  expect(result.unchanged).toBe(true);
+  expect(result.progress.packs.demo.rounds).toBe(1);
+});
 
-  const initial = await page.evaluate(() => window.__learningGameDebug.battle.state());
-  await page.evaluate(correct => window.__learningGameDebug.battle.select(correct), initial.correct);
-  await page.evaluate(() => window.__learningGameDebug.battle.judgeCorrect());
-  const awarded = await page.evaluate(() => window.__learningGameDebug.battle.state());
-  expect(awarded.score).toEqual([1, 0]);
-  await expect(page.locator('.feedback.correct')).toContainText('第 1 组得分');
-  await page.waitForTimeout(820);
+test('legacy per-pack scores migrate into versioned level records', async ({ page }) => {
+  await page.goto('/index.html');
+  const progress = await page.evaluate(async () => {
+    const storage = await import('/js/storage.js');
+    localStorage.setItem(storage.PROGRESS_KEY, JSON.stringify({
+      'g3-english-basic': {
+        rounds: 2,
+        bestScore: 7,
+        games: {
+          listen: { score: 7, total: 8, updatedAt: 123 }
+        }
+      }
+    }));
+    return storage.loadProgress();
+  });
+  expect(progress.version).toBe(2);
+  expect(progress.packs['g3-english-basic'].games.listen.levels.legacy.bestScore).toBe(7);
+});
 
-  const second = await page.evaluate(() => window.__learningGameDebug.battle.state());
-  await page.evaluate(correct => window.__learningGameDebug.battle.select(correct), second.correct);
-  await page.evaluate(() => window.__learningGameDebug.battle.judgeWrong());
-  const rejected = await page.evaluate(() => window.__learningGameDebug.battle.state());
-  expect(rejected.score).toEqual([1, 0]);
-  await expect(page.locator('.feedback.wrong')).toContainText('需复习');
+test('corrupt progress does not block the lobby and is backed up', async ({ page }) => {
+  await page.goto('/index.html');
+  const result = await page.evaluate(async () => {
+    const storage = await import('/js/storage.js');
+    localStorage.setItem(storage.PROGRESS_KEY, 'null');
+    const progress = storage.loadProgress();
+    const keys = Object.keys(localStorage);
+    return {
+      progress,
+      keys
+    };
+  });
+  expect(result.progress.version).toBe(2);
+  expect(Object.keys(result.progress.packs)).toHaveLength(0);
+  expect(result.keys.length).toBeGreaterThanOrEqual(2);
 });

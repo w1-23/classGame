@@ -1,6 +1,6 @@
 {
   "name": "learning-adventure-park",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "description": "Offline learning games for classroom and personal practice",
   "author": "classGame",
@@ -14,8 +14,9 @@
     "record:demo": "node tools/record_demo.mjs",
     "validate": "conda run -n GAME python tools/validate_content.py",
     "icon": "conda run --no-capture-output -n GAME python tools/make_icon.py",
-    "dist": "npm run icon && electron-builder --win nsis portable --x64",
-    "dist:dir": "npm run icon && electron-builder --win --dir --x64"
+    "build:launcher": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build_launcher.ps1",
+    "dist": "npm run icon && npm run build:launcher && electron-builder --win nsis --x64",
+    "dist:dir": "npm run icon && npm run build:launcher && electron-builder --win --dir --x64"
   },
   "devDependencies": {
     "@playwright/test": "^1.65.1",
@@ -33,6 +34,13 @@
     "appId": "cn.classgame.learningpark",
     "productName": "学习闯关乐园",
     "asar": true,
+    "afterPack": "tools/after-pack.cjs",
+    "extraFiles": [
+      {
+        "from": "build/ClassGameUninstaller.exe",
+        "to": "卸载学习闯关乐园.exe"
+      }
+    ],
     "directories": {
       "output": "release",
       "buildResources": "build"
@@ -63,12 +71,6 @@
           "arch": [
             "x64"
           ]
-        },
-        {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
         }
       ]
     },
@@ -84,11 +86,9 @@
         "zh_CN"
       ],
       "language": "2052",
+      "include": "build/installer.nsh",
       "deleteAppDataOnUninstall": false,
       "artifactName": "classGame-${version}-${arch}-setup.${ext}"
-    },
-    "portable": {
-      "artifactName": "classGame-${version}-${arch}-portable.${ext}"
     }
   }
 }

@@ -1,0 +1,4601 @@
+{
+  "id": "g1-chinese-b",
+  "name": "一年级下册语文 · 字词同步",
+  "subject": "语文",
+  "grade": 1,
+  "volume": "下册",
+  "edition": "人教版（部编版）字词同步",
+  "coverage": {
+    "books": 1,
+    "units": 8,
+    "lessons": 29,
+    "items": 207,
+    "content": "课文标题、生字与词语；不含受版权保护的课文原文"
+  },
+  "units": [
+    {
+      "id": "g1-chinese-b-u01",
+      "title": "识字（一）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u01-l01-g01",
+          "title": "春夏秋冬",
+          "items": [
+            {
+              "id": "g1-chinese-b-u01-l01-g01-01",
+              "prompt": "春",
+              "correct": "chūn",
+              "distractors": [
+                "fēng",
+                "dōng"
+              ],
+              "audio": null,
+              "speechText": "春",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l01-g01-02",
+              "prompt": "风",
+              "correct": "fēng",
+              "distractors": [
+                "chūn",
+                "dōng"
+              ],
+              "audio": null,
+              "speechText": "风",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l01-g01-03",
+              "prompt": "冬",
+              "correct": "dōng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "冬",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l01-g01-04",
+              "prompt": "雪",
+              "correct": "xuě",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "雪",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l01-g01-05",
+              "prompt": "花",
+              "correct": "huā",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "花",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l01-g01-06",
+              "prompt": "飞",
+              "correct": "fēi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "飞",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l01-g01-07",
+              "prompt": "入",
+              "correct": "rù",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "入",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u01-l02-g01",
+          "title": "姓氏歌",
+          "items": [
+            {
+              "id": "g1-chinese-b-u01-l02-g01-01",
+              "prompt": "姓",
+              "correct": "xìng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "姓",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l02-g01-02",
+              "prompt": "什",
+              "correct": "shén",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "什",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l02-g01-03",
+              "prompt": "么",
+              "correct": "me",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "么",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l02-g01-04",
+              "prompt": "双",
+              "correct": "shuāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "双",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l02-g01-05",
+              "prompt": "国",
+              "correct": "guó",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "国",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l02-g01-06",
+              "prompt": "王",
+              "correct": "wáng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "王",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l02-g01-07",
+              "prompt": "方",
+              "correct": "fāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "方",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u01-l03-g01",
+          "title": "小青蛙",
+          "items": [
+            {
+              "id": "g1-chinese-b-u01-l03-g01-01",
+              "prompt": "青",
+              "correct": "qīng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "青",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l03-g01-02",
+              "prompt": "清",
+              "correct": "qīng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "清",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l03-g01-03",
+              "prompt": "气",
+              "correct": "qì",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "气",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l03-g01-04",
+              "prompt": "晴",
+              "correct": "qíng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "晴",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l03-g01-05",
+              "prompt": "情",
+              "correct": "qíng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "情",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l03-g01-06",
+              "prompt": "请",
+              "correct": "qǐng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "请",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l03-g01-07",
+              "prompt": "生",
+              "correct": "shēng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "生",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u01-l04-g01",
+          "title": "猜字谜",
+          "items": [
+            {
+              "id": "g1-chinese-b-u01-l04-g01-01",
+              "prompt": "字",
+              "correct": "zì",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "字",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l04-g01-02",
+              "prompt": "左",
+              "correct": "zuǒ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "左",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l04-g01-03",
+              "prompt": "右",
+              "correct": "yòu",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "右",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l04-g01-04",
+              "prompt": "红",
+              "correct": "hóng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "红",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l04-g01-05",
+              "prompt": "时",
+              "correct": "shí",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "时",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l04-g01-06",
+              "prompt": "动",
+              "correct": "dòng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "动",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u01-l04-g01-07",
+              "prompt": "万",
+              "correct": "wàn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "万",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-b-u02",
+      "title": "课文（一）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u02-l01-g01",
+          "title": "吃水不忘挖井人",
+          "items": [
+            {
+              "id": "g1-chinese-b-u02-l01-g01-01",
+              "prompt": "吃",
+              "correct": "chī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "吃",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l01-g01-02",
+              "prompt": "叫",
+              "correct": "jiào",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "叫",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l01-g01-03",
+              "prompt": "主",
+              "correct": "zhǔ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "主",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l01-g01-04",
+              "prompt": "江",
+              "correct": "jiāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "江",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l01-g01-05",
+              "prompt": "住",
+              "correct": "zhù",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "住",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l01-g01-06",
+              "prompt": "没",
+              "correct": "méi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "没",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l01-g01-07",
+              "prompt": "以",
+              "correct": "yǐ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "以",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u02-l02-g01",
+          "title": "我多想去看看",
+          "items": [
+            {
+              "id": "g1-chinese-b-u02-l02-g01-01",
+              "prompt": "会",
+              "correct": "huì",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "会",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l02-g01-02",
+              "prompt": "走",
+              "correct": "zǒu",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "走",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l02-g01-03",
+              "prompt": "北",
+              "correct": "běi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "北",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l02-g01-04",
+              "prompt": "京",
+              "correct": "jīng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "京",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l02-g01-05",
+              "prompt": "门",
+              "correct": "mén",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "门",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l02-g01-06",
+              "prompt": "广",
+              "correct": "guǎng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "广",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u02-l03-g01",
+          "title": "一个接一个",
+          "items": [
+            {
+              "id": "g1-chinese-b-u02-l03-g01-01",
+              "prompt": "过",
+              "correct": "guò",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "过",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l03-g01-02",
+              "prompt": "各",
+              "correct": "gè",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "各",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l03-g01-03",
+              "prompt": "种",
+              "correct": "zhǒng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "种",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l03-g01-04",
+              "prompt": "样",
+              "correct": "yàng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "样",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l03-g01-05",
+              "prompt": "伙",
+              "correct": "huǒ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "伙",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l03-g01-06",
+              "prompt": "伴",
+              "correct": "bàn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "伴",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l03-g01-07",
+              "prompt": "这",
+              "correct": "zhè",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "这",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u02-l04-g01",
+          "title": "四个太阳",
+          "items": [
+            {
+              "id": "g1-chinese-b-u02-l04-g01-01",
+              "prompt": "太",
+              "correct": "tài",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "太",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l04-g01-02",
+              "prompt": "阳",
+              "correct": "yáng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "阳",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l04-g01-03",
+              "prompt": "校",
+              "correct": "xiào",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "校",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l04-g01-04",
+              "prompt": "金",
+              "correct": "jīn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "金",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l04-g01-05",
+              "prompt": "秋",
+              "correct": "qiū",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "秋",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l04-g01-06",
+              "prompt": "因",
+              "correct": "yīn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "因",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u02-l04-g01-07",
+              "prompt": "为",
+              "correct": "wèi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "为",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-b-u03",
+      "title": "课文（二）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u03-l01-g01",
+          "title": "小公鸡和小鸭子",
+          "items": [
+            {
+              "id": "g1-chinese-b-u03-l01-g01-01",
+              "prompt": "他",
+              "correct": "tā",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "他",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l01-g01-02",
+              "prompt": "河",
+              "correct": "hé",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "河",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l01-g01-03",
+              "prompt": "说",
+              "correct": "shuō",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "说",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l01-g01-04",
+              "prompt": "也",
+              "correct": "yě",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "也",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l01-g01-05",
+              "prompt": "地",
+              "correct": "dì",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "地",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l01-g01-06",
+              "prompt": "听",
+              "correct": "tīng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "听",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l01-g01-07",
+              "prompt": "哥",
+              "correct": "gē",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "哥",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u03-l02-g01",
+          "title": "树和喜鹊",
+          "items": [
+            {
+              "id": "g1-chinese-b-u03-l02-g01-01",
+              "prompt": "单",
+              "correct": "dān",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "单",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l02-g01-02",
+              "prompt": "居",
+              "correct": "jū",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "居",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l02-g01-03",
+              "prompt": "招",
+              "correct": "zhāo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "招",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l02-g01-04",
+              "prompt": "呼",
+              "correct": "hū",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "呼",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l02-g01-05",
+              "prompt": "快",
+              "correct": "kuài",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "快",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l02-g01-06",
+              "prompt": "乐",
+              "correct": "lè",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "乐",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u03-l03-g01",
+          "title": "怎么都快乐",
+          "items": [
+            {
+              "id": "g1-chinese-b-u03-l03-g01-01",
+              "prompt": "玩",
+              "correct": "wán",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "玩",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l03-g01-02",
+              "prompt": "很",
+              "correct": "hěn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "很",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l03-g01-03",
+              "prompt": "当",
+              "correct": "dāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "当",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l03-g01-04",
+              "prompt": "音",
+              "correct": "yīn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "音",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l03-g01-05",
+              "prompt": "讲",
+              "correct": "jiǎng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "讲",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l03-g01-06",
+              "prompt": "行",
+              "correct": "xíng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "行",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u03-l03-g01-07",
+              "prompt": "许",
+              "correct": "xǔ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "许",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-b-u04",
+      "title": "课文（三）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u04-l01-g01",
+          "title": "静夜思",
+          "items": [
+            {
+              "id": "g1-chinese-b-u04-l01-g01-01",
+              "prompt": "思",
+              "correct": "sī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "思",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l01-g01-02",
+              "prompt": "床",
+              "correct": "chuáng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "床",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l01-g01-03",
+              "prompt": "前",
+              "correct": "qián",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "前",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l01-g01-04",
+              "prompt": "光",
+              "correct": "guāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "光",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l01-g01-05",
+              "prompt": "低",
+              "correct": "dī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "低",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l01-g01-06",
+              "prompt": "故",
+              "correct": "gù",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "故",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l01-g01-07",
+              "prompt": "乡",
+              "correct": "xiāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "乡",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u04-l02-g01",
+          "title": "夜色",
+          "items": [
+            {
+              "id": "g1-chinese-b-u04-l02-g01-01",
+              "prompt": "色",
+              "correct": "sè",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "色",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l02-g01-02",
+              "prompt": "外",
+              "correct": "wài",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "外",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l02-g01-03",
+              "prompt": "看",
+              "correct": "kàn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "看",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l02-g01-04",
+              "prompt": "爸",
+              "correct": "bà",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "爸",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l02-g01-05",
+              "prompt": "晚",
+              "correct": "wǎn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "晚",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l02-g01-06",
+              "prompt": "笑",
+              "correct": "xiào",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "笑",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l02-g01-07",
+              "prompt": "再",
+              "correct": "zài",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "再",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u04-l03-g01",
+          "title": "端午粽",
+          "items": [
+            {
+              "id": "g1-chinese-b-u04-l03-g01-01",
+              "prompt": "午",
+              "correct": "wǔ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "午",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l03-g01-02",
+              "prompt": "节",
+              "correct": "jié",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "节",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l03-g01-03",
+              "prompt": "叶",
+              "correct": "yè",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "叶",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l03-g01-04",
+              "prompt": "米",
+              "correct": "mǐ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "米",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l03-g01-05",
+              "prompt": "真",
+              "correct": "zhēn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "真",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l03-g01-06",
+              "prompt": "分",
+              "correct": "fēn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "分",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l03-g01-07",
+              "prompt": "豆",
+              "correct": "dòu",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "豆",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u04-l04-g01",
+          "title": "彩虹",
+          "items": [
+            {
+              "id": "g1-chinese-b-u04-l04-g01-01",
+              "prompt": "那",
+              "correct": "nà",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "那",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l04-g01-02",
+              "prompt": "着",
+              "correct": "zhe",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "着",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l04-g01-03",
+              "prompt": "到",
+              "correct": "dào",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "到",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l04-g01-04",
+              "prompt": "高",
+              "correct": "gāo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "高",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l04-g01-05",
+              "prompt": "兴",
+              "correct": "xīng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "兴",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l04-g01-06",
+              "prompt": "千",
+              "correct": "qiān",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "千",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u04-l04-g01-07",
+              "prompt": "成",
+              "correct": "chéng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "成",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-b-u05",
+      "title": "识字（二）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u05-l01-g01",
+          "title": "动物儿歌",
+          "items": [
+            {
+              "id": "g1-chinese-b-u05-l01-g01-01",
+              "prompt": "间",
+              "correct": "jiān",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "间",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l01-g01-02",
+              "prompt": "迷",
+              "correct": "mí",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "迷",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l01-g01-03",
+              "prompt": "造",
+              "correct": "zào",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "造",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l01-g01-04",
+              "prompt": "运",
+              "correct": "yùn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "运",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l01-g01-05",
+              "prompt": "池",
+              "correct": "chí",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "池",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l01-g01-06",
+              "prompt": "欢",
+              "correct": "huān",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "欢",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l01-g01-07",
+              "prompt": "网",
+              "correct": "wǎng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "网",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u05-l02-g01",
+          "title": "古对今",
+          "items": [
+            {
+              "id": "g1-chinese-b-u05-l02-g01-01",
+              "prompt": "古",
+              "correct": "gǔ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "古",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l02-g01-02",
+              "prompt": "凉",
+              "correct": "liáng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "凉",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l02-g01-03",
+              "prompt": "细",
+              "correct": "xì",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "细",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l02-g01-04",
+              "prompt": "夕",
+              "correct": "xī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "夕",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l02-g01-05",
+              "prompt": "李",
+              "correct": "lǐ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "李",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l02-g01-06",
+              "prompt": "语",
+              "correct": "yǔ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "语",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l02-g01-07",
+              "prompt": "香",
+              "correct": "xiāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "香",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u05-l03-g01",
+          "title": "操场上",
+          "items": [
+            {
+              "id": "g1-chinese-b-u05-l03-g01-01",
+              "prompt": "打",
+              "correct": "dǎ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "打",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l03-g01-02",
+              "prompt": "拍",
+              "correct": "pāi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "拍",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l03-g01-03",
+              "prompt": "跑",
+              "correct": "pǎo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "跑",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l03-g01-04",
+              "prompt": "足",
+              "correct": "zú",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "足",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l03-g01-05",
+              "prompt": "声",
+              "correct": "shēng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "声",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l03-g01-06",
+              "prompt": "身",
+              "correct": "shēn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "身",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l03-g01-07",
+              "prompt": "体",
+              "correct": "tǐ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "体",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u05-l04-g01",
+          "title": "人之初",
+          "items": [
+            {
+              "id": "g1-chinese-b-u05-l04-g01-01",
+              "prompt": "之",
+              "correct": "zhī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "之",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l04-g01-02",
+              "prompt": "相",
+              "correct": "xiāng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "相",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l04-g01-03",
+              "prompt": "近",
+              "correct": "jìn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "近",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l04-g01-04",
+              "prompt": "习",
+              "correct": "xí",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "习",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l04-g01-05",
+              "prompt": "远",
+              "correct": "yuǎn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "远",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l04-g01-06",
+              "prompt": "玉",
+              "correct": "yù",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "玉",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u05-l04-g01-07",
+              "prompt": "义",
+              "correct": "yì",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "义",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-b-u06",
+      "title": "课文（四）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u06-l01-g01",
+          "title": "古诗二首 · 第 1 组",
+          "items": [
+            {
+              "id": "g1-chinese-b-u06-l01-g01-01",
+              "prompt": "首",
+              "correct": "shǒu",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "首",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g01-02",
+              "prompt": "采",
+              "correct": "cǎi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "采",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g01-03",
+              "prompt": "无",
+              "correct": "wú",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "无",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g01-04",
+              "prompt": "树",
+              "correct": "shù",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "树",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g01-05",
+              "prompt": "爱",
+              "correct": "ài",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "爱",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g01-06",
+              "prompt": "尖",
+              "correct": "jiān",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "尖",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g01-07",
+              "prompt": "角",
+              "correct": "jiǎo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "角",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g01-08",
+              "prompt": "亮",
+              "correct": "liàng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "亮",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u06-l01-g02",
+          "title": "古诗二首 · 第 2 组",
+          "items": [
+            {
+              "id": "g1-chinese-b-u06-l01-g02-01",
+              "prompt": "机",
+              "correct": "jī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "机",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g02-02",
+              "prompt": "台",
+              "correct": "tái",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "台",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g02-03",
+              "prompt": "放",
+              "correct": "fàng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "放",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g02-04",
+              "prompt": "鱼",
+              "correct": "yú",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "鱼",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g02-05",
+              "prompt": "朵",
+              "correct": "duǒ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "朵",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l01-g02-06",
+              "prompt": "美",
+              "correct": "měi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "美",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u06-l02-g01",
+          "title": "荷叶圆圆",
+          "items": [
+            {
+              "id": "g1-chinese-b-u06-l02-g01-01",
+              "prompt": "亮",
+              "correct": "liàng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "亮",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l02-g01-02",
+              "prompt": "机",
+              "correct": "jī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "机",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l02-g01-03",
+              "prompt": "台",
+              "correct": "tái",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "台",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l02-g01-04",
+              "prompt": "放",
+              "correct": "fàng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "放",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l02-g01-05",
+              "prompt": "鱼",
+              "correct": "yú",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "鱼",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l02-g01-06",
+              "prompt": "朵",
+              "correct": "duǒ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "朵",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l02-g01-07",
+              "prompt": "美",
+              "correct": "měi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "美",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u06-l03-g01",
+          "title": "要下雨了",
+          "items": [
+            {
+              "id": "g1-chinese-b-u06-l03-g01-01",
+              "prompt": "直",
+              "correct": "zhí",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "直",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l03-g01-02",
+              "prompt": "呀",
+              "correct": "ya",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "呀",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l03-g01-03",
+              "prompt": "边",
+              "correct": "biān",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "边",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l03-g01-04",
+              "prompt": "呢",
+              "correct": "ne",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "呢",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l03-g01-05",
+              "prompt": "吗",
+              "correct": "ma",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "吗",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l03-g01-06",
+              "prompt": "吧",
+              "correct": "ba",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "吧",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u06-l03-g01-07",
+              "prompt": "加",
+              "correct": "jiā",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "加",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-b-u07",
+      "title": "课文（五）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u07-l01-g01",
+          "title": "文具的家",
+          "items": [
+            {
+              "id": "g1-chinese-b-u07-l01-g01-01",
+              "prompt": "文",
+              "correct": "wén",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "文",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l01-g01-02",
+              "prompt": "次",
+              "correct": "cì",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "次",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l01-g01-03",
+              "prompt": "找",
+              "correct": "zhǎo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "找",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l01-g01-04",
+              "prompt": "平",
+              "correct": "píng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "平",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l01-g01-05",
+              "prompt": "办",
+              "correct": "bàn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "办",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l01-g01-06",
+              "prompt": "让",
+              "correct": "ràng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "让",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l01-g01-07",
+              "prompt": "包",
+              "correct": "bāo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "包",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u07-l02-g01",
+          "title": "一分钟",
+          "items": [
+            {
+              "id": "g1-chinese-b-u07-l02-g01-01",
+              "prompt": "钟",
+              "correct": "zhōng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "钟",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l02-g01-02",
+              "prompt": "元",
+              "correct": "yuán",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "元",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l02-g01-03",
+              "prompt": "洗",
+              "correct": "xǐ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "洗",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l02-g01-04",
+              "prompt": "共",
+              "correct": "gòng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "共",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l02-g01-05",
+              "prompt": "已",
+              "correct": "yǐ",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "已",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l02-g01-06",
+              "prompt": "经",
+              "correct": "jīng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "经",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l02-g01-07",
+              "prompt": "坐",
+              "correct": "zuò",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "坐",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u07-l03-g01",
+          "title": "动物王国开大会",
+          "items": [
+            {
+              "id": "g1-chinese-b-u07-l03-g01-01",
+              "prompt": "要",
+              "correct": "yào",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "要",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l03-g01-02",
+              "prompt": "连",
+              "correct": "lián",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "连",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l03-g01-03",
+              "prompt": "百",
+              "correct": "bǎi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "百",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l03-g01-04",
+              "prompt": "还",
+              "correct": "hái",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "还",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l03-g01-05",
+              "prompt": "舌",
+              "correct": "shé",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "舌",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l03-g01-06",
+              "prompt": "点",
+              "correct": "diǎn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "点",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u07-l04-g01",
+          "title": "小猴子下山",
+          "items": [
+            {
+              "id": "g1-chinese-b-u07-l04-g01-01",
+              "prompt": "块",
+              "correct": "kuài",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "块",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l04-g01-02",
+              "prompt": "非",
+              "correct": "fēi",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "非",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l04-g01-03",
+              "prompt": "常",
+              "correct": "cháng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "常",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l04-g01-04",
+              "prompt": "往",
+              "correct": "wǎng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "往",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l04-g01-05",
+              "prompt": "瓜",
+              "correct": "guā",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "瓜",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l04-g01-06",
+              "prompt": "进",
+              "correct": "jìn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "进",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u07-l04-g01-07",
+              "prompt": "空",
+              "correct": "kōng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "空",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-b-u08",
+      "title": "课文（六）",
+      "note": "一年级下册 · 人教版（部编版）字词同步",
+      "lessons": [
+        {
+          "id": "g1-chinese-b-u08-l01-g01",
+          "title": "棉花姑娘",
+          "items": [
+            {
+              "id": "g1-chinese-b-u08-l01-g01-01",
+              "prompt": "病",
+              "correct": "bìng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "病",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l01-g01-02",
+              "prompt": "医",
+              "correct": "yī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "医",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l01-g01-03",
+              "prompt": "别",
+              "correct": "bié",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "别",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l01-g01-04",
+              "prompt": "干",
+              "correct": "gàn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "干",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l01-g01-05",
+              "prompt": "奇",
+              "correct": "qí",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "奇",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l01-g01-06",
+              "prompt": "七",
+              "correct": "qī",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "七",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l01-g01-07",
+              "prompt": "星",
+              "correct": "xīng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "星",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u08-l02-g01",
+          "title": "咕咚",
+          "items": [
+            {
+              "id": "g1-chinese-b-u08-l02-g01-01",
+              "prompt": "吓",
+              "correct": "xià",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "吓",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l02-g01-02",
+              "prompt": "怕",
+              "correct": "pà",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "怕",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l02-g01-03",
+              "prompt": "跟",
+              "correct": "gēn",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "跟",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l02-g01-04",
+              "prompt": "家",
+              "correct": "jiā",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "家",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l02-g01-05",
+              "prompt": "羊",
+              "correct": "yáng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "羊",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l02-g01-06",
+              "prompt": "象",
+              "correct": "xiàng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "象",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l02-g01-07",
+              "prompt": "都",
+              "correct": "dōu",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "都",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        },
+        {
+          "id": "g1-chinese-b-u08-l03-g01",
+          "title": "小壁虎借尾巴",
+          "items": [
+            {
+              "id": "g1-chinese-b-u08-l03-g01-01",
+              "prompt": "捉",
+              "correct": "zhuō",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "捉",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l03-g01-02",
+              "prompt": "条",
+              "correct": "tiáo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "条",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l03-g01-03",
+              "prompt": "爬",
+              "correct": "pá",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "爬",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l03-g01-04",
+              "prompt": "姐",
+              "correct": "jiě",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "姐",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l03-g01-05",
+              "prompt": "您",
+              "correct": "nín",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "您",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l03-g01-06",
+              "prompt": "草",
+              "correct": "cǎo",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "草",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            },
+            {
+              "id": "g1-chinese-b-u08-l03-g01-07",
+              "prompt": "房",
+              "correct": "fáng",
+              "distractors": [
+                "chūn",
+                "fēng"
+              ],
+              "audio": null,
+              "speechText": "房",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "athenayan123-web/dictation-robot (MIT)",
+              "reviewed": false,
+              "kind": "character"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": []
+}
