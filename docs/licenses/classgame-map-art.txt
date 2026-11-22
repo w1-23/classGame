@@ -26,6 +26,15 @@ Imported runtime assets:
 - tree-round.svg
 - tree-slim.svg
 
+The approved handoff Canvas drawing primitives are integrated in:
+- js/map-primitives.js
+- js/adventure-map-art.js
+
+The curriculum map uses those Canvas primitives to reproduce the handoff's
+layered terrain, path, route-aligned bridge, trees, mountains and rocks. The
+Phaser runner keeps using the rasterized tree textures because WebGL video
+capture requires stable bitmap resources.
+
 The handoff artistically references the project's existing Kenney Toon
 Characters frames. Those character files are not duplicated in this import;
 the project continues to use the already documented Kenney CC0 character

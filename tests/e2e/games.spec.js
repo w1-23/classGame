@@ -60,6 +60,21 @@ test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());
 });
 
+test('settings and save dialogs render as complete pages', async ({ page }) => {
+  await mkdir(screenshots, { recursive: true });
+  await page.goto('/index.html');
+
+  await page.locator('#settings-open').click();
+  await expect(page.locator('#settings-dialog')).toBeVisible();
+  await page.screenshot({ path: `${screenshots}/settings-dialog.png`, fullPage: false });
+  await page.locator('#settings-dialog button[value="cancel"]').click();
+
+  await page.locator('#backup-open').click();
+  await expect(page.locator('#backup-dialog')).toBeVisible();
+  await page.screenshot({ path: `${screenshots}/backup-dialog.png`, fullPage: false });
+  await page.locator('#backup-dialog button[value="cancel"]').click();
+});
+
 test('all six game entries use one shared game frame', async ({ page }) => {
   await mkdir(screenshots, { recursive: true });
   const errors = [];
@@ -251,6 +266,8 @@ test('memory cards lock while a wrong pair is visible and count real attempts', 
 test('poetry uses reviewed random cloze questions and reveals the full line after answering', async ({ page }) => {
   await openLevel(page, 'beat');
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.beat));
+  await expect(page.locator('.poetry-context')).toContainText('静夜思');
+  await expect(page.locator('.poetry-context')).not.toContainText('undefined');
   const first = await page.evaluate(() => window.__learningGameDebug.beat.state());
   expect(first.options).toHaveLength(3);
   expect(first.options).toContain(first.correct);

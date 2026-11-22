@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
 const screenshots = 'docs/screenshots';
 const viewports = [
@@ -32,7 +33,9 @@ test('curriculum map scales by grade, book, unit and lesson', async ({ page }) =
   const english = await mapState(page);
   expect(english.units).toBeGreaterThanOrEqual(3);
   expect(english.levels).toBeGreaterThan(12);
-  await expect(page.locator('.map-node')).toHaveCount(english.selectedUnitLessons);
+  expect(english.displayedNodes).toBeGreaterThanOrEqual(6);
+  expect(english.displayedNodes).toBeLessThanOrEqual(12);
+  await expect(page.locator('.map-node')).toHaveCount(english.displayedNodes);
 
   const books = await page.locator('#adventure-book option').evaluateAll(options => options.map(option => option.value));
   for (const grade of [1, 2, 3, 4, 5, 6]) {
@@ -95,19 +98,28 @@ test('formal map has no demo completion control', async ({ page }) => {
   await expect(page.locator('.detail-hint')).toContainText('只有完成关卡');
 });
 
-test('map renders the imported local vector asset set', async ({ page }) => {
+test('map renders the approved canvas artwork instead of an empty placeholder', async ({ page }) => {
   await openMap(page);
-  const assets = await page.locator('.map-art image').evaluateAll(images => images.map(image => ({
-    href: image.getAttribute('href'),
-    width: image.getBoundingClientRect().width,
-    height: image.getBoundingClientRect().height
-  })));
-  expect(assets.length).toBeGreaterThanOrEqual(8);
-  expect(assets.every(asset => asset.href?.startsWith('assets/map-art/vector/'))).toBe(true);
-  expect(assets.every(asset => asset.width > 0 && asset.height > 0)).toBe(true);
-  expect(assets.some(asset => asset.href?.endsWith('tree-round.svg'))).toBe(true);
-  expect(assets.some(asset => asset.href?.endsWith('cloud.svg'))).toBe(true);
-  expect(assets.some(asset => asset.href?.endsWith('bridge-topdown.svg'))).toBe(true);
+  const canvas = page.locator('.map-art-canvas');
+  await expect(canvas).toBeVisible();
+  const drawing = await canvas.evaluate(node => {
+    const context = node.getContext('2d');
+    const data = context.getImageData(0, 0, node.width, node.height).data;
+    const colors = new Set();
+    for (let index = 0; index < data.length; index += 1600) {
+      colors.add(`${data[index]},${data[index + 1]},${data[index + 2]},${data[index + 3]}`);
+    }
+    return {
+      width: node.width,
+      height: node.height,
+      colors: colors.size,
+      dataUrlLength: node.toDataURL('image/png').length
+    };
+  });
+  expect(drawing.width).toBeGreaterThan(500);
+  expect(drawing.height).toBeGreaterThan(450);
+  expect(drawing.colors).toBeGreaterThan(12);
+  expect(drawing.dataUrlLength).toBeGreaterThan(20000);
 });
 
 test('all six map regions use their matching imported artwork', async ({ page }) => {
@@ -117,24 +129,24 @@ test('all six map regions use their matching imported artwork', async ({ page })
   await page.locator('#adventure-book').selectOption('g4-chinese-b');
   await expect(page.locator('.adventure-heading')).toContainText('四年级下册语文');
 
+  const hashes = new Set();
   for (const scene of [
-    { theme: 'forest', tree: 'tree-round.svg' },
-    { theme: 'stream', tree: 'tree-round.svg' },
-    { theme: 'mountain', tree: 'pine.svg' },
-    { theme: 'orchard', tree: 'tree-autumn.svg' },
-    { theme: 'coast', tree: 'tree-slim.svg' },
-    { theme: 'snow', tree: 'pine-snow.svg' }
+    { theme: 'forest' },
+    { theme: 'stream' },
+    { theme: 'mountain' },
+    { theme: 'orchard' },
+    { theme: 'coast' },
+    { theme: 'snow' }
   ]) {
     const unitIndex = ['forest', 'stream', 'mountain', 'orchard', 'coast', 'snow'].indexOf(scene.theme);
     await page.locator('.region-tab').nth(unitIndex).click();
     await expect(page.locator('.map-canvas')).toHaveClass(new RegExp(`theme-${scene.theme}`));
     await page.waitForTimeout(100);
-    const hrefs = await page.locator('.map-art image').evaluateAll(images => (
-      images.map(image => image.getAttribute('href'))
-    ));
-    expect(hrefs.some(href => href?.endsWith(scene.tree))).toBe(true);
+    const dataUrl = await page.locator('.map-art-canvas').evaluate(node => node.toDataURL('image/png'));
+    hashes.add(createHash('sha256').update(dataUrl).digest('hex'));
     await page.screenshot({ path: `${screenshots}/map-${scene.theme}-1366x768.png`, fullPage: false });
   }
+  expect(hashes.size).toBe(6);
 });
 
 test('map fits every target viewport without page scrolling', async ({ page }) => {

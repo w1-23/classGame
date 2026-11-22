@@ -321,11 +321,16 @@ test('runner scenery follows all six curriculum regions and their three stages',
       const targetIndex = stageIndex * 2;
       while ((await state(page)).index < targetIndex) {
         const current = await state(page);
-        await page.evaluate(lane => window.__learningGameDebug.runner.switchLane(lane), current.correctLane);
-        await page.evaluate(() => window.__learningGameDebug.runner.collision());
-        await expect.poll(async () => (await state(page)).phase).toBe('feedback');
-        await page.evaluate(() => window.__learningGameDebug.runner.continue());
-        await expect.poll(async () => (await state(page)).index).toBe(current.index + 1);
+        const feedback = await page.evaluate(lane => {
+          const runner = window.__learningGameDebug.runner;
+          runner.switchLane(lane);
+          runner.collision();
+          const resolved = runner.state();
+          if (resolved.phase === 'feedback') runner.continue();
+          return resolved;
+        }, current.correctLane);
+        expect(feedback.phase).toBe('feedback');
+        expect((await state(page)).index).toBe(current.index + 1);
       }
       await page.evaluate(() => window.__learningGameDebug.runner.freezeAtGate(.42));
       await page.waitForTimeout(160);
@@ -334,7 +339,10 @@ test('runner scenery follows all six curriculum regions and their three stages',
       expect(stage.areaName).toBe(scene.areas[stageIndex]);
       expect(stage.stageDetail).toBe(scene.details[stageIndex]);
       await capturePage(page, `${screenshots}/runner-${scene.theme}-stage${stageIndex}-1366x768.png`);
-      await page.evaluate(() => window.__learningGameDebug.runner.resume());
+      await page.evaluate(() => {
+        window.__learningGameDebug.runner.freezeAtGate(0);
+        window.__learningGameDebug.runner.resume();
+      });
     }
   }
 });
@@ -452,11 +460,11 @@ test('offline runtime only requests local resources', async ({ page }) => {
   page.on('request', request => {
     const url = request.url();
     if (!url.startsWith('http://127.0.0.1:4173') && !url.startsWith('data:') && !url.startsWith('blob:')) remote.push(url);
-    if (url.includes('/assets/map-art/vector/')) localArt.push(new URL(url).pathname);
+    if (url.includes('/assets/map-art/raster/')) localArt.push(new URL(url).pathname);
   });
   await openRunner(page);
   expect(remote).toEqual([]);
-  expect(localArt.some(path => path.includes('/tree-round.svg'))).toBe(true);
+  expect(localArt.some(path => path.includes('/tree-round@2x.png'))).toBe(true);
   const current = await state(page);
   expect(current.treeTexture).toBe('map-tree-round');
   expect(current.treeTextureReady).toBe(true);

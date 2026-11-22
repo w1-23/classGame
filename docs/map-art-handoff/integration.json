@@ -4,6 +4,8 @@
   "source_sha256": "6C65F2FA72D6E7B339379D27B3FD54C5EBAE7F521DED4C808EFD8455D80520D8",
   "runtime_directory": "assets/map-art/vector",
   "phaser_raster_directory": "assets/map-art/raster",
+  "canvas_renderer": "js/adventure-map-art.js",
+  "canvas_primitives": "js/map-primitives.js",
   "runtime_assets": [
     "bridge-topdown.svg",
     "cloud.svg",
@@ -16,7 +18,7 @@
     "tree-round.svg",
     "tree-slim.svg"
   ],
-  "map_usage": "Trees, pines, rocks, mountains, clouds and the route-water bridge render from the imported SVG files.",
+  "map_usage": "The curriculum map now uses the approved Canvas composition and drawing primitives from the handoff: layered terrain, diagonal water, route-aligned bridge, tree clusters, mountains and rocks. Imported SVG primitives remain available and are used by the Phaser runner where raster textures are required.",
   "game_usage": "The Phaser runner loads 2x PNG rasterizations of the same themed tree and pine assets for stable WebGL scenery and video capture.",
   "verified_by": [
     "tests/e2e/map.spec.js",

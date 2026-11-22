@@ -1434,6 +1434,14 @@ body.map-active #app { height: 100%; }
   height: 100%;
   pointer-events: none;
 }
+.map-art-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 .map-cloud ellipse { fill: #fffef7; }
 .map-ridge-far { opacity: .78; }
 .map-ridge-near { opacity: .92; }

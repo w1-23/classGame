@@ -32,6 +32,7 @@ import {
   getPassedLevelIds,
   setCurrentLevelId
 } from './storage.js';
+import { drawAdventureMap } from './adventure-map-art.js';
 
 const app = document.querySelector('#app');
 const settingsDialog = document.querySelector('#settings-dialog');
@@ -42,6 +43,7 @@ let packs = [];
 let currentPack = null;
 let activeGame = null;
 let activeSession = null;
+let mapArtResizeObserver = null;
 const audio = new AudioManager(settings);
 const MAP_ART_ROOT = 'assets/map-art/vector';
 const MAP_ART_META = {
@@ -138,6 +140,8 @@ async function loadPacks() {
 }
 
 function resetGame() {
+  mapArtResizeObserver?.disconnect();
+  mapArtResizeObserver = null;
   if (activeGame && typeof activeGame.destroy === 'function') activeGame.destroy();
   else if (typeof activeGame === 'function') activeGame();
   activeGame = null;
@@ -370,6 +374,19 @@ function mapBridgeCrossing(theme, mapHeight, nodeList) {
   return null;
 }
 
+function mapWindowLevels(units, selectedUnit) {
+  const allLevels = units.flatMap(unit => unit.lessons);
+  if (allLevels.length <= 12) return allLevels;
+
+  const selectedLevels = selectedUnit?.lessons || [];
+  const selectedStart = allLevels.findIndex(level => level.id === selectedLevels[0]?.id);
+  const selectedCount = Math.min(selectedLevels.length, 12);
+  const anchor = selectedStart < 0 ? 0 : selectedStart;
+  const preferredStart = anchor - Math.floor((12 - selectedCount) / 2);
+  const start = Math.max(0, Math.min(allLevels.length - 12, preferredStart));
+  return allLevels.slice(start, start + 12);
+}
+
 function PhaserMathLinear(start, end, ratio) {
   return start + (end - start) * ratio;
 }
@@ -402,12 +419,42 @@ function flatRockMarkup(theme, x, y, scale, variant = 0) {
 
 function mapSceneryMarkup(theme, mapHeight) {
   const placements = {
-    forest: [[6, 48, .78, 0], [12, 57, .62, 1], [16, 44, .46, 2], [92, 45, .72, 1], [95, 56, .88, 0], [85, 38, .48, 2]],
-    stream: [[5, 42, .64, 0], [10, 52, .82, 1], [15, 38, .46, 2], [93, 43, .7, 2], [88, 54, .88, 0], [82, 34, .48, 1]],
-    mountain: [[7, 70, .9, 0], [13, 79, .62, 1], [91, 68, .82, 2], [84, 81, .58, 0]],
-    orchard: [[5, 42, .72, 0], [10, 52, .92, 1], [16, 39, .5, 2], [94, 44, .8, 1], [88, 55, .68, 0], [82, 33, .46, 2]],
-    coast: [[6, 38, .66, 0], [12, 51, .82, 1], [17, 42, .44, 2], [94, 40, .74, 2], [88, 53, .92, 0], [82, 34, .48, 1]],
-    snow: [[5, 42, .72, 0], [11, 53, .9, 1], [16, 38, .52, 2], [94, 43, .8, 2], [88, 55, .66, 0], [82, 34, .46, 1]]
+    forest: [
+      [4, 92, .88, 0], [11, 86, .62, 1], [14, 75, .78, 2], [5, 66, .58, 0],
+      [10, 55, .92, 2], [4, 45, .66, 1], [13, 34, .74, 0], [5, 24, .56, 2],
+      [96, 91, .84, 1], [88, 84, .64, 0], [84, 73, .92, 2], [95, 63, .58, 1],
+      [89, 52, .76, 0], [96, 42, .7, 2], [86, 31, .88, 1], [94, 21, .56, 0]
+    ],
+    stream: [
+      [4, 91, .84, 1], [12, 82, .62, 0], [15, 70, .88, 2], [5, 59, .58, 1],
+      [10, 47, .76, 0], [4, 36, .92, 2], [14, 25, .62, 1], [6, 15, .52, 0],
+      [96, 90, .8, 0], [87, 80, .68, 2], [83, 68, .9, 1], [94, 57, .56, 0],
+      [89, 45, .82, 2], [96, 34, .66, 1], [85, 23, .86, 0], [93, 13, .54, 2]
+    ],
+    mountain: [
+      [5, 91, .82, 0], [12, 83, .58, 1], [15, 72, .78, 2], [4, 61, .64, 0],
+      [11, 50, .9, 1], [5, 39, .54, 2], [14, 28, .74, 0], [6, 17, .5, 1],
+      [95, 90, .76, 2], [87, 81, .64, 0], [83, 70, .88, 1], [95, 59, .58, 2],
+      [88, 48, .72, 0], [95, 37, .66, 1], [85, 26, .82, 2], [93, 15, .52, 0]
+    ],
+    orchard: [
+      [4, 92, .82, 0], [11, 84, .66, 1], [15, 73, .82, 2], [5, 62, .58, 0],
+      [10, 51, .9, 1], [4, 40, .6, 2], [14, 29, .72, 0], [6, 18, .54, 1],
+      [96, 91, .84, 1], [88, 82, .62, 0], [83, 71, .9, 2], [95, 60, .56, 1],
+      [89, 49, .76, 0], [96, 38, .66, 2], [85, 27, .86, 1], [94, 16, .52, 0]
+    ],
+    coast: [
+      [4, 91, .78, 1], [12, 82, .6, 0], [16, 70, .86, 2], [5, 59, .54, 1],
+      [10, 48, .82, 0], [4, 37, .64, 2], [14, 26, .72, 1], [6, 15, .5, 0],
+      [96, 90, .82, 2], [87, 80, .64, 1], [83, 69, .9, 0], [95, 58, .56, 2],
+      [89, 47, .74, 1], [96, 36, .62, 0], [85, 25, .84, 2], [93, 14, .5, 1]
+    ],
+    snow: [
+      [4, 92, .8, 0], [12, 83, .58, 1], [16, 72, .84, 2], [5, 61, .56, 0],
+      [10, 50, .88, 1], [4, 39, .62, 2], [14, 28, .74, 0], [6, 17, .5, 1],
+      [96, 91, .82, 2], [87, 81, .62, 0], [83, 70, .92, 1], [95, 59, .58, 2],
+      [89, 48, .78, 0], [96, 37, .64, 1], [85, 26, .86, 2], [93, 15, .52, 0]
+    ]
   }[theme.id] || [];
   const pieces = placements.map(([x, y, scale, variant]) => (
     theme.treeStyle === 'pine'
@@ -432,8 +479,31 @@ function mapSceneryMarkup(theme, mapHeight) {
   return pieces.join('');
 }
 
+function mapForegroundMarkup(theme, mapHeight) {
+  const edgeTrees = [
+    [2, 98, .92, 1], [8, 97, .68, 0], [92, 98, .7, 2], [98, 96, .9, 1],
+    [1, 7, .62, 2], [98, 6, .58, 0]
+  ];
+  const trees = edgeTrees.map(([x, y, scale, variant]) => (
+    theme.treeStyle === 'pine'
+      ? flatPineMarkup(theme, x / 100 * MAP_WIDTH, y / 100 * mapHeight, scale, variant)
+      : flatTreeMarkup(theme, x / 100 * MAP_WIDTH, y / 100 * mapHeight, scale, variant)
+  )).join('');
+  const bushes = Array.from({ length: 22 }, (_, index) => {
+    const side = index % 2 === 0;
+    const x = side
+      ? 12 + (index * 17) % 18
+      : MAP_WIDTH - 12 - (index * 19) % 18;
+    const y = 12 + (index * 37) % Math.max(20, mapHeight * .76);
+    const radius = 2.2 + (index % 4) * .7;
+    return `<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="${(radius * 1.5).toFixed(1)}" ry="${radius.toFixed(1)}"
+      fill="${theme.trees[index % theme.trees.length]}" opacity="${index % 3 === 0 ? .32 : .2}"></ellipse>`;
+  }).join('');
+  return `${bushes}${trees}`;
+}
+
 function mapArtMarkup(theme, routePath, mapHeight, nodes) {
-  const horizon = mapHeight * .45;
+  const horizon = mapHeight * .31;
   const foreground = mapHeight * .88;
   const waterPath = mapWaterPath(theme, mapHeight);
   const crossing = mapBridgeCrossing(theme, mapHeight, nodes);
@@ -448,27 +518,36 @@ function mapArtMarkup(theme, routePath, mapHeight, nodes) {
     <g class="map-bridge" transform="translate(${crossing.x.toFixed(1)} ${crossing.y.toFixed(1)}) rotate(${crossing.angle.toFixed(1)})">
       ${mapAssetImageMarkup('bridge-topdown', 0, 0, .34, 'class="map-bridge-deck"')}
     </g>` : '';
-  const clouds = [[11, 12, 1], [48, 8, .7], [80, 16, 1.1]].map(([x, y, scale]) => `
-    ${mapAssetImageMarkup('cloud', x / 100 * MAP_WIDTH, y / 100 * mapHeight, scale * .48, 'class="map-asset map-cloud"')}`).join('');
 
   return `
     <svg class="map-art" viewBox="0 0 ${MAP_WIDTH} ${mapHeight}" preserveAspectRatio="none" aria-hidden="true">
-      <rect width="${MAP_WIDTH}" height="${mapHeight}" fill="${theme.sky}"></rect>
-      <circle cx="${MAP_WIDTH * .8}" cy="${mapHeight * .12}" r="${Math.max(16, mapHeight * .035)}" fill="${theme.sun}" opacity=".9"></circle>
-      ${clouds}
-      <path d="M0 ${horizon - 10} C ${MAP_WIDTH * .18} ${horizon - 54}, ${MAP_WIDTH * .32} ${horizon - 18}, ${MAP_WIDTH * .48} ${horizon - 39} S ${MAP_WIDTH * .76} ${horizon - 56}, ${MAP_WIDTH} ${horizon - 12} L ${MAP_WIDTH} ${mapHeight} L 0 ${mapHeight} Z" fill="${theme.ridgeFar}" opacity=".78"></path>
+      <defs>
+        <linearGradient id="map-ground-${theme.id}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="${theme.sky}"></stop>
+          <stop offset=".58" stop-color="${theme.ground}"></stop>
+          <stop offset="1" stop-color="${theme.ground}"></stop>
+        </linearGradient>
+        <radialGradient id="map-light-${theme.id}" cx=".72" cy=".2" r=".8">
+          <stop offset="0" stop-color="${theme.sun}" stop-opacity=".26"></stop>
+          <stop offset="1" stop-color="${theme.sun}" stop-opacity="0"></stop>
+        </radialGradient>
+      </defs>
+      <rect width="${MAP_WIDTH}" height="${mapHeight}" fill="url(#map-ground-${theme.id})"></rect>
+      <rect width="${MAP_WIDTH}" height="${mapHeight}" fill="url(#map-light-${theme.id})"></rect>
+      <path d="M0 ${horizon + 8} C ${MAP_WIDTH * .17} ${horizon - 38}, ${MAP_WIDTH * .31} ${horizon - 2}, ${MAP_WIDTH * .46} ${horizon - 30} S ${MAP_WIDTH * .75} ${horizon - 40}, ${MAP_WIDTH} ${horizon + 4} L ${MAP_WIDTH} ${mapHeight} L 0 ${mapHeight} Z" fill="${theme.ridgeFar}" opacity=".68"></path>
       ${mountains}
-      <path d="M0 ${horizon + 10} C ${MAP_WIDTH * .2} ${horizon - 21}, ${MAP_WIDTH * .38} ${horizon + 20}, ${MAP_WIDTH * .56} ${horizon - 6} S ${MAP_WIDTH * .8} ${horizon - 12}, ${MAP_WIDTH} ${horizon + 12} L ${MAP_WIDTH} ${mapHeight} L 0 ${mapHeight} Z" fill="${theme.ridgeNear}" opacity=".92"></path>
-      <path d="M0 ${horizon + 31} C ${MAP_WIDTH * .22} ${horizon + 8}, ${MAP_WIDTH * .45} ${horizon + 43}, ${MAP_WIDTH * .68} ${horizon + 22} S ${MAP_WIDTH * .88} ${horizon + 36}, ${MAP_WIDTH} ${horizon + 20} L ${MAP_WIDTH} ${mapHeight} L 0 ${mapHeight} Z" fill="${theme.ground}"></path>
-      <ellipse cx="${MAP_WIDTH * .2}" cy="${mapHeight * .7}" rx="${MAP_WIDTH * .22}" ry="${mapHeight * .09}" fill="${theme.ridgeFar}" opacity=".3"></ellipse>
-      <ellipse cx="${MAP_WIDTH * .83}" cy="${mapHeight * .78}" rx="${MAP_WIDTH * .19}" ry="${mapHeight * .07}" fill="${theme.ridgeNear}" opacity=".24"></ellipse>
+      <path d="M0 ${horizon + 27} C ${MAP_WIDTH * .18} ${horizon} , ${MAP_WIDTH * .37} ${horizon + 35}, ${MAP_WIDTH * .55} ${horizon + 12} S ${MAP_WIDTH * .8} ${horizon + 8}, ${MAP_WIDTH} ${horizon + 32} L ${MAP_WIDTH} ${mapHeight} L 0 ${mapHeight} Z" fill="${theme.ridgeNear}" opacity=".72"></path>
+      <path d="M0 ${horizon + 48} C ${MAP_WIDTH * .22} ${horizon + 24}, ${MAP_WIDTH * .43} ${horizon + 58}, ${MAP_WIDTH * .66} ${horizon + 38} S ${MAP_WIDTH * .89} ${horizon + 48}, ${MAP_WIDTH} ${horizon + 36} L ${MAP_WIDTH} ${mapHeight} L 0 ${mapHeight} Z" fill="${theme.ground}"></path>
+      <ellipse cx="${MAP_WIDTH * .18}" cy="${mapHeight * .67}" rx="${MAP_WIDTH * .25}" ry="${mapHeight * .1}" fill="${theme.ridgeFar}" opacity=".24"></ellipse>
+      <ellipse cx="${MAP_WIDTH * .84}" cy="${mapHeight * .61}" rx="${MAP_WIDTH * .2}" ry="${mapHeight * .08}" fill="${theme.ridgeNear}" opacity=".2"></ellipse>
       <path d="${waterPath}" fill="none" stroke="${theme.waterBank}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" opacity=".72"></path>
       <path d="${waterPath}" fill="none" stroke="${theme.water}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="${waterPath}" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-dasharray="8 13" stroke-linecap="round" opacity=".34"></path>
       ${mapSceneryMarkup(theme, mapHeight)}
-      <path d="${routePath}" fill="none" stroke="${theme.roadEdge}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity=".55"></path>
-      <path d="${routePath}" fill="none" stroke="${theme.road}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="${routePath}" fill="none" stroke="${theme.roadEdge}" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" opacity=".5"></path>
+      <path d="${routePath}" fill="none" stroke="${theme.road}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"></path>
       ${bridge}
+      ${mapForegroundMarkup(theme, mapHeight)}
       <path d="M0 ${foreground} C ${MAP_WIDTH * .18} ${foreground - 16}, ${MAP_WIDTH * .34} ${foreground + 6}, ${MAP_WIDTH * .5} ${foreground - 10} S ${MAP_WIDTH * .78} ${foreground - 15}, ${MAP_WIDTH} ${foreground + 1} L ${MAP_WIDTH} ${mapHeight} L 0 ${mapHeight} Z" fill="${theme.groundDeep}" opacity=".28"></path>
     </svg>`;
 }
@@ -506,11 +585,11 @@ function renderAdventureMap(gameId) {
   }
   const selectedLevel = levels.find(level => level.id === adventureView.selectedLevelId) || levels[0];
   const selectedUnit = units.find(unit => unit.lessons.some(lesson => lesson.id === selectedLevel.id)) || units[0];
-  const selectedUnitIndex = units.indexOf(selectedUnit);
-  const mapped = layoutUnitLessons(selectedUnit.lessons);
+  const visibleLevels = mapWindowLevels(units, selectedUnit);
+  const mapped = layoutUnitLessons(visibleLevels);
   const routePath = buildRoutePath(mapped.nodes, mapped.height);
   const routeById = new Map(mapped.nodes.map(node => [node.id, node]));
-  const currentInUnit = routeById.get(currentLevelId);
+  const currentInBook = routeById.get(currentLevelId);
   const selectedProgress = getLevelProgress(progress, pack.id, gameId, selectedLevel.id);
   const completedCount = levels.filter(level => passed.has(level.id)).length;
   const returnToClass = meta.type === 'class';
@@ -544,10 +623,10 @@ function renderAdventureMap(gameId) {
     const [left, top] = positions[index];
     return `<span class="map-landmark" style="left:${left}%;top:${top}%">${label}</span>`;
   }).join('');
-  const hero = currentInUnit ? `
+  const hero = currentInBook ? `
     <img class="map-hero" src="assets/kenney/characters/adventurer-run0.png" alt="主角"
-      style="left:${currentInUnit.node.left + 5}%;top:${currentInUnit.node.top - 3}%">
-    <span class="map-here" style="left:${currentInUnit.node.left + 5}%;top:${currentInUnit.node.top - 10}%">正在探索</span>` : '';
+      style="left:${currentInBook.node.left + 5}%;top:${currentInBook.node.top - 3}%">
+    <span class="map-here" style="left:${currentInBook.node.left + 5}%;top:${currentInBook.node.top - 10}%">正在探索</span>` : '';
   const record = selectedProgress
     ? `${selectedProgress.passed ? '已完成' : '已挑战'} · 最佳 ${Math.round(selectedProgress.bestScore / Math.max(selectedProgress.bestTotal, 1) * 100)}%`
     : '尚未完成';
@@ -578,7 +657,7 @@ function renderAdventureMap(gameId) {
       <div class="adventure-body">
         <div class="map-viewport" style="--map-ratio:${MAP_WIDTH} / ${mapped.height}">
           <div class="map-canvas theme-${selectedUnit.theme.id}" style="height:${mapped.height}px;background:${selectedUnit.theme.sky}">
-            ${mapArtMarkup(selectedUnit.theme, routePath, mapped.height, mapped.nodes)}
+            <canvas class="map-art-canvas" aria-hidden="true"></canvas>
             ${landmarks}
             ${nodes}
             ${hero}
@@ -643,6 +722,14 @@ function renderAdventureMap(gameId) {
     };
   });
   app.querySelector('#map-start').onclick = () => startGame(gameId, selectedLevel.id);
+  const mapCanvas = app.querySelector('.map-art-canvas');
+  if (mapCanvas) {
+    const renderMapArt = () => drawAdventureMap(mapCanvas, mapped.nodes, selectedUnit.theme);
+    requestAnimationFrame(renderMapArt);
+    mapArtResizeObserver?.disconnect();
+    mapArtResizeObserver = new ResizeObserver(renderMapArt);
+    mapArtResizeObserver.observe(app.querySelector('.map-canvas'));
+  }
   if (pendingMapWalk) {
     const heroElement = app.querySelector('.map-hero');
     const here = app.querySelector('.map-here');
@@ -700,6 +787,7 @@ function renderAdventureMap(gameId) {
         levels: levels.length,
         units: units.length,
         completed: completedCount,
+        displayedNodes: mapped.nodes.length,
         currentLevelId,
         selectedLevelId: selectedLevel.id,
         selectedUnitId: selectedUnit.id,

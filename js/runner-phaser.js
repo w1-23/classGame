@@ -1790,7 +1790,9 @@ class RunnerScene extends Phaser.Scene {
             scene.countdownPlate.setVisible(false);
             scene.setPlayerPose('run');
           }
-          scene.phaseBeforePause = scene.phase;
+          scene.phaseBeforePause = scene.phase === 'paused'
+            ? scene.phaseBeforePause
+            : scene.phase;
           scene.phase = 'paused';
           scene.gateProgress = Phaser.Math.Clamp(progress, 0, .985);
           scene.positionGates();

@@ -3,6 +3,12 @@ import { worldThemeForUnit } from './world-themes.js';
 export const MAP_WIDTH = 460;
 export const MIN_MAP_HEIGHT = 500;
 
+const REFERENCE_ROUTE = [
+  [.16, .84], [.43, .84], [.68, .78], [.84, .63],
+  [.58, .59], [.30, .64], [.16, .47], [.38, .35],
+  [.64, .38], [.83, .25], [.56, .20], [.29, .20]
+];
+
 const GAME_TASKS = {
   runner: count => `${count} 道选路题`,
   listen: count => `${count} 道听音题`,
@@ -84,7 +90,13 @@ export function normalizeUnits(pack) {
         lessons: chunk(poem.cloze || [], 2).map((questions, lessonIndex) => ({
           id: `${poem.id}-q${lessonIndex + 1}`,
           title: `第 ${lessonIndex + 1} 组填空`,
-          questions
+          questions: questions.map(question => ({
+            ...question,
+            poemId: poem.id,
+            title: poem.title,
+            author: poem.author,
+            lineText: poem.lines[question.line]
+          }))
         }))
       }, index))
       .filter(unit => unit.lessons.length);
@@ -153,6 +165,24 @@ export function getPreviousLevelId(levels, levelId) {
 
 export function layoutUnitLessons(lessons) {
   const count = lessons.length;
+  if (count >= 4 && count <= REFERENCE_ROUTE.length) {
+    const nodes = lessons.map((lesson, index) => {
+      const sourceIndex = count === 1
+        ? 0
+        : Math.round(index * (REFERENCE_ROUTE.length - 1) / (count - 1));
+      const point = REFERENCE_ROUTE[sourceIndex];
+      return {
+        ...lesson,
+        node: {
+          x: point[0] * 100,
+          y: point[1] * 100,
+          left: point[0] * 100,
+          top: point[1] * 100
+        }
+      };
+    });
+    return { height: Math.max(540, Math.min(680, 470 + count * 9)), nodes };
+  }
   const rows = Math.max(1, Math.ceil(count / 2));
   const height = Math.max(MIN_MAP_HEIGHT, rows * 82 + 150);
   const columns = [[22, 78], [18, 74], [27, 82]];
