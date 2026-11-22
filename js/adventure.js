@@ -1,7 +1,7 @@
-import { worldThemeForUnit } from './world-themes.js';
+import { worldThemeById, worldThemeForUnit } from './world-themes.js';
 
 export const MAP_WIDTH = 460;
-export const MIN_MAP_HEIGHT = 500;
+export const MIN_MAP_HEIGHT = 430;
 
 const REFERENCE_ROUTE = [
   [.16, .84], [.43, .84], [.68, .78], [.84, .63],
@@ -13,18 +13,9 @@ const GAME_TASKS = {
   runner: count => `${count} 道选路题`,
   listen: count => `${count} 道听音题`,
   assemble: count => `${count} 道拼装题`,
-  memory: count => `${count} 对记忆卡牌`,
-  beat: count => `${count} 道诗词填空`,
+  memory: count => `${count} 对记忆卡牌 · 分波完成`,
+  beat: (count, variants) => `${count} 道诗词填空${variants ? ` · ${variants} 个可用变体` : ''}`,
   battle: count => `两队各 ${count} 题`
-};
-
-const ITEMS_PER_GAME = {
-  runner: 8,
-  listen: 8,
-  assemble: 6,
-  memory: 6,
-  beat: 4,
-  battle: 5
 };
 
 function chunk(list, size) {
@@ -49,7 +40,13 @@ function normalizeLesson(lesson, unitId, unitIndex, lessonIndex) {
     lessonIndex,
     title: source.title || `第 ${lessonIndex + 1} 组`,
     items,
-    questions
+    questions,
+    questionPool: Array.isArray(source.questionPool) ? source.questionPool : [],
+    questionsPerRun: Number.isInteger(source.questionsPerRun) ? source.questionsPerRun : null,
+    samplingPolicy: source.samplingPolicy || '',
+    poemId: source.poemId || null,
+    sceneHint: source.sceneHint || null,
+    note: source.note || ''
   };
 }
 
@@ -71,6 +68,7 @@ function normalizeUnit(unit, unitIndex) {
     index: unitIndex,
     title: source.title || `第 ${unitIndex + 1} 单元`,
     note: source.note || '',
+    sceneHint: source.sceneHint || null,
     lessons
   };
 }
@@ -113,21 +111,30 @@ export function themeForUnit(unitIndex) {
 
 export function getAdventureUnits(gameId, pack) {
   return normalizeUnits(pack).map(unit => {
-    const theme = themeForUnit(unit.index);
-    const lessons = unit.lessons.map(lesson => ({
-      ...lesson,
-      number: 0,
-      theme: theme.id,
-      regionName: theme.name,
-      terrain: theme.terrain,
-      areas: theme.landmarks.slice(0, 3),
-      taskLabel: (GAME_TASKS[gameId] || GAME_TASKS.runner)(
-        Math.min(ITEMS_PER_GAME[gameId] || 6, Math.max(lesson.items.length, 1))
-      )
-    }));
+    const unitTheme = unit.sceneHint ? worldThemeById(unit.sceneHint) : themeForUnit(unit.index);
+    const lessons = unit.lessons.map(lesson => {
+      const theme = lesson.sceneHint ? worldThemeById(lesson.sceneHint) : unitTheme;
+      const itemCount = Math.max(lesson.items.length, 1);
+      const poetryCount = lesson.questionsPerRun || lesson.questions.length || 4;
+      const taskLabel = gameId === 'beat'
+        ? GAME_TASKS.beat(poetryCount, lesson.questionPool.length || lesson.questions.length)
+        : gameId === 'battle'
+          ? GAME_TASKS.battle(Math.ceil(itemCount / 2))
+          : (GAME_TASKS[gameId] || GAME_TASKS.runner)(itemCount);
+      return {
+        ...lesson,
+        number: 0,
+        sourceTheme: lesson.sceneHint || unit.sceneHint || theme.id,
+        theme: theme.id,
+        regionName: theme.name,
+        terrain: theme.terrain,
+        areas: theme.landmarks.slice(0, 3),
+        taskLabel
+      };
+    });
     return {
       ...unit,
-      theme,
+      theme: unitTheme,
       lessons,
       firstNumber: 0,
       lastNumber: 0
@@ -181,7 +188,7 @@ export function layoutUnitLessons(lessons) {
         }
       };
     });
-    return { height: Math.max(540, Math.min(680, 470 + count * 9)), nodes };
+    return { height: Math.max(460, Math.min(610, 410 + count * 13)), nodes };
   }
   const rows = Math.max(1, Math.ceil(count / 2));
   const height = Math.max(MIN_MAP_HEIGHT, rows * 82 + 150);

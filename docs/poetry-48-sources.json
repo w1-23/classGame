@@ -1,0 +1,909 @@
+[
+  {
+    "poemId": "poem-chunxiao",
+    "title": "春晓",
+    "author": "孟浩然",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/春曉_(孟浩然)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn571154649view0",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=11123475"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-yongliu",
+    "title": "咏柳",
+    "author": "贺知章",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/詠柳_(賀知章)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn571154649view1",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232790"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-chunyexiyu",
+    "title": "春夜喜雨",
+    "author": "杜甫",
+    "dynasty": "唐",
+    "editionNote": "采用“当春乃发生”“晓看红湿处”；来源正文“溼”转作“湿”。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/春夜喜雨",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn913041056view2",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2261431"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jueju-chiri",
+    "title": "绝句（迟日江山丽）",
+    "author": "杜甫",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/絕句（遲日江山麗）",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn571154649view2",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2643188"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jiangpan-xunhua",
+    "title": "江畔独步寻花（其六）",
+    "author": "杜甫",
+    "dynasty": "唐",
+    "editionNote": "选《江畔独步寻花七绝句》第六首；采用“留连戏蝶”，不改作“流连”。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/江畔獨步尋花七絶句",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn571154649view3",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2608717"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jueju-huangli",
+    "title": "绝句（两个黄鹂鸣翠柳）",
+    "author": "杜甫",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/絕句_(兩個黃鸝鳴翠柳)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn571154649view4",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2643186"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-xinshi-xugongdian",
+    "title": "宿新市徐公店（篱落疏疏一径深）",
+    "author": "杨万里",
+    "dynasty": "宋",
+    "editionNote": "采用来源中的“树头新绿未成阴”。同题组诗编次在不同版本中不同，标题用首句区分，不宣称教材编次。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/宿新市徐公店二首",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn571154649view5",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2391440"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-huichong-chunjiang",
+    "title": "惠崇春江晚景（其一）",
+    "author": "苏轼",
+    "dynasty": "宋",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/惠崇春江晚景",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn571154649view6",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1439351"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-xiaochi",
+    "title": "小池",
+    "author": "杨万里",
+    "dynasty": "宋",
+    "editionNote": "采用“树阴”“才露”；来源“纔”转作“才”，不把“阴/荫”作为辨错考点。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/小池",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn913041056view4",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1649744"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jingcisi-linzifang",
+    "title": "晓出净慈寺送林子方",
+    "author": "杨万里",
+    "dynasty": "宋",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/曉出淨慈寺送林子方",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn758192576view0",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2391475"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-yinhu-chuqing",
+    "title": "饮湖上初晴后雨（其二）",
+    "author": "苏轼",
+    "dynasty": "宋",
+    "editionNote": "采用第二首；“空濛”“淡粧”规范作“空蒙”“淡妆”。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/飲湖上初晴後雨",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn758192576view1",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1748111"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-shanxing",
+    "title": "山行",
+    "author": "杜牧",
+    "dynasty": "唐",
+    "editionNote": "采用“白云生处有人家”；“深处”为所列来源注明的异文，不作为错误选项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/山行_(杜牧)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn758192576view2",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1568824"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-zeng-liujingwen",
+    "title": "赠刘景文",
+    "author": "苏轼",
+    "dynasty": "宋",
+    "editionNote": "采用“好景”“最是”；来源另列“好处”“正是”等异文，不把这些异文放入干扰项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/贈劉景文",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn758192576view3",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1968606"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-wang-dongting",
+    "title": "望洞庭",
+    "author": "刘禹锡",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/望洞庭",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn758192576view4",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=825927"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-meihua",
+    "title": "梅花",
+    "author": "王安石",
+    "dynasty": "宋",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/梅花_(王安石)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn758192576view5",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1744202"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jiangxue",
+    "title": "江雪",
+    "author": "柳宗元",
+    "dynasty": "唐",
+    "editionNote": "采用“蓑笠翁”；来源“簑”规范为“蓑”。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/江雪",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn758192576view6",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2315191"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-deng-guanque",
+    "title": "登鹳雀楼",
+    "author": "王之涣",
+    "dynasty": "唐",
+    "editionNote": "依页面主署名王之涣及正文；只取“层”的正文读法，不把“重”等旧本异文设为错误项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/登鸛雀樓_(王之渙)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn649848552view1",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12807586"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-wang-lushan",
+    "title": "望庐山瀑布（其二）",
+    "author": "李白",
+    "dynasty": "唐",
+    "editionNote": "选七言绝句第二首；采用“前川”“九天”，来源另记“长川”“半天”等异文，题目不以这些异文作干扰项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/望廬山瀑布",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn773560709view1"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-wang-tianmenshan",
+    "title": "望天门山",
+    "author": "李白",
+    "dynasty": "唐",
+    "editionNote": "采用正文“碧水东流至此回”；“直”属于所列异文，不放入干扰项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/望天門山",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn773560709view2",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232709"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-ti-xilinbi",
+    "title": "题西林壁",
+    "author": "苏轼",
+    "dynasty": "宋",
+    "editionNote": "采用来源所列“只缘”写法；“祇/只”不作判断对错的依据。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/題西林壁_(蘇軾)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn773560709view3",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=8732088"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-luzhai",
+    "title": "鹿柴",
+    "author": "王维",
+    "dynasty": "唐",
+    "editionNote": "采用“返景”原文；不擅改为“返影”。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/鹿柴_(王維)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn649848552view2",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232893"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-zhuliguan",
+    "title": "竹里馆",
+    "author": "王维",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/輞川集_(王維)/竹里館",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn649848552view3"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jingtingshan",
+    "title": "独坐敬亭山",
+    "author": "李白",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/獨坐敬亭山",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn773560709view6",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=482794"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jiangshang-yuzhe",
+    "title": "江上渔者",
+    "author": "范仲淹",
+    "dynasty": "宋",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/江上漁者",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn773560709view7",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=317422"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jingyesi",
+    "title": "静夜思",
+    "author": "李白",
+    "dynasty": "唐",
+    "editionNote": "完整采用来源“唐诗三百首”栏的版本：床前明月光、举头望明月。不与李太白全集栏的“看月光”“望山月”混写，也不把这些异文当错项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/靜夜思",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn320897967view0",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232857"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-jiuyue-jiuri",
+    "title": "九月九日忆山东兄弟",
+    "author": "王维",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/九月九日憶山東兄弟",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn853165025view1",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232633"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-huixiang-oushu",
+    "title": "回乡偶书（其一）",
+    "author": "贺知章",
+    "dynasty": "唐",
+    "editionNote": "采用“乡音无改鬓毛衰”“笑问客从何处来”的正文读法；所列“未/难”“面”等异文不作为错项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/回鄉偶書二首",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn853165025view2",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1981931"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-zeng-wanglun",
+    "title": "赠汪伦",
+    "author": "李白",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/贈汪倫",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn853165025view3",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232816"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-huanghelou-menghaoran",
+    "title": "黄鹤楼送孟浩然之广陵",
+    "author": "李白",
+    "dynasty": "唐",
+    "editionNote": "第三句采用来源明列的异文“碧空尽”；来源正文另作“碧山尽”。“空/山”不设辨错题。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/黃鶴樓送孟浩然之廣陵",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn853165025view4",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12807811"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-song-yuaner",
+    "title": "送元二使安西",
+    "author": "王维",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/送元二使安西",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn853165025view5",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232830"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-bie-dongda",
+    "title": "别董大（其一）",
+    "author": "高适",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/別董大",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn853165025view6",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2674006"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-qiusi-zhangji",
+    "title": "秋思",
+    "author": "张籍",
+    "dynasty": "唐",
+    "editionNote": "采用来源明列的“家书”“复恐”读法；正文另作“归书”“忽恐”，这些旧本异文不作为错误选项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/秋思_(張籍)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn649848552view11"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-cunju",
+    "title": "村居",
+    "author": "高鼎",
+    "dynasty": "清",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/村居_(高鼎)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn649848552view4",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1614196"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-suojian",
+    "title": "所见",
+    "author": "袁枚",
+    "dynasty": "清",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/所見(袁枚)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn385242317view0",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1653332"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-chishang",
+    "title": "池上（小娃撑小艇）",
+    "author": "白居易",
+    "dynasty": "唐",
+    "editionNote": "选《池上二绝》小娃篇；只收该首四句，不将山僧篇拼接到本关。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/池上二絕",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view1",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1953192"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-xiaoer-chuidiao",
+    "title": "小儿垂钓",
+    "author": "胡令能",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/小兒垂釣",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn649848552view7",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1750763"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-sishi-tianyuan",
+    "title": "四时田园杂兴（昼出耘田夜绩麻）",
+    "author": "范成大",
+    "dynasty": "宋",
+    "editionNote": "按首句选取该首，不以不同选本中的编号作为学习考点。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/四時田園雜興",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn649848552view8",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=873140"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-youziyin",
+    "title": "游子吟",
+    "author": "孟郊",
+    "dynasty": "唐",
+    "editionNote": "采用“谁言寸草心”的正文读法；不把来源所列“难将”异文当错项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/遊子吟_(孟郊)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view2",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1982411"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-minnong-chuhe",
+    "title": "悯农（锄禾日当午）",
+    "author": "李绅",
+    "dynasty": "唐",
+    "editionNote": "采用香港教育局所载“谁知盘中餐”；维基文库同篇作“飧”。餐/飧属于版本差异，本包不以此设错误选项。只使用古代原文，不复制讲义的现代赏析。",
+    "sources": [
+      {
+        "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/resources/primary/lang/pdp/Appreciation%20of%20recommended%20passages%203.pdf",
+        "site": "香港教育局",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn711053362view1"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-minnong-chunzhong",
+    "title": "悯农（春种一粒粟）",
+    "author": "李绅",
+    "dynasty": "唐",
+    "editionNote": "采用“秋收万颗子”“农夫犹饿死”的正文。本篇涉及饥饿与劳动处境，建议教师结合年龄作简短说明。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/憫農_(李紳)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view3",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1777155"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-guyuancao",
+    "title": "赋得古原草送别",
+    "author": "白居易",
+    "dynasty": "唐",
+    "editionNote": "收录完整八句，不以教材节选名《草》代替全诗标题。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/賦得古原草送別",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view4",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1981926"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-xun-yinzhe",
+    "title": "寻隐者不遇",
+    "author": "贾岛",
+    "dynasty": "唐",
+    "editionNote": "依来源主署名贾岛；页面另载孙革署名传承，作者归属不作为本关的选择题。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/尋隱者不遇",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view5",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1310721"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-feng",
+    "title": "风",
+    "author": "李峤",
+    "dynasty": "唐",
+    "editionNote": "选来源中“解落三秋叶”四句，未将同页另一首《风》混入。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/風_(李嶠)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view6",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1987546"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-yonge",
+    "title": "咏鹅",
+    "author": "骆宾王",
+    "dynasty": "唐",
+    "editionNote": "完整保留“鹅，鹅，鹅”；该首只有三句实质描写，第四题组从“曲项向天歌”选另一位置，因此本首最多出现两题来自同一句。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/詠鵝",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view7",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=12232803"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-feng-bee",
+    "title": "蜂",
+    "author": "罗隐",
+    "dynasty": "唐",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/蜂_(羅隱)",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn711053362view0",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2261312"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-momei",
+    "title": "墨梅",
+    "author": "王冕",
+    "dynasty": "元",
+    "editionNote": "完整采用来源“列朝诗集”栏：我家洗砚池边树，朵朵花开淡墨痕。吾/我、池头/池边、个个/朵朵等异文不作错项。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/墨梅",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn320897967view3",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1336380"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-zhushi",
+    "title": "竹石",
+    "author": "郑燮",
+    "dynasty": "清",
+    "editionNote": "依所列来源正文；繁体字转为通行简体字，分句与标点仅作界面展示整理。",
+    "sources": [
+      {
+        "url": "https://zh.wikisource.org/wiki/竹石",
+        "site": "维基文库",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn745669600view10",
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=374465"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  },
+  {
+    "poemId": "poem-shihuiyin",
+    "title": "石灰吟",
+    "author": "于谦",
+    "dynasty": "明",
+    "editionNote": "完整采用香港教育局所列“千锤万击”“粉骨碎身全不怕”版本；其他版本有“凿”“浑”“不顾”等，发布前应与学校用本核对。第3组不以这些有效异文为错误选项。只使用古代诗句，不复制现代讲义。",
+    "sources": [
+      {
+        "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/resources/primary/lang/pdp/20250606_PDF.pdf",
+        "site": "香港教育局",
+        "accessed": "2026-11-22",
+        "checked": true,
+        "retrievalRef": "turn201037846view0"
+      }
+    ],
+    "auditStatus": "source_checked_teacher_pending",
+    "teacherReviewed": false
+  }
+]

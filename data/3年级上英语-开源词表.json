@@ -23,7 +23,7 @@
                 "pencil",
                 "pencil box"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
               "speechText": "pen",
               "speechLang": "en-US",
               "games": [
@@ -34,7 +34,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w02",
@@ -44,7 +45,7 @@
                 "pen",
                 "pencil box"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/041e21f39285a2d7d590ba2d.wav",
               "speechText": "pencil",
               "speechLang": "en-US",
               "games": [
@@ -55,7 +56,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w03",
@@ -65,7 +67,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/95d7c0ad4a11d5d3c21f0d45.wav",
               "speechText": "pencil box",
               "speechLang": "en-US",
               "games": [
@@ -76,7 +78,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w04",
@@ -86,7 +89,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/7d669c0795e5ba626f2faa6b.wav",
               "speechText": "ruler",
               "speechLang": "en-US",
               "games": [
@@ -97,7 +100,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w05",
@@ -107,7 +111,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/6ce4519abfd7fc94e6a6f840.wav",
               "speechText": "eraser",
               "speechLang": "en-US",
               "games": [
@@ -118,7 +122,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w06",
@@ -128,7 +133,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/a61b782c18ab87183ba35eef.wav",
               "speechText": "book",
               "speechLang": "en-US",
               "games": [
@@ -139,7 +144,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -155,7 +161,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/022ced7e2245b142b4e29196.wav",
               "speechText": "bag",
               "speechLang": "en-US",
               "games": [
@@ -166,7 +172,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w08",
@@ -176,7 +183,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/e5085fc429f8c6bde571966b.wav",
               "speechText": "school",
               "speechLang": "en-US",
               "games": [
@@ -187,7 +194,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w09",
@@ -197,7 +205,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/207efb2fbba1aaa2345b3b20.wav",
               "speechText": "class",
               "speechLang": "en-US",
               "games": [
@@ -208,7 +216,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w10",
@@ -218,7 +227,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/3cee0bae9c1349c80de7c3bc.wav",
               "speechText": "teacher",
               "speechLang": "en-US",
               "games": [
@@ -229,7 +238,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w11",
@@ -239,7 +249,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/cda6a41c122e4db7863fdedd.wav",
               "speechText": "friend",
               "speechLang": "en-US",
               "games": [
@@ -250,7 +260,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w12",
@@ -260,7 +271,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/908ea631efd4bf20db65e0c2.wav",
               "speechText": "name",
               "speechLang": "en-US",
               "games": [
@@ -271,7 +282,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -287,7 +299,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d64f7acf06e646ba523f02ed.wav",
               "speechText": "nice",
               "speechLang": "en-US",
               "games": [
@@ -298,7 +310,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w14",
@@ -308,7 +321,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/00669e1c1a2e4a13b6f7d8d9.wav",
               "speechText": "meet",
               "speechLang": "en-US",
               "games": [
@@ -319,7 +332,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u01-w15",
@@ -329,7 +343,7 @@
                 "pen",
                 "pencil"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/932ec61187ee2dc98a21ec62.wav",
               "speechText": "too",
               "speechLang": "en-US",
               "games": [
@@ -340,7 +354,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -363,7 +378,7 @@
                 "green",
                 "yellow"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/10956b12716f684ebbdd0789.wav",
               "speechText": "red",
               "speechLang": "en-US",
               "games": [
@@ -374,7 +389,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w02",
@@ -384,7 +400,7 @@
                 "red",
                 "yellow"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/55cc804f8d11d428c610e474.wav",
               "speechText": "green",
               "speechLang": "en-US",
               "games": [
@@ -395,7 +411,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w03",
@@ -405,7 +422,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/0d6f4f95355b73a6419efb76.wav",
               "speechText": "yellow",
               "speechLang": "en-US",
               "games": [
@@ -416,7 +433,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w04",
@@ -426,7 +444,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/fa73ad86ebc409f88ac92727.wav",
               "speechText": "blue",
               "speechLang": "en-US",
               "games": [
@@ -437,7 +455,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w05",
@@ -447,7 +466,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/54265af920f069897d16d3be.wav",
               "speechText": "black",
               "speechLang": "en-US",
               "games": [
@@ -458,7 +477,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w06",
@@ -468,7 +488,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/73f17b7c480a1c7104b450b4.wav",
               "speechText": "brown",
               "speechLang": "en-US",
               "games": [
@@ -479,7 +499,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -495,7 +516,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c633537c86fea4c81d283802.wav",
               "speechText": "white",
               "speechLang": "en-US",
               "games": [
@@ -506,7 +527,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w08",
@@ -516,7 +538,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/3c2b9d07ef17c2e90b1d2cfe.wav",
               "speechText": "orange",
               "speechLang": "en-US",
               "games": [
@@ -527,7 +549,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w09",
@@ -537,7 +560,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b052cf4609356b19efafeb36.wav",
               "speechText": "colour",
               "speechLang": "en-US",
               "games": [
@@ -548,7 +571,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w10",
@@ -558,7 +582,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/21eed3fc7cf1631d78ade654.wav",
               "speechText": "OK",
               "speechLang": "en-US",
               "games": [
@@ -569,7 +593,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w11",
@@ -579,7 +604,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/32e6981295463e13f19b990c.wav",
               "speechText": "mum",
               "speechLang": "en-US",
               "games": [
@@ -590,7 +615,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u02-w12",
@@ -600,7 +626,7 @@
                 "red",
                 "green"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d06d45220fd2a694044330e7.wav",
               "speechText": "good",
               "speechLang": "en-US",
               "games": [
@@ -611,7 +637,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -634,7 +661,7 @@
                 "ear",
                 "eye"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b2deeab664509400fb04a43f.wav",
               "speechText": "face",
               "speechLang": "en-US",
               "games": [
@@ -645,7 +672,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w02",
@@ -655,7 +683,7 @@
                 "face",
                 "eye"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/89d340a3f771c89d23ecaf56.wav",
               "speechText": "ear",
               "speechLang": "en-US",
               "games": [
@@ -666,7 +694,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w03",
@@ -676,7 +705,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d770217930e8c7905ba53b73.wav",
               "speechText": "eye",
               "speechLang": "en-US",
               "games": [
@@ -687,7 +716,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w04",
@@ -697,7 +727,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/272c5284b74191aaef71fcfb.wav",
               "speechText": "nose",
               "speechLang": "en-US",
               "games": [
@@ -708,7 +738,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w05",
@@ -718,7 +749,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f6cb25f4a8b44f2f965f9178.wav",
               "speechText": "mouth",
               "speechLang": "en-US",
               "games": [
@@ -729,7 +760,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w06",
@@ -739,7 +771,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/bb480950bb558e9a58265095.wav",
               "speechText": "arm",
               "speechLang": "en-US",
               "games": [
@@ -750,7 +782,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -766,7 +799,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/55f4a15344acb6eba20c45d3.wav",
               "speechText": "hand",
               "speechLang": "en-US",
               "games": [
@@ -777,7 +810,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w08",
@@ -787,7 +821,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/35e886e507f11582702678ce.wav",
               "speechText": "head",
               "speechLang": "en-US",
               "games": [
@@ -798,7 +832,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w09",
@@ -808,7 +843,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/a9c8ce825e2ca60d88844874.wav",
               "speechText": "body",
               "speechLang": "en-US",
               "games": [
@@ -819,7 +854,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w10",
@@ -829,7 +865,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/9e0c4c0e44e96dc8e2d2b5b3.wav",
               "speechText": "leg",
               "speechLang": "en-US",
               "games": [
@@ -840,7 +876,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w11",
@@ -850,7 +887,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/321781bcf1bc33190475045b.wav",
               "speechText": "foot",
               "speechLang": "en-US",
               "games": [
@@ -861,7 +898,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u03-w13",
@@ -871,7 +909,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/7e1828bcdcc78edf0f306b26.wav",
               "speechText": "fine",
               "speechLang": "en-US",
               "games": [
@@ -882,7 +920,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -898,7 +937,7 @@
                 "face",
                 "ear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f1faf422e84bbe7f9e2a4f96.wav",
               "speechText": "thank",
               "speechLang": "en-US",
               "games": [
@@ -909,7 +948,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -932,7 +972,7 @@
                 "duck",
                 "bear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/36a42db230973254d1f8c353.wav",
               "speechText": "dog",
               "speechLang": "en-US",
               "games": [
@@ -943,7 +983,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w02",
@@ -953,7 +994,7 @@
                 "dog",
                 "bear"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/12d9b0ad16378bda4d6fc5b5.wav",
               "speechText": "duck",
               "speechLang": "en-US",
               "games": [
@@ -964,7 +1005,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w03",
@@ -974,7 +1016,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/44d48db6dec38c79e94a9455.wav",
               "speechText": "bear",
               "speechLang": "en-US",
               "games": [
@@ -985,7 +1027,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w04",
@@ -995,7 +1038,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/4e6b63ea418ac6289a27408d.wav",
               "speechText": "pig",
               "speechLang": "en-US",
               "games": [
@@ -1006,7 +1049,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w05",
@@ -1016,7 +1060,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/aaf6ee4c1256106a12d622f5.wav",
               "speechText": "cat",
               "speechLang": "en-US",
               "games": [
@@ -1027,7 +1071,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w06",
@@ -1037,7 +1082,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/2eab828e57b911ccee5ad7f5.wav",
               "speechText": "elephant",
               "speechLang": "en-US",
               "games": [
@@ -1048,7 +1093,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1064,7 +1110,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/099bf83d4aac87ece0f7a739.wav",
               "speechText": "monkey",
               "speechLang": "en-US",
               "games": [
@@ -1075,7 +1121,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w08",
@@ -1085,7 +1132,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/dc95456ee22450c1f93d97f6.wav",
               "speechText": "bird",
               "speechLang": "en-US",
               "games": [
@@ -1096,7 +1143,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w09",
@@ -1106,7 +1154,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/07ae5f6d198f4e28358320ef.wav",
               "speechText": "tiger",
               "speechLang": "en-US",
               "games": [
@@ -1117,7 +1165,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w10",
@@ -1127,7 +1176,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/3426b42ac08344b92a5dbb7d.wav",
               "speechText": "panda",
               "speechLang": "en-US",
               "games": [
@@ -1138,7 +1187,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w11",
@@ -1148,7 +1198,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/55547457b399e712e85e6828.wav",
               "speechText": "zoo",
               "speechLang": "en-US",
               "games": [
@@ -1159,7 +1209,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u04-w12",
@@ -1169,7 +1220,7 @@
                 "dog",
                 "duck"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/216488a628339bcbbec2363d.wav",
               "speechText": "funny",
               "speechLang": "en-US",
               "games": [
@@ -1180,7 +1231,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -1203,7 +1255,7 @@
                 "bread",
                 "rice"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/ceccc6ff653b82ee26ed12d2.wav",
               "speechText": "cake",
               "speechLang": "en-US",
               "games": [
@@ -1214,7 +1266,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w02",
@@ -1224,7 +1277,7 @@
                 "cake",
                 "rice"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/29de4f3503c51994157af7f6.wav",
               "speechText": "bread",
               "speechLang": "en-US",
               "games": [
@@ -1235,7 +1288,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w03",
@@ -1245,7 +1299,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/a96b4000c8751ceac9bc4206.wav",
               "speechText": "rice",
               "speechLang": "en-US",
               "games": [
@@ -1256,7 +1310,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w04",
@@ -1266,7 +1321,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/10a11fe4399a15a9b3eff9dc.wav",
               "speechText": "egg",
               "speechLang": "en-US",
               "games": [
@@ -1277,7 +1332,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w05",
@@ -1287,7 +1343,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/e48b3bd45a75aa78b7d03cdd.wav",
               "speechText": "juice",
               "speechLang": "en-US",
               "games": [
@@ -1298,7 +1354,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w06",
@@ -1308,7 +1365,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/8b80860ac836dc16708cafd2.wav",
               "speechText": "milk",
               "speechLang": "en-US",
               "games": [
@@ -1319,7 +1376,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1335,7 +1393,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/0b8ee9c23f853e90ea68a688.wav",
               "speechText": "water",
               "speechLang": "en-US",
               "games": [
@@ -1346,7 +1404,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w08",
@@ -1356,7 +1415,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/47386e2db803125cf97752ed.wav",
               "speechText": "fish",
               "speechLang": "en-US",
               "games": [
@@ -1367,7 +1426,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w09",
@@ -1377,7 +1437,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d1ea1bcc0c09da39be335351.wav",
               "speechText": "hungry",
               "speechLang": "en-US",
               "games": [
@@ -1388,7 +1448,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w10",
@@ -1398,7 +1459,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b8ed22bf310eea11b319cb00.wav",
               "speechText": "thirsty",
               "speechLang": "en-US",
               "games": [
@@ -1409,7 +1470,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w11",
@@ -1419,7 +1481,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c3ae651e3476468bc526015c.wav",
               "speechText": "eat",
               "speechLang": "en-US",
               "games": [
@@ -1430,7 +1492,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u05-w12",
@@ -1440,7 +1503,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/2ecb96509c74272fcf3608f1.wav",
               "speechText": "drink",
               "speechLang": "en-US",
               "games": [
@@ -1451,7 +1514,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1467,7 +1531,7 @@
                 "cake",
                 "bread"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/28dc23567ce9d2a65f457af7.wav",
               "speechText": "cut",
               "speechLang": "en-US",
               "games": [
@@ -1478,7 +1542,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -1501,7 +1566,7 @@
                 "two",
                 "three"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/be6187d35a9f9a055ae89ee3.wav",
               "speechText": "one",
               "speechLang": "en-US",
               "games": [
@@ -1512,7 +1577,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w02",
@@ -1522,7 +1588,7 @@
                 "one",
                 "three"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d7a1208d500b15ce3b774b83.wav",
               "speechText": "two",
               "speechLang": "en-US",
               "games": [
@@ -1533,7 +1599,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w03",
@@ -1543,7 +1610,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/603c01e6fb621afb85f94713.wav",
               "speechText": "three",
               "speechLang": "en-US",
               "games": [
@@ -1554,7 +1621,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w04",
@@ -1564,7 +1632,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/e754a994d05421ae3b469ecd.wav",
               "speechText": "four",
               "speechLang": "en-US",
               "games": [
@@ -1575,7 +1643,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w05",
@@ -1585,7 +1654,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/4b89b6c47cbf059582c24ea7.wav",
               "speechText": "five",
               "speechLang": "en-US",
               "games": [
@@ -1596,7 +1665,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w06",
@@ -1606,7 +1676,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d9e2e2083df1081be9b80804.wav",
               "speechText": "six",
               "speechLang": "en-US",
               "games": [
@@ -1617,7 +1687,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1633,7 +1704,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/7d44b556b980d3288ad065fd.wav",
               "speechText": "seven",
               "speechLang": "en-US",
               "games": [
@@ -1644,7 +1715,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w08",
@@ -1654,7 +1726,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/1c72efc170775fdceff1dd00.wav",
               "speechText": "eight",
               "speechLang": "en-US",
               "games": [
@@ -1665,7 +1737,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w09",
@@ -1675,7 +1748,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/aac7d0662ebca56756e4b352.wav",
               "speechText": "nine",
               "speechLang": "en-US",
               "games": [
@@ -1686,7 +1759,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w10",
@@ -1696,7 +1770,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/e020eb7e194ab6da3a6de8dc.wav",
               "speechText": "ten",
               "speechLang": "en-US",
               "games": [
@@ -1707,7 +1781,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w11",
@@ -1717,7 +1792,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/40562169c43e943a16207bfe.wav",
               "speechText": "brother",
               "speechLang": "en-US",
               "games": [
@@ -1728,7 +1803,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g3-english-basic-u06-w12",
@@ -1738,7 +1814,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/6c3491133b11a2f6cefd8693.wav",
               "speechText": "sister",
               "speechLang": "en-US",
               "games": [
@@ -1749,7 +1825,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1765,7 +1842,7 @@
                 "one",
                 "two"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/a0ae0ff43f41a88d84e5ab17.wav",
               "speechText": "plate",
               "speechLang": "en-US",
               "games": [
@@ -1776,7 +1853,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }

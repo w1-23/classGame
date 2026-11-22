@@ -23,7 +23,7 @@
                 "o",
                 "e"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/266366895bd94327385bdd24.wav",
               "speechText": "张大嘴巴 a a a",
               "speechLang": "zh-CN",
               "games": [
@@ -33,7 +33,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l1-02",
@@ -43,7 +44,7 @@
                 "a",
                 "e"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/af751d637ca2379dcc54c803.wav",
               "speechText": "圆圆嘴巴 o o o",
               "speechLang": "zh-CN",
               "games": [
@@ -53,7 +54,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l1-03",
@@ -63,7 +65,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/91e8c4d0e1e6be7fa2eb331f.wav",
               "speechText": "扁扁嘴巴 e e e",
               "speechLang": "zh-CN",
               "games": [
@@ -73,7 +75,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -89,7 +92,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/cd6c550ca0d46a1917ff7c7c.wav",
               "speechText": "穿新衣 i i i",
               "speechLang": "zh-CN",
               "games": [
@@ -99,7 +102,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l2-02",
@@ -109,7 +113,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9d5a1a8df7f7e5a75a2e3c1a.wav",
               "speechText": "乌鸦叫 u u u",
               "speechLang": "zh-CN",
               "games": [
@@ -119,7 +123,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l2-03",
@@ -129,7 +134,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/73d3572c4a56df74b6113799.wav",
               "speechText": "小鱼吐泡 ü ü ü",
               "speechLang": "zh-CN",
               "games": [
@@ -139,7 +144,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l2-04",
@@ -149,7 +155,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f25a2f2fe906e627cdde6522.wav",
               "speechText": "树杈 y y y",
               "speechLang": "zh-CN",
               "games": [
@@ -159,7 +165,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l2-05",
@@ -169,7 +176,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e456be0e2e8af36728c5da80.wav",
               "speechText": "屋顶 w w w",
               "speechLang": "zh-CN",
               "games": [
@@ -179,7 +186,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -195,7 +203,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b908f0ef29632dd51f8a13f5.wav",
               "speechText": "听广播 b b b",
               "speechLang": "zh-CN",
               "games": [
@@ -205,7 +213,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l3-02",
@@ -215,7 +224,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9f791a52bab9427e853d45f2.wav",
               "speechText": "爬山坡 p p p",
               "speechLang": "zh-CN",
               "games": [
@@ -225,7 +234,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l3-03",
@@ -235,7 +245,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/520cff769dc38f0833399008.wav",
               "speechText": "两个门洞 m m m",
               "speechLang": "zh-CN",
               "games": [
@@ -245,7 +255,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l3-04",
@@ -255,7 +266,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/424257c68e4c5c121ddc67ad.wav",
               "speechText": "一根拐杖 f f f",
               "speechLang": "zh-CN",
               "games": [
@@ -265,7 +276,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -281,7 +293,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1f4d6d41721bcc9d74404d21.wav",
               "speechText": "马蹄声响 d d d",
               "speechLang": "zh-CN",
               "games": [
@@ -291,7 +303,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l4-02",
@@ -301,7 +314,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ebc621a21188339dcf651a0c.wav",
               "speechText": "一把雨伞 t t t",
               "speechLang": "zh-CN",
               "games": [
@@ -311,7 +324,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l4-03",
@@ -321,7 +335,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1f9abd049083eef8eade31d5.wav",
               "speechText": "一个门洞 n n n",
               "speechLang": "zh-CN",
               "games": [
@@ -331,7 +345,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l4-04",
@@ -341,7 +356,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f211ffa9aae590e7320dacbb.wav",
               "speechText": "一根小棒 l l l",
               "speechLang": "zh-CN",
               "games": [
@@ -351,7 +366,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -367,7 +383,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b5cb34c85055d094391553a0.wav",
               "speechText": "鸽子衔环 g g g",
               "speechLang": "zh-CN",
               "games": [
@@ -377,7 +393,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l5-02",
@@ -387,7 +404,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/16a77dd2a802528611e734f6.wav",
               "speechText": "蝌蚪游水 k k k",
               "speechLang": "zh-CN",
               "games": [
@@ -397,7 +414,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l5-03",
@@ -407,7 +425,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/09eeed8122e0afa681bbba64.wav",
               "speechText": "一把椅子 h h h",
               "speechLang": "zh-CN",
               "games": [
@@ -417,7 +435,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -433,7 +452,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/bf3742eaddaf9e0cbc45ff72.wav",
               "speechText": "大母鸡 j j j",
               "speechLang": "zh-CN",
               "games": [
@@ -443,7 +462,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l6-02",
@@ -453,7 +473,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/28bb1871050460ae3d695b02.wav",
               "speechText": "气球上天 q q q",
               "speechLang": "zh-CN",
               "games": [
@@ -463,7 +483,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u1-l6-03",
@@ -473,7 +494,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/23b67bfb32877e45ec7dfe5d.wav",
               "speechText": "一个叉叉 x x x",
               "speechLang": "zh-CN",
               "games": [
@@ -483,7 +504,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         }
@@ -506,7 +528,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6555731710f5ebf30297ef28.wav",
               "speechText": "像个 2 字 z z z",
               "speechLang": "zh-CN",
               "games": [
@@ -516,7 +538,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l7-02",
@@ -526,7 +549,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/bda7e676e62e6b3459eec6c1.wav",
               "speechText": "半个圆圈 c c c",
               "speechLang": "zh-CN",
               "games": [
@@ -536,7 +559,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l7-03",
@@ -546,7 +570,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b0a69bf1a585ec5e6e858bb6.wav",
               "speechText": "蚕儿吐丝 s s s",
               "speechLang": "zh-CN",
               "games": [
@@ -556,7 +580,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -572,7 +597,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/5c9d82f8487fee68f1fdb70c.wav",
               "speechText": "织毛衣 zh zh zh",
               "speechLang": "zh-CN",
               "games": [
@@ -582,7 +607,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l8-02",
@@ -592,7 +618,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/62053297dafccadf15edb7ef.wav",
               "speechText": "吃苹果 ch ch ch",
               "speechLang": "zh-CN",
               "games": [
@@ -602,7 +628,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l8-03",
@@ -612,7 +639,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/fb752d0f4158142edbc7f9c3.wav",
               "speechText": "威风狮子 sh sh sh",
               "speechLang": "zh-CN",
               "games": [
@@ -622,7 +649,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l8-04",
@@ -632,7 +660,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2fe4514c9b255b69bbc64fc7.wav",
               "speechText": "一轮红日 r r r",
               "speechLang": "zh-CN",
               "games": [
@@ -642,7 +670,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -658,7 +687,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/204df35f0576f4c73ef29b2c.wav",
               "speechText": "挨在一起 ai ai ai",
               "speechLang": "zh-CN",
               "games": [
@@ -668,7 +697,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l9-02",
@@ -678,7 +708,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/78cc6b44d4e0176395faf4e8.wav",
               "speechText": "用力砍柴 ei ei ei",
               "speechLang": "zh-CN",
               "games": [
@@ -688,7 +718,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l9-03",
@@ -698,7 +729,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/716408062fcad4dabc5664ba.wav",
               "speechText": "围上围巾 ui ui ui",
               "speechLang": "zh-CN",
               "games": [
@@ -708,7 +739,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -724,7 +756,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1e0b2215a5a7887ba3455f77.wav",
               "speechText": "穿上棉袄 ao ao ao",
               "speechLang": "zh-CN",
               "games": [
@@ -734,7 +766,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l10-02",
@@ -744,7 +777,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d138c83f43aff8ff68a4ad85.wav",
               "speechText": "水里莲藕 ou ou ou",
               "speechLang": "zh-CN",
               "games": [
@@ -754,7 +787,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u2-l10-03",
@@ -764,7 +798,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/69c09441ae731292fb05902b.wav",
               "speechText": "邮递员 iu iu iu",
               "speechLang": "zh-CN",
               "games": [
@@ -774,7 +808,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         }
@@ -797,7 +832,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/fb596849935a516239bc5aad.wav",
               "speechText": "椰树高高 ie ie ie",
               "speechLang": "zh-CN",
               "games": [
@@ -807,7 +842,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l11-02",
@@ -817,7 +853,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/df5724acc173c10f6529273b.wav",
               "speechText": "一轮弯月 üe üe üe",
               "speechLang": "zh-CN",
               "games": [
@@ -827,7 +863,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l11-03",
@@ -837,7 +874,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d3e6f68dd1a8aec0078ffe03.wav",
               "speechText": "竖起耳朵 er er er",
               "speechLang": "zh-CN",
               "games": [
@@ -847,7 +884,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -863,7 +901,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/03dd55dd77abac40bc696d1f.wav",
               "speechText": "天安门 an an an",
               "speechLang": "zh-CN",
               "games": [
@@ -873,7 +911,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l12-02",
@@ -883,7 +922,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b4fedc42aefbe8b5ae749839.wav",
               "speechText": "摁摁门铃 en en en",
               "speechLang": "zh-CN",
               "games": [
@@ -893,7 +932,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l12-03",
@@ -903,7 +943,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f8838eb3de128cae7aaee931.wav",
               "speechText": "大树下面 in in in",
               "speechLang": "zh-CN",
               "games": [
@@ -913,7 +953,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l12-04",
@@ -923,7 +964,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/28dc3cb9c8f886ece0855fdd.wav",
               "speechText": "蚊子嗡嗡 un un un",
               "speechLang": "zh-CN",
               "games": [
@@ -933,7 +974,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l12-05",
@@ -943,7 +985,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/5bf6565d444fba023f08075c.wav",
               "speechText": "朵朵白云 ün ün ün",
               "speechLang": "zh-CN",
               "games": [
@@ -953,7 +995,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         },
@@ -969,7 +1012,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1edcdd21f441500bb9a8a5bf.wav",
               "speechText": "小羊上山 ang ang ang",
               "speechLang": "zh-CN",
               "games": [
@@ -979,7 +1022,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l13-02",
@@ -989,7 +1033,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a7607d9bae2957e0966911a7.wav",
               "speechText": "台灯发亮 eng eng eng",
               "speechLang": "zh-CN",
               "games": [
@@ -999,7 +1043,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l13-03",
@@ -1009,7 +1054,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a208e4f92be60d01d3810a6a.wav",
               "speechText": "老鹰飞翔 ing ing ing",
               "speechLang": "zh-CN",
               "games": [
@@ -1019,7 +1064,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
               "id": "py-u3-l13-04",
@@ -1029,7 +1075,7 @@
                 "a",
                 "o"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/66428710240d44024f511e69.wav",
               "speechText": "钟声嗡嗡 ong ong ong",
               "speechLang": "zh-CN",
               "games": [
@@ -1039,7 +1085,8 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true
+              "reviewed": true,
+              "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
         }

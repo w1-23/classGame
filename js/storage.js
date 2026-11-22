@@ -108,6 +108,14 @@ function normalizeProgress(source) {
       )
     };
   }
+  const entries = Object.entries(source);
+  const hasGames = entries.some(([, pack]) =>
+    pack && typeof pack === 'object' && !Array.isArray(pack)
+    && pack.games && typeof pack.games === 'object' && !Array.isArray(pack.games)
+  );
+  const looksLegacy = source.version === undefined && entries.length > 0 && hasGames
+    && entries.every(([, pack]) => pack && typeof pack === 'object' && !Array.isArray(pack));
+  if (!looksLegacy) throw new Error('这不是本应用支持的存档文件。');
   return migrateLegacyProgress(source);
 }
 
@@ -172,7 +180,7 @@ export function recordResult({
 
   gameProgress.levels[levelId] = normalizeLevel({
     completed: true,
-    passed: rate >= PASS_RATIO,
+    passed: previous?.passed === true || rate >= PASS_RATIO,
     attempts: (previous?.attempts || 0) + 1,
     bestScore: rate >= currentBestRate ? normalizedScore : previous.bestScore,
     bestTotal: rate >= currentBestRate ? normalizedTotal : previous.bestTotal,

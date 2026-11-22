@@ -33,6 +33,11 @@ import {
   setCurrentLevelId
 } from './storage.js';
 import { drawAdventureMap } from './adventure-map-art.js';
+import {
+  buildChoiceRound,
+  buildMemoryRound,
+  buildPoetryRound
+} from './round-plan.js';
 
 const app = document.querySelector('#app');
 const settingsDialog = document.querySelector('#settings-dialog');
@@ -46,6 +51,7 @@ let activeSession = null;
 let mapArtResizeObserver = null;
 const audio = new AudioManager(settings);
 const MAP_ART_ROOT = 'assets/map-art/vector';
+const LAST_ROUND_KEY = 'learning-game-last-round-v1';
 const MAP_ART_META = {
   'tree-round': { width: 128, height: 160, anchorX: 64, anchorY: 140 },
   'tree-slim': { width: 128, height: 160, anchorX: 64, anchorY: 140 },
@@ -70,6 +76,57 @@ const gameIcons = {
 
 function gameMeta(gameId) {
   return GAME_META.find(game => game.id === gameId);
+}
+
+function packLearningItems(pack) {
+  return normalizeUnits(pack)
+    .flatMap(unit => unit.lessons)
+    .flatMap(lesson => lesson.items);
+}
+
+function lastRoundKey(packId, gameId, levelId) {
+  return `${packId}/${gameId}/${levelId}`;
+}
+
+function loadLastRound(packId, gameId, levelId) {
+  try {
+    const stored = JSON.parse(localStorage.getItem(LAST_ROUND_KEY) || '{}');
+    return stored[lastRoundKey(packId, gameId, levelId)] || null;
+  } catch {
+    return null;
+  }
+}
+
+function saveLastRound(packId, gameId, levelId, round) {
+  try {
+    const stored = JSON.parse(localStorage.getItem(LAST_ROUND_KEY) || '{}');
+    stored[lastRoundKey(packId, gameId, levelId)] = {
+      itemIds: round.itemIds || [],
+      correctLanes: round.correctLanes || [],
+      waves: (round.waves || []).map(wave => ({
+        contentKey: wave.contentKey,
+        cards: wave.cards.map(card => ({ id: card.id }))
+      }))
+    };
+    localStorage.setItem(LAST_ROUND_KEY, JSON.stringify(stored));
+  } catch {
+    // A full or unavailable storage area must not stop a new round.
+  }
+}
+
+function battleRoundItems(items) {
+  if (items.length % 2 === 0) return items;
+  const reviewSource = items[items.length - 1];
+  if (!reviewSource) return items;
+  return [
+    ...items,
+    {
+      ...reviewSource,
+      id: `${reviewSource.id}::review`,
+      prompt: `${reviewSource.prompt}（复习）`,
+      review: true
+    }
+  ];
 }
 
 function getPackForGame(gameId) {
@@ -98,9 +155,37 @@ function buildLevelPlan(gameId, levelId) {
   const { levels } = getAdventureLevels(gameId, pack);
   const level = levels.find(item => item.id === levelId) || levels[0];
   if (!level) throw new Error('这本教材还没有可用的关卡。');
-  const items = gameId === 'beat' ? [] : level.items.slice();
-  const poems = gameId === 'beat' ? (pack.poems || []) : [];
-  const questions = gameId === 'beat' ? (level.questions || []) : [];
+  const previousRound = loadLastRound(pack.id, gameId, level.id);
+  let round = null;
+  let memoryPlan = null;
+  let items = [];
+  let questions = [];
+  let poems = [];
+
+  if (gameId === 'beat') {
+    round = buildPoetryRound(level, { bookId: pack.id, previousRound });
+    questions = round.questions;
+    poems = (pack.poems || []).filter(poem => poem.id === round.poemId);
+  } else if (gameId === 'memory') {
+    memoryPlan = buildMemoryRound(level.items, {
+      bookId: pack.id,
+      levelId: level.id,
+      previousRound
+    });
+    round = memoryPlan;
+    items = level.items;
+  } else {
+    const sourceItems = gameId === 'battle' ? battleRoundItems(level.items) : level.items;
+    round = buildChoiceRound(sourceItems, {
+      bookId: pack.id,
+      gameId,
+      levelId: level.id,
+      previousRound,
+      knownItems: packLearningItems(pack)
+    });
+    items = round.questions;
+  }
+  saveLastRound(pack.id, gameId, level.id, round);
   return {
     gameId,
     levelId: level.id,
@@ -114,7 +199,9 @@ function buildLevelPlan(gameId, levelId) {
     pack,
     items,
     poems,
-    questions
+    questions,
+    round,
+    memoryPlan
   };
 }
 
@@ -357,6 +444,53 @@ function mapRouteSamples(nodeList, mapHeight) {
   return samples;
 }
 
+function nearestRouteIndex(samples, node, mapHeight) {
+  const targetX = (node.node.x / 100) * MAP_WIDTH;
+  const targetY = (node.node.y / 100) * mapHeight;
+  let nearest = 0;
+  let distance = Infinity;
+  samples.forEach((point, index) => {
+    const nextDistance = (point.x - targetX) ** 2 + (point.y - targetY) ** 2;
+    if (nextDistance < distance) {
+      distance = nextDistance;
+      nearest = index;
+    }
+  });
+  return nearest;
+}
+
+function animateMapHero(hero, here, samples, fromNode, toNode, mapHeight) {
+  if (!hero || !samples.length) return;
+  const from = nearestRouteIndex(samples, fromNode, mapHeight);
+  const to = nearestRouteIndex(samples, toNode, mapHeight);
+  if (from === to) return;
+  const direction = from < to ? 1 : -1;
+  const segment = samples.slice(Math.min(from, to), Math.max(from, to) + 1);
+  const ordered = direction > 0 ? segment : segment.reverse();
+  const started = performance.now();
+  const duration = 1050;
+  const place = point => {
+    const left = point.x / MAP_WIDTH * 100;
+    const top = point.y / mapHeight * 100;
+    hero.style.left = `${left}%`;
+    hero.style.top = `${top}%`;
+    if (here) {
+      here.style.left = `${left}%`;
+      here.style.top = `${Math.max(2, top - 7)}%`;
+    }
+  };
+  place(ordered[0]);
+  const frame = now => {
+    if (!hero.isConnected) return;
+    const progress = Math.min(1, (now - started) / duration);
+    const eased = 1 - (1 - progress) ** 3;
+    const index = Math.min(ordered.length - 1, Math.round(eased * (ordered.length - 1)));
+    place(ordered[index]);
+    if (progress < 1) requestAnimationFrame(frame);
+  };
+  requestAnimationFrame(frame);
+}
+
 function mapBridgeCrossing(theme, mapHeight, nodeList) {
   const samples = mapRouteSamples(nodeList, mapHeight);
   for (let index = 1; index < samples.length; index += 1) {
@@ -376,15 +510,25 @@ function mapBridgeCrossing(theme, mapHeight, nodeList) {
 
 function mapWindowLevels(units, selectedUnit) {
   const allLevels = units.flatMap(unit => unit.lessons);
-  if (allLevels.length <= 12) return allLevels;
-
   const selectedLevels = selectedUnit?.lessons || [];
-  const selectedStart = allLevels.findIndex(level => level.id === selectedLevels[0]?.id);
-  const selectedCount = Math.min(selectedLevels.length, 12);
-  const anchor = selectedStart < 0 ? 0 : selectedStart;
-  const preferredStart = anchor - Math.floor((12 - selectedCount) / 2);
-  const start = Math.max(0, Math.min(allLevels.length - 12, preferredStart));
-  return allLevels.slice(start, start + 12);
+  if (!selectedLevels.length) return allLevels.slice(0, 12);
+  if (selectedLevels.length >= 12) return selectedLevels.slice(0, 12);
+  let start = allLevels.findIndex(level => level.id === selectedLevels[0].id);
+  let end = start + selectedLevels.length - 1;
+  while (end - start + 1 < 6) {
+    const before = allLevels[start - 1];
+    const after = allLevels[end + 1];
+    if (!before && !after) break;
+    if ((!before || end <= start) && after) {
+      end += 1;
+    } else if (before && (!after || start > allLevels.length - end - 2)) {
+      start -= 1;
+    } else {
+      end += 1;
+      if (end - start + 1 < 6 && start > 0) start -= 1;
+    }
+  }
+  return allLevels.slice(start, end + 1);
 }
 
 function PhaserMathLinear(start, end, ratio) {
@@ -625,8 +769,8 @@ function renderAdventureMap(gameId) {
   }).join('');
   const hero = currentInBook ? `
     <img class="map-hero" src="assets/kenney/characters/adventurer-run0.png" alt="主角"
-      style="left:${currentInBook.node.left + 5}%;top:${currentInBook.node.top - 3}%">
-    <span class="map-here" style="left:${currentInBook.node.left + 5}%;top:${currentInBook.node.top - 10}%">正在探索</span>` : '';
+      style="left:${currentInBook.node.left}%;top:${currentInBook.node.top}%">
+    <span class="map-here" style="left:${currentInBook.node.left}%;top:${Math.max(2, currentInBook.node.top - 7)}%">正在探索</span>` : '';
   const record = selectedProgress
     ? `${selectedProgress.passed ? '已完成' : '已挑战'} · 最佳 ${Math.round(selectedProgress.bestScore / Math.max(selectedProgress.bestTotal, 1) * 100)}%`
     : '尚未完成';
@@ -712,12 +856,13 @@ function renderAdventureMap(gameId) {
     button.onclick = () => {
       const level = levels.find(item => item.id === button.dataset.level);
       if (!level) return;
-      const previous = routeById.get(currentLevelId);
       adventureView.selectedLevelId = level.id;
       adventureView.demoNotice = '';
       setCurrentLevelId(loadProgress(), pack.id, gameId, level.id);
-      const nextNode = routeById.get(level.id);
-      if (previous && nextNode) pendingMapWalk = { from: previous.node, to: nextNode.node };
+      pendingMapWalk = {
+        fromId: currentLevelId,
+        toId: level.id
+      };
       renderAdventureMap(gameId);
     };
   });
@@ -733,27 +878,17 @@ function renderAdventureMap(gameId) {
   if (pendingMapWalk) {
     const heroElement = app.querySelector('.map-hero');
     const here = app.querySelector('.map-here');
-    if (heroElement) {
-      const walk = pendingMapWalk;
-      heroElement.style.transition = 'none';
-      heroElement.style.left = `${walk.from.x + 5}%`;
-      heroElement.style.top = `${walk.from.y - 3}%`;
-      if (here) {
-        here.style.transition = 'none';
-        here.style.left = `${walk.from.x + 5}%`;
-        here.style.top = `${walk.from.y - 10}%`;
-      }
-      void heroElement.offsetWidth;
-      requestAnimationFrame(() => {
-        heroElement.style.transition = 'left 1.05s cubic-bezier(.34,.7,.3,1), top 1.05s cubic-bezier(.34,.7,.3,1)';
-        heroElement.style.left = `${walk.to.x + 5}%`;
-        heroElement.style.top = `${walk.to.y - 3}%`;
-        if (here) {
-          here.style.transition = 'left 1.05s cubic-bezier(.34,.7,.3,1), top 1.05s cubic-bezier(.34,.7,.3,1)';
-          here.style.left = `${walk.to.x + 5}%`;
-          here.style.top = `${walk.to.y - 10}%`;
-        }
-      });
+    const fromNode = routeById.get(pendingMapWalk.fromId);
+    const toNode = routeById.get(pendingMapWalk.toId);
+    if (heroElement && fromNode && toNode) {
+      animateMapHero(
+        heroElement,
+        here,
+        mapRouteSamples(mapped.nodes, mapped.height),
+        fromNode,
+        toNode,
+        mapped.height
+      );
     }
     pendingMapWalk = null;
   }
@@ -913,6 +1048,8 @@ function startGame(gameId, levelId) {
     items: plan.items,
     poems: plan.poems,
     questions: plan.questions,
+    round: plan.round,
+    memoryPlan: plan.memoryPlan,
     levelId: plan.levelId,
     areaNames: plan.level.areas,
     theme: plan.level.theme,

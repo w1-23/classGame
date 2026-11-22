@@ -5,16 +5,19 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 SCREENSHOTS = ROOT / "docs" / "screenshots"
-OUTPUT = SCREENSHOTS / "0.5.0-pages-overview.png"
+OUTPUT = SCREENSHOTS / "0.6.0-pages-overview.png"
 
 PAGES = [
     ("游戏大厅", "home-1366x768.png"),
     ("班级模式", "class-lobby.png"),
     ("教材关卡地图", "map-1366x768.png"),
+    ("诗词 48 关地图", "map-poetry-48.png"),
     ("森林寻宝记", "mode-runner.png"),
     ("听音找精灵", "mode-listen.png"),
+    ("答对后精灵出场", "listen-spirit.png"),
     ("拼音 / 单词拼装", "mode-assemble.png"),
     ("记忆翻牌配对", "mode-memory.png"),
+    ("翻牌分波与锁定", "memory-locked.png"),
     ("诗词填空", "mode-beat.png"),
     ("小组知识守护战", "mode-battle.png"),
     ("答对反馈", "runner-correct-feedback.png"),
@@ -54,7 +57,7 @@ def main():
     title_font = load_font(25)
     label_font = load_font(17)
 
-    draw.text((LEFT, 18), "学习闯关乐园 0.5.0 · 全部前端页面实际截图", fill="#243c2d", font=title_font)
+    draw.text((LEFT, 18), "学习闯关乐园 0.6.0 · 全部前端页面实际截图", fill="#243c2d", font=title_font)
     draw.text(
         (LEFT, 50),
         "静态截图 · 1366×768，另有手机竖屏页；无录屏",

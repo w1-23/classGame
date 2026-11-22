@@ -454,7 +454,16 @@ export const WORLD_THEMES = [
 ];
 
 export function worldThemeForUnit(unitIndex) {
-  const theme = WORLD_THEMES[unitIndex % WORLD_THEMES.length];
+  return worldThemeById(WORLD_THEMES[unitIndex % WORLD_THEMES.length].id);
+}
+
+const THEME_ALIASES = {
+  river: 'stream'
+};
+
+export function worldThemeById(themeId) {
+  const resolve = THEME_ALIASES[themeId] || themeId;
+  const theme = WORLD_THEMES.find(candidate => candidate.id === resolve) || WORLD_THEMES[0];
   return {
     ...theme,
     ...theme.map,

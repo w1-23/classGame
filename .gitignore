@@ -6,6 +6,9 @@ release/
 playwright-report/
 test-results/
 vendor/kenney/
+audio-work/
+.trace-inspect-*/
+.handoff-inspect-*/
 docs/video/page@*.webm
 *.log
 *.tmp

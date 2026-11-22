@@ -71,10 +71,13 @@ assert.match(storage, /PROGRESS_VERSION = 2/, 'progress store must use versioned
 assert.match(storage, /normalizeProgress/, 'imported progress must be structurally validated');
 assert.match(storage, /migrateLegacyProgress/, 'legacy progress must migrate instead of crashing the lobby');
 
-const poemPack = JSON.parse(await readFile('data/古诗-常见篇目朗读.json', 'utf8'));
-for (const poem of poemPack.poems) {
-  assert.ok(poem.cloze?.length >= 4, `${poem.id}: missing reviewed cloze questions`);
-}
+const poemPack = JSON.parse(await readFile('data/poetry-cloze-48-v1.json', 'utf8'));
+assert.equal(poemPack.poems.length, 48, 'poetry pack must contain 48 poems');
+assert.equal(
+  poemPack.units.flatMap(unit => unit.lessons).length,
+  48,
+  'poetry pack must contain one level per poem'
+);
 
 const index = await readFile('index.html', 'utf8');
 assert.match(index, /vendor\/phaser\/phaser\.min\.js[\s\S]*js\/app\.js/, 'Phaser must load before the app');

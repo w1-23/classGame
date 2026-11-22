@@ -18,8 +18,37 @@ async function completeListen(page) {
     const debug = await page.evaluate(() => Boolean(window.__learningGameDebug?.listen));
     if (!debug) break;
     const state = await page.evaluate(() => window.__learningGameDebug.listen.state());
+    if (!state.audioReady) {
+      await page.evaluate(() => window.__learningGameDebug.listen.play());
+      await expect.poll(
+        () => page.evaluate(() => window.__learningGameDebug.listen.state().audioReady),
+        { timeout: 6000 }
+      ).toBe(true);
+    }
     await page.evaluate(answer => window.__learningGameDebug.listen.choose(answer), state.correct);
-    await page.waitForTimeout(820);
+    await page.waitForTimeout(1120);
+  }
+}
+
+async function completeMemory(page) {
+  for (let guard = 0; guard < 40; guard += 1) {
+    if (await page.locator('.result').count()) break;
+    const available = await page.evaluate(() => Boolean(window.__learningGameDebug?.memory));
+    if (!available) break;
+    const groups = await page.evaluate(() => {
+      const groups = {};
+      window.__learningGameDebug.memory.state().cards.forEach((card, index) => {
+        if (!card.matched) (groups[card.key] ||= []).push(index);
+      });
+      return groups;
+    });
+    for (const indexes of Object.values(groups)) {
+      await page.evaluate(pair => {
+        window.__learningGameDebug.memory.click(pair[0]);
+        window.__learningGameDebug.memory.click(pair[1]);
+      }, indexes);
+    }
+    await page.waitForTimeout(560);
   }
 }
 
@@ -197,15 +226,44 @@ test('every game can pause, resume and return to its level list', async ({ page 
 test('listen and assemble judge correct answers and advance', async ({ page }) => {
   await openLevel(page, 'listen');
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.listen));
+  expect(await page.locator('.three-grid button:not([disabled])').count()).toBe(0);
+  await page.evaluate(() => window.__learningGameDebug.listen.play());
+  await expect.poll(
+    () => page.evaluate(() => window.__learningGameDebug.listen.state().audioReady),
+    { timeout: 6000 }
+  ).toBe(true);
   const listen = await page.evaluate(() => window.__learningGameDebug.listen.state());
   await page.evaluate(correct => window.__learningGameDebug.listen.choose(correct), listen.correct);
   await expect.poll(() => page.evaluate(() => window.__learningGameDebug.listen.state().score)).toBe(1);
   await expect(page.locator('.feedback.correct')).toBeVisible();
+  await expect(page.locator('.spirit-reveal')).toBeVisible();
+  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.listen.state().earnedSpirits.length)).toBe(1);
+  await page.waitForTimeout(360);
+  await page.screenshot({ path: `${screenshots}/listen-spirit.png`, fullPage: false });
 
   await openLevel(page, 'assemble');
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.assemble));
   await page.evaluate(() => window.__learningGameDebug.assemble.solve());
   await expect.poll(() => page.evaluate(() => window.__learningGameDebug.assemble.state().score)).toBe(1);
+});
+
+test('listen keeps answers locked when speech cannot be played', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'speechSynthesis', { value: undefined, configurable: true });
+  });
+  await page.route('**/audio/generated/**', route => route.abort());
+  await openLevel(page, 'listen');
+  await page.waitForFunction(() => Boolean(window.__learningGameDebug?.listen));
+  await page.evaluate(() => window.__learningGameDebug.listen.play());
+  await expect.poll(
+    () => page.evaluate(() => window.__learningGameDebug.listen.state().audioState),
+    { timeout: 7000 }
+  ).toBe('failed');
+  const state = await page.evaluate(() => window.__learningGameDebug.listen.state());
+  expect(state.audioReady).toBe(false);
+  expect(state.score).toBe(0);
+  await expect(page.locator('.three-grid button:not([disabled])')).toHaveCount(0);
+  await expect(page.locator('#listen-audio-state')).toContainText('不计错');
 });
 
 test('assemble ignores duplicate submissions and no stale timer returns after exit', async ({ page }) => {
@@ -245,29 +303,20 @@ test('memory cards lock while a wrong pair is visible and count real attempts', 
   await page.locator('[data-id="memory"]').click();
   await page.locator('.map-node').first().click();
   await page.locator('#map-start').click();
-  const groups = await page.evaluate(() => {
-    const groups = {};
-    window.__learningGameDebug.memory.state().cards.forEach((card, index) => {
-      (groups[card.key] ||= []).push(index);
-    });
-    return groups;
-  });
-  for (const indexes of Object.values(groups)) {
-    await page.evaluate(pair => {
-      window.__learningGameDebug.memory.click(pair[0]);
-      window.__learningGameDebug.memory.click(pair[1]);
-    }, indexes);
-  }
+  await completeMemory(page);
   await expect(page.locator('.result h2')).toContainText('记忆翻牌配对完成');
-  await expect(page.locator('.result .pill').nth(1)).toContainText(`尝试 ${cards.length / 2} 次`);
-  await expect(page.locator('.result .pill').nth(2)).toContainText('错配 0 次');
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem(Object.keys(localStorage).find(key => key.includes('progress'))) || '{}'));
+  expect(state.version).toBe(2);
+  await expect(page.locator('.result .pill').nth(1)).toContainText('共');
+  await expect(page.locator('.result .pill').nth(3)).toContainText('错配 0 次');
 });
 
-test('poetry uses reviewed random cloze questions and reveals the full line after answering', async ({ page }) => {
+test('poetry samples four cloze variants and reveals the full line after answering', async ({ page }) => {
   await openLevel(page, 'beat');
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.beat));
-  await expect(page.locator('.poetry-context')).toContainText('静夜思');
   await expect(page.locator('.poetry-context')).not.toContainText('undefined');
+  const context = await page.locator('.poetry-context').textContent();
+  expect(context).toMatch(/《.+》 · .+/);
   const first = await page.evaluate(() => window.__learningGameDebug.beat.state());
   expect(first.options).toHaveLength(3);
   expect(first.options).toContain(first.correct);
@@ -276,16 +325,9 @@ test('poetry uses reviewed random cloze questions and reveals the full line afte
   await page.waitForTimeout(960);
   const second = await page.evaluate(() => window.__learningGameDebug.beat.state());
   expect(second.index).toBe(1);
-  for (let index = 1; index < 8; index += 1) {
-    if (await page.locator('.result').count()) break;
-    const available = await page.evaluate(() => Boolean(window.__learningGameDebug?.beat));
-    if (!available) break;
-    const state = await page.evaluate(() => window.__learningGameDebug.beat.state());
-    await page.evaluate(answer => window.__learningGameDebug.beat.choose(answer), state.correct);
-    await page.waitForTimeout(940);
-  }
+  await completeBeat(page);
   await expect(page.locator('.result h2')).toContainText('诗词填空闯关完成');
-  await expect(page.locator('.poem-review')).toContainText('静夜思');
+  await expect(page.locator('.poem-review')).toContainText(context.split(' · ')[0]);
 });
 
 test('class battle uses the teacher decision consistently in scoring and review', async ({ page }) => {

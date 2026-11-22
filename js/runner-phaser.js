@@ -1235,7 +1235,9 @@ class RunnerScene extends Phaser.Scene {
   loadQuestion(initial = false) {
     this.syncStageTheme();
     this.currentItem = this.items[this.index];
-    this.options = optionList(this.currentItem);
+    this.options = Array.isArray(this.currentItem.options) && this.currentItem.options.length === 3
+      ? [...this.currentItem.options]
+      : optionList(this.currentItem);
     this.gateProgress = 0;
     this.transitionRemaining = 0;
     this.feedback = { visible: false, kind: 'correct', title: '', body: '' };
@@ -1298,7 +1300,10 @@ class RunnerScene extends Phaser.Scene {
       }).setOrigin(.5).setResolution(2);
       const outline = this.add.graphics();
       const hit = this.add.zone(0, -112, 226, 250).setInteractive({ useHandCursor: true });
-      hit.on('pointerdown', () => this.switchLane(lane));
+      hit.on('pointerdown', (pointer, localX, localY, event) => {
+        event?.stopPropagation?.();
+        this.switchLane(lane);
+      });
       root.add([shadow, leftPost, rightPost, board, pinLeft, pinRight, outline, label, hit]);
       const gate = {
         root,
@@ -1696,6 +1701,7 @@ class RunnerScene extends Phaser.Scene {
     return {
       index: this.index,
       total: this.items.length,
+      itemIds: this.items.map(item => item.id),
       score: this.score,
       combo: this.combo,
       bestCombo: this.bestCombo,

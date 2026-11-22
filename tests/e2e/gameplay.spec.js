@@ -15,13 +15,18 @@ async function openGame(page, id) {
 test('pause freezes the pending listen transition and resumes it once', async ({ page }) => {
   await openGame(page, 'listen');
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.listen));
+  await page.evaluate(() => window.__learningGameDebug.listen.play());
+  await expect.poll(
+    () => page.evaluate(() => window.__learningGameDebug.listen.state().audioReady),
+    { timeout: 6000 }
+  ).toBe(true);
   const initial = await page.evaluate(() => window.__learningGameDebug.listen.state());
   await page.evaluate(answer => window.__learningGameDebug.listen.choose(answer), initial.correct);
   await page.locator('#game-pause').click();
   await page.waitForTimeout(1100);
   expect((await page.evaluate(() => window.__learningGameDebug.listen.state())).index).toBe(0);
   await page.locator('#game-resume').click();
-  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.listen.state().index), { timeout: 1600 }).toBe(1);
+  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.listen.state().index), { timeout: 2600 }).toBe(1);
   await page.waitForTimeout(300);
   expect((await page.evaluate(() => window.__learningGameDebug.listen.state())).index).toBe(1);
 });
@@ -40,6 +45,22 @@ test('pause freezes memory mismatch reveal and resumes the same lock window', as
   expect((await page.evaluate(() => window.__learningGameDebug.memory.state())).locked).toBe(true);
   await page.locator('#game-resume').click();
   await expect.poll(() => page.evaluate(() => window.__learningGameDebug.memory.state().locked), { timeout: 1600 }).toBe(false);
+});
+
+test('new runner rounds differ while pause and resume retain the same plan', async ({ page }) => {
+  await openGame(page, 'runner');
+  await page.waitForFunction(() => Boolean(window.__learningGameDebug?.runner));
+  const first = await page.evaluate(() => window.__learningGameDebug.runner.state());
+  await page.locator('#game-pause').click();
+  await page.locator('#game-resume').click();
+  const resumed = await page.evaluate(() => window.__learningGameDebug.runner.state());
+  expect(resumed.options).toEqual(first.options);
+  expect(resumed.correctLane).toBe(first.correctLane);
+
+  await openGame(page, 'runner');
+  await page.waitForFunction(() => Boolean(window.__learningGameDebug?.runner));
+  const second = await page.evaluate(() => window.__learningGameDebug.runner.state());
+  expect(second.itemIds).not.toEqual(first.itemIds);
 });
 
 test('progress import rejects null and preserves the previous save', async ({ page }) => {
@@ -63,6 +84,11 @@ test('progress import rejects null and preserves the previous save', async ({ pa
     } catch (caught) {
       error = caught.message;
     }
+    try {
+      storage.importProgress('{"hello":"world"}');
+    } catch (caught) {
+      error += '|' + caught.message;
+    }
     return {
       error,
       unchanged: before === localStorage.getItem(storage.PROGRESS_KEY),
@@ -72,6 +98,32 @@ test('progress import rejects null and preserves the previous save', async ({ pa
   expect(result.error).toContain('JSON 对象');
   expect(result.unchanged).toBe(true);
   expect(result.progress.packs.demo.rounds).toBe(1);
+});
+
+test('a later failed replay does not revoke a passed level', async ({ page }) => {
+  await page.goto('/index.html');
+  const level = await page.evaluate(async () => {
+    const storage = await import('/js/storage.js');
+    storage.recordResult({
+      game: 'runner',
+      packId: 'demo',
+      levelId: 'level-1',
+      score: 6,
+      total: 6
+    });
+    storage.recordResult({
+      game: 'runner',
+      packId: 'demo',
+      levelId: 'level-1',
+      score: 0,
+      total: 6
+    });
+    return storage.getLevelProgress(storage.loadProgress(), 'demo', 'runner', 'level-1');
+  });
+  expect(level.passed).toBe(true);
+  expect(level.completed).toBe(true);
+  expect(level.lastScore).toBe(0);
+  expect(level.bestScore).toBe(6);
 });
 
 test('legacy per-pack scores migrate into versioned level records', async ({ page }) => {

@@ -23,7 +23,7 @@
                 "post office",
                 "bookstore"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/29d71dddbf7603a49bcd2487.wav",
               "speechText": "science museum",
               "speechLang": "en-US",
               "games": [
@@ -34,7 +34,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w02",
@@ -44,7 +45,7 @@
                 "science museum",
                 "bookstore"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/4831964d35db28e6d78edada.wav",
               "speechText": "post office",
               "speechLang": "en-US",
               "games": [
@@ -55,7 +56,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w03",
@@ -65,7 +67,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/69bbae8ae5a40c8bf94d2fcc.wav",
               "speechText": "bookstore",
               "speechLang": "en-US",
               "games": [
@@ -76,7 +78,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w04",
@@ -86,7 +89,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/5fc21b85c563dd753fea3c9e.wav",
               "speechText": "cinema",
               "speechLang": "en-US",
               "games": [
@@ -97,7 +100,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w05",
@@ -107,7 +111,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d82007b07dfa65df8debd310.wav",
               "speechText": "hospital",
               "speechLang": "en-US",
               "games": [
@@ -118,7 +122,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w06",
@@ -128,7 +133,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/75f0006bc8f76073d415d607.wav",
               "speechText": "crossing",
               "speechLang": "en-US",
               "games": [
@@ -139,7 +144,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -155,7 +161,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/df715e8a8340aee9866ae6c7.wav",
               "speechText": "turn left",
               "speechLang": "en-US",
               "games": [
@@ -166,7 +172,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w08",
@@ -176,7 +183,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f70e18ad02b1457f1b4e0b8f.wav",
               "speechText": "turn right",
               "speechLang": "en-US",
               "games": [
@@ -187,7 +194,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w09",
@@ -197,7 +205,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/534df2ca9df5d03150d197ce.wav",
               "speechText": "go straight",
               "speechLang": "en-US",
               "games": [
@@ -208,7 +216,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w10",
@@ -218,7 +227,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/4b4e303ddf7de75057cb3f8d.wav",
               "speechText": "excuse me",
               "speechLang": "en-US",
               "games": [
@@ -229,7 +238,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w11",
@@ -239,7 +249,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/dd959f2e5ae307fdd8f7d1d7.wav",
               "speechText": "where",
               "speechLang": "en-US",
               "games": [
@@ -250,7 +260,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w12",
@@ -260,7 +271,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/12a329bd2edca0fc294b3c5a.wav",
               "speechText": "how",
               "speechLang": "en-US",
               "games": [
@@ -271,7 +282,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -287,7 +299,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b8bf51aebdee5feb7330249c.wav",
               "speechText": "can",
               "speechLang": "en-US",
               "games": [
@@ -298,7 +310,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w14",
@@ -308,7 +321,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/7a475eaf2e11170e559c0ea9.wav",
               "speechText": "get to",
               "speechLang": "en-US",
               "games": [
@@ -319,7 +332,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w15",
@@ -329,7 +343,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/ee926aa4c3a9368589209b84.wav",
               "speechText": "near",
               "speechLang": "en-US",
               "games": [
@@ -340,7 +354,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w16",
@@ -350,7 +365,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c419bbed286b09e29b140963.wav",
               "speechText": "next to",
               "speechLang": "en-US",
               "games": [
@@ -361,7 +376,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w17",
@@ -371,7 +387,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/4f1579108235aca419bff6b6.wav",
               "speechText": "behind",
               "speechLang": "en-US",
               "games": [
@@ -382,7 +398,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w18",
@@ -392,7 +409,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/502da02c958522b5638f9736.wav",
               "speechText": "in front of",
               "speechLang": "en-US",
               "games": [
@@ -403,7 +420,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -419,7 +437,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/df160df069efa15a16fb0778.wav",
               "speechText": "go",
               "speechLang": "en-US",
               "games": [
@@ -430,7 +448,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w20",
@@ -440,7 +459,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/9be8f50b6f9c276849e8b21a.wav",
               "speechText": "straight",
               "speechLang": "en-US",
               "games": [
@@ -451,7 +470,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w21",
@@ -461,7 +481,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d9527f03c64a29d8658517ba.wav",
               "speechText": "then",
               "speechLang": "en-US",
               "games": [
@@ -472,7 +492,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w22",
@@ -482,7 +503,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b0bcf8dc27d9b9ac2c0c9208.wav",
               "speechText": "turn",
               "speechLang": "en-US",
               "games": [
@@ -493,7 +514,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w23",
@@ -503,7 +525,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f355ae6650d0487dee500499.wav",
               "speechText": "right",
               "speechLang": "en-US",
               "games": [
@@ -514,7 +536,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w24",
@@ -524,7 +547,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/be45abc796a2416582c801b4.wav",
               "speechText": "left",
               "speechLang": "en-US",
               "games": [
@@ -535,7 +558,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -551,7 +575,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c98a04a973df0a0a73b702d4.wav",
               "speechText": "at",
               "speechLang": "en-US",
               "games": [
@@ -562,7 +586,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u01-w26",
@@ -572,7 +597,7 @@
                 "science museum",
                 "post office"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/905d636ca00c358352b51d29.wav",
               "speechText": "turning",
               "speechLang": "en-US",
               "games": [
@@ -583,7 +608,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 1
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -606,7 +632,7 @@
                 "by ship",
                 "on foot"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c33defe2f3d9ebdf886b808e.wav",
               "speechText": "by plane",
               "speechLang": "en-US",
               "games": [
@@ -617,7 +643,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w02",
@@ -627,7 +654,7 @@
                 "by plane",
                 "on foot"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/1a5a32e9a0b8d45bd0cb8816.wav",
               "speechText": "by ship",
               "speechLang": "en-US",
               "games": [
@@ -638,7 +665,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w03",
@@ -648,7 +676,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/44cd1f793d016fb274a0fd21.wav",
               "speechText": "on foot",
               "speechLang": "en-US",
               "games": [
@@ -659,7 +687,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w04",
@@ -669,7 +698,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/10d2bea672ca834a0580fccb.wav",
               "speechText": "by bike",
               "speechLang": "en-US",
               "games": [
@@ -680,7 +709,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w05",
@@ -690,7 +720,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/a81ddf81fc7d46c7fc3b62a3.wav",
               "speechText": "by bus",
               "speechLang": "en-US",
               "games": [
@@ -701,7 +731,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w06",
@@ -711,7 +742,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b0eddbad2a0e32e10fae74d3.wav",
               "speechText": "by train",
               "speechLang": "en-US",
               "games": [
@@ -722,7 +753,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -738,7 +770,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f94c8c0699d45322333b4799.wav",
               "speechText": "subway",
               "speechLang": "en-US",
               "games": [
@@ -749,7 +781,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w08",
@@ -759,7 +792,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/509842f9979940eaa10be1c8.wav",
               "speechText": "taxi",
               "speechLang": "en-US",
               "games": [
@@ -770,7 +803,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w10",
@@ -780,7 +814,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/17b20315279a7b9359b25271.wav",
               "speechText": "go to",
               "speechLang": "en-US",
               "games": [
@@ -791,7 +825,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w11",
@@ -801,7 +836,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/e5085fc429f8c6bde571966b.wav",
               "speechText": "school",
               "speechLang": "en-US",
               "games": [
@@ -812,7 +847,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w12",
@@ -822,7 +858,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/55d10a283760f2ed3b260fa7.wav",
               "speechText": "traffic",
               "speechLang": "en-US",
               "games": [
@@ -833,7 +869,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w13",
@@ -843,7 +880,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/5b4ae1efc45040b984b07996.wav",
               "speechText": "traffic lights",
               "speechLang": "en-US",
               "games": [
@@ -854,7 +891,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -870,7 +908,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/5471d480d46bbbffa5c8cc37.wav",
               "speechText": "traffic rules",
               "speechLang": "en-US",
               "games": [
@@ -881,7 +919,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w15",
@@ -891,7 +930,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/06a410032f228945075161ee.wav",
               "speechText": "stop",
               "speechLang": "en-US",
               "games": [
@@ -902,7 +941,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w16",
@@ -912,7 +952,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c1f5964430c5ad2f0c5a59c1.wav",
               "speechText": "wait",
               "speechLang": "en-US",
               "games": [
@@ -923,7 +963,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w17",
@@ -933,7 +974,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/2fd8c677f64cc129b74f5b80.wav",
               "speechText": "slow down",
               "speechLang": "en-US",
               "games": [
@@ -944,7 +985,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w19",
@@ -954,7 +996,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/88eff2c24c806003e35b2455.wav",
               "speechText": "traffic light",
               "speechLang": "en-US",
               "games": [
@@ -965,7 +1007,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w20",
@@ -975,7 +1018,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/853f67b24883149d4eeb785c.wav",
               "speechText": "red light",
               "speechLang": "en-US",
               "games": [
@@ -986,7 +1029,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1002,7 +1046,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/4ad3f03bfa735acbd1e8095a.wav",
               "speechText": "yellow light",
               "speechLang": "en-US",
               "games": [
@@ -1013,7 +1057,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w22",
@@ -1023,7 +1068,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c2378fe868bfd82be1e8420f.wav",
               "speechText": "green light",
               "speechLang": "en-US",
               "games": [
@@ -1034,7 +1079,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u02-w23",
@@ -1044,7 +1090,7 @@
                 "by plane",
                 "by ship"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/8a1bd69a4fdc8bb4aa040f35.wav",
               "speechText": "wait for",
               "speechLang": "en-US",
               "games": [
@@ -1055,7 +1101,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 2
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -1078,7 +1125,7 @@
                 "film",
                 "see a film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/2934bc108c864d121bfa753a.wav",
               "speechText": "visit",
               "speechLang": "en-US",
               "games": [
@@ -1089,7 +1136,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w02",
@@ -1099,7 +1147,7 @@
                 "visit",
                 "see a film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/0d3f11748609cfb0553720da.wav",
               "speechText": "film",
               "speechLang": "en-US",
               "games": [
@@ -1110,7 +1158,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w03",
@@ -1120,7 +1169,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/6d6077496f6e212f79eb15e1.wav",
               "speechText": "see a film",
               "speechLang": "en-US",
               "games": [
@@ -1131,7 +1180,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w04",
@@ -1141,7 +1191,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b300caa980d71c6b29b02e14.wav",
               "speechText": "trip",
               "speechLang": "en-US",
               "games": [
@@ -1152,7 +1202,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w05",
@@ -1162,7 +1213,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/2a39c037c6a908c8395fb4a2.wav",
               "speechText": "take a trip",
               "speechLang": "en-US",
               "games": [
@@ -1173,7 +1224,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w06",
@@ -1183,7 +1235,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/22919f6deb95981359a38927.wav",
               "speechText": "supermarket",
               "speechLang": "en-US",
               "games": [
@@ -1194,7 +1246,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1210,7 +1263,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f5bae0cecbd87d2f26f13e60.wav",
               "speechText": "evening",
               "speechLang": "en-US",
               "games": [
@@ -1221,7 +1274,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w08",
@@ -1231,7 +1285,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/758abe070a016b2b38a712b9.wav",
               "speechText": "tonight",
               "speechLang": "en-US",
               "games": [
@@ -1242,7 +1296,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w09",
@@ -1252,7 +1307,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/9906843023bfcffbb5341821.wav",
               "speechText": "tomorrow",
               "speechLang": "en-US",
               "games": [
@@ -1263,7 +1318,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w10",
@@ -1273,7 +1329,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/82baaef59d9b389578fceac0.wav",
               "speechText": "next week",
               "speechLang": "en-US",
               "games": [
@@ -1284,7 +1340,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w11",
@@ -1294,7 +1351,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/50cddff309eb4da195e1cbce.wav",
               "speechText": "dictionary",
               "speechLang": "en-US",
               "games": [
@@ -1305,7 +1362,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w12",
@@ -1315,7 +1373,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/5aee31c1a286e0a7746039b3.wav",
               "speechText": "comic book",
               "speechLang": "en-US",
               "games": [
@@ -1326,7 +1384,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1342,7 +1401,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f0098c2810d9ef78f07f952d.wav",
               "speechText": "word book",
               "speechLang": "en-US",
               "games": [
@@ -1353,7 +1412,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w14",
@@ -1363,7 +1423,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/6d6ff31ea32e957dc828498f.wav",
               "speechText": "postcard",
               "speechLang": "en-US",
               "games": [
@@ -1374,7 +1434,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w15",
@@ -1384,7 +1445,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/fe9dc6c93556b541b01d0e6b.wav",
               "speechText": "this morning",
               "speechLang": "en-US",
               "games": [
@@ -1395,7 +1456,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w16",
@@ -1405,7 +1467,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/59294208c1435aa10970f0e9.wav",
               "speechText": "this afternoon",
               "speechLang": "en-US",
               "games": [
@@ -1416,7 +1478,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w17",
@@ -1426,7 +1489,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/5f3d577831be717029dd2555.wav",
               "speechText": "this evening",
               "speechLang": "en-US",
               "games": [
@@ -1437,7 +1500,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u03-w21",
@@ -1447,7 +1511,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c4a9c8bf7e11bf9180be7786.wav",
               "speechText": "what",
               "speechLang": "en-US",
               "games": [
@@ -1458,7 +1522,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1474,7 +1539,7 @@
                 "visit",
                 "film"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/74c28e7aaa5360a36464dbd1.wav",
               "speechText": "when",
               "speechLang": "en-US",
               "games": [
@@ -1485,7 +1550,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 3
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -1508,7 +1574,7 @@
                 "puzzle",
                 "hiking"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/17c96178c77711b3e733eccd.wav",
               "speechText": "studies",
               "speechLang": "en-US",
               "games": [
@@ -1519,7 +1585,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w02",
@@ -1529,7 +1596,7 @@
                 "studies",
                 "hiking"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/9627a65f842d5b58e4b2327d.wav",
               "speechText": "puzzle",
               "speechLang": "en-US",
               "games": [
@@ -1540,7 +1607,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w03",
@@ -1550,7 +1618,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/5551593e97828d34200e156c.wav",
               "speechText": "hiking",
               "speechLang": "en-US",
               "games": [
@@ -1561,7 +1629,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w04",
@@ -1571,7 +1640,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/01ed75f5c65121ff3bc16ac6.wav",
               "speechText": "pen pal",
               "speechLang": "en-US",
               "games": [
@@ -1582,7 +1651,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w05",
@@ -1592,7 +1662,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/17227d047ed5b41548a3f72a.wav",
               "speechText": "hobby",
               "speechLang": "en-US",
               "games": [
@@ -1603,7 +1673,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w06",
@@ -1613,7 +1684,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/0399aa285d792197d2519792.wav",
               "speechText": "jasmine",
               "speechLang": "en-US",
               "games": [
@@ -1624,7 +1695,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1640,7 +1712,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/dfcdca0731e378d87d6c34b6.wav",
               "speechText": "idea",
               "speechLang": "en-US",
               "games": [
@@ -1651,7 +1723,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w08",
@@ -1661,7 +1734,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c7dd36165257e0c35475f877.wav",
               "speechText": "Canberra",
               "speechLang": "en-US",
               "games": [
@@ -1672,7 +1745,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w09",
@@ -1682,7 +1756,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/75b276ca52e6b05af749585a.wav",
               "speechText": "amazing",
               "speechLang": "en-US",
               "games": [
@@ -1693,7 +1767,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w10",
@@ -1703,7 +1778,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/285c6bd2372eb1cc424d42ed.wav",
               "speechText": "shall",
               "speechLang": "en-US",
               "games": [
@@ -1714,7 +1789,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w11",
@@ -1724,7 +1800,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/32a2213a21eaeefebda1c4d7.wav",
               "speechText": "goal",
               "speechLang": "en-US",
               "games": [
@@ -1735,7 +1811,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w12",
@@ -1745,7 +1822,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/fd342fff0258e59778e53fda.wav",
               "speechText": "join",
               "speechLang": "en-US",
               "games": [
@@ -1756,7 +1833,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1772,7 +1850,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/aad4b8c03c8909ceb346fd14.wav",
               "speechText": "club",
               "speechLang": "en-US",
               "games": [
@@ -1783,7 +1861,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w14",
@@ -1793,7 +1872,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/18557cd0e49490fd18a8fa9b.wav",
               "speechText": "share",
               "speechLang": "en-US",
               "games": [
@@ -1804,7 +1883,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w15",
@@ -1814,7 +1894,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/981a4c1ebb4236eea4bd36a1.wav",
               "speechText": "like",
               "speechLang": "en-US",
               "games": [
@@ -1825,7 +1905,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w16",
@@ -1835,7 +1916,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/0caf949091f420193dd44eec.wav",
               "speechText": "love",
               "speechLang": "en-US",
               "games": [
@@ -1846,7 +1927,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w17",
@@ -1856,7 +1938,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b48b272e6df6549b89fbdd5c.wav",
               "speechText": "live",
               "speechLang": "en-US",
               "games": [
@@ -1867,7 +1949,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u04-w18",
@@ -1877,7 +1960,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/3f3692a3259d009bb1f44f9b.wav",
               "speechText": "teach",
               "speechLang": "en-US",
               "games": [
@@ -1888,7 +1971,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1904,7 +1988,7 @@
                 "studies",
                 "puzzle"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/e3826911200a9698178919bd.wav",
               "speechText": "learn",
               "speechLang": "en-US",
               "games": [
@@ -1915,7 +1999,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 4
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -1938,7 +2023,7 @@
                 "postman",
                 "businessman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/54e99d711d590dbcf2488e82.wav",
               "speechText": "factory",
               "speechLang": "en-US",
               "games": [
@@ -1949,7 +2034,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w02",
@@ -1959,7 +2045,7 @@
                 "factory",
                 "businessman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f258b5830dfcbe69dd609798.wav",
               "speechText": "postman",
               "speechLang": "en-US",
               "games": [
@@ -1970,7 +2056,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w03",
@@ -1980,7 +2067,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/2d00d0cc3c82be76e80d4a65.wav",
               "speechText": "businessman",
               "speechLang": "en-US",
               "games": [
@@ -1991,7 +2078,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w04",
@@ -2001,7 +2089,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b60b4671f60f0695bb506253.wav",
               "speechText": "police officer",
               "speechLang": "en-US",
               "games": [
@@ -2012,7 +2100,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w05",
@@ -2022,7 +2111,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/65054dbaca6797bb15bfa42b.wav",
               "speechText": "fisherman",
               "speechLang": "en-US",
               "games": [
@@ -2033,7 +2122,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w06",
@@ -2043,7 +2133,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/baa036320b7af8af629b12ce.wav",
               "speechText": "scientist",
               "speechLang": "en-US",
               "games": [
@@ -2054,7 +2144,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2070,7 +2161,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/b5c699df01ee60bf4922004e.wav",
               "speechText": "pilot",
               "speechLang": "en-US",
               "games": [
@@ -2081,7 +2172,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w08",
@@ -2091,7 +2183,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d6f1de5f8c79451a490d2abc.wav",
               "speechText": "coach",
               "speechLang": "en-US",
               "games": [
@@ -2102,7 +2194,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w09",
@@ -2112,7 +2205,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/df5d0f46e2dc1f778fa389c7.wav",
               "speechText": "work",
               "speechLang": "en-US",
               "games": [
@@ -2123,7 +2216,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w13",
@@ -2133,7 +2227,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/71e2c1300153be6245f098a0.wav",
               "speechText": "job",
               "speechLang": "en-US",
               "games": [
@@ -2144,7 +2238,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w14",
@@ -2154,7 +2249,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/1a53e58cc6228f3b32fee528.wav",
               "speechText": "reporter",
               "speechLang": "en-US",
               "games": [
@@ -2165,7 +2260,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w15",
@@ -2175,7 +2271,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/93dd669f5ae4fd0769d638b4.wav",
               "speechText": "university",
               "speechLang": "en-US",
               "games": [
@@ -2186,7 +2282,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2202,7 +2299,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/e7d8652c598b12a13aa53bcc.wav",
               "speechText": "gym",
               "speechLang": "en-US",
               "games": [
@@ -2213,7 +2310,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w17",
@@ -2223,7 +2321,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/458c78d4401e8a285d0954b3.wav",
               "speechText": "use",
               "speechLang": "en-US",
               "games": [
@@ -2234,7 +2332,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w18",
@@ -2244,7 +2343,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/a7a5699ede67a045debf0c10.wav",
               "speechText": "type",
               "speechLang": "en-US",
               "games": [
@@ -2255,7 +2354,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w19",
@@ -2265,7 +2365,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/7f4e030a913bebcd2094a3ad.wav",
               "speechText": "quickly",
               "speechLang": "en-US",
               "games": [
@@ -2276,7 +2376,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w20",
@@ -2286,7 +2387,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/7ff1d4de814f633e4e1d3472.wav",
               "speechText": "secretary",
               "speechLang": "en-US",
               "games": [
@@ -2297,7 +2398,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u05-w21",
@@ -2307,7 +2409,7 @@
                 "factory",
                 "postman"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c381bafd238c19f0e0e97fe6.wav",
               "speechText": "if",
               "speechLang": "en-US",
               "games": [
@@ -2318,7 +2420,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 5
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -2341,7 +2444,7 @@
                 "afraid",
                 "sad"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/649e7ef128aa2f407910f58d.wav",
               "speechText": "angry",
               "speechLang": "en-US",
               "games": [
@@ -2352,7 +2455,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w02",
@@ -2362,7 +2466,7 @@
                 "angry",
                 "sad"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f875ed212316862856d21709.wav",
               "speechText": "afraid",
               "speechLang": "en-US",
               "games": [
@@ -2373,7 +2477,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w03",
@@ -2383,7 +2488,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/da33ebad640fbeb6f51702da.wav",
               "speechText": "sad",
               "speechLang": "en-US",
               "games": [
@@ -2394,7 +2499,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w04",
@@ -2404,7 +2510,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/20464fc3f592aac1d14a3028.wav",
               "speechText": "worried",
               "speechLang": "en-US",
               "games": [
@@ -2415,7 +2521,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w05",
@@ -2425,7 +2532,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/8e1e4a64f2e16ae8b163b5af.wav",
               "speechText": "happy",
               "speechLang": "en-US",
               "games": [
@@ -2436,7 +2543,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w06",
@@ -2446,7 +2554,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/fbebdafd396b98d90b2bf086.wav",
               "speechText": "ill",
               "speechLang": "en-US",
               "games": [
@@ -2457,7 +2565,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2473,7 +2582,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/97c98a6947490be23ec16aa1.wav",
               "speechText": "wrong",
               "speechLang": "en-US",
               "games": [
@@ -2484,7 +2593,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w08",
@@ -2494,7 +2604,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/11bf5e175ccb6a7d0ceed170.wav",
               "speechText": "should",
               "speechLang": "en-US",
               "games": [
@@ -2505,7 +2615,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w09",
@@ -2515,7 +2626,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/edfddf6259397df6af0491a1.wav",
               "speechText": "feel",
               "speechLang": "en-US",
               "games": [
@@ -2526,7 +2637,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w10",
@@ -2536,7 +2648,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/04307f6be6de456bf1a78d33.wav",
               "speechText": "well",
               "speechLang": "en-US",
               "games": [
@@ -2547,7 +2659,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w11",
@@ -2557,7 +2670,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/f04fb136d15457a42ff8ff23.wav",
               "speechText": "see a doctor",
               "speechLang": "en-US",
               "games": [
@@ -2568,7 +2681,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w12",
@@ -2578,7 +2692,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/7ae99738c2918aa83603f9a6.wav",
               "speechText": "do more exercise",
               "speechLang": "en-US",
               "games": [
@@ -2589,7 +2703,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2605,7 +2720,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/2147b5abf42d6040f9864a91.wav",
               "speechText": "wear warm clothes",
               "speechLang": "en-US",
               "games": [
@@ -2616,7 +2731,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w14",
@@ -2626,7 +2742,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/9793960e5f6cb973dffd2dcd.wav",
               "speechText": "take a deep breath",
               "speechLang": "en-US",
               "games": [
@@ -2637,7 +2753,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w15",
@@ -2647,7 +2764,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/05a2b80b3e322e1f631b6996.wav",
               "speechText": "count to ten",
               "speechLang": "en-US",
               "games": [
@@ -2658,7 +2775,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w16",
@@ -2668,7 +2786,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/67b8368d6798b5974a995d1e.wav",
               "speechText": "chase",
               "speechLang": "en-US",
               "games": [
@@ -2679,7 +2797,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w17",
@@ -2689,7 +2808,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c8844fba646db375c9f83439.wav",
               "speechText": "mice",
               "speechLang": "en-US",
               "games": [
@@ -2700,7 +2819,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w18",
@@ -2710,7 +2830,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/58325bb7213c18c89a5e0ce0.wav",
               "speechText": "bad",
               "speechLang": "en-US",
               "games": [
@@ -2721,7 +2841,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2737,7 +2858,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/c8cb0ed0f4f88c98b5e6069b.wav",
               "speechText": "hurt",
               "speechLang": "en-US",
               "games": [
@@ -2748,7 +2869,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w20",
@@ -2758,7 +2880,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/97c98a6947490be23ec16aa1.wav",
               "speechText": "wrong",
               "speechLang": "en-US",
               "games": [
@@ -2769,7 +2891,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w23",
@@ -2779,7 +2902,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/04307f6be6de456bf1a78d33.wav",
               "speechText": "well",
               "speechLang": "en-US",
               "games": [
@@ -2790,7 +2913,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "en-book-11-u06-w24",
@@ -2800,7 +2924,7 @@
                 "angry",
                 "afraid"
               ],
-              "audio": null,
+              "audio": "audio/generated/en-US/d1de4f6464fff20e8b770360.wav",
               "speechText": "health",
               "speechLang": "en-US",
               "games": [
@@ -2811,7 +2935,8 @@
               ],
               "source": "guanchunsheng/guanyiyi-english (MIT)",
               "reviewed": false,
-              "lesson": 6
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }

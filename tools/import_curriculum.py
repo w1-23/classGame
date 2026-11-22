@@ -368,7 +368,7 @@ def main():
             *english_manifest,
             pinyin_path,
             *chinese_manifest,
-            "data/古诗-常见篇目朗读.json",
+            "data/poetry-cloze-48-v1.json",
         ]
     }
     write_json(DATA / "manifest.json", manifest)

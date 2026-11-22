@@ -98,6 +98,21 @@ test('formal map has no demo completion control', async ({ page }) => {
   await expect(page.locator('.detail-hint')).toContainText('只有完成关卡');
 });
 
+test('poetry map exposes six regions and all 48 poem levels', async ({ page }) => {
+  await mkdir(screenshots, { recursive: true });
+  await page.setViewportSize({ width: 1366, height: 768 });
+  await openMap(page, 'beat');
+  const state = await mapState(page);
+  expect(state.units).toBe(6);
+  expect(state.levels).toBe(48);
+  await expect(page.locator('.region-tab')).toHaveCount(6);
+  await page.locator('.region-tab').last().click();
+  await expect(page.locator('.region-tab').last()).toHaveClass(/active/);
+  await expect(page.locator('.map-node')).toHaveCount(8);
+  await expect(page.locator('.adventure-heading')).toContainText('诗词填空 · 48首主题探险');
+  await page.screenshot({ path: `${screenshots}/map-poetry-48.png`, fullPage: false });
+});
+
 test('map renders the approved canvas artwork instead of an empty placeholder', async ({ page }) => {
   await openMap(page);
   const canvas = page.locator('.map-art-canvas');

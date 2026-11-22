@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "name": "classGame 森林小精灵素材精选",
+  "createdAt": "2026-11-22",
+  "publisher": "Kenney",
+  "sourcePack": "New Platformer Pack",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "publisherUrl": "https://kenney.nl/assets/new-platformer-pack",
+  "licenseNotice": "../../docs/assets/New-Platformer-Pack-License.txt",
+  "assetPathsRelativeTo": "assets/spirits/manifest.json",
+  "modificationPolicy": "All PNG bytes are unmodified. This manifest and Chinese display names are integration metadata authored for classGame.",
+  "characterCount": 9,
+  "pngCount": 27,
+  "pngBytes": 68263,
+  "characters": [
+    {
+      "id": "slime-purple",
+      "labelZh": "软糖精灵",
+      "idle": "kenney/slime_normal_rest.png",
+      "motionFrames": [
+        "kenney/slime_normal_walk_a.png",
+        "kenney/slime_normal_walk_b.png"
+      ],
+      "sourceMotion": "walk",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "forest",
+        "meadow"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "slime-block",
+      "labelZh": "方块精灵",
+      "idle": "kenney/slime_block_rest.png",
+      "motionFrames": [
+        "kenney/slime_block_walk_a.png",
+        "kenney/slime_block_walk_b.png"
+      ],
+      "sourceMotion": "walk",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "forest",
+        "mountain"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "slime-fire",
+      "labelZh": "小火精灵",
+      "idle": "kenney/slime_fire_rest.png",
+      "motionFrames": [
+        "kenney/slime_fire_walk_a.png",
+        "kenney/slime_fire_walk_b.png"
+      ],
+      "sourceMotion": "walk",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "autumn",
+        "camp"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "frog",
+      "labelZh": "池塘精灵",
+      "idle": "kenney/frog_idle.png",
+      "motionFrames": [
+        "kenney/frog_rest.png",
+        "kenney/frog_jump.png"
+      ],
+      "sourceMotion": "rest/jump",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "river",
+        "wetland"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "bee",
+      "labelZh": "花蜜精灵",
+      "idle": "kenney/bee_rest.png",
+      "motionFrames": [
+        "kenney/bee_a.png",
+        "kenney/bee_b.png"
+      ],
+      "sourceMotion": "fly",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "meadow",
+        "garden"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "ladybug",
+      "labelZh": "红点精灵",
+      "idle": "kenney/ladybug_rest.png",
+      "motionFrames": [
+        "kenney/ladybug_walk_a.png",
+        "kenney/ladybug_walk_b.png"
+      ],
+      "sourceMotion": "walk",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "meadow",
+        "garden"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "snail",
+      "labelZh": "贝壳精灵",
+      "idle": "kenney/snail_rest.png",
+      "motionFrames": [
+        "kenney/snail_walk_a.png",
+        "kenney/snail_walk_b.png"
+      ],
+      "sourceMotion": "walk",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "forest",
+        "wetland"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "mouse",
+      "labelZh": "灰绒精灵",
+      "idle": "kenney/mouse_rest.png",
+      "motionFrames": [
+        "kenney/mouse_walk_a.png",
+        "kenney/mouse_walk_b.png"
+      ],
+      "sourceMotion": "walk",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "forest",
+        "mountain"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    },
+    {
+      "id": "fish-blue",
+      "labelZh": "水泡精灵",
+      "idle": "kenney/fish_blue_rest.png",
+      "motionFrames": [
+        "kenney/fish_blue_swim_a.png",
+        "kenney/fish_blue_swim_b.png"
+      ],
+      "sourceMotion": "swim",
+      "frameSize": {
+        "width": 128,
+        "height": 128
+      },
+      "suggestedAnchor": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "previewFps": 6,
+      "suggestedRevealMs": 900,
+      "suggestedBiomes": [
+        "river",
+        "lake"
+      ],
+      "note": "Chinese name and app usage are integration suggestions. Motion frames are original Kenney poses, not a new author-supplied celebration animation."
+    }
+  ]
+}

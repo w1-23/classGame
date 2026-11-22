@@ -332,70 +332,191 @@ export function createListen(container, pack, audio, finish, session, options = 
   const levelId = options.levelId || 'practice';
   const answers = [];
   const wrongIds = [];
+  const earnedSpirits = [];
   const nextDelay = createPausableDelay();
   let index = 0;
   let score = 0;
   let locked = false;
   let paused = false;
   let finished = false;
+  let audioReady = false;
+  let audioState = 'idle';
+  let playbackRequest = 0;
+
+  const spirits = [
+    { id: 'slime-purple', label: '软糖精灵', idle: 'assets/spirits/kenney/slime_normal_rest.png', frames: ['assets/spirits/kenney/slime_normal_walk_a.png', 'assets/spirits/kenney/slime_normal_walk_b.png'], biomes: ['forest', 'stream', 'river'] },
+    { id: 'slime-block', label: '方块精灵', idle: 'assets/spirits/kenney/slime_block_rest.png', frames: ['assets/spirits/kenney/slime_block_walk_a.png', 'assets/spirits/kenney/slime_block_walk_b.png'], biomes: ['mountain', 'snow'] },
+    { id: 'slime-fire', label: '小火精灵', idle: 'assets/spirits/kenney/slime_fire_rest.png', frames: ['assets/spirits/kenney/slime_fire_walk_a.png', 'assets/spirits/kenney/slime_fire_walk_b.png'], biomes: ['orchard', 'snow'] },
+    { id: 'frog', label: '池塘精灵', idle: 'assets/spirits/kenney/frog_idle.png', frames: ['assets/spirits/kenney/frog_rest.png', 'assets/spirits/kenney/frog_jump.png'], biomes: ['stream', 'river'] },
+    { id: 'bee', label: '花蜜精灵', idle: 'assets/spirits/kenney/bee_rest.png', frames: ['assets/spirits/kenney/bee_a.png', 'assets/spirits/kenney/bee_b.png'], biomes: ['forest', 'orchard'] },
+    { id: 'ladybug', label: '红点精灵', idle: 'assets/spirits/kenney/ladybug_rest.png', frames: ['assets/spirits/kenney/ladybug_walk_a.png', 'assets/spirits/kenney/ladybug_walk_b.png'], biomes: ['orchard', 'forest'] },
+    { id: 'snail', label: '贝壳精灵', idle: 'assets/spirits/kenney/snail_rest.png', frames: ['assets/spirits/kenney/snail_walk_a.png', 'assets/spirits/kenney/snail_walk_b.png'], biomes: ['stream', 'coast'] },
+    { id: 'mouse', label: '灰绒精灵', idle: 'assets/spirits/kenney/mouse_rest.png', frames: ['assets/spirits/kenney/mouse_walk_a.png', 'assets/spirits/kenney/mouse_walk_b.png'], biomes: ['mountain', 'forest'] },
+    { id: 'fish-blue', label: '水泡精灵', idle: 'assets/spirits/kenney/fish_blue_rest.png', frames: ['assets/spirits/kenney/fish_blue_swim_a.png', 'assets/spirits/kenney/fish_blue_swim_b.png'], biomes: ['coast', 'stream'] }
+  ];
+
+  function nextSpirit() {
+    const theme = options.theme || 'forest';
+    const available = spirits.filter(spirit =>
+      !earnedSpirits.includes(spirit.id) && spirit.biomes.includes(theme)
+    );
+    const fallback = spirits.filter(spirit => !earnedSpirits.includes(spirit.id));
+    const pool = available.length ? available : fallback.length ? fallback : spirits;
+    return pool[earnedSpirits.length % pool.length];
+  }
+
+  function partyMarkup() {
+    if (!earnedSpirits.length) return '';
+    return `<div class="spirit-party" aria-label="本局伙伴">
+      ${earnedSpirits.map(id => {
+        const spirit = spirits.find(candidate => candidate.id === id);
+        return `<span title="${spirit.label}"><img src="${spirit.idle}" alt=""><small>${spirit.label}</small></span>`;
+      }).join('')}
+    </div>`;
+  }
 
   function show() {
     if (finished) return;
     const item = items[index];
     locked = false;
+    audioReady = false;
+    audioState = 'idle';
     container.innerHTML = `
       <section class="game-shell listen-shell">
         <div class="game-content listen-content">
           <div class="question-text">听一听，选出正确内容</div>
-          <button id="play" class="flat-primary">播放读音</button>
-          <div class="three-grid"></div>
+          <div class="listen-scene theme-${options.theme || 'forest'}">
+            <div class="spirit-reveal" hidden aria-live="polite">
+              <img src="" alt="">
+              <strong></strong>
+            </div>
+            <button id="play" class="flat-primary" type="button">播放读音</button>
+            <span class="listen-audio-state" id="listen-audio-state">等待播放</span>
+            ${String(item.audioReview || '').includes('pending')
+              ? '<span class="audio-review-tag">试听 · 待教师审核</span>'
+              : ''}
+          </div>
+          <div class="three-grid" aria-label="答案选项"></div>
           <div class="feedback"></div>
+          <div class="spirit-party-slot">${partyMarkup()}</div>
         </div>
       </section>`;
     const grid = container.querySelector('.three-grid');
     const feedback = container.querySelector('.feedback');
     const playButton = container.querySelector('#play');
+    const audioStateLabel = container.querySelector('#listen-audio-state');
+    const spiritReveal = container.querySelector('.spirit-reveal');
+    const partySlot = container.querySelector('.spirit-party-slot');
     updateSession(session, {
       progress: `第 ${index + 1} / ${items.length} 题`,
-      hint: '点击播放，选出听到的内容',
+      hint: '先播放读音，听到后再选择',
       score: `得分 ${score}`
     });
-    playButton.onclick = () => {
-      if (!paused) audio.speech(item.audio, item.speechText, item.speechLang);
-    };
-    optionList(item).forEach(value => {
+
+    const optionButtons = [...(item.options || optionList(item))].map(value => {
       const button = document.createElement('button');
       button.className = 'large-option';
       button.textContent = value;
       button.dataset.value = value;
+      button.disabled = true;
       button.onclick = () => {
-        if (locked || paused) return;
+        if (locked || paused || !audioReady) return;
         locked = true;
         const correct = value === item.correct;
         if (correct) {
           score += 1;
           audio.effect('correct');
+          const spirit = nextSpirit();
+          earnedSpirits.push(spirit.id);
+          partySlot.innerHTML = partyMarkup();
+          spiritReveal.hidden = false;
+          spiritReveal.querySelector('img').src = spirit.frames[0];
+          spiritReveal.querySelector('strong').textContent = spirit.label;
+          let frame = 0;
+          const animation = setInterval(() => {
+            if (!paused) {
+              frame = (frame + 1) % spirit.frames.length;
+              spiritReveal.querySelector('img').src = spirit.frames[frame];
+            }
+          }, 220);
+          setTimeout(() => clearInterval(animation), 1050);
+          feedback.textContent = `答对了！发现了${spirit.label}。`;
         } else {
           wrongIds.push(item.id);
           audio.effect('wrong');
+          feedback.textContent = `需要复习：正确答案是「${item.correct}」`;
         }
         feedback.className = `feedback ${correct ? 'correct' : 'wrong'}`;
-        feedback.textContent = correct ? '答对了！进入下一题…' : `需要复习：正确答案是「${item.correct}」`;
-        grid.querySelectorAll('button').forEach(option => { option.disabled = true; });
+        optionButtons.forEach(option => { option.disabled = true; });
         playButton.disabled = true;
         answers.push({ itemId: item.id, prompt: item.prompt, selected: value, correct: item.correct });
         nextDelay.schedule(() => {
           index += 1;
           if (index < items.length) show();
           else complete();
-        }, 780);
+        }, correct ? 1080 : 820);
       };
       grid.appendChild(button);
+      return button;
     });
+
+    function setAudioState(nextState, message) {
+      audioState = nextState;
+      audioStateLabel.dataset.state = nextState;
+      audioStateLabel.textContent = message;
+      playButton.dataset.state = nextState;
+    }
+
+    playButton.onclick = async () => {
+      if (paused || locked) return;
+      const request = ++playbackRequest;
+      playButton.disabled = true;
+      optionButtons.forEach(button => { button.disabled = true; });
+      setAudioState('preparing', '正在准备读音…');
+      const result = await audio.speech(
+        item.audio,
+        item.speechText,
+        item.speechLang,
+        status => {
+          if (request !== playbackRequest || finished || paused) return;
+          if (status.status === 'preparing') setAudioState('preparing', '正在准备读音…');
+          if (status.status === 'playing') setAudioState('playing', '正在播放…');
+          if (status.status === 'ended') setAudioState('ended', '已播放，可以选择答案');
+          if (status.status === 'failed') setAudioState('failed', '读音播放失败，请重试');
+        }
+      );
+      if (request !== playbackRequest || finished || paused) return;
+      if (result?.status === 'ended') {
+        audioReady = true;
+        playButton.disabled = false;
+        playButton.textContent = '再听一次';
+        optionButtons.forEach(button => { button.disabled = false; });
+        feedback.className = 'feedback';
+        feedback.textContent = '听清楚后，选择你听到的内容。';
+      } else {
+        audioReady = false;
+        playButton.disabled = false;
+        setAudioState('failed', '没有播放成功，不计错，请重试');
+        feedback.className = 'feedback wrong';
+        feedback.textContent = result?.reason === 'voice-missing'
+          ? '没有可用的中文/英语声线，请检查安装或本地音频。'
+          : '读音没有播放成功，答案暂不可选，请重试。';
+      }
+    };
     window.__learningGameDebug = {
       ...(window.__learningGameDebug || {}),
       listen: {
-        state: () => ({ index, score, locked, paused, prompt: item.prompt, correct: item.correct }),
+        state: () => ({
+          index,
+          score,
+          locked,
+          paused,
+          prompt: item.prompt,
+          correct: item.correct,
+          audioState,
+          audioReady,
+          earnedSpirits: [...earnedSpirits]
+        }),
         choose: value => grid.querySelector(`[data-value="${value}"]`)?.click(),
         play: () => playButton.click()
       }
@@ -411,6 +532,7 @@ export function createListen(container, pack, audio, finish, session, options = 
       game: '听音找精灵',
       score,
       answers,
+      extraHtml: partyMarkup(),
       showNext: Boolean(session?.nextLevelId)
     }));
   }
@@ -419,18 +541,30 @@ export function createListen(container, pack, audio, finish, session, options = 
   return {
     destroy() {
       finished = true;
+      playbackRequest += 1;
       nextDelay.cancel();
       audio.stopSpeech();
       if (window.__learningGameDebug?.listen) delete window.__learningGameDebug.listen;
     },
     pause() {
       paused = true;
+      playbackRequest += 1;
       nextDelay.pause();
       audio.stopSpeech();
+      container.classList.add('spirit-paused');
     },
     resume() {
       paused = false;
       nextDelay.resume();
+      container.classList.remove('spirit-paused');
+      const debug = window.__learningGameDebug?.listen;
+      if (debug) {
+        const state = debug.state();
+        if (!state.audioReady) {
+          const playButton = container.querySelector('#play');
+          if (playButton) playButton.disabled = false;
+        }
+      }
     }
   };
 }
@@ -602,16 +736,16 @@ export function createAssemble(container, pack, audio, finish, session, options 
 }
 
 export function createMemory(container, pack, audio, finish, session, options = {}) {
-  const items = options.items || [...pack.items].slice(0, 6);
   const levelId = options.levelId || 'practice';
-  const cards = shuffle(items.flatMap(item => [
-    { key: item.id, text: item.prompt, pair: item.correct },
-    { key: item.id, text: item.correct, pair: item.prompt }
-  ]));
+  const plan = options.memoryPlan;
+  if (!plan?.waves?.length) throw new Error('记忆翻牌缺少本局分波计划。');
+  const totalPairs = plan.pairCount;
   const flipDelay = createPausableDelay();
   const answers = [];
   const mistakeIds = new Set();
   let opened = [];
+  let waveIndex = 0;
+  let waveMatched = 0;
   let matched = 0;
   let attempts = 0;
   let locked = false;
@@ -621,39 +755,37 @@ export function createMemory(container, pack, audio, finish, session, options = 
   container.innerHTML = `
     <section class="game-shell">
       <div class="game-content memory-content">
+        <div class="memory-wave-label"></div>
         <div class="memory-grid"></div>
         <div class="feedback">先翻两张牌，找出“字词”和“拼音/英文”的配对。</div>
       </div>
     </section>`;
   const grid = container.querySelector('.memory-grid');
   const feedback = container.querySelector('.feedback');
-  updateSession(session, {
-    progress: `已配 ${matched}/${items.length}`,
-    hint: '翻出成对的字词与拼音/英文',
-    score: `尝试 ${attempts} 次`
-  });
+  const waveLabel = container.querySelector('.memory-wave-label');
 
   function finishRound() {
     if (finished) return;
     finished = true;
-    const mistakes = Math.max(0, attempts - items.length);
+    const mistakes = Math.max(0, attempts - totalPairs);
     recordResult({
       game: 'memory',
       packId: pack.id,
       levelId,
-      score: items.length,
-      total: Math.max(attempts, items.length),
+      score: totalPairs,
+      total: Math.max(attempts, totalPairs),
       attempts,
       wrongIds: [...mistakeIds]
     });
-    audio.effect(completionSound(items.length, items.length));
+    audio.effect(completionSound(totalPairs, totalPairs));
     finish(resultView({
       game: '记忆翻牌配对',
-      score: items.length,
+      score: totalPairs,
       answers,
-      ratio: items.length / Math.max(attempts, items.length),
+      ratio: totalPairs / Math.max(attempts, totalPairs),
       statPills: [
-        `完成 ${items.length} 对`,
+        `完成 ${totalPairs} 对`,
+        `共 ${plan.waveCount} 波`,
         `尝试 ${attempts} 次`,
         `错配 ${mistakes} 次`
       ],
@@ -661,72 +793,105 @@ export function createMemory(container, pack, audio, finish, session, options = 
     }));
   }
 
-  cards.forEach((card, cardIndex) => {
-    const button = document.createElement('button');
-    button.className = 'memory-card';
-    button.textContent = '?';
-    button.dataset.index = String(cardIndex);
-    button.dataset.key = card.key;
-    button.dataset.text = card.text;
-    button.onclick = () => {
-      if (paused || locked || opened.some(entry => entry.button === button) || button.classList.contains('matched')) return;
-      button.textContent = card.text;
-      button.classList.add('flipped');
-      opened.push({ ...card, button });
-      if (opened.length !== 2) return;
+  function updateMemorySession() {
+    updateSession(session, {
+      progress: `已配 ${matched}/${totalPairs} 对 · 第 ${waveIndex + 1}/${plan.waveCount} 波`,
+      hint: '翻出成对的字词与拼音或英文',
+      score: `尝试 ${attempts} 次`
+    });
+  }
 
-      attempts += 1;
-      const [first, second] = opened;
-      if (first.key === second.key && first.text !== second.text) {
-        matched += 1;
-        first.button.classList.add('matched');
-        second.button.classList.add('matched');
-        audio.effect('correct');
-        feedback.className = 'feedback correct';
-        feedback.textContent = `配对成功！还剩 ${items.length - matched} 对。`;
-        answers.push({ prompt: first.text, selected: second.text, correct: second.text });
-        opened = [];
-        updateSession(session, {
-          progress: `已配 ${matched}/${items.length}`,
-          score: `尝试 ${attempts} 次`
-        });
-        if (matched === items.length) finishRound();
-      } else {
-        locked = true;
-        mistakeIds.add(first.key);
-        mistakeIds.add(second.key);
-        audio.effect('wrong');
-        const current = opened;
-        opened = [];
-        feedback.className = 'feedback wrong';
-        feedback.textContent = '不是一对，记住位置，稍后再试。';
-        flipDelay.schedule(() => {
-          current.forEach(entry => {
-            entry.button.textContent = '?';
-            entry.button.classList.remove('flipped');
-          });
-          locked = false;
-        }, 760);
-        updateSession(session, {
-          progress: `已配 ${matched}/${items.length}`,
-          score: `尝试 ${attempts} 次`
-        });
-      }
-    };
-    grid.appendChild(button);
-  });
+  function renderWave() {
+    const wave = plan.waves[waveIndex];
+    if (!wave) {
+      finishRound();
+      return;
+    }
+    opened = [];
+    waveMatched = 0;
+    locked = false;
+    grid.innerHTML = '';
+    waveLabel.textContent = `第 ${waveIndex + 1} / ${plan.waveCount} 波 · ${wave.pairCount} 对`;
+    feedback.className = 'feedback';
+    feedback.textContent = wave.pairCount < totalPairs
+      ? '这一波配对完成后，会继续下一波。'
+      : '先翻两张牌，找出字词与拼音或英文的配对。';
+    wave.cards.forEach((card, cardIndex) => {
+      const button = document.createElement('button');
+      button.className = 'memory-card';
+      button.textContent = '?';
+      button.dataset.index = String(cardIndex);
+      button.dataset.key = card.pairKey;
+      button.dataset.side = card.side;
+      button.dataset.text = card.text;
+      button.onclick = () => {
+        if (paused || locked || opened.some(entry => entry.button === button) || button.classList.contains('matched')) return;
+        button.textContent = card.text;
+        button.classList.add('flipped');
+        opened.push({ ...card, button });
+        if (opened.length !== 2) return;
+
+        attempts += 1;
+        const [first, second] = opened;
+        if (first.pairKey === second.pairKey && first.side !== second.side) {
+          matched += 1;
+          waveMatched += 1;
+          first.button.classList.add('matched');
+          second.button.classList.add('matched');
+          audio.effect('correct');
+          feedback.className = 'feedback correct';
+          feedback.textContent = `配对成功！还剩 ${totalPairs - matched} 对。`;
+          answers.push({ prompt: first.text, selected: second.text, correct: second.text });
+          opened = [];
+          updateMemorySession();
+          if (waveMatched === wave.pairCount) {
+            locked = true;
+            flipDelay.schedule(() => {
+              waveIndex += 1;
+              renderWave();
+            }, 520);
+          }
+        } else {
+          locked = true;
+          mistakeIds.add(first.pairKey);
+          mistakeIds.add(second.pairKey);
+          audio.effect('wrong');
+          const current = opened;
+          opened = [];
+          feedback.className = 'feedback wrong';
+          feedback.textContent = '不是一对，记住位置，稍后再试。';
+          flipDelay.schedule(() => {
+            current.forEach(entry => {
+              entry.button.textContent = '?';
+              entry.button.classList.remove('flipped');
+            });
+            locked = false;
+          }, 760);
+          updateMemorySession();
+        }
+      };
+      grid.appendChild(button);
+    });
+    updateMemorySession();
+  }
+
+  renderWave();
 
   window.__learningGameDebug = {
     ...(window.__learningGameDebug || {}),
     memory: {
       state: () => ({
         matched,
+        waveIndex,
+        waveCount: plan.waveCount,
+        waveMatched,
         attempts,
-        mistakes: Math.max(0, attempts - items.length),
+        mistakes: Math.max(0, attempts - totalPairs),
         locked,
         paused,
         cards: [...grid.children].map(child => ({
           key: child.dataset.key,
+          side: child.dataset.side,
           text: child.dataset.text,
           shown: child.classList.contains('flipped') || child.classList.contains('matched'),
           matched: child.classList.contains('matched')
@@ -915,7 +1080,7 @@ export function createBattle(container, pack, audio, finish, session, options = 
       <div class="game-content battle-content">
         <div class="battle-arena">
           <div class="team team-blue active" id="team0"><img src="assets/kenney/platformer/flag_blue_b.png" alt=""><strong>蓝队</strong><span class="team-score" id="team-score0">0</span><div class="energy"><span></span></div></div>
-          <div class="team team-amber" id="team1"><img src="assets/kenney/platformer/flag_yellow_a.png" alt=""><strong>琥珀队</strong><span class="team-score" id="team-score1">0</span><div class="energy"><span></span></div></div>
+          <div class="team team-amber" id="team1"><img src="assets/kenney/platformer/flag_yellow_a.png" alt=""><strong>黄队</strong><span class="team-score" id="team-score1">0</span><div class="energy"><span></span></div></div>
         </div>
         <div class="question-text" id="prompt"></div>
         <div class="option-grid"></div>
@@ -933,8 +1098,9 @@ export function createBattle(container, pack, audio, finish, session, options = 
     container.querySelector('#team1').classList.toggle('active', turn === 1);
     container.querySelector('#team-score0').textContent = String(score[0]);
     container.querySelector('#team-score1').textContent = String(score[1]);
-    container.querySelector('#team0 .energy span').style.width = `${score[0] / Math.max(items.length, 1) * 100}%`;
-    container.querySelector('#team1 .energy span').style.width = `${score[1] / Math.max(items.length, 1) * 100}%`;
+    const teamTotal = Math.max(1, Math.ceil(items.length / 2));
+    container.querySelector('#team0 .energy span').style.width = `${score[0] / teamTotal * 100}%`;
+    container.querySelector('#team1 .energy span').style.width = `${score[1] / teamTotal * 100}%`;
   }
 
   function show() {
@@ -952,9 +1118,9 @@ export function createBattle(container, pack, audio, finish, session, options = 
     updateSession(session, {
       progress: `第 ${index + 1} / ${items.length} 题 · 第 ${turn + 1} 组`,
       hint: '两组轮流答题，老师确认后计分',
-      score: `蓝 ${score[0]} : ${score[1]} 琥珀`
+      score: `蓝 ${score[0]} : ${score[1]} 黄`
     });
-    optionList(item).forEach(value => {
+    (item.options || optionList(item)).forEach(value => {
       const button = document.createElement('button');
       button.className = 'large-option';
       button.textContent = value;
@@ -1006,7 +1172,7 @@ export function createBattle(container, pack, audio, finish, session, options = 
     wrongButton.disabled = true;
     updateTeams();
     updateSession(session, {
-      score: `蓝 ${score[0]} : ${score[1]} 琥珀`,
+      score: `蓝 ${score[0]} : ${score[1]} 黄`,
       progress: `第 ${index + 1} / ${items.length} 题 · 老师已判定`
     });
     advanceDelay.schedule(() => {
@@ -1035,7 +1201,7 @@ export function createBattle(container, pack, audio, finish, session, options = 
       answers,
       statPills: [
         `蓝队 ${score[0]} 分`,
-        `琥珀队 ${score[1]} 分`,
+        `黄队 ${score[1]} 分`,
         `全班得分 ${score[0] + score[1]} / ${items.length}`
       ],
       showNext: Boolean(session?.nextLevelId)

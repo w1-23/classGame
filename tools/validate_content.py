@@ -31,6 +31,8 @@ total_items = 0
 english_items = 0
 pinyin_items = 0
 english_books = 0
+poetry_levels = 0
+poetry_variants = 0
 
 for relative_path in pack_paths:
     pack_path = ROOT / relative_path
@@ -43,6 +45,11 @@ for relative_path in pack_paths:
     check(bool(pack.get("subject")), f"{relative_path}: missing subject")
     if pack.get("subject") == "英语":
         english_books += 1
+    poetry_pack = any(
+        lesson.get("questionPool")
+        for unit in pack.get("units", [])
+        for lesson in unit.get("lessons", [])
+    )
 
     seen_pairs = {}
     local_count = 0
@@ -80,8 +87,51 @@ for relative_path in pack_paths:
                 f"{item_id}: pinyin mismatch {generated} != {item['correct']}",
             )
 
-    check(local_count > 0 or pack.get("poems"), f"{relative_path}: no items")
+    check(local_count > 0 or pack.get("poems") or poetry_pack, f"{relative_path}: no items")
+    if poetry_pack:
+        for unit in pack.get("units", []):
+            for lesson in unit.get("lessons", []):
+                poetry_levels += 1
+                pool = lesson.get("questionPool", [])
+                poetry_variants += len(pool)
+                check(
+                    lesson.get("samplingPolicy") == "one_variant_per_group_then_shuffle",
+                    f"{lesson.get('id')}: unsupported poetry sampling policy",
+                )
+                check(
+                    isinstance(lesson.get("questionsPerRun"), int) and lesson["questionsPerRun"] > 0,
+                    f"{lesson.get('id')}: invalid questionsPerRun",
+                )
+                groups = {}
+                seen_pool_ids = set()
+                for question in pool:
+                    question_id = question.get("id", "")
+                    check(question_id not in seen_pool_ids, f"{lesson.get('id')}: duplicate pool id {question_id}")
+                    seen_pool_ids.add(question_id)
+                    groups.setdefault(question.get("variantGroupId", ""), []).append(question)
+                    line_index = question.get("line")
+                    source_poem = next(
+                        (poem for poem in pack.get("poems", []) if poem.get("id") == question.get("poemId")),
+                        None,
+                    )
+                    check(source_poem is not None, f"{question_id}: unknown poem")
+                    if source_poem and isinstance(line_index, int) and 0 <= line_index < len(source_poem.get("lines", [])):
+                        reconstructed = f"{question.get('before', '')}{question.get('answer', '')}{question.get('after', '')}"
+                        check(
+                            reconstructed == source_poem["lines"][line_index],
+                            f"{question_id}: cloze does not reconstruct its source line",
+                        )
+                    options = [question.get("answer"), *question.get("distractors", [])]
+                    check(len(question.get("distractors", [])) >= 2, f"{question_id}: fewer than two distractors")
+                    check(len(options) == len(set(options)), f"{question_id}: duplicate options")
+                check(
+                    len(groups) == lesson.get("questionsPerRun"),
+                    f"{lesson.get('id')}: variant groups must equal questionsPerRun",
+                )
     for poem in pack.get("poems", []):
+        if poetry_pack:
+            check(len(poem.get("lines", [])) >= 2, f"{poem['id']}: poem lines incomplete")
+            continue
         check((ROOT / poem["audio"]).exists(), f"{poem['id']}: missing audio {poem['audio']}")
         check(poem.get("reviewed") is True, f"{poem['id']}: not reviewed")
         check(len(poem.get("lines", [])) >= 2, f"{poem['id']}: poem lines incomplete")
@@ -129,6 +179,8 @@ chinese_items = sum(
     for _, _item in lesson_items(pack)
 )
 check(chinese_items >= 3000, f"Chinese character/word corpus is incomplete: {chinese_items} < 3000")
+check(poetry_levels == 48, f"poetry levels incomplete: {poetry_levels} != 48")
+check(poetry_variants == 384, f"poetry variants incomplete: {poetry_variants} != 384")
 
 for required in [
     "vendor/phaser/phaser.min.js",
@@ -150,6 +202,11 @@ for required in [
     "assets/kenney/licenses/Particle-Pack-License.txt",
     "assets/kenney/licenses/Interface-Sounds-License.txt",
     "assets/kenney/licenses/Music-Jingles-License.txt",
+    "assets/spirits/New-Platformer-Pack-License.txt",
+    "assets/spirits/manifest.json",
+    "assets/spirits/kenney/slime_normal_rest.png",
+    "assets/spirits/kenney/slime_normal_walk_a.png",
+    "assets/spirits/kenney/slime_normal_walk_b.png",
     "docs/licenses/guanchunsheng-english-MIT.txt",
     "docs/licenses/xuepinyin-MIT.txt",
     "docs/licenses/dictation-robot-MIT.txt",
@@ -177,3 +234,5 @@ print(f"Pinyin items: {pinyin_items}")
 print(f"Chinese books: {len(chinese_books)}")
 print(f"Chinese items: {chinese_items}")
 print(f"Total items: {total_items}")
+print(f"Poetry levels: {poetry_levels}")
+print(f"Poetry variants: {poetry_variants}")

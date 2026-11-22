@@ -30,7 +30,7 @@
                 "jiù",
                 "nǎ"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1bdd278eeae93eaf902f2903.wav",
               "speechText": "两",
               "speechLang": "zh-CN",
               "games": [
@@ -41,7 +41,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g01-02",
@@ -51,7 +52,7 @@
                 "liǎng",
                 "nǎ"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ef2049e7ef7bee4a27b8d03e.wav",
               "speechText": "就",
               "speechLang": "zh-CN",
               "games": [
@@ -62,7 +63,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g01-03",
@@ -72,7 +74,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/34a8bb3c0b2b32ff686ba51d.wav",
               "speechText": "哪",
               "speechLang": "zh-CN",
               "games": [
@@ -83,7 +85,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g01-04",
@@ -93,7 +96,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/236e9dac24433370db67d5e0.wav",
               "speechText": "宽",
               "speechLang": "zh-CN",
               "games": [
@@ -104,7 +107,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g01-05",
@@ -114,7 +118,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/14e9d62306ebec2c078803cb.wav",
               "speechText": "顶",
               "speechLang": "zh-CN",
               "games": [
@@ -125,7 +129,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g01-06",
@@ -135,7 +140,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a9919f390eae71a10421fb01.wav",
               "speechText": "眼",
               "speechLang": "zh-CN",
               "games": [
@@ -146,7 +151,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g01-07",
@@ -156,7 +162,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/cc0e19c8e63a2b331c2d9932.wav",
               "speechText": "睛",
               "speechLang": "zh-CN",
               "games": [
@@ -167,7 +173,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g01-08",
@@ -177,7 +184,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c4ce660a7888b65ed559d9e4.wav",
               "speechText": "肚",
               "speechLang": "zh-CN",
               "games": [
@@ -188,7 +195,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -204,7 +212,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/8e4799980779f308e9ce3cdd.wav",
               "speechText": "皮",
               "speechLang": "zh-CN",
               "games": [
@@ -215,7 +223,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g02-02",
@@ -225,7 +234,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6b425a6d0873cd114b920f09.wav",
               "speechText": "孩",
               "speechLang": "zh-CN",
               "games": [
@@ -236,7 +245,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l01-g02-03",
@@ -246,7 +256,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f02c256c78db59fa4cf456c8.wav",
               "speechText": "跳",
               "speechLang": "zh-CN",
               "games": [
@@ -257,7 +267,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -273,7 +284,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/0f3e6d7e0462cba25699c61a.wav",
               "speechText": "变",
               "speechLang": "zh-CN",
               "games": [
@@ -284,7 +295,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g01-02",
@@ -294,7 +306,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/19f3e382dce269391c8907e6.wav",
               "speechText": "极",
               "speechLang": "zh-CN",
               "games": [
@@ -305,7 +317,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g01-03",
@@ -315,7 +328,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f3d732f16a10f46d6cc84919.wav",
               "speechText": "片",
               "speechLang": "zh-CN",
               "games": [
@@ -326,7 +339,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g01-04",
@@ -336,7 +350,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e468d60ecd3a610f4e029bc7.wav",
               "speechText": "傍",
               "speechLang": "zh-CN",
               "games": [
@@ -347,7 +361,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g01-05",
@@ -357,7 +372,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7ec883d3fdbf5a6d4dbc7e7b.wav",
               "speechText": "海",
               "speechLang": "zh-CN",
               "games": [
@@ -368,7 +383,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g01-06",
@@ -378,7 +394,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/322980905eb36b5a24615ba7.wav",
               "speechText": "洋",
               "speechLang": "zh-CN",
               "games": [
@@ -389,7 +405,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g01-07",
@@ -399,7 +416,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/565cc5dd503bc71bd69417c5.wav",
               "speechText": "作",
               "speechLang": "zh-CN",
               "games": [
@@ -410,7 +427,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g01-08",
@@ -420,7 +438,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/05e8209e6abc9ff152c1ad29.wav",
               "speechText": "坏",
               "speechLang": "zh-CN",
               "games": [
@@ -431,7 +449,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -447,7 +466,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1a62a2ae7ef26c9d3450e9ba.wav",
               "speechText": "给",
               "speechLang": "zh-CN",
               "games": [
@@ -458,7 +477,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l02-g02-02",
@@ -468,7 +488,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/98d2d1329e00a3761a7a84d4.wav",
               "speechText": "带",
               "speechLang": "zh-CN",
               "games": [
@@ -479,7 +499,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -495,7 +516,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/258adbee9a147e20f96f3f7c.wav",
               "speechText": "法",
               "speechLang": "zh-CN",
               "games": [
@@ -506,7 +527,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g01-02",
@@ -516,7 +538,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ae0191a5adbf1a28fa895391.wav",
               "speechText": "如",
               "speechLang": "zh-CN",
               "games": [
@@ -527,7 +549,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g01-03",
@@ -537,7 +560,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/86bdaf02cc6f1b52349f49c1.wav",
               "speechText": "脚",
               "speechLang": "zh-CN",
               "games": [
@@ -548,7 +571,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g01-04",
@@ -558,7 +582,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2949dcd8e662d94048b137c7.wav",
               "speechText": "它",
               "speechLang": "zh-CN",
               "games": [
@@ -569,7 +593,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g01-05",
@@ -579,7 +604,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/289afe4b9d465cd9a847e57a.wav",
               "speechText": "娃",
               "speechLang": "zh-CN",
               "games": [
@@ -590,7 +615,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g01-06",
@@ -600,7 +626,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d4ad5416b5fad64a3ec6b15f.wav",
               "speechText": "她",
               "speechLang": "zh-CN",
               "games": [
@@ -611,7 +637,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g01-07",
@@ -621,7 +648,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/41666c08f34cfe428057fe52.wav",
               "speechText": "毛",
               "speechLang": "zh-CN",
               "games": [
@@ -632,7 +659,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g01-08",
@@ -642,7 +670,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/17eb2e30283a2808ff52e406.wav",
               "speechText": "更",
               "speechLang": "zh-CN",
               "games": [
@@ -653,7 +681,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -669,7 +698,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/72cffce2894ae7a79707ee97.wav",
               "speechText": "知",
               "speechLang": "zh-CN",
               "games": [
@@ -680,7 +709,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u01-l03-g02-02",
@@ -690,7 +720,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/edd86c8620d98aca8307f553.wav",
               "speechText": "识",
               "speechLang": "zh-CN",
               "games": [
@@ -701,7 +731,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -724,7 +755,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2322052de9a0b592322a6d46.wav",
               "speechText": "处",
               "speechLang": "zh-CN",
               "games": [
@@ -735,7 +766,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g01-02",
@@ -745,7 +777,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b73f8806fafe848e7312bcdd.wav",
               "speechText": "园",
               "speechLang": "zh-CN",
               "games": [
@@ -756,7 +788,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g01-03",
@@ -766,7 +799,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/cc5c22cdf781b9010b2e529e.wav",
               "speechText": "桥",
               "speechLang": "zh-CN",
               "games": [
@@ -777,7 +810,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g01-04",
@@ -787,7 +821,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/caa8c07b87a4e6415bcbf15a.wav",
               "speechText": "群",
               "speechLang": "zh-CN",
               "games": [
@@ -798,7 +832,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g01-05",
@@ -808,7 +843,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c598ed154d88d9e92aa348e0.wav",
               "speechText": "队",
               "speechLang": "zh-CN",
               "games": [
@@ -819,7 +854,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g01-06",
@@ -829,7 +865,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/aa7b6167b764b0563f991e81.wav",
               "speechText": "旗",
               "speechLang": "zh-CN",
               "games": [
@@ -840,7 +876,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g01-07",
@@ -850,7 +887,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/bfe3dfd095452ec5eb050ede.wav",
               "speechText": "铜",
               "speechLang": "zh-CN",
               "games": [
@@ -861,7 +898,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g01-08",
@@ -871,7 +909,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c52840a3c93fa74e6a4d1429.wav",
               "speechText": "号",
               "speechLang": "zh-CN",
               "games": [
@@ -882,7 +920,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -898,7 +937,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/4b75ff89fa609f966b1cd645.wav",
               "speechText": "领",
               "speechLang": "zh-CN",
               "games": [
@@ -909,7 +948,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l01-g02-02",
@@ -919,7 +959,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6efed76bc2d90f6cca160483.wav",
               "speechText": "巾",
               "speechLang": "zh-CN",
               "games": [
@@ -930,7 +970,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -946,7 +987,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2561a661c004ecba7a317c76.wav",
               "speechText": "杨",
               "speechLang": "zh-CN",
               "games": [
@@ -957,7 +998,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g01-02",
@@ -967,7 +1009,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/95ceee2b25aa8a25bb4b3603.wav",
               "speechText": "壮",
               "speechLang": "zh-CN",
               "games": [
@@ -978,7 +1020,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g01-03",
@@ -988,7 +1031,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/03009780b3d64d613c590c57.wav",
               "speechText": "桐",
               "speechLang": "zh-CN",
               "games": [
@@ -999,7 +1042,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g01-04",
@@ -1009,7 +1053,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/89bba958dd9acdc8ce6cfc73.wav",
               "speechText": "枫",
               "speechLang": "zh-CN",
               "games": [
@@ -1020,7 +1064,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g01-05",
@@ -1030,7 +1075,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9997165be49999a244bc0a72.wav",
               "speechText": "松",
               "speechLang": "zh-CN",
               "games": [
@@ -1041,7 +1086,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g01-06",
@@ -1051,7 +1097,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e210e01e4caf1c65e0d385b9.wav",
               "speechText": "柏",
               "speechLang": "zh-CN",
               "games": [
@@ -1062,7 +1108,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g01-07",
@@ -1072,7 +1119,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6b0ee0fe83ae8a7cdde4437b.wav",
               "speechText": "棉",
               "speechLang": "zh-CN",
               "games": [
@@ -1083,7 +1130,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g01-08",
@@ -1093,7 +1141,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d96f7b50a14d7f819802872f.wav",
               "speechText": "杉",
               "speechLang": "zh-CN",
               "games": [
@@ -1104,7 +1152,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1120,7 +1169,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2ddd214de03b7bb8bda8c006.wav",
               "speechText": "化",
               "speechLang": "zh-CN",
               "games": [
@@ -1131,7 +1180,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l02-g02-02",
@@ -1141,7 +1191,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6072b6d74a40fc81586114bb.wav",
               "speechText": "桂",
               "speechLang": "zh-CN",
               "games": [
@@ -1152,7 +1202,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1168,7 +1219,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/0a0e7765ca9834ed9c402aad.wav",
               "speechText": "歌",
               "speechLang": "zh-CN",
               "games": [
@@ -1179,7 +1230,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g01-02",
@@ -1189,7 +1241,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/61b3d7721036396255b1502a.wav",
               "speechText": "丛",
               "speechLang": "zh-CN",
               "games": [
@@ -1200,7 +1252,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g01-03",
@@ -1210,7 +1263,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/02e75957d90de2565c2859f2.wav",
               "speechText": "深",
               "speechLang": "zh-CN",
               "games": [
@@ -1221,7 +1274,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g01-04",
@@ -1231,7 +1285,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2322052de9a0b592322a6d46.wav",
               "speechText": "处",
               "speechLang": "zh-CN",
               "games": [
@@ -1242,7 +1296,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g01-05",
@@ -1252,7 +1307,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d17a04eb0206d71e00727c82.wav",
               "speechText": "六",
               "speechLang": "zh-CN",
               "games": [
@@ -1263,7 +1318,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g01-06",
@@ -1273,7 +1329,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e45b5bd591154885e9dd93b5.wav",
               "speechText": "熊",
               "speechLang": "zh-CN",
               "games": [
@@ -1284,7 +1340,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g01-07",
@@ -1294,7 +1351,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/09f23698e53ae67ad84c71b6.wav",
               "speechText": "猫",
               "speechLang": "zh-CN",
               "games": [
@@ -1305,7 +1362,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g01-08",
@@ -1315,7 +1373,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/25229b2e18c37f3afdc3d23d.wav",
               "speechText": "九",
               "speechLang": "zh-CN",
               "games": [
@@ -1326,7 +1384,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1342,7 +1401,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/497382f5c26ed71e7ada8239.wav",
               "speechText": "朋",
               "speechLang": "zh-CN",
               "games": [
@@ -1353,7 +1412,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l03-g02-02",
@@ -1363,7 +1423,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f90f09fbaf4586c746ad732a.wav",
               "speechText": "友",
               "speechLang": "zh-CN",
               "games": [
@@ -1374,7 +1434,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1390,7 +1451,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9eb30a3cfdc0a319b92b7d49.wav",
               "speechText": "季",
               "speechLang": "zh-CN",
               "games": [
@@ -1401,7 +1462,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l04-g01-02",
@@ -1411,7 +1473,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6deb2d7bf1d3b5a2abd5fd27.wav",
               "speechText": "吹",
               "speechLang": "zh-CN",
               "games": [
@@ -1422,7 +1484,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l04-g01-03",
@@ -1432,7 +1495,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/0522fb278716b18330a1073f.wav",
               "speechText": "肥",
               "speechLang": "zh-CN",
               "games": [
@@ -1443,7 +1506,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l04-g01-04",
@@ -1453,7 +1517,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f92fa1d0360a6524b04f6334.wav",
               "speechText": "农",
               "speechLang": "zh-CN",
               "games": [
@@ -1464,7 +1528,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l04-g01-05",
@@ -1474,7 +1539,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1776f23fc138a299cc070b6a.wav",
               "speechText": "事",
               "speechLang": "zh-CN",
               "games": [
@@ -1485,7 +1550,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l04-g01-06",
@@ -1495,7 +1561,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a8c003ca756df5d07b356105.wav",
               "speechText": "忙",
               "speechLang": "zh-CN",
               "games": [
@@ -1506,7 +1572,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l04-g01-07",
@@ -1516,7 +1583,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1f946f9c9f1cf11fdb41c482.wav",
               "speechText": "归",
               "speechLang": "zh-CN",
               "games": [
@@ -1527,7 +1594,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u02-l04-g01-08",
@@ -1537,7 +1605,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6116223388a0301400d0bc8e.wav",
               "speechText": "戴",
               "speechLang": "zh-CN",
               "games": [
@@ -1548,7 +1616,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -1571,7 +1640,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e23947fca0465300bd16a390.wav",
               "speechText": "称",
               "speechLang": "zh-CN",
               "games": [
@@ -1582,7 +1651,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l01-g01-02",
@@ -1592,7 +1662,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a28be7a4d8ae2144f30cdc34.wav",
               "speechText": "柱",
               "speechLang": "zh-CN",
               "games": [
@@ -1603,7 +1673,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l01-g01-03",
@@ -1613,7 +1684,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e54c49e0e5b0018a18d61f81.wav",
               "speechText": "底",
               "speechLang": "zh-CN",
               "games": [
@@ -1624,7 +1695,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l01-g01-04",
@@ -1634,7 +1706,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/30d8db21cab286ac790bd03b.wav",
               "speechText": "杆",
               "speechLang": "zh-CN",
               "games": [
@@ -1645,7 +1717,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l01-g01-05",
@@ -1655,7 +1728,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7e1763e7ad236baaacdf6a1d.wav",
               "speechText": "秤",
               "speechLang": "zh-CN",
               "games": [
@@ -1666,7 +1739,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l01-g01-06",
@@ -1676,7 +1750,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/5aa56d55beb01212e2ce7276.wav",
               "speechText": "岁",
               "speechLang": "zh-CN",
               "games": [
@@ -1687,7 +1761,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l01-g01-07",
@@ -1697,7 +1772,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/5fca6b65bcfe6ddb67668c89.wav",
               "speechText": "站",
               "speechLang": "zh-CN",
               "games": [
@@ -1708,7 +1783,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l01-g01-08",
@@ -1718,7 +1794,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/dc40081244931b8583267048.wav",
               "speechText": "船",
               "speechLang": "zh-CN",
               "games": [
@@ -1729,7 +1805,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1745,7 +1822,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/db3eb80b9e9aba923e72eaf8.wav",
               "speechText": "然",
               "speechLang": "zh-CN",
               "games": [
@@ -1756,7 +1833,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1772,7 +1850,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/dcb7de23d3f61f80d20fa13c.wav",
               "speechText": "画",
               "speechLang": "zh-CN",
               "games": [
@@ -1783,7 +1861,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g01-02",
@@ -1793,7 +1872,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2921b4f6240f7ab9453bcbf6.wav",
               "speechText": "幅",
               "speechLang": "zh-CN",
               "games": [
@@ -1804,7 +1883,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g01-03",
@@ -1814,7 +1894,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6edf9da744b70287f4ae15f8.wav",
               "speechText": "评",
               "speechLang": "zh-CN",
               "games": [
@@ -1825,7 +1905,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g01-04",
@@ -1835,7 +1916,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9ff997be12acaa73b833d95e.wav",
               "speechText": "奖",
               "speechLang": "zh-CN",
               "games": [
@@ -1846,7 +1927,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g01-05",
@@ -1856,7 +1938,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f808259b696fde8d931cc273.wav",
               "speechText": "纸",
               "speechLang": "zh-CN",
               "games": [
@@ -1867,7 +1949,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g01-06",
@@ -1877,7 +1960,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/327e6f5c76bfc79620735b43.wav",
               "speechText": "报",
               "speechLang": "zh-CN",
               "games": [
@@ -1888,7 +1971,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g01-07",
@@ -1898,7 +1982,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a6ab2520dafca52d2c4c20b3.wav",
               "speechText": "另",
               "speechLang": "zh-CN",
               "games": [
@@ -1909,7 +1993,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g01-08",
@@ -1919,7 +2004,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/66af7610fd490c487eb16ccb.wav",
               "speechText": "及",
               "speechLang": "zh-CN",
               "games": [
@@ -1930,7 +2015,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1946,7 +2032,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/fc1cd5b305af672b851efd73.wav",
               "speechText": "拿",
               "speechLang": "zh-CN",
               "games": [
@@ -1957,7 +2043,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l02-g02-02",
@@ -1967,7 +2054,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/366ec3a7c334e30603303213.wav",
               "speechText": "并",
               "speechLang": "zh-CN",
               "games": [
@@ -1978,7 +2065,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -1994,7 +2082,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ca225857a0d07c780c7a95a7.wav",
               "speechText": "封",
               "speechLang": "zh-CN",
               "games": [
@@ -2005,7 +2093,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g01-02",
@@ -2015,7 +2104,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/03a53287f4e80c72418de9e2.wav",
               "speechText": "信",
               "speechLang": "zh-CN",
               "games": [
@@ -2026,7 +2115,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g01-03",
@@ -2036,7 +2126,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b9f44e866e69590afca377be.wav",
               "speechText": "今",
               "speechLang": "zh-CN",
               "games": [
@@ -2047,7 +2137,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g01-04",
@@ -2057,7 +2148,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ece69354846c65fb01782d93.wav",
               "speechText": "支",
               "speechLang": "zh-CN",
               "games": [
@@ -2068,7 +2159,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g01-05",
@@ -2078,7 +2170,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b5cb94ea6c892a961c9f75d5.wav",
               "speechText": "圆",
               "speechLang": "zh-CN",
               "games": [
@@ -2089,7 +2181,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g01-06",
@@ -2099,7 +2192,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/cf81ee2474788c3e6955ebf7.wav",
               "speechText": "珠",
               "speechLang": "zh-CN",
               "games": [
@@ -2110,7 +2203,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g01-07",
@@ -2120,7 +2214,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d74426553ab7b79952a6309b.wav",
               "speechText": "笔",
               "speechLang": "zh-CN",
               "games": [
@@ -2131,7 +2225,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g01-08",
@@ -2141,7 +2236,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/85d8583d9dd123872cb70cb2.wav",
               "speechText": "灯",
               "speechLang": "zh-CN",
               "games": [
@@ -2152,7 +2247,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2168,7 +2264,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/24ed555f7c14c8418f9f5214.wav",
               "speechText": "电",
               "speechLang": "zh-CN",
               "games": [
@@ -2179,7 +2275,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l03-g02-02",
@@ -2189,7 +2286,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9378383f62f9ec9e43d9d571.wav",
               "speechText": "影",
               "speechLang": "zh-CN",
               "games": [
@@ -2200,7 +2297,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2216,7 +2314,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/916ef2a6cc88a6538c107480.wav",
               "speechText": "哄",
               "speechLang": "zh-CN",
               "games": [
@@ -2227,7 +2325,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l04-g01-02",
@@ -2237,7 +2336,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9e4f6c7430523e3eb48077de.wav",
               "speechText": "先",
               "speechLang": "zh-CN",
               "games": [
@@ -2248,7 +2347,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l04-g01-03",
@@ -2258,7 +2358,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c51391952f85d6b64b2757aa.wav",
               "speechText": "闭",
               "speechLang": "zh-CN",
               "games": [
@@ -2269,7 +2369,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l04-g01-04",
@@ -2279,7 +2380,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/086942adfb54ac94da32c1cf.wav",
               "speechText": "脸",
               "speechLang": "zh-CN",
               "games": [
@@ -2290,7 +2391,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l04-g01-05",
@@ -2300,7 +2402,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1776f23fc138a299cc070b6a.wav",
               "speechText": "事",
               "speechLang": "zh-CN",
               "games": [
@@ -2311,7 +2413,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l04-g01-06",
@@ -2321,7 +2424,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c5fd707b36ee077f4c192aaf.wav",
               "speechText": "沉",
               "speechLang": "zh-CN",
               "games": [
@@ -2332,7 +2435,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l04-g01-07",
@@ -2342,7 +2446,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f776c325edac732609650589.wav",
               "speechText": "发",
               "speechLang": "zh-CN",
               "games": [
@@ -2353,7 +2457,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u03-l04-g01-08",
@@ -2363,7 +2468,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f4ca8c7503c77ad976c3edbf.wav",
               "speechText": "窗",
               "speechLang": "zh-CN",
               "games": [
@@ -2374,7 +2479,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -2397,7 +2503,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/0a9280167e30037b02a0d1b5.wav",
               "speechText": "楼",
               "speechLang": "zh-CN",
               "games": [
@@ -2408,7 +2514,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g01-02",
@@ -2418,7 +2525,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a97458ce2fbaaa07083ae220.wav",
               "speechText": "依",
               "speechLang": "zh-CN",
               "games": [
@@ -2429,7 +2536,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g01-03",
@@ -2439,7 +2547,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/107ed84eea0e683589f1cf4f.wav",
               "speechText": "尽",
               "speechLang": "zh-CN",
               "games": [
@@ -2450,7 +2558,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g01-04",
@@ -2460,7 +2569,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/462ab5fc082159b21ef13731.wav",
               "speechText": "欲",
               "speechLang": "zh-CN",
               "games": [
@@ -2471,7 +2580,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g01-05",
@@ -2481,7 +2591,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/126803e004d568aad43fc707.wav",
               "speechText": "穷",
               "speechLang": "zh-CN",
               "games": [
@@ -2492,7 +2602,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g01-06",
@@ -2502,7 +2613,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/63ae5f47c4bcd6b4447f1794.wav",
               "speechText": "层",
               "speechLang": "zh-CN",
               "games": [
@@ -2513,7 +2624,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g01-07",
@@ -2523,7 +2635,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a848a8bfdf03f02ced83ad9a.wav",
               "speechText": "瀑",
               "speechLang": "zh-CN",
               "games": [
@@ -2534,7 +2646,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g01-08",
@@ -2544,7 +2657,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9041b4636dcddc95a29e6a58.wav",
               "speechText": "布",
               "speechLang": "zh-CN",
               "games": [
@@ -2555,7 +2668,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2571,7 +2685,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c8a817ae0660f00349e7d8d4.wav",
               "speechText": "炉",
               "speechLang": "zh-CN",
               "games": [
@@ -2582,7 +2696,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g02-02",
@@ -2592,7 +2707,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/8611c84d986adc9d7a512f4f.wav",
               "speechText": "烟",
               "speechLang": "zh-CN",
               "games": [
@@ -2603,7 +2718,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g02-03",
@@ -2613,7 +2729,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/81e538c534d482daa580d3c1.wav",
               "speechText": "遥",
               "speechLang": "zh-CN",
               "games": [
@@ -2624,7 +2740,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l01-g02-04",
@@ -2634,7 +2751,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a7a3e416c5b564addca7ee6b.wav",
               "speechText": "川",
               "speechLang": "zh-CN",
               "games": [
@@ -2645,7 +2762,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2661,7 +2779,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f8ad6427522906a4769a5695.wav",
               "speechText": "南",
               "speechLang": "zh-CN",
               "games": [
@@ -2672,7 +2790,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g01-02",
@@ -2682,7 +2801,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/3f80b1470a9679369b5c087a.wav",
               "speechText": "部",
               "speechLang": "zh-CN",
               "games": [
@@ -2693,7 +2812,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g01-03",
@@ -2703,7 +2823,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/bb9bcd06c05885c521d70ab4.wav",
               "speechText": "些",
               "speechLang": "zh-CN",
               "games": [
@@ -2714,7 +2834,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g01-04",
@@ -2724,7 +2845,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c1e6d18a03b7ee144e62ad80.wav",
               "speechText": "巨",
               "speechLang": "zh-CN",
               "games": [
@@ -2735,7 +2856,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g01-05",
@@ -2745,7 +2867,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e53f54c9cde9ad3fdf30bcfe.wav",
               "speechText": "位",
               "speechLang": "zh-CN",
               "games": [
@@ -2756,7 +2878,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g01-06",
@@ -2766,7 +2889,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d00317bc7aa1357a9e98c6a6.wav",
               "speechText": "向",
               "speechLang": "zh-CN",
               "games": [
@@ -2777,7 +2900,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g01-07",
@@ -2787,7 +2911,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/613cec2fc2e7b54316127d59.wav",
               "speechText": "每",
               "speechLang": "zh-CN",
               "games": [
@@ -2798,7 +2922,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g01-08",
@@ -2808,7 +2933,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/908679489a33cb44dded74a8.wav",
               "speechText": "升",
               "speechLang": "zh-CN",
               "games": [
@@ -2819,7 +2944,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2835,7 +2961,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/34c136fb1f615418092cdef5.wav",
               "speechText": "闪",
               "speechLang": "zh-CN",
               "games": [
@@ -2846,7 +2972,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l02-g02-02",
@@ -2856,7 +2983,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/86bfe7ab2a98c8b6cdfd470d.wav",
               "speechText": "狗",
               "speechLang": "zh-CN",
               "games": [
@@ -2867,7 +2994,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -2883,7 +3011,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/294ff42fa121b86caf733eb9.wav",
               "speechText": "名",
               "speechLang": "zh-CN",
               "games": [
@@ -2894,7 +3022,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l03-g01-02",
@@ -2904,7 +3033,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/07f5304d7d4c39709e046b63.wav",
               "speechText": "胜",
               "speechLang": "zh-CN",
               "games": [
@@ -2915,7 +3044,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l03-g01-03",
@@ -2925,7 +3055,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e62f36ab2fe75a42deb653ae.wav",
               "speechText": "迹",
               "speechLang": "zh-CN",
               "games": [
@@ -2936,7 +3066,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l03-g01-04",
@@ -2946,7 +3077,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/8629f885b8695cc69de4bfb2.wav",
               "speechText": "央",
               "speechLang": "zh-CN",
               "games": [
@@ -2957,7 +3088,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l03-g01-05",
@@ -2967,7 +3099,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2c8598213c1d927dc7eb7c21.wav",
               "speechText": "丽",
               "speechLang": "zh-CN",
               "games": [
@@ -2978,7 +3110,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l03-g01-06",
@@ -2988,7 +3121,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7362b0b78455756d6e740f00.wav",
               "speechText": "华",
               "speechLang": "zh-CN",
               "games": [
@@ -2999,7 +3132,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l03-g01-07",
@@ -3009,7 +3143,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a3ffd160f70d3f37e35b8707.wav",
               "speechText": "展",
               "speechLang": "zh-CN",
               "games": [
@@ -3020,7 +3154,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l03-g01-08",
@@ -3030,7 +3165,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/fbe7f997dfc1cb89f73da81a.wav",
               "speechText": "现",
               "speechLang": "zh-CN",
               "games": [
@@ -3041,7 +3176,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -3057,7 +3193,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/3f8895cde42eb9a452f4802f.wav",
               "speechText": "披",
               "speechLang": "zh-CN",
               "games": [
@@ -3068,7 +3204,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -3084,7 +3221,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a2a7a378ad12b764def2ff0c.wav",
               "speechText": "份",
               "speechLang": "zh-CN",
               "games": [
@@ -3095,7 +3232,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g01-02",
@@ -3105,7 +3243,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/bfbaebd6c184e4a6c673e8d6.wav",
               "speechText": "坡",
               "speechLang": "zh-CN",
               "games": [
@@ -3116,7 +3254,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g01-03",
@@ -3126,7 +3265,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/df1d110a53c449145b29d66e.wav",
               "speechText": "梯",
               "speechLang": "zh-CN",
               "games": [
@@ -3137,7 +3276,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g01-04",
@@ -3147,7 +3287,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/17042e21fd45ea47491433b4.wav",
               "speechText": "客",
               "speechLang": "zh-CN",
               "games": [
@@ -3158,7 +3298,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g01-05",
@@ -3168,7 +3309,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7935f24255947fbdd077f3bc.wav",
               "speechText": "收",
               "speechLang": "zh-CN",
               "games": [
@@ -3179,7 +3320,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g01-06",
@@ -3189,7 +3331,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9f3dc6233889d613288800a2.wav",
               "speechText": "城",
               "speechLang": "zh-CN",
               "games": [
@@ -3200,7 +3342,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g01-07",
@@ -3210,7 +3353,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/932bd21108d54820912799bf.wav",
               "speechText": "市",
               "speechLang": "zh-CN",
               "games": [
@@ -3221,7 +3364,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g01-08",
@@ -3231,7 +3375,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e32b60fb9130e2f665cf36ac.wav",
               "speechText": "利",
               "speechLang": "zh-CN",
               "games": [
@@ -3242,7 +3386,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -3258,7 +3403,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/70128fec7d4707402917c01c.wav",
               "speechText": "干",
               "speechLang": "zh-CN",
               "games": [
@@ -3269,7 +3414,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g02-02",
@@ -3279,7 +3425,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c979d0017fd047a2660a6f65.wav",
               "speechText": "留",
               "speechLang": "zh-CN",
               "games": [
@@ -3290,7 +3436,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g02-03",
@@ -3300,7 +3447,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/81d0bbcde796d7e2c646c370.wav",
               "speechText": "钉",
               "speechLang": "zh-CN",
               "games": [
@@ -3311,7 +3458,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g02-04",
@@ -3321,7 +3469,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b337e89e3c429904a3b30498.wav",
               "speechText": "分",
               "speechLang": "zh-CN",
               "games": [
@@ -3332,7 +3480,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u04-l04-g02-05",
@@ -3342,7 +3491,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7bd20acf6b55da1e9c9c194a.wav",
               "speechText": "味",
               "speechLang": "zh-CN",
               "games": [
@@ -3353,7 +3502,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -3376,7 +3526,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/911180e6c8686ed0cf6d42f0.wav",
               "speechText": "井",
               "speechLang": "zh-CN",
               "games": [
@@ -3387,7 +3537,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l01-g01-02",
@@ -3397,7 +3548,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/45372c87b18da528991c53d5.wav",
               "speechText": "观",
               "speechLang": "zh-CN",
               "games": [
@@ -3408,7 +3559,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l01-g01-03",
@@ -3418,7 +3570,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f32b93641c82f6bea5c49456.wav",
               "speechText": "沿",
               "speechLang": "zh-CN",
               "games": [
@@ -3429,7 +3581,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l01-g01-04",
@@ -3439,7 +3592,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/8f84d1a00bfd3db65c5e2ab6.wav",
               "speechText": "答",
               "speechLang": "zh-CN",
               "games": [
@@ -3450,7 +3603,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l01-g01-05",
@@ -3460,7 +3614,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/be1744236a8964d0b7da71ef.wav",
               "speechText": "渴",
               "speechLang": "zh-CN",
               "games": [
@@ -3471,7 +3625,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l01-g01-06",
@@ -3481,7 +3636,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/89e57d845fb705a1792b6dce.wav",
               "speechText": "喝",
               "speechLang": "zh-CN",
               "games": [
@@ -3492,7 +3647,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l01-g01-07",
@@ -3502,7 +3658,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e04c2092ff2ec9069380f718.wav",
               "speechText": "话",
               "speechLang": "zh-CN",
               "games": [
@@ -3513,7 +3669,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l01-g01-08",
@@ -3523,7 +3680,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/926bdbbcb8a583cdc5d7f6b5.wav",
               "speechText": "际",
               "speechLang": "zh-CN",
               "games": [
@@ -3534,7 +3691,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -3550,7 +3708,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d705994ca32d76019cf3d6df.wav",
               "speechText": "面",
               "speechLang": "zh-CN",
               "games": [
@@ -3561,7 +3719,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l02-g01-02",
@@ -3571,7 +3730,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/072b087aaecd747a9e0d3dfa.wav",
               "speechText": "阵",
               "speechLang": "zh-CN",
               "games": [
@@ -3582,7 +3741,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l02-g01-03",
@@ -3592,7 +3752,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a9b5defab9d05c67c94dc690.wav",
               "speechText": "朗",
               "speechLang": "zh-CN",
               "games": [
@@ -3603,7 +3763,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l02-g01-04",
@@ -3613,7 +3774,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c1b7575570a9980b8f52e6e6.wav",
               "speechText": "枯",
               "speechLang": "zh-CN",
               "games": [
@@ -3624,7 +3785,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l02-g01-05",
@@ -3634,7 +3796,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2a141bc1188f445d8bf16148.wav",
               "speechText": "却",
               "speechLang": "zh-CN",
               "games": [
@@ -3645,7 +3807,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l02-g01-06",
@@ -3655,7 +3818,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2aeed46974de2531ebc49563.wav",
               "speechText": "将",
               "speechLang": "zh-CN",
               "games": [
@@ -3666,7 +3829,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l02-g01-07",
@@ -3676,7 +3840,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b71e4a4e8e70fc659a58b56f.wav",
               "speechText": "纷",
               "speechLang": "zh-CN",
               "games": [
@@ -3687,7 +3851,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l02-g01-08",
@@ -3697,7 +3862,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c8fcbbe314b0f3ca9191caf8.wav",
               "speechText": "夜",
               "speechLang": "zh-CN",
               "games": [
@@ -3708,7 +3873,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -3724,7 +3890,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/fa2867675bc7689d35637b14.wav",
               "speechText": "棵",
               "speechLang": "zh-CN",
               "games": [
@@ -3735,7 +3901,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l03-g01-02",
@@ -3745,7 +3912,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/39518444c01a766cd2bf9e64.wav",
               "speechText": "谢",
               "speechLang": "zh-CN",
               "games": [
@@ -3756,7 +3923,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l03-g01-03",
@@ -3766,7 +3934,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/67249b6d92d78b9a0d52b565.wav",
               "speechText": "想",
               "speechLang": "zh-CN",
               "games": [
@@ -3777,7 +3945,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l03-g01-04",
@@ -3787,7 +3956,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d0d3070410b6405b9f71c11b.wav",
               "speechText": "盯",
               "speechLang": "zh-CN",
               "games": [
@@ -3798,7 +3967,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l03-g01-05",
@@ -3808,7 +3978,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6f02b53c5ccd0f00fa77c9da.wav",
               "speechText": "言",
               "speechLang": "zh-CN",
               "games": [
@@ -3819,7 +3989,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l03-g01-06",
@@ -3829,7 +4000,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/95663756a45d06d7a9dad4df.wav",
               "speechText": "邻",
               "speechLang": "zh-CN",
               "games": [
@@ -3840,7 +4011,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l03-g01-07",
@@ -3850,7 +4022,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/98f3d1a76e76510a1caf99a0.wav",
               "speechText": "治",
               "speechLang": "zh-CN",
               "games": [
@@ -3861,7 +4033,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u05-l03-g01-08",
@@ -3871,7 +4044,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/81eb95507d844ccc3b3e1d5c.wav",
               "speechText": "怪",
               "speechLang": "zh-CN",
               "games": [
@@ -3882,7 +4055,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -3905,7 +4079,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/42c675ac666d5721b4a37e34.wav",
               "speechText": "洪",
               "speechLang": "zh-CN",
               "games": [
@@ -3916,7 +4090,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l01-g01-02",
@@ -3926,7 +4101,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c48d0a7cab69e40e52af84dc.wav",
               "speechText": "灾",
               "speechLang": "zh-CN",
               "games": [
@@ -3937,7 +4112,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l01-g01-03",
@@ -3947,7 +4123,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/396880f6b1cb373e85a7c37d.wav",
               "speechText": "难",
               "speechLang": "zh-CN",
               "games": [
@@ -3958,7 +4134,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l01-g01-04",
@@ -3968,7 +4145,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d1f747b4831f17b00cbe639d.wav",
               "speechText": "道",
               "speechLang": "zh-CN",
               "games": [
@@ -3979,7 +4156,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l01-g01-05",
@@ -3989,7 +4167,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7b0d01aeecd042be0278fde7.wav",
               "speechText": "认",
               "speechLang": "zh-CN",
               "games": [
@@ -4000,7 +4178,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l01-g01-06",
@@ -4010,7 +4189,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/5ddbcc58a81812e7046ecb1e.wav",
               "speechText": "被",
               "speechLang": "zh-CN",
               "games": [
@@ -4021,7 +4200,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l01-g01-07",
@@ -4031,7 +4211,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/1376762d9dbaae95cc3a2e52.wav",
               "speechText": "业",
               "speechLang": "zh-CN",
               "games": [
@@ -4042,7 +4222,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l01-g01-08",
@@ -4052,7 +4233,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f9010785f00c74bc92cbc791.wav",
               "speechText": "产",
               "speechLang": "zh-CN",
               "games": [
@@ -4063,7 +4244,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -4079,7 +4261,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/97ade909894200e9f03a9032.wav",
               "speechText": "扁",
               "speechLang": "zh-CN",
               "games": [
@@ -4090,7 +4272,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l02-g01-02",
@@ -4100,7 +4283,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/fb57c2d0f37dc1ef474ae316.wav",
               "speechText": "担",
               "speechLang": "zh-CN",
               "games": [
@@ -4111,7 +4294,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l02-g01-03",
@@ -4121,7 +4305,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2a2d92940e876802954f20ac.wav",
               "speechText": "志",
               "speechLang": "zh-CN",
               "games": [
@@ -4132,7 +4316,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l02-g01-04",
@@ -4142,7 +4327,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f9255e7f4531a73a7485bf2e.wav",
               "speechText": "伍",
               "speechLang": "zh-CN",
               "games": [
@@ -4153,7 +4338,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l02-g01-05",
@@ -4163,7 +4349,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/bbdce12cc8d9d1a96bd988e1.wav",
               "speechText": "师",
               "speechLang": "zh-CN",
               "games": [
@@ -4174,7 +4360,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l02-g01-06",
@@ -4184,7 +4371,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d15ddc699cc7dbac063b569f.wav",
               "speechText": "军",
               "speechLang": "zh-CN",
               "games": [
@@ -4195,7 +4382,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l02-g01-07",
@@ -4205,7 +4393,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ab99f2e372e6aad481e3ef89.wav",
               "speechText": "战",
               "speechLang": "zh-CN",
               "games": [
@@ -4216,7 +4404,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l02-g01-08",
@@ -4226,7 +4415,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c18a2e172a76a40a4f9892d4.wav",
               "speechText": "士",
               "speechLang": "zh-CN",
               "games": [
@@ -4237,7 +4426,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -4253,7 +4443,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/65268eeb434515e312becacd.wav",
               "speechText": "忘",
               "speechLang": "zh-CN",
               "games": [
@@ -4264,7 +4454,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l03-g01-02",
@@ -4274,7 +4465,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f7d9e1fc023a9747b24dc2c6.wav",
               "speechText": "泼",
               "speechLang": "zh-CN",
               "games": [
@@ -4285,7 +4476,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l03-g01-03",
@@ -4295,7 +4487,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f534dc3ed3e6e799a94a2ec5.wav",
               "speechText": "度",
               "speechLang": "zh-CN",
               "games": [
@@ -4306,7 +4498,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l03-g01-04",
@@ -4316,7 +4509,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6e7c158e7f82d0a50f533cb0.wav",
               "speechText": "龙",
               "speechLang": "zh-CN",
               "games": [
@@ -4327,7 +4520,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l03-g01-05",
@@ -4337,7 +4531,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ec8eb730a3d9dd4f985f7adc.wav",
               "speechText": "炮",
               "speechLang": "zh-CN",
               "games": [
@@ -4348,7 +4542,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l03-g01-06",
@@ -4358,7 +4553,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/eb8412bddfd8ab8ab8640dfd.wav",
               "speechText": "穿",
               "speechLang": "zh-CN",
               "games": [
@@ -4369,7 +4564,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l03-g01-07",
@@ -4379,7 +4575,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/d00317bc7aa1357a9e98c6a6.wav",
               "speechText": "向",
               "speechLang": "zh-CN",
               "games": [
@@ -4390,7 +4586,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u06-l03-g01-08",
@@ -4400,7 +4597,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2851c7f2c1dce9d1021527d2.wav",
               "speechText": "令",
               "speechLang": "zh-CN",
               "games": [
@@ -4411,7 +4608,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -4434,7 +4632,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2261cfb1e4bc5aefd880fda4.wav",
               "speechText": "危",
               "speechLang": "zh-CN",
               "games": [
@@ -4445,7 +4643,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l01-g01-02",
@@ -4455,7 +4654,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ac0d96f4bbc1a7ae83a0055d.wav",
               "speechText": "敢",
               "speechLang": "zh-CN",
               "games": [
@@ -4466,7 +4665,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l01-g01-03",
@@ -4476,7 +4676,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7613f680eb0888a3fe7163b5.wav",
               "speechText": "惊",
               "speechLang": "zh-CN",
               "games": [
@@ -4487,7 +4687,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l01-g01-04",
@@ -4497,7 +4698,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/341bc6264fe99415c3a5b205.wav",
               "speechText": "阴",
               "speechLang": "zh-CN",
               "games": [
@@ -4508,7 +4709,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l01-g01-05",
@@ -4518,7 +4720,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ee9148b4008827d8ddea8480.wav",
               "speechText": "似",
               "speechLang": "zh-CN",
               "games": [
@@ -4529,7 +4731,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l01-g01-06",
@@ -4539,7 +4742,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/3b306f2c3790685db02da035.wav",
               "speechText": "野",
               "speechLang": "zh-CN",
               "games": [
@@ -4550,7 +4753,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l01-g01-07",
@@ -4560,7 +4764,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/28e1a1d9f250d1b097117f91.wav",
               "speechText": "苍",
               "speechLang": "zh-CN",
               "games": [
@@ -4571,7 +4775,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l01-g01-08",
@@ -4581,7 +4786,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f730b32231a3dcb4af56d69d.wav",
               "speechText": "茫",
               "speechLang": "zh-CN",
               "games": [
@@ -4592,7 +4797,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -4608,7 +4814,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/dc4c5286a352b92a3759c37a.wav",
               "speechText": "于",
               "speechLang": "zh-CN",
               "games": [
@@ -4619,7 +4825,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l02-g01-02",
@@ -4629,7 +4836,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/17370227af263614c1fed6f7.wav",
               "speechText": "论",
               "speechLang": "zh-CN",
               "games": [
@@ -4640,7 +4847,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l02-g01-03",
@@ -4650,7 +4858,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/802fa87bc3189e695ef4a11a.wav",
               "speechText": "岸",
               "speechLang": "zh-CN",
               "games": [
@@ -4661,7 +4869,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l02-g01-04",
@@ -4671,7 +4880,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/f7008c67174db1eed553a211.wav",
               "speechText": "屋",
               "speechLang": "zh-CN",
               "games": [
@@ -4682,7 +4891,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l02-g01-05",
@@ -4692,7 +4902,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/4bec14a36de7b9eb4b86b822.wav",
               "speechText": "切",
               "speechLang": "zh-CN",
               "games": [
@@ -4703,7 +4913,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l02-g01-06",
@@ -4713,7 +4924,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e8f87084f7167e11918bfa7d.wav",
               "speechText": "久",
               "speechLang": "zh-CN",
               "games": [
@@ -4724,7 +4935,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l02-g01-07",
@@ -4734,7 +4946,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/3528501b92958b8ee18dcb0c.wav",
               "speechText": "散",
               "speechLang": "zh-CN",
               "games": [
@@ -4745,7 +4957,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l02-g01-08",
@@ -4755,7 +4968,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/4e57a7351d1b846e564f8052.wav",
               "speechText": "步",
               "speechLang": "zh-CN",
               "games": [
@@ -4766,7 +4979,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -4782,7 +4996,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/dac971c59ce79ebf9451e450.wav",
               "speechText": "唱",
               "speechLang": "zh-CN",
               "games": [
@@ -4793,7 +5007,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l03-g01-02",
@@ -4803,7 +5018,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/657d159c6d6de132b4448e81.wav",
               "speechText": "赶",
               "speechLang": "zh-CN",
               "games": [
@@ -4814,7 +5029,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l03-g01-03",
@@ -4824,7 +5040,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/3fa033f007345beac3158dce.wav",
               "speechText": "旺",
               "speechLang": "zh-CN",
               "games": [
@@ -4835,7 +5051,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l03-g01-04",
@@ -4845,7 +5062,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/b5dc4bd69c52c77a6ecf0fc1.wav",
               "speechText": "旁",
               "speechLang": "zh-CN",
               "games": [
@@ -4856,7 +5073,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l03-g01-05",
@@ -4866,7 +5084,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7e9134394220b83b17dc5b81.wav",
               "speechText": "浑",
               "speechLang": "zh-CN",
               "games": [
@@ -4877,7 +5095,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l03-g01-06",
@@ -4887,7 +5106,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/972f80aba6e227382abf4969.wav",
               "speechText": "谁",
               "speechLang": "zh-CN",
               "games": [
@@ -4898,7 +5117,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l03-g01-07",
@@ -4908,7 +5128,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/962697bd3428ee5cb73b71f3.wav",
               "speechText": "轻",
               "speechLang": "zh-CN",
               "games": [
@@ -4919,7 +5139,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u07-l03-g01-08",
@@ -4929,7 +5150,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/3df829e05c407202fa094ff2.wav",
               "speechText": "汽",
               "speechLang": "zh-CN",
               "games": [
@@ -4940,7 +5161,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
@@ -4963,7 +5185,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/2f56d696d17f423de27f09ab.wav",
               "speechText": "食",
               "speechLang": "zh-CN",
               "games": [
@@ -4974,7 +5196,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l01-g01-02",
@@ -4984,7 +5207,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/26536903217c593356ae4491.wav",
               "speechText": "物",
               "speechLang": "zh-CN",
               "games": [
@@ -4995,7 +5218,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l01-g01-03",
@@ -5005,7 +5229,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/97bf0dbf04f840090324b561.wav",
               "speechText": "爷",
               "speechLang": "zh-CN",
               "games": [
@@ -5016,7 +5240,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l01-g01-04",
@@ -5026,7 +5251,7 @@
                 "liǎng",
                 "nǎ"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ef2049e7ef7bee4a27b8d03e.wav",
               "speechText": "就",
               "speechLang": "zh-CN",
               "games": [
@@ -5037,7 +5262,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l01-g01-05",
@@ -5047,7 +5273,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/dbc2cba361d777a906e577d7.wav",
               "speechText": "爪",
               "speechLang": "zh-CN",
               "games": [
@@ -5058,7 +5284,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l01-g01-06",
@@ -5068,7 +5295,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/9fa2541c2ac29cc0b901e9b6.wav",
               "speechText": "神",
               "speechLang": "zh-CN",
               "games": [
@@ -5079,7 +5306,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l01-g01-07",
@@ -5089,7 +5317,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/7c3b699809b0ec4fba6aaff4.wav",
               "speechText": "活",
               "speechLang": "zh-CN",
               "games": [
@@ -5100,7 +5328,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l01-g01-08",
@@ -5110,7 +5339,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/67eda527fd11d9064cb06dbb.wav",
               "speechText": "猪",
               "speechLang": "zh-CN",
               "games": [
@@ -5121,7 +5350,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -5137,7 +5367,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/a1c7687e0395b71ea84e7da1.wav",
               "speechText": "奶",
               "speechLang": "zh-CN",
               "games": [
@@ -5148,7 +5378,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l02-g01-02",
@@ -5158,7 +5389,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6cf391029a1e144586fb2fa7.wav",
               "speechText": "始",
               "speechLang": "zh-CN",
               "games": [
@@ -5169,7 +5400,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l02-g01-03",
@@ -5179,7 +5411,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/eb0f57153465e61a59da289d.wav",
               "speechText": "吵",
               "speechLang": "zh-CN",
               "games": [
@@ -5190,7 +5422,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l02-g01-04",
@@ -5200,7 +5433,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/8afbf28ba90f58683d6eb112.wav",
               "speechText": "仔",
               "speechLang": "zh-CN",
               "games": [
@@ -5211,7 +5444,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l02-g01-05",
@@ -5221,7 +5455,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/33206286f1ad068cccb8adff.wav",
               "speechText": "急",
               "speechLang": "zh-CN",
               "games": [
@@ -5232,7 +5466,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l02-g01-06",
@@ -5242,7 +5477,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/c47455087d6351ae5fda700a.wav",
               "speechText": "咬",
               "speechLang": "zh-CN",
               "games": [
@@ -5253,7 +5488,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l02-g01-07",
@@ -5263,7 +5499,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/6cf49e2fae217cfc2d5ef00d.wav",
               "speechText": "第",
               "speechLang": "zh-CN",
               "games": [
@@ -5274,7 +5510,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l02-g01-08",
@@ -5284,7 +5521,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/24caa9762c6679a00dbf6cd8.wav",
               "speechText": "公",
               "speechLang": "zh-CN",
               "games": [
@@ -5295,7 +5532,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         },
@@ -5311,7 +5549,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/e49ecbe82cccf097c75cb573.wav",
               "speechText": "折",
               "speechLang": "zh-CN",
               "games": [
@@ -5322,7 +5560,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l03-g01-02",
@@ -5332,7 +5571,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/039928f2456bce774e127838.wav",
               "speechText": "张",
               "speechLang": "zh-CN",
               "games": [
@@ -5343,7 +5582,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l03-g01-03",
@@ -5353,7 +5593,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/bae65be6505de0f39f7b152c.wav",
               "speechText": "祝",
               "speechLang": "zh-CN",
               "games": [
@@ -5364,7 +5604,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l03-g01-04",
@@ -5374,7 +5615,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/32cdd2ad346e68c416112bac.wav",
               "speechText": "扎",
               "speechLang": "zh-CN",
               "games": [
@@ -5385,7 +5626,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l03-g01-05",
@@ -5395,7 +5637,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/ce780016139a3a66df61f178.wav",
               "speechText": "抓",
               "speechLang": "zh-CN",
               "games": [
@@ -5406,7 +5648,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l03-g01-06",
@@ -5416,7 +5659,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/cd805839773fc3bb81e1abe2.wav",
               "speechText": "但",
               "speechLang": "zh-CN",
               "games": [
@@ -5427,7 +5670,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l03-g01-07",
@@ -5437,7 +5681,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/0aea56527036c6bad967f4fa.wav",
               "speechText": "哭",
               "speechLang": "zh-CN",
               "games": [
@@ -5448,7 +5692,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             },
             {
               "id": "g2-chinese-a-u08-l03-g01-08",
@@ -5458,7 +5703,7 @@
                 "liǎng",
                 "jiù"
               ],
-              "audio": null,
+              "audio": "audio/generated/zh-CN/03ae23470059dd4d282a3968.wav",
               "speechText": "取",
               "speechLang": "zh-CN",
               "games": [
@@ -5469,7 +5714,8 @@
               ],
               "source": "athenayan123-web/dictation-robot (MIT)",
               "reviewed": false,
-              "kind": "character"
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review"
             }
           ]
         }
