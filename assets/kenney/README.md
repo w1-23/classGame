@@ -33,10 +33,13 @@
 
 `ui/` 来自 **UI Pack**：
 
-- 蓝、绿、红、黄按钮和圆角按钮。
-- 左右箭头。
-- 确认、错误图标。
-- 星星。
+- `arrow-left.png`、`arrow-right.png`：底部三段式跑酷控制条的左右方向标识。
+- `icon-checkmark.png`、`icon-cross.png`：正确/错误反馈。
+- `star.png`：品牌标识、记忆牌背和结算星级。
+
+本轮视觉收敛后，运行时不再使用 `button-*.png`、`button-round-*.png`、
+`button-rectangle-*.png` 作为大面积控件背景。主按钮改为 CSS 平面按钮，
+避免亮面 UI 与游戏场景争夺视觉焦点。这些原始素材文件保留用于来源追溯。
 
 ## 音频
 
@@ -55,3 +58,15 @@
 | `result.ogg` | Music Jingles / `Pizzicato jingles/jingles_PIZZI07.ogg` |
 
 `result.ogg` 只在结算时播放一次，不用于循环 BGM。
+
+## 跑酷循环音乐
+
+`../../audio/music/runner-loop.ogg` 不属于 Kenney 素材包，来源为：
+
+- OpenGameArt《Overworld Theme》alternate version
+- 作者：Louswan
+- 许可证：CC0 1.0
+- 来源：https://opengameart.org/content/overworld-theme-0
+- 工程内许可说明：`../../docs/licenses/Overworld-Theme-CC0.txt`
+
+该曲目约 41 秒，作为跑酷循环 BGM 使用；Kenney Music Jingles 仍只承担短结算提示音。

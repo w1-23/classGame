@@ -40,6 +40,9 @@ async function loadPacks() {
 function resetGame() {
   if (typeof activeGame === 'function') activeGame();
   activeGame = null;
+  document.body.classList.remove('game-active');
+  document.body.classList.remove('result-active');
+  audio.stopMusic();
 }
 
 function renderHome() {
@@ -101,7 +104,7 @@ function renderHome() {
 function renderClassLobby() {
   resetGame();
   app.innerHTML = `
-    <section class="game-shell">
+    <section class="class-lobby">
       <div class="game-header">
         <div>
           <h1 class="game-title">全班挑战 · 老师主控</h1>
@@ -135,6 +138,7 @@ function renderClassLobby() {
 
 function finishGame(html) {
   resetGame();
+  document.body.classList.add('result-active');
   app.innerHTML = html;
   app.querySelector('#game-home').onclick = renderHome;
   app.querySelector('#game-retry').onclick = () => startGame(app.dataset.currentGame);
@@ -142,13 +146,15 @@ function finishGame(html) {
 
 function startGame(gameId) {
   resetGame();
+  document.body.classList.add('game-active');
   app.dataset.currentGame = gameId;
   const beatPack = packs.find(pack => pack.poems?.length);
   const itemPack = currentPack.items?.length ? currentPack : packs.find(pack => pack.items?.length);
   const gamePack = gameId === 'beat' ? beatPack : itemPack;
   audio.effect('click');
+  if (gameId === 'runner') audio.startMusic();
   const finish = finishGame;
-  if (gameId === 'runner') activeGame = createRunner(app, gamePack, audio, finish);
+  if (gameId === 'runner') activeGame = createRunner(app, gamePack, audio, finish, renderHome);
   if (gameId === 'listen') activeGame = createListen(app, gamePack, audio, finish);
   if (gameId === 'assemble') activeGame = createAssemble(app, gamePack, audio, finish);
   if (gameId === 'memory') activeGame = createMemory(app, gamePack, audio, finish);
@@ -157,6 +163,7 @@ function startGame(gameId) {
 }
 
 document.querySelector('#settings-open').onclick = () => {
+  packSelect.disabled = document.body.classList.contains('game-active');
   packSelect.value = currentPack.id;
   document.querySelector('#speech-volume').value = settings.speechVolume * 100;
   document.querySelector('#effect-volume').value = settings.effectVolume * 100;
@@ -164,16 +171,18 @@ document.querySelector('#settings-open').onclick = () => {
 };
 document.querySelector('#settings-save').onclick = event => {
   event.preventDefault();
+  const inGame = document.body.classList.contains('game-active');
   settings = {
-    pack: packSelect.value,
+    ...settings,
+    pack: inGame ? settings.pack : packSelect.value,
     speechVolume: document.querySelector('#speech-volume').value / 100,
     effectVolume: document.querySelector('#effect-volume').value / 100
   };
   saveSettings(settings);
   audio.settings = settings;
-  currentPack = packs.find(pack => pack.id === settings.pack);
+  if (!inGame) currentPack = packs.find(pack => pack.id === settings.pack);
   settingsDialog.close();
-  renderHome();
+  if (!inGame) renderHome();
 };
 document.querySelector('#audio-test').onclick = async () => {
   audio.effect('click');

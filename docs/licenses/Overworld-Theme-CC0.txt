@@ -1,0 +1,13 @@
+Overworld Theme (alternate)
+
+Original file: platformer_alt_0.ogg
+Runtime file: audio/music/runner-loop.ogg
+Author: Louswan
+Source: https://opengameart.org/content/overworld-theme-0
+License: Creative Commons Zero 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Obtained: 2026-11-21
+
+The author has waived copyright and related rights to the greatest extent
+permitted by law. The track is used as the runner's looping background music;
+it is not a Kenney jingle and is not sourced from the Kenney Music Jingles pack.

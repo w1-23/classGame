@@ -26,10 +26,71 @@ test('all six game entries mount without runtime errors', async ({ page }) => {
     await page.goto('/index.html');
     await page.locator(`[data-id="${id}"]`).click();
     await expect(page.locator(selector)).toBeVisible();
+    if (id === 'runner') {
+      await page.waitForFunction(() => Boolean(window.__learningGameDebug?.runner));
+      await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.66));
+      await page.waitForTimeout(120);
+    }
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.screenshot({ path: `${screenshots}/mode-${id}.png`, fullPage: true });
   }
   expect(errors).toEqual([]);
+});
+
+test('all game pages fit the six target viewports without page scrolling', async ({ page }) => {
+  const viewports = [
+    [1920, 1080],
+    [1366, 768],
+    [1280, 800],
+    [1175, 803],
+    [1024, 768],
+    [390, 844]
+  ];
+  const games = [
+    ['runner', '.race-shell'],
+    ['listen', '.listen-content'],
+    ['assemble', '.assemble-content'],
+    ['memory', '.memory-content'],
+    ['beat', '.beat-content'],
+    ['battle', '.battle-content']
+  ];
+  for (const [id, selector] of games) {
+    await page.goto('/index.html');
+    await page.locator(`[data-id="${id}"]`).click();
+    await expect(page.locator(selector)).toBeVisible();
+    if (id === 'runner') {
+      await page.waitForFunction(() => Boolean(window.__learningGameDebug?.runner));
+      await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.66));
+    }
+    for (const [width, height] of viewports) {
+      await page.setViewportSize({ width, height });
+      await page.waitForTimeout(80);
+      const metrics = await page.evaluate(activeSelector => {
+        const content = document.querySelector(activeSelector)?.getBoundingClientRect();
+        return {
+          innerWidth,
+          innerHeight,
+          scrollWidth: document.documentElement.scrollWidth,
+          scrollHeight: document.documentElement.scrollHeight,
+          bodyScrollHeight: document.body.scrollHeight,
+          headerDisplay: getComputedStyle(document.querySelector('header')).display,
+          content: content ? { top: content.top, right: content.right, bottom: content.bottom, left: content.left } : null
+        };
+      }, selector);
+      expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
+      expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+      expect(metrics.bodyScrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+      expect(metrics.headerDisplay).toBe('none');
+      expect(metrics.content).not.toBeNull();
+      expect(metrics.content.left).toBeGreaterThanOrEqual(-1);
+      expect(metrics.content.top).toBeGreaterThanOrEqual(-1);
+      expect(metrics.content.right).toBeLessThanOrEqual(metrics.innerWidth + 1);
+      expect(metrics.content.bottom).toBeLessThanOrEqual(metrics.innerHeight + 1);
+      if (width === 390) {
+        await page.screenshot({ path: `${screenshots}/mode-${id}-390x844.png`, fullPage: false });
+      }
+    }
+  }
 });
 
 test('personal and class modes have distinct entry flows', async ({ page }) => {

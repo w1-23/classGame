@@ -38,12 +38,16 @@ for (const factory of ['createRunner', 'createListen', 'createAssemble', 'create
   assert.match(games, new RegExp(`export function ${factory}\\b`), `${factory} is missing`);
 }
 assert.match(games, /mountRunnerGame/, 'runner must mount the Phaser scene');
+assert.match(games, /runner-pause-panel/, 'runner must expose pause menu tools');
+assert.match(games, /gameTitlebar/, 'secondary games must share the compact title bar');
 const runner = await readFile('js/runner-phaser.js', 'utf8');
 assert.match(runner, /class RunnerScene extends Phaser\.Scene/, 'runner scene must extend Phaser.Scene');
 assert.match(runner, /laneXAt/, 'runner must calculate three perspective lane positions');
 assert.match(runner, /gateProgress/, 'runner must animate gate collision progress');
 assert.match(runner, /successBurst\.explode/, 'runner must emit real particles');
 assert.match(runner, /phaseBeforePause/, 'runner must support pause and resume');
+assert.match(runner, /PLAYER_HEIGHT_RATIO = \.25/, 'runner player must use the approved 25% height');
+assert.doesNotMatch(runner, /answerBanner|playerAura|countdownHalo/, 'legacy duplicate feedback and glow layers must be removed');
 
 const index = await readFile('index.html', 'utf8');
 assert.match(index, /vendor\/phaser\/phaser\.min\.js[\s\S]*js\/app\.js/, 'Phaser must load before the app');
@@ -51,6 +55,10 @@ assert.match(index, /id="speech-volume"[^>]+value="80"/, 'speech volume must def
 assert.match(index, /id="effect-volume"[^>]+value="60"/, 'effect volume must default to 60');
 assert.doesNotMatch(index, /music-volume/, 'short jingles must not be exposed as looping background music');
 assert.doesNotMatch(games, /mascot-.*\.svg/, 'legacy placeholder mascot must not remain in runtime games');
+const css = await readFile('css/style.css', 'utf8');
+assert.doesNotMatch(css, /radial-gradient/, 'decorative radial gradients must not remain');
+assert.doesNotMatch(css, /button-round|button-rectangle|button-blue\.png/, 'Kenney glossy buttons must not be used as global controls');
+assert.match(css, /body\.game-active > header\s*\{\s*display:\s*none/, 'global header must hide during games');
 
 for (const path of [
   'vendor/phaser/phaser.min.js',
@@ -72,6 +80,7 @@ for (const path of [
   'audio/kenney/confirmation_002.ogg',
   'audio/kenney/error_004.ogg',
   'audio/kenney/result.ogg',
+  'audio/music/runner-loop.ogg',
   'audio/zh/g1-cn-01.wav',
   'audio/en/g3-en-01.wav',
   'audio/zh/poem-jingyesi.wav',
@@ -87,7 +96,9 @@ for (const path of [
   'docs/范读审核清单.md',
   'docs/真机验收清单.md',
   'docs/教材映射模板.md',
-  'docs/发布校验报告.md'
+  'docs/发布校验报告.md',
+  'docs/licenses/Overworld-Theme-CC0.txt',
+  'docs/0.3.0视觉收敛报告.md'
 ]) {
   assert.ok(await exists(path), `${path} is missing`);
 }
@@ -102,5 +113,11 @@ for (const path of [
 ]) {
   assert.match(await readFile(path, 'utf8'), /CC0/i, `${path} is not a CC0 license`);
 }
+
+assert.match(
+  await readFile('docs/licenses/Overworld-Theme-CC0.txt', 'utf8'),
+  /CC0[\s\S]*Louswan|Louswan[\s\S]*CC0/i,
+  'runner BGM license must document Louswan and CC0'
+);
 
 console.log('SMOKE TEST PASSED');

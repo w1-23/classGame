@@ -49,45 +49,58 @@ function resultView({ game, score, answers, coins = 0, bestCombo = 0, retry, hom
   `;
 }
 
-function activityBanner({ kicker, title, detail, character, prop, tone }) {
+function gameTitlebar({ title, progress, hint, character = 'adventurer-idle' }) {
   return `
-    <div class="activity-banner ${tone || ''}">
-      <img class="activity-guide" src="assets/kenney/characters/${character}.png" alt="">
-      <div class="activity-copy">
-        <span>${kicker}</span>
-        <strong>${title}</strong>
-        <small>${detail}</small>
+    <header class="game-topbar">
+      <div class="game-topbar-copy">
+        <div class="game-topbar-line">
+          <h2 class="game-title">${title}</h2>
+          <span class="game-progress">${progress}</span>
+        </div>
+        <p>${hint}</p>
       </div>
-      <img class="activity-prop" src="assets/kenney/${prop}" alt="">
-    </div>`;
+      <img class="game-avatar" src="assets/kenney/characters/${character}.png" alt="">
+    </header>`;
 }
 
-export function createRunner(container, pack, audio, finish) {
+export function createRunner(container, pack, audio, finish, onExit) {
   const items = [...pack.items].slice(0, 10);
   container.innerHTML = `
     <section class="race-shell" data-game="runner">
-      <div class="game-header race-heading">
-        <div>
-          <h2 class="game-title">三道门跑酷</h2>
-          <p>看看题目，冲向正确答案门</p>
+      <header class="runner-hud" id="runner-hud">
+        <div class="runner-hud-title">
+          <strong>三道门跑酷</strong>
+          <span id="runner-progress">第 1 / 10 题</span>
         </div>
-        <button class="race-pause" id="runner-pause" type="button"><span aria-hidden="true">Ⅱ</span><span class="pause-label">暂停</span></button>
-      </div>
-      <div class="runner-answer-legend" id="runner-answer-legend" aria-label="三道门答案对照">
-        <span class="legend-title">答案对照</span>
-        <div class="legend-options">
-          <button class="lane-chip lane-blue" type="button" data-lane="0"><b>蓝道 1</b><span class="lane-answer">载入中</span></button>
-          <button class="lane-chip lane-green" type="button" data-lane="1"><b>绿道 2</b><span class="lane-answer">载入中</span></button>
-          <button class="lane-chip lane-yellow" type="button" data-lane="2"><b>黄道 3</b><span class="lane-answer">载入中</span></button>
+        <div class="runner-prompt" id="runner-prompt">准备出发</div>
+        <div class="runner-hud-stats">
+          <span id="runner-score">得分 0</span>
+          <span class="runner-coins"><img src="assets/kenney/platformer/hud_coin.png" alt=""><b id="runner-coins">0</b></span>
+          <span class="runner-combo" id="runner-combo" hidden></span>
         </div>
-      </div>
+        <button class="runner-pause" id="runner-pause" type="button">暂停</button>
+        <div class="runner-progress-track" aria-hidden="true"><span id="runner-progress-bar"></span></div>
+      </header>
       <div class="runner-stage" id="runner-stage" aria-label="三道门跑酷游戏场景"></div>
       <div class="race-controls" aria-label="跑道控制">
-        <button class="race-control" id="runner-left" type="button" aria-label="向左变道"><img src="assets/kenney/ui/arrow-left.png" alt=""><span>左道</span></button>
-        <button class="race-control race-control-center" id="runner-middle" type="button" aria-label="回到中间跑道">中间</button>
-        <button class="race-control" id="runner-right" type="button" aria-label="向右变道"><span>右道</span><img src="assets/kenney/ui/arrow-right.png" alt=""></button>
+        <button class="race-control" id="runner-left" data-lane="0" type="button"><img src="assets/kenney/ui/arrow-left.png" alt=""><span>左道</span></button>
+        <button class="race-control" id="runner-middle" data-lane="1" type="button"><span>中间</span></button>
+        <button class="race-control" id="runner-right" data-lane="2" type="button"><span>右道</span><img src="assets/kenney/ui/arrow-right.png" alt=""></button>
       </div>
-      <p class="race-hint" id="runner-status" aria-live="polite">方向键变道，也可直接点击跑道。三道门会从远处驶来，到达终点时自动判定。</p>
+      <div class="pause-overlay" id="runner-pause-panel" hidden>
+        <div class="pause-card">
+          <h2>游戏暂停</h2>
+          <p>题目、门体和计时已冻结。</p>
+          <div class="pause-actions">
+            <button id="runner-resume" type="button">继续游戏</button>
+            <button class="ghost" id="runner-audio-test" type="button">音频测试</button>
+            <button class="ghost" id="runner-settings" type="button">设置</button>
+            <button class="ghost" id="runner-fullscreen" type="button">全屏</button>
+            <button class="ghost" id="runner-exit" type="button">返回大厅</button>
+          </div>
+        </div>
+      </div>
+      <p class="sr-only" id="runner-status" aria-live="polite">方向键变道，也可直接点击跑道。</p>
     </section>`;
   const runner = mountRunnerGame({
     container: container.querySelector('#runner-stage'),
@@ -102,31 +115,55 @@ export function createRunner(container, pack, audio, finish) {
   container.querySelector('#runner-left').onclick = () => runner.events.emit('switch-lane', 0);
   container.querySelector('#runner-middle').onclick = () => runner.events.emit('switch-lane', 1);
   container.querySelector('#runner-right').onclick = () => runner.events.emit('switch-lane', 2);
-  const legendButtons = [...container.querySelectorAll('.lane-chip')];
-  legendButtons.forEach(button => {
-    button.onclick = () => runner.events.emit('switch-lane', Number(button.dataset.lane));
-  });
   const pauseButton = container.querySelector('#runner-pause');
-  const pauseLabel = pauseButton.querySelector('.pause-label');
+  const pausePanel = container.querySelector('#runner-pause-panel');
   const status = container.querySelector('#runner-status');
+  const controls = [...container.querySelectorAll('.race-control')];
+  const prompt = container.querySelector('#runner-prompt');
+  const progress = container.querySelector('#runner-progress');
+  const progressBar = container.querySelector('#runner-progress-bar');
+  const score = container.querySelector('#runner-score');
+  const coins = container.querySelector('#runner-coins');
+  const combo = container.querySelector('#runner-combo');
   pauseButton.onclick = () => {
     const state = window.__learningGameDebug?.runner?.state();
     runner.events.emit(state?.phase === 'paused' ? 'resume' : 'pause');
   };
+  container.querySelector('#runner-resume').onclick = () => runner.events.emit('resume');
+  container.querySelector('#runner-audio-test').onclick = async () => {
+    audio.effect('click');
+    await audio.speech('audio/en/g3-en-01.wav');
+  };
+  container.querySelector('#runner-settings').onclick = () => {
+    audio.effect('click');
+    document.querySelector('#settings-open')?.click();
+  };
+  container.querySelector('#runner-fullscreen').onclick = async () => {
+    if (document.fullscreenElement) await document.exitFullscreen();
+    else await document.documentElement.requestFullscreen();
+  };
+  container.querySelector('#runner-exit').onclick = () => {
+    audio.effect('click');
+    onExit();
+  };
   runner.events.on('state', state => {
-    pauseLabel.textContent = state.phase === 'paused' ? '继续' : '暂停';
-    pauseButton.setAttribute('aria-label', state.phase === 'paused' ? '继续游戏' : '暂停游戏');
+    const paused = state.phase === 'paused';
+    audio.setMusicPaused(paused);
+    pausePanel.hidden = !paused;
+    pauseButton.textContent = paused ? '继续' : '暂停';
     pauseButton.disabled = ['resolved', 'complete'].includes(state.phase);
-    legendButtons.forEach((button, lane) => {
-      button.querySelector('.lane-answer').textContent = state.options[lane] || '—';
-      button.classList.toggle('active', state.lane === lane);
-      button.classList.toggle('is-correct', state.phase === 'resolved' && state.correctLane === lane);
-      button.classList.toggle('is-wrong', state.phase === 'resolved' && state.lane === lane && state.lane !== state.correctLane);
-      button.disabled = !['countdown', 'running'].includes(state.phase);
-    });
-    if (state.phase === 'paused') status.textContent = '游戏已暂停，点击上方继续按钮恢复。';
+    prompt.textContent = state.prompt || '准备出发';
+    progress.textContent = `第 ${state.index + 1} / ${state.total} 题`;
+    score.textContent = `得分 ${state.score}`;
+    coins.textContent = String(state.coins);
+    combo.hidden = state.combo <= 1;
+    combo.textContent = state.combo > 1 ? `${state.combo} 连击` : '';
+    const remaining = state.phase === 'resolved' ? 0 : 1 - state.gateProgress;
+    progressBar.style.width = `${Math.max(0, remaining) * 100}%`;
+    controls.forEach(button => button.classList.toggle('active', Number(button.dataset.lane) === state.lane));
+    if (paused) status.textContent = '游戏已暂停。';
     else if (state.phase === 'resolved') status.textContent = '本题结束，请查看反馈并继续下一题。';
-    else status.textContent = `第 ${state.index + 1} 题：${state.prompt}。三道门会从远处驶来。`;
+    else status.textContent = `第 ${state.index + 1} 题：${state.prompt}。`;
   });
   return () => runner.destroy();
 }
@@ -142,17 +179,18 @@ export function createListen(container, pack, audio, finish) {
     locked = false;
     container.innerHTML = `
       <section class="game-shell listen-shell">
-        <div class="game-header"><h2 class="game-title">听音找精灵</h2><span class="pill">第 ${index + 1} / ${items.length} 题</span></div>
-        ${activityBanner({
-          kicker: '个人冒险',
-          title: '听一听，再帮精灵找到正确宝藏',
-          detail: '范读只在点击时播放；选出答案后立即给出反馈。',
-          character: 'adventurer-talk',
-          prop: 'platformer/gem_blue.png',
-          tone: 'forest'
+        ${gameTitlebar({
+          title: '听音找精灵',
+          progress: `第 ${index + 1} / ${items.length} 题`,
+          hint: '点击播放，选出听到的内容',
+          character: 'adventurer-talk'
         })}
-        <div class="question-card"><div class="question-text">听一听，选出正确内容</div><button id="play">播放读音</button><div class="three-grid"></div></div>
-        <div class="feedback"></div>
+        <div class="game-content listen-content">
+          <div class="question-text">听一听，选出正确内容</div>
+          <button id="play" class="flat-primary">播放读音</button>
+          <div class="three-grid"></div>
+          <div class="feedback"></div>
+        </div>
       </section>`;
     const options = container.querySelector('.three-grid');
     const feedback = container.querySelector('.feedback');
@@ -209,16 +247,19 @@ export function createAssemble(container, pack, audio, finish) {
     const letters = shuffle(item.correct.split(''));
     container.innerHTML = `
       <section class="game-shell">
-        <div class="game-header"><h2 class="game-title">拼音/单词拼装</h2><span class="pill">第 ${index + 1} / ${items.length} 题</span></div>
-        ${activityBanner({
-          kicker: '个人冒险',
-          title: '把字母装回知识门',
-          detail: '可以点击字母填入，也可以点已填格子退回重试。',
-          character: 'adventurer-idle',
-          prop: 'ui/icon-checkmark.png',
-          tone: 'sunrise'
+        ${gameTitlebar({
+          title: '拼音/单词拼装',
+          progress: `第 ${index + 1} / ${items.length} 题`,
+          hint: '点击字母填入，再确认答案',
+          character: 'adventurer-idle'
         })}
-        <div class="question-card"><div class="question-text">${item.prompt}</div><div class="slots" id="slots"></div><div class="letters" id="letters"></div><div class="dialog-actions"><button class="ghost" id="clear">清空</button><button id="confirm">确认答案</button></div><div class="feedback"></div></div>
+        <div class="game-content assemble-content">
+          <div class="question-text">${item.prompt}</div>
+          <div class="slots" id="slots"></div>
+          <div class="letters" id="letters"></div>
+          <div class="game-actions"><button class="ghost" id="clear">清空</button><button id="confirm">确认答案</button></div>
+          <div class="feedback"></div>
+        </div>
       </section>`;
     const slots = container.querySelector('#slots');
     const letterBox = container.querySelector('#letters');
@@ -307,16 +348,16 @@ export function createMemory(container, pack, audio, finish) {
   const answers = [];
   container.innerHTML = `
     <section class="game-shell">
-      <div class="game-header"><h2 class="game-title">记忆翻牌配对</h2><span class="pill">已配 ${matched}/${items.length}</span></div>
-      ${activityBanner({
-        kicker: '个人冒险',
-        title: '先观察，再翻出成对的字词',
-        detail: '翻错的两张牌会短暂停留，随后自动盖回。',
-        character: 'adventurer-duck',
-        prop: 'platformer/coin_gold.png',
-        tone: 'lavender'
+      ${gameTitlebar({
+        title: '记忆翻牌配对',
+        progress: `已配 ${matched}/${items.length}`,
+        hint: '翻出成对的字词与拼音/英文',
+        character: 'adventurer-duck'
       })}
-      <div class="memory-grid"></div><div class="feedback">先翻两张牌，找出“字词”和“拼音/英文”的配对。</div>
+      <div class="game-content memory-content">
+        <div class="memory-grid"></div>
+        <div class="feedback">先翻两张牌，找出“字词”和“拼音/英文”的配对。</div>
+      </div>
     </section>`;
   const grid = container.querySelector('.memory-grid');
   const feedback = container.querySelector('.feedback');
@@ -344,7 +385,7 @@ export function createMemory(container, pack, audio, finish) {
           feedback.textContent = `配对成功！还剩 ${items.length - matched} 对。`;
           answers.push({ prompt: first.text, selected: second.text, correct: second.text });
           opened = [];
-          container.querySelector('.pill').textContent = `已配 ${matched}/${items.length}`;
+          container.querySelector('.game-progress').textContent = `已配 ${matched}/${items.length}`;
           if (matched === items.length) {
             recordResult('memory', pack.id, items.length, items.length);
             finish(resultView({ game: '记忆翻牌配对', score: items.length, answers }));
@@ -399,18 +440,17 @@ export function createBeat(container, pack, audio, finish) {
   const answers = [];
   container.innerHTML = `
     <section class="game-shell">
-      <div class="game-header"><h2 class="game-title">古诗朗读节拍</h2><span class="pill">点击、空格或触屏击打</span></div>
-      ${activityBanner({
-        kicker: '全班挑战',
-        title: '跟着范读稳稳击节',
-        detail: '系统只判断节拍窗口，不冒充朗读发音评分。',
-        character: 'adventurer-talk',
-        prop: 'platformer/flag_green_a.png',
-        tone: 'night'
+      ${gameTitlebar({
+        title: '古诗朗读节拍',
+        progress: '点击、空格或触屏击打',
+        hint: '只判断节拍窗口，不冒充朗读发音评分',
+        character: 'adventurer-talk'
       })}
-      <div class="beat-arena"><div class="beat-line"></div><div class="poem">${poem.title} · ${poem.author}<br>${poem.lines.join('<br>')}</div></div>
-      <div class="dialog-actions"><button class="ghost" id="beat-start">播放范读并开始</button><button id="beat-hit">击打</button></div>
-      <div class="feedback">节拍判定不代表朗读发音评分，老师可听后确认。</div>
+      <div class="game-content beat-content">
+        <div class="beat-arena"><div class="beat-line"></div><div class="poem">${poem.title} · ${poem.author}<br>${poem.lines.join('<br>')}</div></div>
+        <div class="game-actions"><button class="ghost" id="beat-start">播放范读并开始</button><button id="beat-hit">击打</button></div>
+        <div class="feedback">节拍判定不代表朗读发音评分，老师可听后确认。</div>
+      </div>
     </section>`;
   const arena = container.querySelector('.beat-arena');
   const feedback = container.querySelector('.feedback');
@@ -499,17 +539,22 @@ export function createBattle(container, pack, audio, finish) {
   const answers = [];
   container.innerHTML = `
     <section class="game-shell">
-      <div class="game-header"><h2 class="game-title">小组知识守护战</h2><span class="pill">老师确认答案</span></div>
-      ${activityBanner({
-        kicker: '全班挑战',
-        title: '两组轮流答题，守护知识能量',
-        detail: '学生代表选择答案，老师确认后再计分并切换回合。',
-        character: 'adventurer-cheer0',
-        prop: 'platformer/flag_blue_b.png',
-        tone: 'battle'
+      ${gameTitlebar({
+        title: '小组知识守护战',
+        progress: '老师确认答案',
+        hint: '两组轮流答题，确认后计分',
+        character: 'adventurer-cheer0'
       })}
-      <div class="battle-arena"><div class="team active" id="team0"><img src="assets/kenney/platformer/flag_yellow_a.png" alt=""><strong>第一组</strong><div class="energy"><span></span></div></div><div class="team" id="team1"><img src="assets/kenney/platformer/flag_blue_b.png" alt=""><strong>第二组</strong><div class="energy"><span></span></div></div></div>
-      <div class="question-card"><div class="question-text" id="prompt"></div><div class="option-grid"></div><div class="dialog-actions"><button id="teacher-correct">老师确认正确</button><button class="danger" id="teacher-wrong">老师判定需复习</button></div><div class="feedback">先选择答案，再由老师确认。</div></div>
+      <div class="game-content battle-content">
+        <div class="battle-arena">
+          <div class="team team-blue active" id="team0"><img src="assets/kenney/platformer/flag_blue_b.png" alt=""><strong>蓝队</strong><div class="energy"><span></span></div></div>
+          <div class="team team-amber" id="team1"><img src="assets/kenney/platformer/flag_yellow_a.png" alt=""><strong>琥珀队</strong><div class="energy"><span></span></div></div>
+        </div>
+        <div class="question-text" id="prompt"></div>
+        <div class="option-grid"></div>
+        <div class="game-actions"><button id="teacher-correct">老师确认正确</button><button class="danger" id="teacher-wrong">老师判定需复习</button></div>
+        <div class="feedback">先选择答案，再由老师确认。</div>
+      </div>
     </section>`;
   const optionGrid = container.querySelector('.option-grid');
   const feedback = container.querySelector('.feedback');

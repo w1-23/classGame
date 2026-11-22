@@ -4,6 +4,8 @@ const tracks = {
   wrong: 'audio/kenney/error_004.ogg',
   result: 'audio/kenney/result.ogg'
 };
+const MUSIC_PATH = 'audio/music/runner-loop.ogg';
+const MUSIC_VOLUME = .16;
 
 export class AudioManager {
   constructor(settings) {
@@ -11,6 +13,9 @@ export class AudioManager {
     this.context = null;
     this.buffers = new Map();
     this.speechSource = null;
+    this.musicSource = null;
+    this.musicGain = null;
+    this.musicToken = 0;
   }
 
   #context() {
@@ -81,8 +86,50 @@ export class AudioManager {
     this.speechSource = null;
   }
 
+  async startMusic() {
+    this.stopMusic();
+    const token = ++this.musicToken;
+    try {
+      const context = this.#context();
+      const buffer = await this.#buffer(MUSIC_PATH);
+      if (!buffer || token !== this.musicToken) return;
+      const source = context.createBufferSource();
+      const gain = context.createGain();
+      source.buffer = buffer;
+      source.loop = true;
+      gain.gain.value = MUSIC_VOLUME;
+      source.connect(gain).connect(context.destination);
+      source.start();
+      this.musicSource = source;
+      this.musicGain = gain;
+    } catch {
+      this.stopMusic();
+    }
+  }
+
+  setMusicPaused(paused) {
+    if (!this.musicGain || !this.context) return;
+    const now = this.context.currentTime;
+    this.musicGain.gain.cancelScheduledValues(now);
+    this.musicGain.gain.setTargetAtTime(paused ? 0 : MUSIC_VOLUME, now, .04);
+  }
+
+  stopMusic() {
+    this.musicToken += 1;
+    if (this.musicSource) {
+      try {
+        this.musicSource.stop();
+      } catch {
+        // The source may already have stopped.
+      }
+    }
+    this.musicSource = null;
+    this.musicGain = null;
+  }
+
   destroy() {
     this.stopSpeech();
+    this.stopMusic();
     if (this.context && this.context.state !== 'closed') this.context.close();
   }
 }

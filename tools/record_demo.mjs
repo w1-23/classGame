@@ -55,48 +55,54 @@ const video = page.video();
 try {
   await page.goto(`http://127.0.0.1:${port}/index.html`);
   await page.waitForSelector('[data-id="runner"]');
-  await page.waitForTimeout(900);
+  await page.waitForTimeout(1200);
   await page.locator('[data-id="runner"]').click();
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.runner));
-  await page.waitForTimeout(700);
+  await page.waitForTimeout(1000);
 
   await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.34));
-  await page.waitForTimeout(900);
+  await page.waitForTimeout(1000);
   const first = await page.evaluate(() => window.__learningGameDebug.runner.state());
   const wrongLane = first.correctLane === 0 ? 1 : 0;
   await page.evaluate(lane => window.__learningGameDebug.runner.switchLane(lane), wrongLane);
-  await page.waitForTimeout(450);
+  await page.waitForTimeout(500);
   await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.985));
-  await page.waitForTimeout(1450);
+  await page.waitForTimeout(1500);
   await page.evaluate(() => {
     window.scrollTo(0, 0);
     window.__learningGameDebug.runner.continue();
   });
-  await page.waitForTimeout(550);
+  await page.waitForTimeout(900);
 
   const second = await page.evaluate(() => window.__learningGameDebug.runner.state());
   await page.evaluate(lane => {
     window.__learningGameDebug.runner.switchLane(lane);
-    window.__learningGameDebug.runner.advanceToGate(.82);
+    window.__learningGameDebug.runner.advanceToGate(.72);
   }, second.correctLane);
-  await page.waitForTimeout(1050);
+  await page.waitForTimeout(1200);
+  await page.evaluate(() => window.__learningGameDebug.runner.pause());
+  await page.waitForTimeout(1300);
+  await page.evaluate(() => window.__learningGameDebug.runner.resume());
+  await page.waitForTimeout(500);
   await page.evaluate(() => window.__learningGameDebug.runner.advanceToGate(.985));
-  await page.waitForTimeout(1450);
+  await page.waitForTimeout(1600);
+  await page.evaluate(() => window.__learningGameDebug.runner.continue());
+  await page.waitForTimeout(650);
 
   for (let question = 2; question < 10; question += 1) {
-    await page.evaluate(() => window.__learningGameDebug.runner.continue());
-    await page.waitForTimeout(190);
     const current = await page.evaluate(() => window.__learningGameDebug.runner.state());
     await page.evaluate(lane => {
       window.__learningGameDebug.runner.switchLane(lane);
+      window.__learningGameDebug.runner.advanceToGate(.985);
       window.__learningGameDebug.runner.collision();
     }, current.correctLane);
-    await page.waitForTimeout(330);
+    await page.waitForTimeout(800);
+    await page.evaluate(() => window.__learningGameDebug.runner.continue());
+    await page.waitForTimeout(350);
   }
-  await page.evaluate(() => window.__learningGameDebug.runner.continue());
   await page.getByRole('heading', { name: '三道门跑酷完成' }).waitFor({ timeout: 15000 });
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(3000);
 } finally {
   await context.close();
   await video.saveAs(VIDEO_PATH);
