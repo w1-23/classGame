@@ -39,21 +39,21 @@ try {
   });
 
   const state = await page.evaluate(() => window.__learningGameDebug.runner.state());
-  assert.equal(state.total, 10, 'runner must load ten local questions');
+  assert.equal(state.total, 9, 'runner must load three stages of three local questions');
   assert.equal(state.options.length, 3, 'runner must expose three perspective gates');
   await page.evaluate(lane => {
     window.__learningGameDebug.runner.switchLane(lane);
     window.__learningGameDebug.runner.collision();
   }, state.correctLane);
   const resolved = await page.evaluate(() => window.__learningGameDebug.runner.state());
-  assert.equal(resolved.phase, 'resolved');
+  assert.equal(resolved.phase, 'feedback');
   assert.equal(resolved.score, 1);
   assert.ok(resolved.sounds.includes('sfx-correct'));
   assert.ok(!resolved.sounds.includes('sfx-wrong'));
   await page.waitForTimeout(650);
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: screenshotPath, fullPage: true });
-  for (let question = 1; question < 10; question += 1) {
+  for (let question = 1; question < 9; question += 1) {
     await page.evaluate(() => window.__learningGameDebug.runner.continue());
     const next = await page.evaluate(() => window.__learningGameDebug.runner.state());
     await page.evaluate(lane => {
@@ -62,14 +62,16 @@ try {
     }, next.correctLane);
     const completed = await page.evaluate(() => window.__learningGameDebug.runner.state());
     assert.equal(completed.score, question + 1);
-    assert.equal(completed.phase, 'resolved');
+    assert.equal(completed.phase, 'feedback');
   }
   await page.evaluate(() => window.__learningGameDebug.runner.continue());
-  await page.getByRole('heading', { name: '三道门跑酷完成' }).waitFor({ timeout: 20000 });
+  await page.locator('#runner-prompt').filter({ hasText: '抵达终点' }).waitFor({ timeout: 20000 });
+  await page.locator('#runner-right').click();
+  await page.getByRole('heading', { name: '森林寻宝记完成' }).waitFor({ timeout: 20000 });
   assert.deepEqual(remoteRequests, [], `unexpected remote requests: ${remoteRequests.join(', ')}`);
   console.log(`PACKAGED APP VERIFIED: ${executablePath}`);
   console.log(`Remote requests: 0`);
-  console.log(`Completed questions: 10/10`);
+  console.log(`Completed questions: 9/9`);
   console.log(`Screenshot: ${screenshotPath}`);
 } finally {
   await app.close();

@@ -64,7 +64,7 @@ function renderHome() {
         <div class="mascot"><img class="mascot-image" src="assets/kenney/characters/adventurer-cheer0.png" alt="冒险者角色"></div>
       </div>
       <div class="mode-grid">
-        <button class="mode-card" id="personal-mode"><strong>个人冒险</strong><span>跑酷、听音、拼装、配对，本地自动判定。</span></button>
+        <button class="mode-card" id="personal-mode"><strong>个人冒险</strong><span>森林寻宝、听音、拼装、配对，本地自动判定。</span></button>
         <button class="mode-card warning" id="class-mode"><strong>全班挑战</strong><span>一块大屏主持，老师确认朗读与答案。</span></button>
       </div>
       <h2 class="section-title">个人冒险</h2>
@@ -76,11 +76,11 @@ function renderHome() {
   const classGrid = app.querySelector('.class-grid');
   GAME_META.forEach(game => {
     const descriptions = {
-      runner: '三车道冲门，连击与金币反馈',
+      runner: '看题选路，一路寻宝',
       listen: '听本地范读，找出正确内容',
       assemble: '拖动或点击字母完成拼装',
       memory: '翻牌配对，训练短时记忆',
-      beat: '跟随古诗朗读击打节拍',
+      beat: '听一句、读一句，合作完成诗词共读',
       battle: '两组轮流答题，老师确认计分'
     };
     const button = document.createElement('button');
@@ -114,8 +114,8 @@ function renderClassLobby() {
       </div>
       <div class="mode-grid">
         <button class="mode-card" id="class-beat">
-          <strong>古诗朗读节拍</strong>
-          <span>老师播放范读，学生跟随击打；系统只判断节拍，不冒充朗读发音评分。</span>
+          <strong>诗词小剧场</strong>
+          <span>选择《静夜思》或《春晓》，老师控制逐句共读、补全诗句与课堂进度。</span>
         </button>
         <button class="mode-card warning" id="class-battle">
           <strong>小组知识守护战</strong>
@@ -125,9 +125,10 @@ function renderClassLobby() {
       <div class="question-card">
         <div class="question-text">课堂流程</div>
         <div class="stat-row">
-          <span class="pill">1. 宣读规则</span>
-          <span class="pill">2. 学生代表操作</span>
-          <span class="pill">3. 老师确认与讲评</span>
+          <span class="pill">1. 选诗</span>
+          <span class="pill">2. 逐句共读</span>
+          <span class="pill">3. 补全诗句</span>
+          <span class="pill">4. 老师总结</span>
         </div>
       </div>
     </section>`;

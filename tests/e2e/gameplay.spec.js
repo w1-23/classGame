@@ -58,17 +58,22 @@ test('memory game locks mismatches and briefly blocks a third card', async ({ pa
   await expect.poll(() => page.evaluate(() => window.__learningGameDebug.memory.state().locked), { timeout: 2000 }).toBe(false);
 });
 
-test('beat game distinguishes on-beat and early hits', async ({ page }) => {
-  await openGame(page, 'beat', '.beat-arena');
-  await page.evaluate(() => window.__learningGameDebug.beat.startNote());
-  await page.evaluate(() => window.__learningGameDebug.beat.hitAt(.91));
-  expect((await page.evaluate(() => window.__learningGameDebug.beat.state())).score).toBe(1);
-  await expect(page.locator('.feedback.correct')).toContainText('合拍');
-  await page.waitForTimeout(480);
-  await page.evaluate(() => window.__learningGameDebug.beat.startNote());
-  await page.evaluate(() => window.__learningGameDebug.beat.hitAt(.35));
-  expect((await page.evaluate(() => window.__learningGameDebug.beat.state())).score).toBe(1);
-  await expect(page.locator('.feedback.wrong')).toContainText('稍快');
+test('poetry theater requires line-by-line teacher-led reading and a comprehension answer', async ({ page }) => {
+  await openGame(page, 'beat', '.theater-workbench');
+  await page.evaluate(() => window.__learningGameDebug.beat.finish());
+  await expect(page.locator('#poetry-feedback')).toContainText('没有共读');
+
+  await page.evaluate(() => window.__learningGameDebug.beat.play());
+  await page.evaluate(() => window.__learningGameDebug.beat.next());
+  await page.evaluate(() => window.__learningGameDebug.beat.next());
+  await page.evaluate(() => window.__learningGameDebug.beat.next());
+  await page.evaluate(() => window.__learningGameDebug.beat.choose('清风'));
+  await expect(page.locator('#poetry-feedback')).toContainText('再想一想');
+  await page.evaluate(() => window.__learningGameDebug.beat.choose('明月'));
+  await expect(page.locator('#poetry-practice-note')).toContainText('床前明月光');
+  const state = await page.evaluate(() => window.__learningGameDebug.beat.state());
+  expect(state.heardLines).toEqual([0, 1, 2, 3]);
+  expect(state.chosenAnswer).toBe('明月');
 });
 
 test('class lobby and battle use teacher-confirmed two-team scoring', async ({ page }) => {

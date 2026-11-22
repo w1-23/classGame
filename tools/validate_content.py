@@ -42,6 +42,13 @@ for pack_path in PACKS:
         check(Path(ROOT / poem["audio"]).exists(), f"{poem['id']}: missing audio {poem['audio']}")
         check(poem.get("reviewed") is True, f"{poem['id']}: not reviewed")
         check(len(poem.get("lines", [])) >= 2, f"{poem['id']}: poem lines incomplete")
+        line_audio = poem.get("lineAudio", [])
+        check(
+            len(line_audio) == len(poem.get("lines", [])),
+            f"{poem['id']}: lineAudio count must match poem lines",
+        )
+        for audio_path in line_audio:
+            check(Path(ROOT / audio_path).exists(), f"{poem['id']}: missing line audio {audio_path}")
 
 for required in [
     "vendor/phaser/phaser.min.js",

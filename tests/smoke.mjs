@@ -98,7 +98,8 @@ for (const path of [
   'docs/教材映射模板.md',
   'docs/发布校验报告.md',
   'docs/licenses/Overworld-Theme-CC0.txt',
-  'docs/0.3.0视觉收敛报告.md'
+  'docs/0.3.0视觉收敛报告.md',
+  'docs/0.4.0森林寻宝与诗词小剧场报告.md'
 ]) {
   assert.ok(await exists(path), `${path} is missing`);
 }

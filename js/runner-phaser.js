@@ -1,25 +1,23 @@
 const Phaser = window.Phaser;
 
-const QUESTION_SECONDS = 6;
+const QUESTION_SECONDS = 8;
 const COUNTDOWN_SECONDS = 3;
+const STAGE_SIZE = 3;
 const PLAYER_SOURCE_HEIGHT = 128;
 const PLAYER_HEIGHT_RATIO = .25;
-const ROAD_COLOR = 0xbda77f;
-const GRASS_COLOR = 0x75b96b;
+const MAX_GATE_VISUAL = .84;
+const ROAD_COLOR = 0xf1dfb7;
+const ROAD_EDGE_COLOR = 0xd4bd8d;
+const GRASS_NEAR = 0x93c777;
+const HORIZON_BLUE = 0xd8f0ee;
+const WOOD_DARK = 0x805f3e;
+const WOOD_LIGHT = 0xf2e6c8;
+const INK_GREEN = '#183d2d';
 
-const LANE_STYLES = [
-  {
-    color: 0x5ca9d6,
-    label: '蓝道'
-  },
-  {
-    color: 0x69b77c,
-    label: '绿道'
-  },
-  {
-    color: 0xe2b65c,
-    label: '琥珀道'
-  }
+const AREAS = [
+  { name: '阳光林地', accent: 0x8fc16f },
+  { name: '溪边栈道', accent: 0x77b987 },
+  { name: '林间营地', accent: 0xa8bf72 }
 ];
 
 function shuffle(list) {
@@ -37,6 +35,10 @@ function optionList(item) {
 
 function uiFont() {
   return '"Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif';
+}
+
+function inverseEase(value) {
+  return Math.pow(Phaser.Math.Clamp(value, 0, 1), 1 / 1.45);
 }
 
 class RunnerScene extends Phaser.Scene {
@@ -58,16 +60,19 @@ class RunnerScene extends Phaser.Scene {
     this.countdown = COUNTDOWN_SECONDS;
     this.countdownDigit = COUNTDOWN_SECONDS;
     this.gateProgress = 0;
+    this.transitionRemaining = 0;
     this.answers = [];
     this.currentItem = null;
     this.options = [];
+    this.feedback = { visible: false, kind: 'correct', title: '', body: '' };
     this.sceneryClock = 0;
     this.playerClock = 0;
     this.hudClock = 0;
     this.playerPose = 'idle';
     this.audioLog = [];
-    this.idleTween = null;
     this.celebrateTimer = null;
+    this.finished = false;
+    this.laneTween = null;
   }
 
   preload() {
@@ -75,37 +80,27 @@ class RunnerScene extends Phaser.Scene {
     const platformer = 'assets/kenney/platformer';
     const ui = 'assets/kenney/ui';
     const particles = 'assets/kenney/particles';
-    const images = [
+    [
       ['char-idle', `${character}/adventurer-idle.png`],
       ['char-run0', `${character}/adventurer-run0.png`],
       ['char-run1', `${character}/adventurer-run1.png`],
       ['char-run2', `${character}/adventurer-run2.png`],
-      ['char-jump', `${character}/adventurer-jump.png`],
-      ['char-fall', `${character}/adventurer-fall.png`],
-      ['char-hit', `${character}/adventurer-hit.png`],
       ['char-hurt', `${character}/adventurer-hurt.png`],
       ['char-cheer0', `${character}/adventurer-cheer0.png`],
       ['char-cheer1', `${character}/adventurer-cheer1.png`],
-      ['char-slide', `${character}/adventurer-slide.png`],
       ['sky', `${platformer}/background_solid_sky.png`],
       ['clouds', `${platformer}/background_clouds.png`],
       ['trees', `${platformer}/background_color_trees.png`],
       ['bush', `${platformer}/bush.png`],
       ['grass', `${platformer}/grass.png`],
       ['rock', `${platformer}/rock.png`],
-      ['mushroom-red', `${platformer}/mushroom_red.png`],
       ['coin', `${platformer}/coin_gold.png`],
-      ['hud-coin', `${platformer}/hud_coin.png`],
-      ['gate-column-green', `${platformer}/block_green.png`],
-      ['gate-door-closed', `${platformer}/door_closed.png`],
-      ['gate-door-open', `${platformer}/door_open.png`],
       ['ui-check', `${ui}/icon-checkmark.png`],
       ['ui-cross', `${ui}/icon-cross.png`],
       ['fx-star', `${particles}/star.png`],
       ['fx-spark', `${particles}/spark.png`],
       ['fx-circle', `${particles}/circle.png`]
-    ];
-    images.forEach(([key, path]) => this.load.image(key, path));
+    ].forEach(([key, path]) => this.load.image(key, path));
 
     this.load.audio('sfx-switch', 'audio/kenney/switch_002.ogg');
     this.load.audio('sfx-correct', 'audio/kenney/confirmation_002.ogg');
@@ -120,8 +115,8 @@ class RunnerScene extends Phaser.Scene {
     this.createBackground();
     this.roadGfx = this.add.graphics().setDepth(2);
     this.createScenery();
+    this.createCoinPickups();
     this.createPlayer();
-    this.createFeedback();
     this.createParticles();
     this.createCountdown();
     this.createControls();
@@ -130,29 +125,29 @@ class RunnerScene extends Phaser.Scene {
     this.scale.on('resize', this.layout, this);
     this.eventsBus.on('pause', this.pause, this);
     this.eventsBus.on('resume', this.resume, this);
+    this.eventsBus.on('finish', this.finishJourney, this);
+    this.eventsBus.on('restart', this.restartJourney, this);
     this.switchLaneHandler = lane => this.switchLane(lane);
     this.eventsBus.on('switch-lane', this.switchLaneHandler);
-    this.eventsBus.on('continue', this.continueNext, this);
 
     this.publishDebug();
-    this.showQuestion();
+    this.startJourney();
   }
 
   createBackground() {
     this.createTreeCutout();
-    this.skyBackdrop = this.add.graphics().setDepth(-22);
-    this.sky = this.add.tileSprite(0, 0, 10, 10, 'sky')
-      .setOrigin(0)
-      .setTint(0xa9ddf2)
-      .setAlpha(1)
-      .setDepth(-20);
+    this.skyBackdrop = this.add.graphics().setDepth(-30);
+    this.hillGfx = this.add.graphics().setDepth(-24);
     this.cloudLayer = this.add.tileSprite(0, 0, 10, 10, 'clouds')
       .setOrigin(0)
-      .setAlpha(.25)
-      .setDepth(-18);
-    this.treeLayer = this.add.tileSprite(0, 0, 10, 10, 'trees-cutout')
+      .setTint(0xfffdf0)
+      .setAlpha(.7)
+      .setDepth(-21);
+    this.treeLine = this.add.tileSprite(0, 0, 10, 10, 'trees-cutout')
       .setOrigin(.5, 1)
-      .setDepth(1);
+      .setTint(0x91bf84)
+      .setAlpha(.62)
+      .setDepth(-8);
   }
 
   createTreeCutout() {
@@ -177,111 +172,87 @@ class RunnerScene extends Phaser.Scene {
     texture.refresh();
   }
 
+  makeTreeActor(index, side) {
+    const root = this.add.container(0, 0).setDepth(3 + index % 4);
+    const shadow = this.add.ellipse(0, -2, 118, 22, 0x355936, .16);
+    const trunk = this.add.graphics();
+    trunk.fillStyle(0x7d6043, 1);
+    trunk.fillRoundedRect(-6, -68, 12, 68, 4);
+    const back = this.add.image(0, -66, 'bush')
+      .setOrigin(.5, .82)
+      .setTint(index % 2 ? 0x75ad62 : 0x639e5b)
+      .setScale(1.75);
+    const left = this.add.image(-28, -54, 'bush')
+      .setOrigin(.5, .86)
+      .setTint(index % 3 ? 0x8fc871 : 0x75b469)
+      .setScale(1.18);
+    const right = this.add.image(27, -50, 'bush')
+      .setOrigin(.5, .86)
+      .setTint(index % 2 ? 0x87c16c : 0x6eaa61)
+      .setScale(1.08);
+    root.add([shadow, trunk, back, left, right]);
+    return {
+      root,
+      side,
+      variant: index % 3,
+      offset: index / 12,
+      speed: .035 + (index % 4) * .006,
+      baseScale: .64 + (index % 4) * .11,
+      canopyWidth: 150
+    };
+  }
+
   createScenery() {
-    const sideTextures = ['bush', 'rock', 'mushroom-red', 'grass'];
     this.sceneryActors = [];
-    for (let index = 0; index < 8; index += 1) {
-      const image = this.add.image(0, 0, sideTextures[index % sideTextures.length]).setDepth(4);
-      this.sceneryActors.push({
-        image,
-        side: index % 2 === 0 ? -1 : 1,
-        lane: null,
-        offset: index / 8,
-        scale: .72 + (index % 2) * .12
-      });
-    }
-    const coinLanes = [1, 0, 2, 1];
-    for (let index = 0; index < coinLanes.length; index += 1) {
-      const image = this.add.image(0, 0, 'coin').setDepth(5);
-      this.sceneryActors.push({
-        image,
-        side: 0,
-        lane: coinLanes[index],
-        offset: .14 + index * .22,
-        scale: .6
-      });
+    for (let index = 0; index < 14; index += 1) {
+      const side = index % 2 === 0 ? -1 : 1;
+      this.sceneryActors.push(this.makeTreeActor(index, side));
     }
   }
 
+  createCoinPickups() {
+    this.coinPickups = [0, 1].map(() => {
+      const image = this.add.image(0, 0, 'coin').setOrigin(.5).setDepth(35).setVisible(false);
+      return { image, lane: 1, start: .3, collected: false, expired: false };
+    });
+  }
+
   createPlayer() {
-    this.playerShadow = this.add.ellipse(0, 0, 90, 22, 0x103a2a, .28).setDepth(52);
+    this.playerShadow = this.add.ellipse(0, 0, 90, 22, 0x355936, .24).setDepth(52);
     this.player = this.add.image(0, 0, 'char-idle').setOrigin(.5, 1).setDepth(55);
     this.playerRunFrames = ['char-run0', 'char-run1', 'char-run2', 'char-run1'];
     this.playerFrame = 0;
   }
 
-  createFeedback() {
-    this.feedbackScrim = this.add.rectangle(0, 0, 10, 10, 0x26384a, .18)
-      .setOrigin(0)
-      .setDepth(150)
-      .setVisible(false);
-    this.feedbackPanel = this.add.container(0, 0).setDepth(151).setVisible(false);
-    this.feedbackCard = this.add.graphics();
-    this.feedbackIcon = this.add.image(0, 0, 'ui-check');
-    this.feedbackTitle = this.add.text(0, 0, '', {
-      fontFamily: uiFont(),
-      fontStyle: 'bold',
-      fontSize: '30px',
-      color: '#26384a',
-      align: 'center'
-    }).setOrigin(.5);
-    this.feedbackBody = this.add.text(0, 0, '', {
-      fontFamily: uiFont(),
-      fontSize: '19px',
-      color: '#718096',
-      align: 'center',
-      lineSpacing: 5
-    }).setOrigin(.5);
-    this.continueButton = this.add.rectangle(0, 0, 220, 48, 0x399b68)
-      .setInteractive({ useHandCursor: true });
-    this.continueLabel = this.add.text(0, 0, '继续', {
-      fontFamily: uiFont(),
-      fontStyle: 'bold',
-      fontSize: '20px',
-      color: '#ffffff'
-    }).setOrigin(.5);
-    this.continueButton.on('pointerup', () => {
-      if (this.phase === 'resolved') this.continueNext();
-    });
-    this.feedbackPanel.add([
-      this.feedbackCard,
-      this.feedbackIcon,
-      this.feedbackTitle,
-      this.feedbackBody,
-      this.continueButton,
-      this.continueLabel
-    ]);
-  }
-
   createParticles() {
     this.successBurst = this.add.particles(0, 0, 'fx-star', {
-      lifespan: 720,
-      speed: { min: 120, max: 280 },
-      angle: { min: 210, max: 330 },
-      gravityY: 480,
-      scale: { start: .16, end: 0 },
-      rotate: { min: 0, max: 360 },
-      tint: [0xffd95b, 0xfff1a8],
+      lifespan: 680,
+      speed: { min: 90, max: 210 },
+      angle: { min: 215, max: 325 },
+      gravityY: 410,
+      scale: { start: .13, end: 0 },
+      rotate: { min: 0, max: 300 },
+      tint: [0xffdf68, 0xfff2ad],
       emitting: false
     }).setDepth(80);
     this.sparkBurst = this.add.particles(0, 0, 'fx-spark', {
-      lifespan: 420,
-      speed: { min: 70, max: 190 },
-      scale: { start: .08, end: 0 },
+      lifespan: 380,
+      speed: { min: 55, max: 150 },
+      scale: { start: .07, end: 0 },
       emitting: false
     }).setDepth(81);
     this.dustBurst = this.add.particles(0, 0, 'fx-circle', {
-      lifespan: 360,
-      speed: { min: 20, max: 70 },
-      scale: { start: .07, end: 0 },
-      alpha: { start: .38, end: 0 },
-      tint: 0xffe9b2,
+      lifespan: 320,
+      speed: { min: 15, max: 55 },
+      scale: { start: .055, end: 0 },
+      alpha: { start: .32, end: 0 },
+      tint: 0xf5e6c2,
       emitting: false
     }).setDepth(51);
   }
 
   createCountdown() {
-    this.countdownPlate = this.add.ellipse(0, 0, 128, 128, 0x26384a, .2)
+    this.countdownPlate = this.add.ellipse(0, 0, 128, 128, 0x1c4b36, .2)
       .setDepth(139)
       .setVisible(false);
     this.countdownText = this.add.text(0, 0, '', {
@@ -289,7 +260,7 @@ class RunnerScene extends Phaser.Scene {
       fontStyle: 'bold',
       fontSize: '92px',
       color: '#ffffff',
-      stroke: '#26384a',
+      stroke: '#1c4b36',
       strokeThickness: 6
     }).setOrigin(.5).setDepth(140).setVisible(false);
   }
@@ -297,16 +268,17 @@ class RunnerScene extends Phaser.Scene {
   createControls() {
     this.keyLeftHandler = () => this.switchLane(this.lane - 1);
     this.keyRightHandler = () => this.switchLane(this.lane + 1);
-    this.keyContinueHandler = () => {
-      if (this.phase === 'resolved') this.continueNext();
-    };
+    this.keyOneHandler = () => this.switchLane(0);
+    this.keyTwoHandler = () => this.switchLane(1);
+    this.keyThreeHandler = () => this.switchLane(2);
     this.input.keyboard.on('keydown-LEFT', this.keyLeftHandler);
     this.input.keyboard.on('keydown-RIGHT', this.keyRightHandler);
-    this.input.keyboard.on('keydown-SPACE', this.keyContinueHandler);
-    this.input.keyboard.on('keydown-ENTER', this.keyContinueHandler);
+    this.input.keyboard.on('keydown-ONE', this.keyOneHandler);
+    this.input.keyboard.on('keydown-TWO', this.keyTwoHandler);
+    this.input.keyboard.on('keydown-THREE', this.keyThreeHandler);
     this.input.on('pointerdown', pointer => {
-      if (this.phase !== 'running' && this.phase !== 'countdown') return;
-      const centers = [0, 1, 2].map(lane => this.laneXAt(lane, 1));
+      if (!['running', 'countdown'].includes(this.phase)) return;
+      const centers = [0, 1, 2].map(lane => this.laneXAt(lane, MAX_GATE_VISUAL));
       let nearest = 0;
       centers.forEach((x, lane) => {
         if (Math.abs(pointer.x - x) < Math.abs(pointer.x - centers[nearest])) nearest = lane;
@@ -316,11 +288,7 @@ class RunnerScene extends Phaser.Scene {
   }
 
   horizonY() {
-    return this.scale.height * (this.scale.width < 640 ? .3 : .31);
-  }
-
-  gateNearY() {
-    return this.scale.height * .85;
+    return this.scale.height * (this.scale.width < 640 ? .31 : .33);
   }
 
   depthEase(progress) {
@@ -328,19 +296,23 @@ class RunnerScene extends Phaser.Scene {
   }
 
   roadHalfAt(progress) {
-    const near = Math.min(this.scale.width * .43, 760);
-    const far = Math.min(this.scale.width * .075, 96);
+    const near = Math.min(this.scale.width * .38, 660);
+    const far = Math.min(this.scale.width * .045, 62);
     return Phaser.Math.Linear(far, near, this.depthEase(progress));
   }
 
-  perspective(progress, endY = this.gateNearY()) {
+  perspective(progress) {
     const eased = this.depthEase(progress);
     return {
       eased,
       half: this.roadHalfAt(progress),
-      y: Phaser.Math.Linear(this.horizonY(), endY, eased),
-      scale: Phaser.Math.Linear(.085, 1, eased)
+      y: Phaser.Math.Linear(this.horizonY(), this.scale.height, eased),
+      scale: Phaser.Math.Linear(.075, 1, eased)
     };
+  }
+
+  gateVisual(progress = this.gateProgress) {
+    return Phaser.Math.Linear(.035, MAX_GATE_VISUAL, Phaser.Math.Clamp(progress, 0, 1));
   }
 
   laneXAt(lane, progress = 0) {
@@ -348,72 +320,56 @@ class RunnerScene extends Phaser.Scene {
   }
 
   layout() {
+    if (!this.roadGfx) return;
     const width = this.scale.width;
     const height = this.scale.height;
     const horizon = this.horizonY();
 
-    this.sky.setSize(width, height);
-    const cloudScale = Phaser.Math.Clamp(width / 1800, .48, 1.2);
-    this.cloudLayer
-      .setPosition(0, height * .02)
-      .setSize(width, height * .24)
-      .setTileScale(cloudScale);
     this.skyBackdrop.clear();
-    this.skyBackdrop.fillStyle(0xa9ddf2, 1);
-    this.skyBackdrop.fillRect(0, 0, width, height);
-    const treeHeight = height * .18;
-    const treeScale = Math.max(width / 1450, treeHeight / 156);
-    this.treeLayer
-      .setPosition(width / 2, horizon + height * .015)
-      .setSize(width * 1.08, treeHeight)
+    this.skyBackdrop.fillStyle(HORIZON_BLUE, 1);
+    this.skyBackdrop.fillRect(0, 0, width, horizon + 1);
+
+    this.drawHills();
+    const cloudScale = Phaser.Math.Clamp(width / 1800, .42, 1);
+    this.cloudLayer
+      .setPosition(0, 0)
+      .setSize(width, height * .22)
+      .setTileScale(cloudScale);
+
+    const treeHeight = height * .13;
+    const treeScale = Math.max(width / 1700, treeHeight / 156);
+    this.treeLine
+      .setPosition(width / 2, horizon + height * .018)
+      .setSize(width * 1.12, treeHeight)
       .setTileScale(treeScale);
 
     this.drawRoad();
     this.updateScenery();
     this.layoutPlayer();
-    this.layoutFeedback();
     this.positionGates();
+    this.updateCoins();
 
-    const countSize = Phaser.Math.Clamp(width * .085, 60, 112);
+    const countSize = Phaser.Math.Clamp(width * .075, 56, 104);
     this.countdownText
-      .setPosition(width / 2, horizon + (this.gateNearY() - horizon) * .28);
+      .setPosition(width / 2, horizon + (height - horizon) * .28);
     this.countdownText.setFontSize(countSize);
     this.countdownPlate
       .setPosition(this.countdownText.x, this.countdownText.y)
-      .setDisplaySize(countSize * 1.5, countSize * 1.5);
-
-    this.feedbackScrim.setSize(width, height);
+      .setDisplaySize(countSize * 1.45, countSize * 1.45);
   }
 
-  layoutFeedback() {
+  drawHills() {
     const width = this.scale.width;
-    const height = this.scale.height;
-    const compact = width < 680;
-    const panelWidth = Math.min(width * (compact ? .88 : .42), compact ? 480 : 620);
-    const panelHeight = Math.min(height * .34, compact ? 248 : 226);
-    const buttonWidth = Math.min(panelWidth * .58, 260);
-    this.feedbackPanel.setPosition(width / 2, height * (compact ? .55 : .56));
-    this.feedbackCard.clear();
-    this.feedbackCard.fillStyle(0xffffff, .98);
-    this.feedbackCard.fillRoundedRect(-panelWidth / 2, -panelHeight / 2, panelWidth, panelHeight, 18);
-    this.feedbackCard.lineStyle(1, 0xd9e2df, 1);
-    this.feedbackCard.strokeRoundedRect(-panelWidth / 2, -panelHeight / 2, panelWidth, panelHeight, 18);
-    this.feedbackIcon
-      .setPosition(0, -panelHeight * .3)
-      .setDisplaySize(compact ? 42 : 50, compact ? 42 : 50);
-    this.feedbackTitle
-      .setPosition(0, -panelHeight * .11)
-      .setFontSize(compact ? 24 : 28);
-    this.feedbackBody
-      .setPosition(0, panelHeight * .1)
-      .setFontSize(compact ? 16 : 18)
-      .setWordWrapWidth(panelWidth - 48);
-    this.continueButton
-      .setPosition(0, panelHeight * .34)
-      .setSize(buttonWidth, compact ? 44 : 48);
-    this.continueLabel
-      .setPosition(0, panelHeight * .34)
-      .setFontSize(compact ? 18 : 20);
+    const horizon = this.horizonY();
+    const g = this.hillGfx;
+    g.clear();
+    g.fillStyle(0xa8d1a7, .7);
+    g.fillEllipse(width * .08, horizon + 4, width * .7, 112);
+    g.fillEllipse(width * .78, horizon - 3, width * .85, 126);
+    g.fillStyle(0x83b976, .82);
+    g.fillEllipse(width * .48, horizon + 22, width * .95, 92);
+    g.fillStyle(0x93c777, 1);
+    g.fillRect(0, horizon, width, this.scale.height - horizon);
   }
 
   drawRoad() {
@@ -424,16 +380,13 @@ class RunnerScene extends Phaser.Scene {
     const g = this.roadGfx;
     g.clear();
 
-    g.fillStyle(GRASS_COLOR, 1);
-    g.fillRect(0, horizon, width, height - horizon);
-
-    const shoulder = this.perspective(1, height);
-    g.fillStyle(GRASS_COLOR, 1);
+    const near = this.perspective(1);
+    g.fillStyle(ROAD_EDGE_COLOR, .38);
     g.beginPath();
-    g.moveTo(width / 2 - shoulder.half, horizon);
-    g.lineTo(width / 2 + shoulder.half, horizon);
-    g.lineTo(width * .99, height);
-    g.lineTo(width * .01, height);
+    g.moveTo(width / 2 - this.roadHalfAt(0) - 8, horizon);
+    g.lineTo(width / 2 + this.roadHalfAt(0) + 8, horizon);
+    g.lineTo(width / 2 + near.half + 14, height);
+    g.lineTo(width / 2 - near.half - 14, height);
     g.closePath();
     g.fillPath();
 
@@ -441,19 +394,23 @@ class RunnerScene extends Phaser.Scene {
     g.beginPath();
     g.moveTo(width / 2 - this.roadHalfAt(0), horizon);
     g.lineTo(width / 2 + this.roadHalfAt(0), horizon);
-    g.lineTo(width / 2 + shoulder.half, height);
-    g.lineTo(width / 2 - shoulder.half, height);
+    g.lineTo(width / 2 + near.half, height);
+    g.lineTo(width / 2 - near.half, height);
     g.closePath();
     g.fillPath();
 
     for (let divider = 1; divider < 3; divider += 1) {
-      for (let dash = 0; dash < 18; dash += 1) {
-        const start = (dash / 18 + this.sceneryClock * .18) % 1;
-        const end = Math.min(1, start + .032);
+      for (let dash = 0; dash < 16; dash += 1) {
+        const start = (dash / 16 + this.sceneryClock * .025) % 1;
+        const end = Math.min(.995, start + .022);
         if (end <= start) continue;
-        const p0 = this.perspective(start, height);
-        const p1 = this.perspective(end, height);
-        g.lineStyle(Phaser.Math.Linear(1, 5, p0.eased), 0xffffff, Phaser.Math.Linear(.42, .78, p0.eased));
+        const p0 = this.perspective(start);
+        const p1 = this.perspective(end);
+        g.lineStyle(
+          Phaser.Math.Linear(.7, 3.4, p0.eased),
+          Phaser.Math.Linear(0xcbbd9f, 0xb9a582, p0.eased),
+          Phaser.Math.Linear(.2, .36, p0.eased)
+        );
         g.beginPath();
         g.moveTo(width / 2 + (divider * 2 / 3 - 1) * p0.half, p0.y);
         g.lineTo(width / 2 + (divider * 2 / 3 - 1) * p1.half, p1.y);
@@ -461,46 +418,41 @@ class RunnerScene extends Phaser.Scene {
       }
     }
 
-    g.lineStyle(2, 0xe8e0d1, .72);
-    g.beginPath();
-    g.moveTo(width / 2 - shoulder.half, horizon);
-    g.lineTo(width * .01, height);
-    g.moveTo(width / 2 + shoulder.half, horizon);
-    g.lineTo(width * .99, height);
-    g.strokePath();
-
-    for (let index = 0; index < 18; index += 1) {
-      const progress = (index / 18 + this.sceneryClock * .055) % 1;
-      const p = this.perspective(progress, height);
-      g.fillStyle(0x7b6649, .025 + p.eased * .035);
-      g.fillRect(width / 2 - p.half, p.y, p.half * 2, Math.max(1, 2 + 2 * p.eased));
+    for (let index = 0; index < 15; index += 1) {
+      const progress = (index / 15 + this.sceneryClock * .015) % 1;
+      const p = this.perspective(progress);
+      g.fillStyle(0xcbb994, .05 + p.eased * .035);
+      g.fillRect(width / 2 - p.half, p.y, p.half * 2, Math.max(1, 1 + 2 * p.eased));
     }
   }
 
   updateScenery() {
     if (!this.sceneryActors) return;
-    this.sceneryActors.forEach((actor, index) => {
-      const progress = (actor.offset + this.sceneryClock * (actor.lane == null ? .095 : .12)) % 1;
-      const point = this.perspective(progress);
-      const full = this.perspective(progress, this.scale.height);
-      const alpha = Math.min(1, progress * 12, (1 - progress) * 7);
-      const scale = point.scale * actor.scale * Phaser.Math.Clamp(this.scale.width / 980, .55, 1.2);
-      actor.image.setScale(scale);
-      if (actor.lane == null) {
-        const edge = full.half * .84;
-        const rawX = this.scale.width / 2 + actor.side * edge;
-        const halfWidth = actor.image.width * scale / 2;
-        actor.image.setPosition(Phaser.Math.Clamp(rawX, halfWidth + 8, this.scale.width - halfWidth - 8), full.y);
-        actor.image.setOrigin(.5, 1);
-      } else {
-        actor.image.setPosition(this.laneXAt(actor.lane, progress), point.y - 28 * point.scale);
-        actor.image.setOrigin(.5);
-      }
-      actor.image.setAlpha(alpha);
-      actor.image.setDepth(4 + Math.round(progress * 18));
-      const oversized = actor.image.displayWidth > this.scale.width * .34;
-      actor.image.setVisible(progress > .01 && progress < .985 && !oversized);
-      actor.image.setAngle(actor.lane != null ? Math.sin(this.sceneryClock * 3 + index) * 4 : 0);
+    const width = this.scale.width;
+    this.sceneryActors.forEach(actor => {
+      const progress = (actor.offset + this.sceneryClock * actor.speed) % 1;
+      const full = this.perspective(progress);
+      const compactScale = Phaser.Math.Clamp(width / 1050, .56, 1.16);
+      const scale = full.scale * actor.baseScale * compactScale;
+      const displayWidth = actor.canopyWidth * scale;
+      const gap = Math.max(6, width * .009);
+      const outside = full.half + gap + displayWidth / 2;
+      const x = width / 2 + actor.side * outside;
+      const visible = (
+        progress > .01
+        && progress < .99
+        && x + displayWidth / 2 > -4
+        && x - displayWidth / 2 < width + 4
+      );
+      actor.root
+        .setPosition(x, full.y)
+        .setScale(scale)
+        .setVisible(visible)
+        .setDepth(4 + Math.round(progress * 18));
+      actor.roadEdge = Math.round(width / 2 + actor.side * full.half);
+      actor.displayWidth = Math.round(displayWidth);
+      actor.x = Math.round(x);
+      actor.y = Math.round(full.y);
     });
   }
 
@@ -509,119 +461,248 @@ class RunnerScene extends Phaser.Scene {
     const targetHeight = this.scale.height * PLAYER_HEIGHT_RATIO;
     const playerScale = targetHeight / PLAYER_SOURCE_HEIGHT;
     this.player.setScale(playerScale);
-    this.player.setPosition(this.laneXAt(this.lane, 1), this.scale.height * .88);
+    const x = this.laneXAt(this.lane, 1);
+    this.player.setPosition(x, this.scale.height * .9);
     this.playerShadow
-      .setPosition(this.player.x, this.player.y + 3)
-      .setDisplaySize(Math.min(this.scale.width * .14, 128), Math.max(14, this.player.displayWidth * .16));
+      .setPosition(x, this.player.y + 2)
+      .setDisplaySize(Math.min(this.scale.width * .12, 110), Math.max(12, this.player.displayWidth * .15));
   }
 
-  showQuestion() {
+  startJourney() {
+    this.index = 0;
+    this.score = 0;
+    this.combo = 0;
+    this.bestCombo = 0;
+    this.coins = 0;
+    this.lane = 1;
+    this.answers = [];
+    this.audioLog = [];
+    this.finished = false;
+    this.feedback = { visible: false, kind: 'correct', title: '', body: '' };
+    this.loadQuestion(true);
+  }
+
+  loadQuestion(initial = false) {
     this.currentItem = this.items[this.index];
     this.options = optionList(this.currentItem);
-    this.lane = 1;
     this.gateProgress = 0;
+    this.transitionRemaining = 0;
+    this.feedback = { visible: false, kind: 'correct', title: '', body: '' };
+    this.phase = initial ? 'countdown' : 'running';
     this.countdown = COUNTDOWN_SECONDS;
     this.countdownDigit = COUNTDOWN_SECONDS;
-    this.phase = 'countdown';
-    this.feedbackPanel.setVisible(false);
-    this.feedbackScrim.setVisible(false);
-    this.countdownText
-      .setText(String(COUNTDOWN_SECONDS))
-      .setVisible(true)
-      .setAlpha(1)
-      .setScale(1);
-    this.countdownPlate.setVisible(true).setAlpha(.2);
-    this.setPlayerPose('idle');
+    this.setPlayerPose(initial ? 'idle' : 'run');
     this.layoutPlayer();
+    this.layoutPlayerLane(true);
     this.buildGates();
     this.positionGates();
-    this.layoutPlayerLane(true);
+    this.resetCoinRoutes();
+    this.updateCoins();
+    this.toggleCountdown(initial);
     this.eventsBus.emit('state', this.getState());
+  }
+
+  toggleCountdown(visible) {
+    this.countdownText
+      .setText(String(COUNTDOWN_SECONDS))
+      .setVisible(visible)
+      .setAlpha(1)
+      .setScale(1);
+    this.countdownPlate.setVisible(visible).setAlpha(.2);
   }
 
   buildGates() {
     this.gates?.forEach(gate => gate.root.destroy());
     this.gates = this.options.map((option, lane) => {
-      const style = LANE_STYLES[lane];
       const root = this.add.container(0, 0).setDepth(30);
-      const shadow = this.add.ellipse(0, -2, 176, 24, 0x294c3c, .26);
-      const door = this.add.image(0, -3, 'gate-door-closed')
-        .setOrigin(.5, 1)
-        .setDisplaySize(110, 110);
-      const left = this.add.tileSprite(-88, -2, 32, 146, 'gate-column-green').setOrigin(.5, 1);
-      const right = this.add.tileSprite(88, -2, 32, 146, 'gate-column-green').setOrigin(.5, 1);
-      const lintel = this.add.tileSprite(0, -151, 208, 28, 'gate-column-green');
-      const sign = this.add.graphics();
-      sign.fillStyle(style.color, 1);
-      sign.fillRoundedRect(-108, -220, 216, 58, 9);
-      sign.lineStyle(2, 0xffffff, .82);
-      sign.strokeRoundedRect(-108, -220, 216, 58, 9);
-      const label = this.add.text(0, -191, option, {
+      const shadow = this.add.ellipse(0, -1, 226, 22, 0x496b3e, .16);
+      const leftPost = this.add.rectangle(-94, -76, 17, 152, WOOD_DARK).setOrigin(.5);
+      const rightPost = this.add.rectangle(94, -76, 17, 152, WOOD_DARK).setOrigin(.5);
+      const board = this.add.graphics();
+      const pinLeft = this.add.circle(-78, -224, 5, 0x9d7c52);
+      const pinRight = this.add.circle(78, -224, 5, 0x9d7c52);
+      const label = this.add.text(0, -185, option, {
         fontFamily: uiFont(),
         fontStyle: 'bold',
-        fontSize: '34px',
-        color: '#26384a',
+        fontSize: '38px',
+        color: INK_GREEN,
         align: 'center',
-        wordWrap: { width: 182 }
-      }).setOrigin(.5);
-      const laneBadge = this.add.circle(-90, -232, 13, 0xffffff, .92);
-      const laneText = this.add.text(-90, -232, String(lane + 1), {
-        fontFamily: uiFont(),
-        fontStyle: 'bold',
-        fontSize: '16px',
-        color: '#26384a'
-      }).setOrigin(.5);
-      const hit = this.add.zone(0, -112, 224, 238).setInteractive({ useHandCursor: true });
+        wordWrap: { width: 186 }
+      }).setOrigin(.5).setResolution(2);
+      const outline = this.add.graphics();
+      const hit = this.add.zone(0, -112, 226, 250).setInteractive({ useHandCursor: true });
       hit.on('pointerdown', () => this.switchLane(lane));
-      root.add([shadow, door, left, right, lintel, sign, label, laneBadge, laneText, hit]);
-      return { root, door, sign, label, lane, baseColor: style.color };
+      root.add([shadow, leftPost, rightPost, board, pinLeft, pinRight, outline, label, hit]);
+      const gate = {
+        root,
+        board,
+        outline,
+        label,
+        leftPost,
+        rightPost,
+        shadow,
+        lane,
+        option
+      };
+      this.paintGate(gate);
+      return gate;
     });
+    this.paintGateSelection();
+  }
+
+  paintGate(gate, result = null) {
+    const selected = gate.lane === this.lane;
+    const outlineColor = result === 'correct'
+      ? 0x3a9b67
+      : result === 'wrong'
+        ? 0xd2685d
+        : selected
+          ? 0x2e6a4b
+          : 0xcdbb99;
+    gate.board.clear();
+    gate.board.fillStyle(WOOD_LIGHT, result ? .99 : .96);
+    gate.board.fillRoundedRect(-112, -222, 224, 76, 18);
+    gate.board.lineStyle(result ? 5 : selected ? 4 : 2, outlineColor, 1);
+    gate.board.strokeRoundedRect(-112, -222, 224, 76, 18);
+    gate.outline.clear();
+    if (selected || result) {
+      gate.outline.lineStyle(3, outlineColor, .9);
+      gate.outline.beginPath();
+      gate.outline.moveTo(-96, -150);
+      gate.outline.lineTo(-96, -4);
+      gate.outline.moveTo(96, -150);
+      gate.outline.lineTo(96, -4);
+      gate.outline.strokePath();
+    }
+    gate.leftPost.setFillStyle(selected ? 0x755438 : WOOD_DARK, 1);
+    gate.rightPost.setFillStyle(selected ? 0x755438 : WOOD_DARK, 1);
+    gate.label.setColor(result === 'wrong' ? '#9c4038' : INK_GREEN);
+    gate.shadow.setAlpha(selected || result ? .24 : .16);
+  }
+
+  paintGateSelection() {
+    if (!this.gates) return;
+    this.gates.forEach(gate => this.paintGate(gate));
   }
 
   positionGates() {
     if (!this.gates) return;
-    const responsive = Phaser.Math.Clamp(this.scale.width / 1000, .45, 1.2);
+    const width = this.scale.width;
+    const responsive = Phaser.Math.Clamp(width / 1120, .5, 1.15);
+    const visual = this.gateVisual();
+    const point = this.perspective(visual);
+    const laneGap = point.half * 2 / 3;
+    const fitFactor = width < 640 ? 1.1 : .82;
+    const fitScale = laneGap * fitFactor / 224;
+    const commonScale = Math.min(point.scale * responsive, fitScale);
     this.gates.forEach(gate => {
-      const point = this.perspective(this.gateProgress);
-      gate.root.setPosition(this.laneXAt(gate.lane, this.gateProgress), point.y);
-      gate.root.setScale(point.scale * responsive);
-      gate.root.setDepth(22 + Math.round(point.eased * 18));
-      if (this.phase !== 'resolved') {
-        gate.root.setAlpha(Math.min(1, .28 + this.gateProgress * 2.2));
+      gate.root
+        .setPosition(this.laneXAt(gate.lane, visual), point.y)
+        .setScale(commonScale)
+        .setDepth(26 + Math.round(point.eased * 18));
+      gate.root.setAlpha(Math.min(1, .2 + this.gateProgress * 1.8));
+    });
+  }
+
+  resetCoinRoutes() {
+    const lanes = [(this.index + 1) % 3, (this.index + 2) % 3];
+    this.coinPickups.forEach((coin, index) => {
+      coin.lane = lanes[index];
+      coin.start = index === 0 ? .26 : .48;
+      coin.collected = false;
+      coin.expired = false;
+      coin.image
+        .setTexture('coin')
+        .setAlpha(1)
+        .setScale(1)
+        .setVisible(true);
+      this.tweens.killTweensOf(coin.image);
+    });
+  }
+
+  updateCoins() {
+    if (!this.coinPickups) return;
+    const width = this.scale.width;
+    const height = this.scale.height;
+    this.coinPickups.forEach(coin => {
+      if (coin.collected || coin.expired) return;
+      const progress = Phaser.Math.Clamp(
+        coin.start + this.gateProgress * (MAX_GATE_VISUAL - coin.start),
+        coin.start,
+        MAX_GATE_VISUAL
+      );
+      const point = this.perspective(progress);
+      const scale = point.scale * Phaser.Math.Clamp(width / 1200, .62, 1.1);
+      coin.image
+        .setPosition(this.laneXAt(coin.lane, progress), point.y - 22 * scale)
+        .setScale(scale)
+        .setVisible(this.gateProgress > .05)
+        .setAlpha(Math.min(1, this.gateProgress * 5, (1 - this.gateProgress) * 12));
+      if (this.gateProgress >= .48 && this.lane === coin.lane) {
+        this.collectCoin(coin);
+      } else if (this.gateProgress >= .94) {
+        coin.expired = true;
+        coin.image.setVisible(false);
       }
     });
   }
 
+  collectCoin(coin) {
+    if (coin.collected) return;
+    coin.collected = true;
+    this.coins += 1;
+    this.safeSound('sfx-coin', .48);
+    this.sparkBurst.explode(5, coin.image.x, coin.image.y);
+    this.spawnFloatingText('+1', coin.image.x, coin.image.y - 18, '#fff3b2');
+    this.tweens.add({
+      targets: coin.image,
+      x: this.scale.width * .82,
+      y: this.scale.height * .08,
+      scale: .34,
+      alpha: 0,
+      duration: 430,
+      ease: 'Cubic.easeIn',
+      onComplete: () => coin.image.setVisible(false)
+    });
+    this.eventsBus.emit('state', this.getState());
+  }
+
   layoutPlayerLane(immediate = false) {
+    if (!this.player) return;
     const target = this.laneXAt(this.lane, 1);
+    if (this.laneTween) {
+      this.laneTween.stop();
+      this.laneTween = null;
+    }
     if (immediate) {
       this.player.x = target;
       this.playerShadow.x = target;
       return;
     }
-    this.tweens.killTweensOf([this.player, this.playerShadow]);
-    this.tweens.add({ targets: this.player, x: target, duration: 135, ease: 'Cubic.easeOut' });
-    this.tweens.add({ targets: this.playerShadow, x: target, duration: 135, ease: 'Cubic.easeOut' });
+    this.tweens.add({ targets: this.playerShadow, x: target, duration: 150, ease: 'Sine.easeOut' });
+    this.laneTween = this.tweens.add({
+      targets: this.player,
+      x: target,
+      duration: 150,
+      ease: 'Sine.easeOut',
+      onComplete: () => {
+        this.player.x = target;
+        this.playerShadow.x = target;
+        this.tweens.add({ targets: this.player, angle: 0, duration: 80 });
+      }
+    });
+    this.tweens.add({ targets: this.player, angle: this.lane === 0 ? -3 : this.lane === 2 ? 3 : 0, duration: 90 });
   }
 
   switchLane(next) {
     if (!['running', 'countdown'].includes(this.phase)) return;
     const clamped = Phaser.Math.Clamp(next, 0, 2);
     if (clamped === this.lane) return;
-    const direction = clamped > this.lane ? 1 : -1;
     this.lane = clamped;
     this.layoutPlayerLane();
-    this.tweens.killTweensOf(this.player);
-    this.tweens.add({
-      targets: this.player,
-      angle: direction * 5,
-      duration: 76,
-      yoyo: true,
-      repeat: 1,
-      onComplete: () => this.player.setAngle(0)
-    });
-    this.dustBurst.explode(8, this.player.x, this.player.y - 4);
-    this.safeSound('sfx-switch', .34);
+    this.dustBurst.explode(6, this.player.x, this.player.y - 4);
+    this.safeSound('sfx-switch', .28);
+    this.paintGateSelection();
     this.eventsBus.emit('state', this.getState());
   }
 
@@ -629,7 +710,7 @@ class RunnerScene extends Phaser.Scene {
     if (!this.roadGfx) return;
     if (this.phase !== 'paused') {
       this.sceneryClock += delta / 1000;
-      this.cloudLayer.tilePositionX += delta * .006;
+      this.cloudLayer.tilePositionX += delta * .004;
     }
     this.drawRoad();
     this.updateScenery();
@@ -640,20 +721,20 @@ class RunnerScene extends Phaser.Scene {
       this.countdownDigit = Math.ceil(this.countdown);
       if (this.countdownDigit !== previousDigit && this.countdownDigit > 0) {
         this.countdownText.setText(String(this.countdownDigit));
-        this.countdownText.setScale(1.22);
-        this.tweens.add({ targets: this.countdownText, scale: 1, duration: 170 });
+        this.countdownText.setScale(1.18);
+        this.tweens.add({ targets: this.countdownText, scale: 1, duration: 160 });
       }
       if (this.countdown <= 0) {
         this.phase = 'running';
-        this.countdownText.setText('GO!').setScale(1.18);
+        this.countdownText.setText('出发！').setFontSize(66).setScale(1.08);
         this.tweens.add({
           targets: this.countdownText,
           alpha: 0,
-          scale: 1.8,
-          duration: 360,
+          scale: 1.45,
+          duration: 320,
           onComplete: () => this.countdownText.setVisible(false)
         });
-        this.tweens.add({ targets: this.countdownPlate, alpha: 0, duration: 360 });
+        this.tweens.add({ targets: this.countdownPlate, alpha: 0, duration: 320 });
         this.setPlayerPose('run');
         this.eventsBus.emit('state', this.getState());
       }
@@ -663,19 +744,31 @@ class RunnerScene extends Phaser.Scene {
     if (this.phase === 'running') {
       this.gateProgress = Math.min(1, this.gateProgress + delta / (QUESTION_SECONDS * 1000));
       this.positionGates();
+      this.updateCoins();
+      if (this.playerPose === 'hurt' && this.gateProgress > .35) this.setPlayerPose('run');
       this.animatePlayer(delta);
       this.hudClock += delta;
-      if (this.hudClock >= 60) {
+      if (this.hudClock >= 55) {
         this.hudClock = 0;
         this.eventsBus.emit('state', this.getState());
       }
       if (this.gateProgress >= 1) this.resolveQuestion();
+      return;
     }
+
+    if (this.phase === 'feedback') {
+      this.animatePlayer(delta);
+      this.transitionRemaining = Math.max(0, this.transitionRemaining - delta / 1000);
+      if (this.transitionRemaining <= 0) this.advanceQuestion();
+      return;
+    }
+
+    if (this.phase === 'complete') this.animatePlayer(delta);
   }
 
   animatePlayer(delta) {
     this.playerClock += delta;
-    if (this.phase !== 'running') return;
+    if (!['running', 'feedback'].includes(this.phase) || this.playerPose === 'hurt') return;
     if (this.playerPose !== 'run') this.setPlayerPose('run');
     const frame = Math.floor(this.playerClock / 105) % this.playerRunFrames.length;
     if (frame !== this.playerFrame) {
@@ -690,7 +783,6 @@ class RunnerScene extends Phaser.Scene {
     const textures = {
       idle: 'char-idle',
       run: 'char-run1',
-      jump: 'char-jump',
       hurt: 'char-hurt',
       cheer: 'char-cheer0'
     };
@@ -711,152 +803,138 @@ class RunnerScene extends Phaser.Scene {
   }
 
   resolveQuestion() {
-    if (!['running', 'countdown'].includes(this.phase)) return;
-    this.phase = 'resolved';
+    if (this.phase !== 'running') return;
     this.gateProgress = 1;
     this.positionGates();
+    this.updateCoins();
     const selected = this.options[this.lane];
     const correct = selected === this.currentItem.correct;
     const correctLane = this.options.indexOf(this.currentItem.correct);
-    const correctGate = this.gates[correctLane];
-    const selectedGate = this.gates[this.lane];
     this.answers.push({
       prompt: this.currentItem.prompt,
       selected,
       correct: this.currentItem.correct
     });
-    this.gates.forEach(gate => {
-      if (gate !== correctGate) {
-        gate.root.setAlpha(.42);
-        gate.sign.setAlpha(.6);
-      }
-    });
-    correctGate.sign.setAlpha(1);
-    correctGate.label.setColor('#143f2c');
-    this.tweens.add({
-      targets: correctGate.root,
-      scaleX: correctGate.root.scaleX * 1.04,
-      scaleY: correctGate.root.scaleY * 1.04,
-      duration: 180,
-      yoyo: true,
-      repeat: 1,
-      ease: 'Quad.easeOut'
-    });
-    this.sparkBurst.explode(8, correctGate.root.x, correctGate.root.y - 96);
+    this.gates.forEach((gate, lane) => this.paintGate(gate, lane === correctLane ? 'correct' : null));
+    if (this.gates[this.lane] && this.lane !== correctLane) {
+      this.paintGate(this.gates[this.lane], 'wrong');
+    }
 
     if (correct) {
       this.score += 1;
       this.combo += 1;
       this.bestCombo = Math.max(this.bestCombo, this.combo);
-      const coinGain = 1 + Math.min(this.combo, 4);
-      this.coins += coinGain;
-      correctGate.door.setTexture('gate-door-open');
-      this.tweens.add({ targets: correctGate.door, alpha: .6, duration: 140 });
+      this.feedback = {
+        visible: true,
+        kind: 'correct',
+        title: `+1 拾取·${this.currentItem.prompt} 对应 ${this.currentItem.correct}`,
+        body: ''
+      };
+      this.safeSound('sfx-correct', .62);
+      this.successBurst.explode(9, this.gates[correctLane].root.x, this.gates[correctLane].root.y - 160);
+      this.sparkBurst.explode(6, this.player.x, this.player.y - this.player.displayHeight * .55);
       this.setPlayerPose('cheer');
-      this.celebrate();
       this.tweens.add({
         targets: this.player,
-        y: this.player.y - 54,
-        duration: 190,
+        y: this.player.y - 24,
+        duration: 170,
         yoyo: true,
-        ease: 'Quad.easeOut'
+        ease: 'Sine.easeOut',
+        onComplete: () => this.setPlayerPose('run')
       });
-      this.successBurst.explode(10, this.player.x, this.player.y - this.player.displayHeight * .62);
-      this.sparkBurst.explode(8, this.player.x, this.player.y - this.player.displayHeight * .5);
-      this.safeSound('sfx-correct', .64);
-      this.safeSound('sfx-coin', .4, 130);
+      this.transitionRemaining = .88;
     } else {
       this.combo = 0;
-      selectedGate.door.setTint(0xff8076);
+      this.feedback = {
+        visible: true,
+        kind: 'wrong',
+        title: '再看一眼',
+        body: `正确答案：${this.currentItem.correct}`
+      };
       this.setPlayerPose('hurt');
       this.tweens.add({
         targets: this.player,
-        x: this.player.x + (this.lane === 0 ? 22 : -22),
-        angle: { from: -8, to: 8 },
+        angle: { from: -5, to: 5 },
         duration: 68,
         yoyo: true,
         repeat: 2,
         onComplete: () => {
           this.player.setAngle(0);
-          this.layoutPlayerLane(true);
+          this.setPlayerPose('run');
         }
       });
-      this.safeSound('sfx-hurt', .46);
-      this.safeSound('sfx-wrong', .5, 130);
+      this.safeSound('sfx-wrong', .44, 130);
+      this.eventsBus.emit('speak', this.currentItem.audio);
+      this.transitionRemaining = 2.1;
     }
-
+    this.phase = 'feedback';
     this.eventsBus.emit('state', this.getState());
-    const answerIndex = this.index;
-    this.time.delayedCall(220, () => {
-      if (this.phase === 'resolved' && this.index === answerIndex) {
-        this.showAnswerFeedback(correct, selected, correctLane);
-      }
-    });
   }
 
   spawnFloatingText(text, x, y, color) {
     const label = this.add.text(x, y, text, {
       fontFamily: uiFont(),
       fontStyle: 'bold',
-      fontSize: '24px',
+      fontSize: '22px',
       color,
-      stroke: '#0b3557',
+      stroke: '#37523b',
       strokeThickness: 5
-    }).setOrigin(.5).setDepth(90);
+    }).setOrigin(.5).setDepth(90).setResolution(2);
     this.tweens.add({
       targets: label,
-      y: y - 46,
+      y: y - 38,
       alpha: 0,
-      duration: 960,
+      duration: 780,
       ease: 'Cubic.easeOut',
       onComplete: () => label.destroy()
     });
   }
 
-  showAnswerFeedback(correct, selected, correctLane) {
-    this.feedbackScrim.setVisible(true);
-    this.feedbackPanel.setVisible(true).setAlpha(0).setScale(.94);
-    this.feedbackIcon
-      .setTexture(correct ? 'ui-check' : 'ui-cross')
-      .setTint(correct ? 0x6dff9d : 0xff9d95);
-    this.feedbackTitle
-      .setText(correct ? '答对了 +1' : '差一点，再试一次')
-      .setColor(correct ? '#2e7d55' : '#b94f46');
-    const reward = correct
-      ? `+${1 + Math.min(this.combo, 4)} 金币${this.combo > 1 ? ` · 连续 ${this.combo} 题正确` : ''}`
-      : `正确答案：${LANE_STYLES[correctLane].label} · ${this.currentItem.correct}`;
-    this.feedbackBody.setText(reward);
-    const last = this.index >= this.items.length - 1;
-    this.continueLabel.setText(last ? '查看成绩' : '继续下一题');
-    this.continueButton.setFillStyle(last ? 0xe2b65c : 0x399b68);
-    this.tweens.add({
-      targets: this.feedbackPanel,
-      alpha: 1,
-      scale: 1,
-      duration: 180,
-      ease: 'Back.easeOut'
+  advanceQuestion() {
+    if (this.phase !== 'feedback') return;
+    this.index += 1;
+    if (this.index >= this.items.length) {
+      this.showJourneyComplete();
+      return;
+    }
+    this.loadQuestion(false);
+  }
+
+  showJourneyComplete() {
+    this.phase = 'complete';
+    this.feedback = { visible: false, kind: 'correct', title: '', body: '' };
+    this.gates?.forEach(gate => gate.root.destroy());
+    this.gates = [];
+    this.coinPickups.forEach(coin => coin.image.setVisible(false));
+    this.setPlayerPose('cheer');
+    this.celebrate();
+    this.safeSound('sfx-finish', .4);
+    this.successBurst.explode(16, this.scale.width / 2, this.scale.height * .62);
+    this.eventsBus.emit('state', this.getState());
+  }
+
+  finishJourney() {
+    if (this.phase !== 'complete' || this.finished) return;
+    this.finished = true;
+    this.onComplete({
+      score: this.score,
+      answers: this.answers,
+      coins: this.coins,
+      bestCombo: this.bestCombo
     });
   }
 
-  continueNext() {
-    if (this.phase !== 'resolved') return;
-    this.index += 1;
-    if (this.index >= this.items.length) {
-      this.phase = 'complete';
-      this.safeSound('sfx-finish', .45);
-      this.onComplete({
-        score: this.score,
-        answers: this.answers,
-        coins: this.coins,
-        bestCombo: this.bestCombo
-      });
-      return;
+  restartJourney() {
+    if (this.celebrateTimer) {
+      this.celebrateTimer.remove(false);
+      this.celebrateTimer = null;
     }
-    this.showQuestion();
+    this.finished = false;
+    this.startJourney();
   }
 
   pause() {
-    if (!['running', 'countdown'].includes(this.phase)) return;
+    if (!['running', 'countdown', 'feedback'].includes(this.phase)) return;
     this.phaseBeforePause = this.phase;
     this.phase = 'paused';
     this.eventsBus.emit('state', this.getState());
@@ -871,20 +949,34 @@ class RunnerScene extends Phaser.Scene {
   safeSound(key, volume, delay = 0) {
     if (this.cache.audio.exists(key)) {
       this.audioLog.push(key);
-      if (this.audioLog.length > 20) this.audioLog.shift();
+      if (this.audioLog.length > 24) this.audioLog.shift();
       this.sound.play(key, { volume, delay: delay / 1000 });
     }
   }
 
+  stageMeta() {
+    const safeIndex = Math.min(this.index, this.items.length - 1);
+    const stageIndex = Math.min(AREAS.length - 1, Math.floor(safeIndex / STAGE_SIZE));
+    const questionInStage = this.phase === 'complete' ? STAGE_SIZE : (safeIndex % STAGE_SIZE) + 1;
+    return {
+      area: AREAS[stageIndex],
+      stageIndex,
+      questionInStage,
+      stageSize: STAGE_SIZE
+    };
+  }
+
   getState() {
-    const gateProjection = this.gates?.map(gate => ({
-      lane: gate.lane,
-      x: Math.round(gate.root.x),
-      y: Math.round(gate.root.y),
-      scale: Number(gate.root.scaleX.toFixed(3)),
-      width: Math.round(216 * gate.root.scaleX),
-      answer: this.options[gate.lane]
-    })) || [];
+    const stage = this.stageMeta();
+    const visual = this.gateVisual();
+    const gatePoint = this.perspective(visual);
+    const gateScale = this.gates?.[0]?.root.scaleX || 0;
+    const goal = this.pack?.subject === '语文'
+      ? '找到对应的拼音'
+      : this.pack?.subject === '英语'
+        ? '找到对应的英文'
+        : '找到对应的内容';
+    const complete = this.phase === 'complete';
     return {
       index: this.index,
       total: this.items.length,
@@ -896,35 +988,57 @@ class RunnerScene extends Phaser.Scene {
       phase: this.phase,
       countdown: this.countdown,
       gateProgress: this.gateProgress,
+      transitionRemaining: this.transitionRemaining,
       sounds: [...this.audioLog],
-      prompt: this.currentItem?.prompt || '',
+      prompt: complete ? '抵达终点' : this.currentItem?.prompt || '',
+      goal: complete ? '完成这段林间冒险' : goal,
       options: [...this.options],
+      completed: complete,
+      areaName: stage.area.name,
+      stageIndex: stage.stageIndex,
+      questionInStage: stage.questionInStage,
+      stageSize: stage.stageSize,
       correctLane: this.options.indexOf(this.currentItem?.correct),
-      feedback: {
-        visible: Boolean(this.feedbackPanel?.visible),
-        title: this.feedbackTitle?.text || '',
-        body: this.feedbackBody?.text || ''
-      },
+      feedback: { ...this.feedback },
       geometry: {
         width: this.scale.width,
         height: this.scale.height,
         horizon: Math.round(this.horizonY()),
-        near: Math.round(this.gateNearY()),
-        laneCenters: [0, 1, 2].map(lane => Math.round(this.laneXAt(lane, 1))),
-        gates: gateProjection,
+        gateFootY: Math.round(gatePoint.y),
+        roadHalf: Math.round(gatePoint.half),
+        laneCenters: [0, 1, 2].map(lane => Math.round(this.laneXAt(lane, visual))),
+        roadEdges: {
+          left: Math.round(this.scale.width / 2 - gatePoint.half),
+          right: Math.round(this.scale.width / 2 + gatePoint.half)
+        },
+        gates: this.gates?.map(gate => ({
+          lane: gate.lane,
+          x: Math.round(gate.root.x),
+          footY: Math.round(gate.root.y),
+          scale: Number(gate.root.scaleX.toFixed(3)),
+          signWidth: Math.round(224 * gate.root.scaleX),
+          answer: this.options[gate.lane]
+        })) || [],
+        coins: this.coinPickups?.filter(coin => coin.image.visible && !coin.collected && !coin.expired).map(coin => ({
+          lane: coin.lane,
+          x: Math.round(coin.image.x),
+          y: Math.round(coin.image.y),
+          width: Math.round(coin.image.displayWidth)
+        })) || [],
         scenery: this.sceneryActors
-          ?.filter(actor => actor.image.visible)
+          ?.filter(actor => actor.root.visible)
           .map(actor => ({
-            x: Math.round(actor.image.x),
-            y: Math.round(actor.image.y),
-            width: Math.round(actor.image.displayWidth),
-            height: Math.round(actor.image.displayHeight),
-            lane: actor.lane,
-            side: actor.side
+            x: actor.x,
+            y: actor.y,
+            width: actor.displayWidth,
+            side: actor.side,
+            roadEdge: actor.roadEdge
           })) || [],
         player: {
           x: Math.round(this.player?.x || 0),
           y: Math.round(this.player?.y || 0),
+          targetX: Math.round(this.laneXAt(this.lane, 1)),
+          shadowX: Math.round(this.playerShadow?.x || 0),
           width: Math.round(this.player?.displayWidth || 0),
           height: Math.round(this.player?.displayHeight || 0),
           heightRatio: Number((this.player?.displayHeight / this.scale.height || 0).toFixed(3))
@@ -952,6 +1066,7 @@ class RunnerScene extends Phaser.Scene {
           if (scene.phase === 'running') {
             scene.gateProgress = Phaser.Math.Clamp(progress, 0, .985);
             scene.positionGates();
+            scene.updateCoins();
             scene.eventsBus.emit('state', scene.getState());
           }
         },
@@ -959,12 +1074,23 @@ class RunnerScene extends Phaser.Scene {
           if (scene.phase === 'countdown') {
             scene.countdown = 0;
             scene.phase = 'running';
+            scene.countdownText.setVisible(false);
+            scene.countdownPlate.setVisible(false);
           }
-          scene.gateProgress = 1;
-          scene.positionGates();
-          scene.resolveQuestion();
+          if (scene.phase === 'running') {
+            scene.gateProgress = 1;
+            scene.positionGates();
+            scene.resolveQuestion();
+          }
         },
-        continue: () => scene.continueNext(),
+        continue: () => {
+          if (scene.phase === 'feedback') {
+            scene.transitionRemaining = 0;
+            scene.advanceQuestion();
+          }
+        },
+        finish: () => scene.finishJourney(),
+        restart: () => scene.restartJourney(),
         pause: () => scene.pause(),
         resume: () => scene.resume()
       }
@@ -976,13 +1102,15 @@ class RunnerScene extends Phaser.Scene {
     this.scale.off('resize', this.layout, this);
     this.eventsBus.off('pause', this.pause, this);
     this.eventsBus.off('resume', this.resume, this);
+    this.eventsBus.off('finish', this.finishJourney, this);
+    this.eventsBus.off('restart', this.restartJourney, this);
     this.eventsBus.off('switch-lane', this.switchLaneHandler);
-    this.eventsBus.off('continue', this.continueNext, this);
     if (this.input?.keyboard) {
       this.input.keyboard.off('keydown-LEFT', this.keyLeftHandler);
       this.input.keyboard.off('keydown-RIGHT', this.keyRightHandler);
-      this.input.keyboard.off('keydown-SPACE', this.keyContinueHandler);
-      this.input.keyboard.off('keydown-ENTER', this.keyContinueHandler);
+      this.input.keyboard.off('keydown-ONE', this.keyOneHandler);
+      this.input.keyboard.off('keydown-TWO', this.keyTwoHandler);
+      this.input.keyboard.off('keydown-THREE', this.keyThreeHandler);
     }
     if (window.__learningGameDebug?.runner) delete window.__learningGameDebug.runner;
   }
@@ -994,7 +1122,7 @@ export function mountRunnerGame({ container, items, pack, effectVolume, onComple
   const game = new Phaser.Game({
     type: Phaser.AUTO,
     parent: container,
-    backgroundColor: '#87d7ff',
+    backgroundColor: '#d8f0ee',
     scale: {
       mode: Phaser.Scale.RESIZE,
       width: container.clientWidth || 1280,

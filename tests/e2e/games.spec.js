@@ -19,7 +19,7 @@ test('all six game entries mount without runtime errors', async ({ page }) => {
     ['listen', '.three-grid'],
     ['assemble', '.letters'],
     ['memory', '.memory-grid'],
-    ['beat', '.beat-arena'],
+    ['beat', '.theater-workbench'],
     ['battle', '.battle-arena']
   ];
   for (const [id, selector] of games) {
@@ -51,7 +51,7 @@ test('all game pages fit the six target viewports without page scrolling', async
     ['listen', '.listen-content'],
     ['assemble', '.assemble-content'],
     ['memory', '.memory-content'],
-    ['beat', '.beat-content'],
+    ['beat', '.theater-content'],
     ['battle', '.battle-content']
   ];
   for (const [id, selector] of games) {
@@ -141,18 +141,23 @@ test('memory cards lock while a wrong pair is visible and then unlock', async ({
   await expect.poll(() => page.evaluate(() => window.__learningGameDebug.memory.state().locked), { timeout: 1600 }).toBe(false);
 });
 
-test('rhythm timing window accepts on-beat hits and rejects early hits', async ({ page }) => {
+test('poetry theater switches poems, reads every line and completes comprehension', async ({ page }) => {
   await page.goto('/index.html');
   await page.locator('[data-id="beat"]').click();
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.beat));
-  await page.evaluate(() => {
-    window.__learningGameDebug.beat.startNote();
-    window.__learningGameDebug.beat.hitAt(.9);
-  });
-  await expect.poll(() => page.evaluate(() => window.__learningGameDebug.beat.state().score)).toBe(1);
-  await page.waitForTimeout(520);
-  await page.evaluate(() => window.__learningGameDebug.beat.hitAt(.15));
-  expect((await page.evaluate(() => window.__learningGameDebug.beat.state())).score).toBe(1);
+  await page.evaluate(() => window.__learningGameDebug.beat.selectPoem('poem-chunxiao'));
+  await expect(page.getByRole('tab', { name: /春晓/ })).toHaveClass(/active/);
+  const initial = await page.evaluate(() => window.__learningGameDebug.beat.state());
+  expect(initial.title).toBe('春晓');
+  await page.evaluate(() => window.__learningGameDebug.beat.play());
+  for (let index = 0; index < 3; index += 1) await page.evaluate(() => window.__learningGameDebug.beat.next());
+  const read = await page.evaluate(() => window.__learningGameDebug.beat.state());
+  expect(read.heardLines).toEqual([0, 1, 2, 3]);
+  await page.evaluate(() => window.__learningGameDebug.beat.choose('啼鸟'));
+  await expect(page.getByText('补全正确：处处闻啼鸟。')).toBeVisible();
+  await page.evaluate(() => window.__learningGameDebug.beat.finish());
+  await expect(page.getByRole('heading', { name: '诗词小剧场 · 春晓完成' })).toBeVisible();
+  await expect(page.getByText('正确率 100%')).toBeVisible();
 });
 
 test('class battle awards the active team and alternates turns', async ({ page }) => {
