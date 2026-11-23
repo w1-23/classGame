@@ -191,7 +191,7 @@ def build_pinyin_pack(source):
                     "speechLang": "zh-CN",
                     "games": ["runner", "listen", "assemble", "memory"],
                     "source": "caopengfei/xuepinyin (MIT)",
-                    "reviewed": True,
+                "reviewed": False,
                 })
             lessons.append({
                 "id": f"pinyin-{lesson['id']:02d}",
@@ -201,16 +201,18 @@ def build_pinyin_pack(source):
         units.append({
             "id": f"pinyin-unit-{unit['id']}",
             "title": unit["title"],
-            "note": f"2024 统编版语文一年级上册 · {unit['title']}",
+        "note": f"第三方拼音数据 · {unit['title']}（未声明教材版次）",
             "lessons": lessons,
         })
     pack = {
         "id": "g1-chinese-pinyin",
-        "name": "一年级上册语文 · 拼音（2024统编版）",
+        "name": "一年级上册语文 · 旧版拼音练习",
         "subject": "语文",
         "grade": 1,
         "volume": "上册",
-        "edition": "2024 统编版",
+        "edition": "第三方拼音数据（未声明教材版次）",
+        "alignmentStatus": "legacy_unverified",
+        "notes": "导入器不会把第三方词表标为新版教材；仍含旧版 i u ü y w 合课。",
         "units": units,
         "items": [],
     }

@@ -419,13 +419,13 @@ test('connected questions end at the finish sign and a real result screen', asyn
 
   const progressBeforeFinish = await page.evaluate(() => JSON.parse(localStorage.getItem(Object.keys(localStorage).find(key => key.includes('progress'))) || '{}'));
   expect(progressBeforeFinish.version).toBe(2);
-  expect(progressBeforeFinish.packs['g3-english-basic'].rounds).toBe(1);
+  expect(progressBeforeFinish.packs['g3-english-pep-2024-a'].rounds).toBe(1);
 
   await page.locator('#runner-right').click();
   await expect(page.getByRole('heading', { name: '森林寻宝记完成' })).toBeVisible();
   await expect(page.locator('header')).toBeVisible();
   const progress = await page.evaluate(() => JSON.parse(localStorage.getItem(Object.keys(localStorage).find(key => key.includes('progress'))) || '{}'));
-  expect(progress.packs['g3-english-basic'].rounds).toBe(1);
+  expect(progress.packs['g3-english-pep-2024-a'].rounds).toBe(1);
   await capturePage(page, `${screenshots}/runner-result.png`);
 
   for (const [width, height] of viewports) {

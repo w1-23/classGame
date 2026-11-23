@@ -1,15 +1,15 @@
 {
   "id": "g1-chinese-pinyin",
-  "name": "一年级上册语文 · 拼音（2024统编版）",
+  "name": "一年级上册语文 · 旧版拼音练习",
   "subject": "语文",
   "grade": 1,
   "volume": "上册",
-  "edition": "2024 统编版",
+  "edition": "第三方拼音数据（未声明教材版次）",
   "units": [
     {
       "id": "pinyin-unit-1",
       "title": "拼音一 · 单韵母和声母",
-      "note": "2024 统编版语文一年级上册 · 拼音一 · 单韵母和声母",
+      "note": "仍含旧版 i u ü y w 合课；不得标为 2024 统编版",
       "lessons": [
         {
           "id": "pinyin-01",
@@ -33,7 +33,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -54,7 +54,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -75,7 +75,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -102,7 +102,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -123,7 +123,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -144,7 +144,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -165,7 +165,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -186,7 +186,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -213,7 +213,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -234,7 +234,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -255,7 +255,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -276,7 +276,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -303,7 +303,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -324,7 +324,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -345,7 +345,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -366,7 +366,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -393,7 +393,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -414,7 +414,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -435,7 +435,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -462,7 +462,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -483,7 +483,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -504,7 +504,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -514,7 +514,7 @@
     {
       "id": "pinyin-unit-2",
       "title": "拼音二 · 平翘舌和复韵母",
-      "note": "2024 统编版语文一年级上册 · 拼音二 · 平翘舌和复韵母",
+      "note": "仍含旧版 i u ü y w 合课；不得标为 2024 统编版",
       "lessons": [
         {
           "id": "pinyin-07",
@@ -538,7 +538,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -559,7 +559,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -580,7 +580,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -607,7 +607,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -628,7 +628,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -649,7 +649,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -670,7 +670,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -697,7 +697,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -718,7 +718,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -739,7 +739,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -766,7 +766,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -787,7 +787,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -808,7 +808,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -818,7 +818,7 @@
     {
       "id": "pinyin-unit-3",
       "title": "拼音三 · 前后鼻韵母",
-      "note": "2024 统编版语文一年级上册 · 拼音三 · 前后鼻韵母",
+      "note": "仍含旧版 i u ü y w 合课；不得标为 2024 统编版",
       "lessons": [
         {
           "id": "pinyin-11",
@@ -842,7 +842,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -863,7 +863,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -884,7 +884,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -911,7 +911,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -932,7 +932,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -953,7 +953,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -974,7 +974,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -995,7 +995,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -1022,7 +1022,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -1043,7 +1043,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -1064,7 +1064,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             },
             {
@@ -1085,7 +1085,7 @@
                 "memory"
               ],
               "source": "caopengfei/xuepinyin (MIT)",
-              "reviewed": true,
+              "reviewed": false,
               "audioReview": "pinyin_preview_pending_teacher_review"
             }
           ]
@@ -1093,5 +1093,7 @@
       ]
     }
   ],
-  "items": []
+  "items": [],
+  "alignmentStatus": "legacy_unverified",
+  "notes": "仍含旧版 i u ü y w 合课；不得标为 2024 统编版"
 }

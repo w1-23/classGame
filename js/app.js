@@ -391,9 +391,16 @@ function previewMarkup(level) {
 function bookOptionsForGame(books, selectedId) {
   const groups = new Map();
   books.forEach(book => {
+    const status = book.alignmentStatus === 'structure_verified_lesson_details_pending'
+      ? ' · 新版结构已核验'
+      : book.alignmentStatus === 'unit_titles_and_sections_verified_wordlist_pending'
+        ? ' · 新版主题已核验'
+        : book.alignmentStatus === 'legacy_unverified'
+          ? ' · 旧版/拓展'
+          : '';
     const label = book.subject === '古诗'
-      ? '古诗与晨读'
-      : `${book.subject} · ${book.grade}年级`;
+      ? `古诗与晨读${status}`
+      : `${book.subject} · ${book.grade}年级${status}`;
     if (!groups.has(label)) groups.set(label, []);
     groups.get(label).push(book);
   });
@@ -782,6 +789,12 @@ function renderAdventureMap(gameId) {
   const record = selectedProgress
     ? `${selectedProgress.passed ? '已完成' : '已挑战'} · 最佳 ${Math.round(selectedProgress.bestScore / Math.max(selectedProgress.bestTotal, 1) * 100)}%`
     : '尚未完成';
+  const alignmentLabels = {
+    structure_verified_lesson_details_pending: '新版结构已核验 · 逐课字表待核验',
+    unit_titles_and_sections_verified_wordlist_pending: '新版单元主题已核验 · 官方词表待核验',
+    legacy_unverified: '旧版练习/通用拓展 · 未声明新版同步'
+  };
+  const alignmentLabel = alignmentLabels[pack.alignmentStatus] || '内容包核对状态未标注';
   const hasPlayable = selectedLevel.items?.length || selectedLevel.questions?.length;
   app.innerHTML = `
     <section class="adventure-page">
@@ -802,6 +815,7 @@ function renderAdventureMap(gameId) {
         <div>
           <h1>下一站，去哪里？</h1>
           <p>${pack.name} · ${meta.name} · ${units.length} 个单元</p>
+          <p class="alignment-status">${alignmentLabel}</p>
         </div>
         <p class="adventure-progress">已完成 <b>${completedCount}</b> / ${levels.length} 关 · 共 ${pack.coverage?.items || levels.reduce((sum, level) => sum + (level.items?.length || level.questions?.length || 0), 0)} 条学习内容</p>
       </div>
@@ -819,6 +833,7 @@ function renderAdventureMap(gameId) {
           <p class="detail-region">${selectedUnit.title} · 第 ${selectedLevel.number} 关</p>
           <h2>${selectedLevel.title}</h2>
           <p class="detail-unit">${selectedUnit.note || `${selectedUnit.theme.name} · ${selectedLevel.regionName}`}</p>
+          <p class="detail-alignment">核对状态：${alignmentLabel}${pack.verificationDate ? ` · ${pack.verificationDate}` : ''}</p>
           ${previewMarkup(selectedLevel)}
           <dl class="detail-stats">
             <div><dt>本关任务</dt><dd>${selectedLevel.taskLabel}</dd></div>
@@ -934,7 +949,8 @@ function renderAdventureMap(gameId) {
         currentLevelId,
         selectedLevelId: selectedLevel.id,
         selectedUnitId: selectedUnit.id,
-        selectedUnitLessons: selectedUnit.lessons.length
+        selectedUnitLessons: selectedUnit.lessons.length,
+        alignmentStatus: pack.alignmentStatus || null
       })
     }
   };

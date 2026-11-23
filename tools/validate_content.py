@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 from pypinyin import Style, pinyin
@@ -181,6 +182,56 @@ chinese_items = sum(
 check(chinese_items >= 3000, f"Chinese character/word corpus is incomplete: {chinese_items} < 3000")
 check(poetry_levels == 48, f"poetry levels incomplete: {poetry_levels} != 48")
 check(poetry_variants == 384, f"poetry variants incomplete: {poetry_variants} != 384")
+
+required_metadata = [
+    "publisher", "series", "curriculumStandard", "textbookEdition",
+    "textbookActivation", "alignmentStatus", "alignmentSources",
+    "verificationDate", "reviewedBy", "notes"
+]
+new_packs = [
+    json.loads((ROOT / path).read_text(encoding="utf-8"))
+    for path in pack_paths
+    if path in ("data/G1-语文-上册-2024修订版.json", "data/3年级上英语-新版PEP对应练习.json")
+]
+check(len(new_packs) == 2, "new curriculum sample packs must be present")
+for pack in new_packs:
+    for field in required_metadata:
+        check(bool(pack.get(field)), f"{pack.get('id')}: missing metadata {field}")
+    check("pending" in pack.get("alignmentStatus", ""), f"{pack.get('id')}: unverified bundle must not claim full alignment")
+    sources = pack.get("alignmentSources") or []
+    check(len(sources) >= 2, f"{pack.get('id')}: at least two alignment sources required")
+    check(all(source.get("url", "").startswith("https://") for source in sources), f"{pack.get('id')}: alignment sources must be traceable URLs")
+
+g1_pack = next((pack for pack in new_packs if pack.get("id") == "g1-chinese-2024-a"), None)
+g3_pack = next((pack for pack in new_packs if pack.get("id") == "g3-english-pep-2024-a"), None)
+check(g1_pack is not None, "new G1 Chinese pack id must be stable")
+check(g3_pack is not None, "new G3 English pack id must be stable")
+if g1_pack:
+    g1_titles = [lesson["title"] for unit in g1_pack["units"] for lesson in unit["lessons"]]
+    g1_notes = [unit.get("note", "") for unit in g1_pack["units"]]
+    check(any("日月山川" in title for title in g1_titles), "G1 new pack must include 日月山川")
+    check(not any("i u ü y w" in title for title in g1_titles), "G1 new pack must not merge i u ü y w")
+    check(any("i u ü" in title and "y w" not in title for title in g1_titles), "G1 new pack must split i u ü")
+    check(any("y w" in title for title in g1_titles), "G1 new pack must include a y w lesson")
+    check(any("欢迎台湾小朋友" in title for title in g1_titles), "G1 new pack must include the pinyin song")
+    check(any("两件宝" in note for note in g1_notes), "G1 new pack must record 两件宝")
+if g3_pack:
+    titles = [unit["title"] for unit in g3_pack["units"]]
+    expected = [
+        "Unit 1 Making friends", "Unit 2 Different families", "Unit 3 Amazing animals",
+        "Unit 4 Plants around us", "Unit 5 The colourful world", "Unit 6 Useful numbers",
+        "Revision: Being a good guest"
+    ]
+    check(titles == expected, f"G3 PEP unit titles do not match official structure: {titles}")
+
+for relative_path in pack_paths:
+    pack_path = ROOT / relative_path
+    if not pack_path.exists():
+        continue
+    pack = json.loads(pack_path.read_text(encoding="utf-8"))
+    if pack.get("id") in {"g1-chinese-a", "g1-chinese-pinyin", "g3-english-basic"}:
+        check(pack.get("alignmentStatus") == "legacy_unverified", f"{pack['id']}: legacy bundle must be marked legacy_unverified")
+        check(not re.search(r"(?<!未声明)新版同步|2024统编版", pack.get("name", "") + pack.get("edition", "")), f"{pack['id']}: legacy bundle must not claim new alignment")
 
 for required in [
     "vendor/phaser/phaser.min.js",

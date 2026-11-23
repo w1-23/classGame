@@ -32,6 +32,9 @@ test('curriculum map scales by grade, book, unit and lesson', async ({ page }) =
   await openMap(page);
 
   const english = await mapState(page);
+  expect(english.bookId).toBe('g3-english-pep-2024-a');
+  expect(english.alignmentStatus).toBe('unit_titles_and_sections_verified_wordlist_pending');
+  await expect(page.locator('.alignment-status')).toContainText('官方词表待核验');
   expect(english.units).toBeGreaterThanOrEqual(3);
   expect(english.levels).toBeGreaterThan(12);
   expect(english.displayedNodes).toBeGreaterThanOrEqual(6);
@@ -39,6 +42,7 @@ test('curriculum map scales by grade, book, unit and lesson', async ({ page }) =
   await expect(page.locator('.map-node')).toHaveCount(english.displayedNodes);
 
   const books = await page.locator('#adventure-book option').evaluateAll(options => options.map(option => option.value));
+  expect(books.indexOf('g3-english-pep-2024-a')).toBeLessThan(books.indexOf('g3-english-basic'));
   for (const grade of [1, 2, 3, 4, 5, 6]) {
     expect(books).toContain(`g${grade}-chinese-a`);
     expect(books).toContain(`g${grade}-chinese-b`);
@@ -54,6 +58,25 @@ test('curriculum map scales by grade, book, unit and lesson', async ({ page }) =
   await page.locator('.region-tab').nth(1).click();
   await expect(page.locator('.region-tab').nth(1)).toHaveClass(/active/);
   await expect(page.locator('.map-node').first()).toBeVisible();
+});
+
+test('verified curriculum bundles expose edition status and keep legacy progress isolated', async ({ page }) => {
+  await openMap(page);
+  await page.locator('#adventure-book').selectOption('g1-chinese-2024-a');
+  const chinese = await mapState(page);
+  expect(chinese.alignmentStatus).toBe('structure_verified_lesson_details_pending');
+  await expect(page.locator('.alignment-status')).toContainText('逐课字表待核验');
+
+  const g1Lessons = await page.locator('.region-tab strong').allTextContents();
+  expect(g1Lessons.some(text => text.includes('汉语拼音一'))).toBeTruthy();
+
+  await page.locator('.map-node').first().click();
+  const progress = await page.evaluate(() => {
+    const key = Object.keys(localStorage).find(item => item.includes('progress'));
+    return JSON.parse(localStorage.getItem(key) || '{}');
+  });
+  expect(progress.packs?.['g3-english-pep-2024-a']).toBeUndefined();
+  expect(progress.packs?.['g1-chinese-2024-a']).toBeTruthy();
 });
 
 test('choosing a later level does not mark skipped levels as passed', async ({ page }) => {

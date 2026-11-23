@@ -1,0 +1,1902 @@
+{
+  "id": "g3-english-pep-2024-a",
+  "name": "三年级上册英语 · 新版 PEP 对应练习",
+  "subject": "英语",
+  "grade": 3,
+  "volume": "上册",
+  "edition": "人教 PEP 小学英语（三年级起点）新版",
+  "publisher": "人民教育出版社",
+  "series": "义务教育教科书 英语（PEP）三年级起点",
+  "curriculumStandard": "义务教育英语课程标准（2022 年版）",
+  "textbookEdition": "新版教材，具体版次/印次待按学校用书版权页核验",
+  "textbookActivation": "2024 年秋季学期起随起始年级使用；新版 PEP 三至六年级共八册，每册 6 个教学单元与 1 个复习单元",
+  "alignmentStatus": "unit_titles_and_sections_verified_wordlist_pending",
+  "reviewedBy": "自动核对公开资源页；教师终审未完成",
+  "verificationDate": "2026-11-23",
+  "alignmentSources": [
+    {
+      "title": "人教社新版 PEP 三年级上册配套资源",
+      "url": "https://www.pep.com.cn/zslth/yyptypzj/xypep/3s/",
+      "verified": "Unit 1–6、Revision 标题与各栏目音频；词表页面仅提供音频"
+    },
+    {
+      "title": "人教版义务教育英语（PEP）（一～六年级）新教材简介",
+      "url": "https://www.pep.com.cn/xw/zt/hd/12/xjcjs/xx/202409/t20240920_1995564.html",
+      "verified": "三年级起点、每册 6 个教学单元和 1 个复习单元、六下 4+1 结构"
+    }
+  ],
+  "coverage": {
+    "books": 1,
+    "units": 7,
+    "lessons": 14,
+    "items": 78,
+    "content": "按已核验单元主题编排的自编词语与句型练习；不含教材原文"
+  },
+  "notes": "单元标题和栏目结构已按人教社公开资源核验；Words in each unit 页面仅提供音频，未取得可机读官方词表。练习词项不得被标记为官方教材词表。",
+  "units": [
+    {
+      "id": "u01",
+      "title": "Unit 1 Making friends",
+      "note": "官方配套资源页确认单元标题；栏目 Listen and chant / Listen and sing / A Let’s talk 等已核验",
+      "lessons": [
+        {
+          "id": "u01-l01",
+          "title": "词汇与句型练习 1",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-making-01",
+              "prompt": "朋友",
+              "correct": "friend",
+              "distractors": [
+                "mother",
+                "father"
+              ],
+              "audio": "audio/generated/en-US/cda6a41c122e4db7863fdedd.wav",
+              "speechText": "friend",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-02",
+              "prompt": "名字",
+              "correct": "name",
+              "distractors": [
+                "nice",
+                "meet"
+              ],
+              "audio": "audio/generated/en-US/908ea631efd4bf20db65e0c2.wav",
+              "speechText": "name",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-03",
+              "prompt": "友好的",
+              "correct": "nice",
+              "distractors": [
+                "name",
+                "meet"
+              ],
+              "audio": "audio/generated/en-US/d64f7acf06e646ba523f02ed.wav",
+              "speechText": "nice",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-04",
+              "prompt": "遇见",
+              "correct": "meet",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/00669e1c1a2e4a13b6f7d8d9.wav",
+              "speechText": "meet",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-05",
+              "prompt": "也",
+              "correct": "too",
+              "distractors": [
+                "mum",
+                "dad"
+              ],
+              "audio": "audio/generated/en-US/932ec61187ee2dc98a21ec62.wav",
+              "speechText": "too",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-06",
+              "prompt": "你好",
+              "correct": "hello",
+              "distractors": [
+                "panda",
+                "tiger"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "hello",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        },
+        {
+          "id": "u01-l02",
+          "title": "词汇与句型练习 2",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-making-07",
+              "prompt": "嗨",
+              "correct": "hi",
+              "distractors": [
+                "my",
+                "up"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "hi",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-08",
+              "prompt": "我",
+              "correct": "I",
+              "distractors": [
+                "friend",
+                "name"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "I",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-09",
+              "prompt": "我的",
+              "correct": "my",
+              "distractors": [
+                "hi",
+                "up"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "my",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-making-10",
+              "prompt": "你的",
+              "correct": "your",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "your",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02",
+      "title": "Unit 2 Different families",
+      "note": "官方配套资源页确认单元标题与栏目结构；人教社新教材简介以本单元举例",
+      "lessons": [
+        {
+          "id": "u02-l01",
+          "title": "词汇与句型练习 1",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-families-01",
+              "prompt": "妈妈",
+              "correct": "mother",
+              "distractors": [
+                "friend",
+                "father"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "mother",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-02",
+              "prompt": "爸爸",
+              "correct": "father",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "father",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-03",
+              "prompt": "姐妹",
+              "correct": "sister",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6c3491133b11a2f6cefd8693.wav",
+              "speechText": "sister",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-04",
+              "prompt": "兄弟",
+              "correct": "brother",
+              "distractors": [
+                "welcome",
+                "friend"
+              ],
+              "audio": "audio/generated/en-US/40562169c43e943a16207bfe.wav",
+              "speechText": "brother",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-05",
+              "prompt": "祖母",
+              "correct": "grandmother",
+              "distractors": [
+                "grandfather",
+                "friend"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "grandmother",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-06",
+              "prompt": "祖父",
+              "correct": "grandfather",
+              "distractors": [
+                "grandmother",
+                "friend"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "grandfather",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        },
+        {
+          "id": "u02-l02",
+          "title": "词汇与句型练习 2",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-families-07",
+              "prompt": "家庭",
+              "correct": "family",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "family",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-08",
+              "prompt": "妈妈",
+              "correct": "mum",
+              "distractors": [
+                "too",
+                "dad"
+              ],
+              "audio": "audio/generated/en-US/32e6981295463e13f19b990c.wav",
+              "speechText": "mum",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-09",
+              "prompt": "爸爸",
+              "correct": "dad",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "dad",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-families-10",
+              "prompt": "这个",
+              "correct": "this",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "this",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03",
+      "title": "Unit 3 Amazing animals",
+      "note": "官方配套资源页确认单元标题；词表音频存在但文本未公开，练习词项待核验",
+      "lessons": [
+        {
+          "id": "u03-l01",
+          "title": "词汇与句型练习 1",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-animals-01",
+              "prompt": "狗",
+              "correct": "dog",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/36a42db230973254d1f8c353.wav",
+              "speechText": "dog",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-02",
+              "prompt": "猫",
+              "correct": "cat",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/aaf6ee4c1256106a12d622f5.wav",
+              "speechText": "cat",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-03",
+              "prompt": "鸭子",
+              "correct": "duck",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/12d9b0ad16378bda4d6fc5b5.wav",
+              "speechText": "duck",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-04",
+              "prompt": "熊",
+              "correct": "bear",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/44d48db6dec38c79e94a9455.wav",
+              "speechText": "bear",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-05",
+              "prompt": "猪",
+              "correct": "pig",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/4e6b63ea418ac6289a27408d.wav",
+              "speechText": "pig",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-06",
+              "prompt": "鸟",
+              "correct": "bird",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/dc95456ee22450c1f93d97f6.wav",
+              "speechText": "bird",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        },
+        {
+          "id": "u03-l02",
+          "title": "词汇与句型练习 2",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-animals-07",
+              "prompt": "猴子",
+              "correct": "monkey",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/099bf83d4aac87ece0f7a739.wav",
+              "speechText": "monkey",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-08",
+              "prompt": "熊猫",
+              "correct": "panda",
+              "distractors": [
+                "hello",
+                "tiger"
+              ],
+              "audio": "audio/generated/en-US/3426b42ac08344b92a5dbb7d.wav",
+              "speechText": "panda",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-09",
+              "prompt": "老虎",
+              "correct": "tiger",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/07ae5f6d198f4e28358320ef.wav",
+              "speechText": "tiger",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-10",
+              "prompt": "大象",
+              "correct": "elephant",
+              "distractors": [
+                "friend",
+                "name"
+              ],
+              "audio": "audio/generated/en-US/2eab828e57b911ccee5ad7f5.wav",
+              "speechText": "elephant",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-11",
+              "prompt": "动物园",
+              "correct": "zoo",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/55547457b399e712e85e6828.wav",
+              "speechText": "zoo",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 4,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-animals-12",
+              "prompt": "动物",
+              "correct": "animal",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "animal",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04",
+      "title": "Unit 4 Plants around us",
+      "note": "官方配套资源页确认单元标题；词表音频存在但文本未公开，练习词项待核验",
+      "lessons": [
+        {
+          "id": "u04-l01",
+          "title": "词汇与句型练习 1",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-plants-01",
+              "prompt": "植物",
+              "correct": "plant",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "plant",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-02",
+              "prompt": "花",
+              "correct": "flower",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "flower",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-03",
+              "prompt": "树",
+              "correct": "tree",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "tree",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-04",
+              "prompt": "草",
+              "correct": "grass",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "grass",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-05",
+              "prompt": "叶子",
+              "correct": "leaf",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "leaf",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-06",
+              "prompt": "种子",
+              "correct": "seed",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "seed",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        },
+        {
+          "id": "u04-l02",
+          "title": "词汇与句型练习 2",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-plants-07",
+              "prompt": "水果",
+              "correct": "fruit",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "fruit",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-08",
+              "prompt": "苹果",
+              "correct": "apple",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "apple",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-09",
+              "prompt": "香蕉",
+              "correct": "banana",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "banana",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-10",
+              "prompt": "橙子",
+              "correct": "orange",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/3c2b9d07ef17c2e90b1d2cfe.wav",
+              "speechText": "orange",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-11",
+              "prompt": "水",
+              "correct": "water",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/0b8ee9c23f853e90ea68a688.wav",
+              "speechText": "water",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 5,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-plants-12",
+              "prompt": "阳光",
+              "correct": "sun",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "sun",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05",
+      "title": "Unit 5 The colourful world",
+      "note": "官方配套资源页确认单元标题；词表音频存在但文本未公开，练习词项待核验",
+      "lessons": [
+        {
+          "id": "u05-l01",
+          "title": "词汇与句型练习 1",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-colours-01",
+              "prompt": "红色",
+              "correct": "red",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/10956b12716f684ebbdd0789.wav",
+              "speechText": "red",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-02",
+              "prompt": "绿色",
+              "correct": "green",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/55cc804f8d11d428c610e474.wav",
+              "speechText": "green",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-03",
+              "prompt": "黄色",
+              "correct": "yellow",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/0d6f4f95355b73a6419efb76.wav",
+              "speechText": "yellow",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-04",
+              "prompt": "蓝色",
+              "correct": "blue",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/fa73ad86ebc409f88ac92727.wav",
+              "speechText": "blue",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-05",
+              "prompt": "黑色",
+              "correct": "black",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/54265af920f069897d16d3be.wav",
+              "speechText": "black",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-06",
+              "prompt": "棕色",
+              "correct": "brown",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/73f17b7c480a1c7104b450b4.wav",
+              "speechText": "brown",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        },
+        {
+          "id": "u05-l02",
+          "title": "词汇与句型练习 2",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-colours-07",
+              "prompt": "白色",
+              "correct": "white",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/c633537c86fea4c81d283802.wav",
+              "speechText": "white",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-08",
+              "prompt": "橙色",
+              "correct": "orange",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/3c2b9d07ef17c2e90b1d2cfe.wav",
+              "speechText": "orange",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-09",
+              "prompt": "颜色",
+              "correct": "colour",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/b052cf4609356b19efafeb36.wav",
+              "speechText": "colour",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 2,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-10",
+              "prompt": "粉色",
+              "correct": "pink",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "pink",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-11",
+              "prompt": "紫色",
+              "correct": "purple",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "purple",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-colours-12",
+              "prompt": "灰色",
+              "correct": "grey",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "grey",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06",
+      "title": "Unit 6 Useful numbers",
+      "note": "官方配套资源页确认单元标题；词表音频存在但文本未公开，练习词项待核验",
+      "lessons": [
+        {
+          "id": "u06-l01",
+          "title": "词汇与句型练习 1",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-numbers-01",
+              "prompt": "一",
+              "correct": "one",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/be6187d35a9f9a055ae89ee3.wav",
+              "speechText": "one",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-02",
+              "prompt": "二",
+              "correct": "two",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/d7a1208d500b15ce3b774b83.wav",
+              "speechText": "two",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-03",
+              "prompt": "三",
+              "correct": "three",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/603c01e6fb621afb85f94713.wav",
+              "speechText": "three",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-04",
+              "prompt": "四",
+              "correct": "four",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/e754a994d05421ae3b469ecd.wav",
+              "speechText": "four",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-05",
+              "prompt": "五",
+              "correct": "five",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/4b89b6c47cbf059582c24ea7.wav",
+              "speechText": "five",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-06",
+              "prompt": "六",
+              "correct": "six",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/d9e2e2083df1081be9b80804.wav",
+              "speechText": "six",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        },
+        {
+          "id": "u06-l02",
+          "title": "词汇与句型练习 2",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-numbers-07",
+              "prompt": "七",
+              "correct": "seven",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/7d44b556b980d3288ad065fd.wav",
+              "speechText": "seven",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-08",
+              "prompt": "八",
+              "correct": "eight",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/1c72efc170775fdceff1dd00.wav",
+              "speechText": "eight",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-09",
+              "prompt": "九",
+              "correct": "nine",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/aac7d0662ebca56756e4b352.wav",
+              "speechText": "nine",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-10",
+              "prompt": "十",
+              "correct": "ten",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/e020eb7e194ab6da3a6de8dc.wav",
+              "speechText": "ten",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 6,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-11",
+              "prompt": "数字",
+              "correct": "number",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "number",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-numbers-12",
+              "prompt": "数数",
+              "correct": "count",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "count",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07",
+      "title": "Revision: Being a good guest",
+      "note": "官方配套资源页确认复习单元标题；练习为教师自编情景用语",
+      "lessons": [
+        {
+          "id": "u07-l01",
+          "title": "词汇与句型练习 1",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-guest-01",
+              "prompt": "你好",
+              "correct": "hello",
+              "distractors": [
+                "panda",
+                "tiger"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "hello",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-02",
+              "prompt": "请",
+              "correct": "please",
+              "distractors": [
+                "friend",
+                "mother"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "please",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-03",
+              "prompt": "谢谢",
+              "correct": "thank",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/f1faf422e84bbe7f9e2a4f96.wav",
+              "speechText": "thank",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 3,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-04",
+              "prompt": "对不起",
+              "correct": "sorry",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "sorry",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-05",
+              "prompt": "欢迎",
+              "correct": "welcome",
+              "distractors": [
+                "brother",
+                "friend"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "welcome",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-06",
+              "prompt": "客人",
+              "correct": "guest",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "guest",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        },
+        {
+          "id": "u07-l02",
+          "title": "词汇与句型练习 2",
+          "note": "自编练习，不等同于官方教材词表",
+          "items": [
+            {
+              "id": "g3-english-pep-2024-a-guest-07",
+              "prompt": "坐",
+              "correct": "sit",
+              "distractors": [
+                "too",
+                "mum"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "sit",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-08",
+              "prompt": "向下",
+              "correct": "down",
+              "distractors": [
+                "name",
+                "nice"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "down",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-09",
+              "prompt": "站立",
+              "correct": "stand",
+              "distractors": [
+                "hello",
+                "panda"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "stand",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            },
+            {
+              "id": "g3-english-pep-2024-a-guest-10",
+              "prompt": "向上",
+              "correct": "up",
+              "distractors": [
+                "hi",
+                "my"
+              ],
+              "audio": "audio/generated/en-US/6a774c8a70f5c487fd9ebb50.wav",
+              "speechText": "up",
+              "speechLang": "en-US",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "自编练习词项；参考旧版音频映射，官方词表待核验",
+              "reviewed": false,
+              "lesson": 1,
+              "audioReview": "tts_preview_pending_teacher_review"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": []
+}

@@ -6,7 +6,7 @@ const PROGRESS_VERSION = 2;
 const PASS_RATIO = 0.6;
 
 const defaultSettings = {
-  pack: 'g3-english-basic',
+  pack: 'g3-english-pep-2024-a',
   speechVolume: 0.8,
   effectVolume: 0.6
 };

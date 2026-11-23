@@ -1,5 +1,7 @@
 {
   "packs": [
+    "data/G1-语文-上册-2024修订版.json",
+    "data/3年级上英语-新版PEP对应练习.json",
     "data/1年级上英语-开源词表.json",
     "data/1年级下英语-开源词表.json",
     "data/2年级上英语-开源词表.json",

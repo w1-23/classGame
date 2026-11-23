@@ -45,6 +45,40 @@ assert.ok(
   'Chinese character/word corpus is incomplete'
 );
 assert.ok(packs.some(pack => pack.id === 'g3-english-basic'), 'stable g3 English progress id changed');
+const g1New = packs.find(pack => pack.id === 'g1-chinese-2024-a');
+const g3New = packs.find(pack => pack.id === 'g3-english-pep-2024-a');
+assert.ok(g1New, 'new G1 Chinese curriculum pack is missing');
+assert.ok(g3New, 'new G3 English curriculum pack is missing');
+const requiredAlignmentFields = [
+  'publisher', 'series', 'curriculumStandard', 'textbookEdition',
+  'textbookActivation', 'alignmentStatus', 'alignmentSources',
+  'verificationDate', 'reviewedBy', 'notes'
+];
+for (const pack of [g1New, g3New]) {
+  for (const field of requiredAlignmentFields) {
+    assert.ok(pack[field], `${pack.id} missing alignment metadata: ${field}`);
+  }
+  assert.match(pack.alignmentStatus, /pending$/, `${pack.id} must not claim completed alignment`);
+}
+const g1Lessons = g1New.units.flatMap(unit => unit.lessons);
+assert.ok(g1Lessons.some(lesson => lesson.title.includes('日月山川')), 'G1 must include 日月山川');
+assert.ok(!g1Lessons.some(lesson => lesson.title.includes('i u ü y w')), 'G1 must split i u ü y w');
+assert.ok(g1Lessons.some(lesson => lesson.title.includes('y w')), 'G1 must keep y w as a separate lesson');
+assert.ok(g1Lessons.some(lesson => lesson.title.includes('欢迎台湾小朋友')), 'G1 must include the pinyin song');
+assert.deepEqual(g3New.units.map(unit => unit.title), [
+  'Unit 1 Making friends',
+  'Unit 2 Different families',
+  'Unit 3 Amazing animals',
+  'Unit 4 Plants around us',
+  'Unit 5 The colourful world',
+  'Unit 6 Useful numbers',
+  'Revision: Being a good guest'
+]);
+for (const id of ['g1-chinese-a', 'g1-chinese-pinyin', 'g3-english-basic']) {
+  const pack = packs.find(item => item.id === id);
+  assert.equal(pack.alignmentStatus, 'legacy_unverified', `${id} must be marked as legacy/unverified`);
+  assert.doesNotMatch(pack.name + pack.edition, /2024统编版|(?<!未声明)新版同步/, `${id} must not claim new-edition alignment`);
+}
 
 const games = await readFile('js/games.js', 'utf8');
 for (const factory of ['createRunner', 'createListen', 'createAssemble', 'createMemory', 'createBeat', 'createBattle']) {

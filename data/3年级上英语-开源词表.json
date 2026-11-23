@@ -1,15 +1,15 @@
 {
   "id": "g3-english-basic",
-  "name": "3年级上英语 · 开源同步词表",
+  "name": "三年级上册英语 · 旧版开源词表",
   "subject": "英语",
   "grade": 3,
   "volume": "上",
-  "edition": "开源同步词表（需按学校教材核对）",
+  "edition": "开源词表（未声明新版同步）",
   "units": [
     {
       "id": "u01",
       "title": "Unit 1 Hello!",
-      "note": "3年级上 · Unit 1 Hello!",
+      "note": "六个旧单元目录；新版请使用“三年级上册英语 · 新版 PEP 对应练习”",
       "lessons": [
         {
           "id": "u01-l01",
@@ -364,7 +364,7 @@
     {
       "id": "u02",
       "title": "Unit 2 Colours",
-      "note": "3年级上 · Unit 2 Colours",
+      "note": "六个旧单元目录；新版请使用“三年级上册英语 · 新版 PEP 对应练习”",
       "lessons": [
         {
           "id": "u02-l01",
@@ -647,7 +647,7 @@
     {
       "id": "u03",
       "title": "Unit 3 Look at Me!",
-      "note": "3年级上 · Unit 3 Look at Me!",
+      "note": "六个旧单元目录；新版请使用“三年级上册英语 · 新版 PEP 对应练习”",
       "lessons": [
         {
           "id": "u03-l01",
@@ -958,7 +958,7 @@
     {
       "id": "u04",
       "title": "Unit 4 We Love Animals",
-      "note": "3年级上 · Unit 4 We Love Animals",
+      "note": "六个旧单元目录；新版请使用“三年级上册英语 · 新版 PEP 对应练习”",
       "lessons": [
         {
           "id": "u04-l01",
@@ -1241,7 +1241,7 @@
     {
       "id": "u05",
       "title": "Unit 5 Let's Eat!",
-      "note": "3年级上 · Unit 5 Let's Eat!",
+      "note": "六个旧单元目录；新版请使用“三年级上册英语 · 新版 PEP 对应练习”",
       "lessons": [
         {
           "id": "u05-l01",
@@ -1552,7 +1552,7 @@
     {
       "id": "u06",
       "title": "Unit 6 Happy Birthday!",
-      "note": "3年级上 · Unit 6 Happy Birthday!",
+      "note": "六个旧单元目录；新版请使用“三年级上册英语 · 新版 PEP 对应练习”",
       "lessons": [
         {
           "id": "u06-l01",
@@ -1861,5 +1861,7 @@
       ]
     }
   ],
-  "items": []
+  "items": [],
+  "alignmentStatus": "legacy_unverified",
+  "notes": "六个旧单元目录；新版请使用“三年级上册英语 · 新版 PEP 对应练习”"
 }

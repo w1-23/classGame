@@ -1,0 +1,4205 @@
+{
+  "id": "g1-chinese-2024-a",
+  "name": "一年级上册语文 · 统编修订版对应练习",
+  "subject": "语文",
+  "grade": 1,
+  "volume": "上册",
+  "edition": "统编修订版（2024 秋启用起始年级）",
+  "publisher": "人民教育出版社",
+  "series": "义务教育教科书 · 语文（统编版）",
+  "curriculumStandard": "义务教育语文课程标准（2022 年版）",
+  "textbookEdition": "修订版，具体版次/印次待按学校用书版权页核验",
+  "textbookActivation": "2024 年秋季学期起在起始年级使用；2026 年秋季完成义务教育阶段替换",
+  "alignmentStatus": "structure_verified_lesson_details_pending",
+  "reviewedBy": "自动核对公开资料；教师终审未完成",
+  "verificationDate": "2026-11-23",
+  "alignmentSources": [
+    {
+      "title": "统编教材修订说明（人教社转载）",
+      "url": "https://www.pep.com.cn/rjdt/mtbd/202408/t20240827_1994380.shtml",
+      "verified": "结构变化、拼音拆分、识字/课文数量"
+    },
+    {
+      "title": "新修订的义务教育教科书一年级上册语文（人教社）",
+      "url": "https://www.pep.com.cn/xw/zt/hd/sktbjc/bxgs/202606/t20260611_2006816.html",
+      "verified": "日月山川、拼音儿歌、两件宝、语文园地栏目"
+    }
+  ],
+  "coverage": {
+    "books": 1,
+    "units": 5,
+    "lessons": 25,
+    "items": 172,
+    "content": "自编字词/拼音练习；不含教材原文、插图或受版权保护课文"
+  },
+  "notes": "仅对公开资料已核验的结构和栏目建立对应关系。逐课字表、版次印次和音频试听仍待教师核验；题目复用旧版正确内容并重新归组。",
+  "units": [
+    {
+      "id": "g1-chinese-2024-a-u01",
+      "title": "第一单元 · 识字",
+      "note": "2024 秋启用统编修订版；识字课由 10 课调整为 8 课，旧版《日月水火》调整为《日月山川》",
+      "lessons": [
+        {
+          "id": "u01-l01",
+          "title": "识字 1 天地人",
+          "note": "官方修订说明确认保留",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u01-l01-w01",
+              "prompt": "天",
+              "correct": "tiān",
+              "distractors": [
+                "dì",
+                "rén"
+              ],
+              "audio": "audio/generated/zh-CN/7946d85d0d4297fc17e83abb.wav",
+              "speechText": "天",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 1 天地人"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l01-w02",
+              "prompt": "地",
+              "correct": "dì",
+              "distractors": [
+                "tiān",
+                "rén"
+              ],
+              "audio": "audio/generated/zh-CN/a8821302e25645d851b62363.wav",
+              "speechText": "地",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 1 天地人"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l01-w03",
+              "prompt": "人",
+              "correct": "rén",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/3a89c29b490887c0ff76c14e.wav",
+              "speechText": "人",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 1 天地人"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l01-w04",
+              "prompt": "你",
+              "correct": "nǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/cc1ac07db5f60128200ef2ce.wav",
+              "speechText": "你",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 1 天地人"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l01-w05",
+              "prompt": "我",
+              "correct": "wǒ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/bbafbfbb2c05dd11389318dc.wav",
+              "speechText": "我",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 1 天地人"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l01-w06",
+              "prompt": "他",
+              "correct": "tā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1a82c6be4a27258d578b7658.wav",
+              "speechText": "他",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 1 天地人"
+            }
+          ]
+        },
+        {
+          "id": "u01-l02",
+          "title": "识字 2 金木水火土",
+          "note": "官方修订说明确认保留",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u01-l02-w01",
+              "prompt": "一",
+              "correct": "yī",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/4c27b11b3431af21f07fbda8.wav",
+              "speechText": "一",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 2 金木水火土"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l02-w02",
+              "prompt": "二",
+              "correct": "èr",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/5cbdd86dffa1470128c54120.wav",
+              "speechText": "二",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 2 金木水火土"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l02-w03",
+              "prompt": "三",
+              "correct": "sān",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/32e0a76766cdf18c88db0a19.wav",
+              "speechText": "三",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 2 金木水火土"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l02-w04",
+              "prompt": "四",
+              "correct": "sì",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/9fa5cd721d81a23d9b43f34f.wav",
+              "speechText": "四",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 2 金木水火土"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l02-w05",
+              "prompt": "五",
+              "correct": "wǔ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/8528c4f225d31c36bdf73c9f.wav",
+              "speechText": "五",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 2 金木水火土"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l02-w06",
+              "prompt": "上",
+              "correct": "shàng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/15fa58c7900807b0cad32817.wav",
+              "speechText": "上",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 2 金木水火土"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l02-w07",
+              "prompt": "下",
+              "correct": "xià",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/db4c2985df82cc5b212bb01d.wav",
+              "speechText": "下",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 2 金木水火土"
+            }
+          ]
+        },
+        {
+          "id": "u01-l03",
+          "title": "识字 3 口耳目",
+          "note": "旧版字词复用；逐字表待核验",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u01-l03-w01",
+              "prompt": "口",
+              "correct": "kǒu",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/2f15a46b15ce593ac1d6d28c.wav",
+              "speechText": "口",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 3 口耳目"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l03-w02",
+              "prompt": "耳",
+              "correct": "ěr",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/4cebae7ab2adadbdf6b02b58.wav",
+              "speechText": "耳",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 3 口耳目"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l03-w03",
+              "prompt": "目",
+              "correct": "mù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/802a744910fdf82fba0616e3.wav",
+              "speechText": "目",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 3 口耳目"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l03-w04",
+              "prompt": "手",
+              "correct": "shǒu",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/929250aa089c24ea587e6b2a.wav",
+              "speechText": "手",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 3 口耳目"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l03-w05",
+              "prompt": "足",
+              "correct": "zú",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/07a837f9ee15f2101f82772f.wav",
+              "speechText": "足",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 3 口耳目"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l03-w06",
+              "prompt": "站",
+              "correct": "zhàn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/5fca6b65bcfe6ddb67668c89.wav",
+              "speechText": "站",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 3 口耳目"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l03-w07",
+              "prompt": "坐",
+              "correct": "zuò",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/0f525488cc75cf0ecb9824b9.wav",
+              "speechText": "坐",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 3 口耳目"
+            }
+          ]
+        },
+        {
+          "id": "u01-l04",
+          "title": "识字 4 日月山川",
+          "note": "官方修订说明确认由《日月水火》改为《日月山川》；“石”换为“川”",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u01-l04-w01",
+              "prompt": "日",
+              "correct": "rì",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f80a231ab651b92de4a3d481.wav",
+              "speechText": "日",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 4 日月山川"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l04-w02",
+              "prompt": "月",
+              "correct": "yuè",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/68fd5795e76381f719d7ad26.wav",
+              "speechText": "月",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 4 日月山川"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l04-w03",
+              "prompt": "水",
+              "correct": "shuǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/144ee0d906a65e54d1a60237.wav",
+              "speechText": "水",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 4 日月山川"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l04-w04",
+              "prompt": "火",
+              "correct": "huǒ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1dcdc883ce29558f1f6115af.wav",
+              "speechText": "火",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 4 日月山川"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l04-w05",
+              "prompt": "田",
+              "correct": "tián",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a9c8a2cd3600c32afd103e91.wav",
+              "speechText": "田",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 4 日月山川"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l04-w06",
+              "prompt": "禾",
+              "correct": "hé",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/efbb93cd367e5aa44084d613.wav",
+              "speechText": "禾",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 4 日月山川"
+            }
+          ]
+        },
+        {
+          "id": "u01-l05",
+          "title": "识字 5 对韵歌",
+          "note": "旧版字词复用；逐字表待核验",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u01-l05-w01",
+              "prompt": "对",
+              "correct": "duì",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/5cf8e5b2ba9ef6dad95d219c.wav",
+              "speechText": "对",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 5 对韵歌"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l05-w02",
+              "prompt": "云",
+              "correct": "yún",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/27f144108d98c6d205acb9ec.wav",
+              "speechText": "云",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 5 对韵歌"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l05-w03",
+              "prompt": "雨",
+              "correct": "yǔ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/e1780dec43112fbf6dc829aa.wav",
+              "speechText": "雨",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 5 对韵歌"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l05-w04",
+              "prompt": "风",
+              "correct": "fēng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/140e1e702bc921342441e6e4.wav",
+              "speechText": "风",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 5 对韵歌"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l05-w05",
+              "prompt": "花",
+              "correct": "huā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ea14e996c2e9e2dd107bce65.wav",
+              "speechText": "花",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 5 对韵歌"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l05-w06",
+              "prompt": "鸟",
+              "correct": "niǎo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/42df05333671b82b509b14ea.wav",
+              "speechText": "鸟",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 5 对韵歌"
+            },
+            {
+              "id": "g1-chinese-2024-a-u01-l05-w07",
+              "prompt": "虫",
+              "correct": "chóng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a6f2fd3f7eb48cbfb44e18c7.wav",
+              "speechText": "虫",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 5 对韵歌"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-2024-a-u02",
+      "title": "第二单元 · 汉语拼音一",
+      "note": "官方修订说明确认拼音单元由 2 个增至 3 个；本单元按已核验的 6 课结构组织",
+      "lessons": [
+        {
+          "id": "u02-l01",
+          "title": "拼音 1 a o e",
+          "note": "旧版拼音随文识字；已移出错误的 b p m f 归组",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w01",
+              "prompt": "爸",
+              "correct": "bà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f51da9339b42f710840ca794.wav",
+              "speechText": "爸",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w02",
+              "prompt": "妈",
+              "correct": "mā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/5e68f15ce5e56f14e3e85a16.wav",
+              "speechText": "妈",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w03",
+              "prompt": "马",
+              "correct": "mǎ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ef4e4557f497c6020276ec0b.wav",
+              "speechText": "马",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w04",
+              "prompt": "土",
+              "correct": "tǔ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a8f54fb39daf494a313bdea8.wav",
+              "speechText": "土",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w05",
+              "prompt": "不",
+              "correct": "bù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/d8d8e653de40f0b50bf39b5e.wav",
+              "speechText": "不",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w06",
+              "prompt": "画",
+              "correct": "huà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/dcb7de23d3f61f80d20fa13c.wav",
+              "speechText": "画",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w07",
+              "prompt": "打",
+              "correct": "dǎ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/51a4f4a7f259c28ecc84be9a.wav",
+              "speechText": "打",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l01-w08",
+              "prompt": "棋",
+              "correct": "qí",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/2b970ca98ac1dec0ad6518bb.wav",
+              "speechText": "棋",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 1 a o e"
+            }
+          ]
+        },
+        {
+          "id": "u02-l02",
+          "title": "拼音 2 i u ü",
+          "note": "官方修订说明确认 i u ü 与 y w 拆分为两课",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u02-l02-w01",
+              "prompt": "文",
+              "correct": "wén",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/dd410c6c4a447414479b6ef6.wav",
+              "speechText": "文",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 2 i u ü"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l02-w02",
+              "prompt": "数",
+              "correct": "shù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f3c71989a0fb018bf2b5aedf.wav",
+              "speechText": "数",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 2 i u ü"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l02-w03",
+              "prompt": "学",
+              "correct": "xué",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/9730609ae9f1dff14b5d4052.wav",
+              "speechText": "学",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 2 i u ü"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l02-w04",
+              "prompt": "音",
+              "correct": "yīn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/8885eb8828f012ffd680452f.wav",
+              "speechText": "音",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 2 i u ü"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l02-w05",
+              "prompt": "乐",
+              "correct": "lè",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1b6ecce6b1e783953c466abb.wav",
+              "speechText": "乐",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 2 i u ü"
+            }
+          ]
+        },
+        {
+          "id": "u02-l03",
+          "title": "拼音 3 y w",
+          "note": "官方修订说明确认独立成课；字词为旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u02-l03-w01",
+              "prompt": "妹",
+              "correct": "mèi",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ea3b81fed9debb7467e1d38c.wav",
+              "speechText": "妹",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 3 y w"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l03-w02",
+              "prompt": "奶",
+              "correct": "nǎi",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a1c7687e0395b71ea84e7da1.wav",
+              "speechText": "奶",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 3 y w"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l03-w03",
+              "prompt": "白",
+              "correct": "bái",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/3bbbfb9fd19a7cb8dfbc3052.wav",
+              "speechText": "白",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 3 y w"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l03-w04",
+              "prompt": "皮",
+              "correct": "pí",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/8e4799980779f308e9ce3cdd.wav",
+              "speechText": "皮",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 3 y w"
+            }
+          ]
+        },
+        {
+          "id": "u02-l04",
+          "title": "拼音 4 b p m f",
+          "note": "仅保留旧版前两组；删除原包另外 14 组错位归课",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w01",
+              "prompt": "爸",
+              "correct": "bà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f51da9339b42f710840ca794.wav",
+              "speechText": "爸",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w02",
+              "prompt": "妈",
+              "correct": "mā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/5e68f15ce5e56f14e3e85a16.wav",
+              "speechText": "妈",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w03",
+              "prompt": "我",
+              "correct": "wǒ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/bbafbfbb2c05dd11389318dc.wav",
+              "speechText": "我",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w04",
+              "prompt": "大",
+              "correct": "dà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/868d319489763d4561961fca.wav",
+              "speechText": "大",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w05",
+              "prompt": "米",
+              "correct": "mǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/12955cd71c4fb0f5ec8ae0c2.wav",
+              "speechText": "米",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w06",
+              "prompt": "土",
+              "correct": "tǔ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a8f54fb39daf494a313bdea8.wav",
+              "speechText": "土",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w07",
+              "prompt": "地",
+              "correct": "dì",
+              "distractors": [
+                "tiān",
+                "rén"
+              ],
+              "audio": "audio/generated/zh-CN/a8821302e25645d851b62363.wav",
+              "speechText": "地",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l04-w08",
+              "prompt": "马",
+              "correct": "mǎ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ef4e4557f497c6020276ec0b.wav",
+              "speechText": "马",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 4 b p m f"
+            }
+          ]
+        },
+        {
+          "id": "u02-l05",
+          "title": "拼音 5 d t n l",
+          "note": "旧版字词复用，按拼音课重新归组",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u02-l05-w01",
+              "prompt": "花",
+              "correct": "huā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ea14e996c2e9e2dd107bce65.wav",
+              "speechText": "花",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 5 d t n l"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l05-w02",
+              "prompt": "哥",
+              "correct": "gē",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/7acf9dd467a4af91bcf5384a.wav",
+              "speechText": "哥",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 5 d t n l"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l05-w03",
+              "prompt": "弟",
+              "correct": "dì",
+              "distractors": [
+                "tiān",
+                "rén"
+              ],
+              "audio": "audio/generated/zh-CN/f2c3657fb512bba1eec1cdd7.wav",
+              "speechText": "弟",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 5 d t n l"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l05-w04",
+              "prompt": "画",
+              "correct": "huà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/dcb7de23d3f61f80d20fa13c.wav",
+              "speechText": "画",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 5 d t n l"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l05-w05",
+              "prompt": "下",
+              "correct": "xià",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/db4c2985df82cc5b212bb01d.wav",
+              "speechText": "下",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 5 d t n l"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l05-w06",
+              "prompt": "洗",
+              "correct": "xǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/153e069ee92bbf6cecb89e0d.wav",
+              "speechText": "洗",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 5 d t n l"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l05-w07",
+              "prompt": "衣",
+              "correct": "yī",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/54f0d05fd44abba1ba11a530.wav",
+              "speechText": "衣",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 5 d t n l"
+            }
+          ]
+        },
+        {
+          "id": "u02-l06",
+          "title": "拼音 6 g k h",
+          "note": "旧版字词复用，按拼音课重新归组",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u02-l06-w01",
+              "prompt": "服",
+              "correct": "fú",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f53fedc757cdd98c9d81c490.wav",
+              "speechText": "服",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 6 g k h"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l06-w02",
+              "prompt": "鸡",
+              "correct": "jī",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/7d4b69d1ca9431cbf3efbe76.wav",
+              "speechText": "鸡",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 6 g k h"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l06-w03",
+              "prompt": "做",
+              "correct": "zuò",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/48bb4367043965b10560bf79.wav",
+              "speechText": "做",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 6 g k h"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l06-w04",
+              "prompt": "过",
+              "correct": "guò",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ee6d43f23b13da4f9df6c7c1.wav",
+              "speechText": "过",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 6 g k h"
+            },
+            {
+              "id": "g1-chinese-2024-a-u02-l06-w05",
+              "prompt": "乐",
+              "correct": "lè",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1b6ecce6b1e783953c466abb.wav",
+              "speechText": "乐",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 6 g k h"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-2024-a-u03",
+      "title": "第三单元 · 汉语拼音二",
+      "note": "官方修订说明确认三个拼音单元；本单元课次边界待官方电子教材逐课复核",
+      "lessons": [
+        {
+          "id": "u03-l01",
+          "title": "拼音 7 j q x",
+          "note": "结构待核验；字词来自旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u03-l01-w01",
+              "prompt": "了",
+              "correct": "le",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/998194aa6cf2f5dade032444.wav",
+              "speechText": "了",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 7 j q x"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l01-w02",
+              "prompt": "不",
+              "correct": "bù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/d8d8e653de40f0b50bf39b5e.wav",
+              "speechText": "不",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 7 j q x"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l01-w03",
+              "prompt": "出",
+              "correct": "chū",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/0ad97ff14abc2c5e636b35f4.wav",
+              "speechText": "出",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 7 j q x"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l01-w04",
+              "prompt": "读",
+              "correct": "dú",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/87a9658ae6b5b905f568d4d0.wav",
+              "speechText": "读",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 7 j q x"
+            }
+          ]
+        },
+        {
+          "id": "u03-l02",
+          "title": "拼音 8 zh ch sh r",
+          "note": "结构待核验；字词来自旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u03-l02-w01",
+              "prompt": "书",
+              "correct": "shū",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/c453d1cdfed8f984337bc40e.wav",
+              "speechText": "书",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 8 zh ch sh r"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l02-w02",
+              "prompt": "骑",
+              "correct": "qí",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/75b4eca96f49678cb06dc1b6.wav",
+              "speechText": "骑",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 8 zh ch sh r"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l02-w03",
+              "prompt": "车",
+              "correct": "chē",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/58fc75372d8674fa65f54fc0.wav",
+              "speechText": "车",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 8 zh ch sh r"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l02-w04",
+              "prompt": "的",
+              "correct": "de",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/deaf4711ce71e85db967ef43.wav",
+              "speechText": "的",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 8 zh ch sh r"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l02-w05",
+              "prompt": "话",
+              "correct": "huà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/e04c2092ff2ec9069380f718.wav",
+              "speechText": "话",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 8 zh ch sh r"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l02-w06",
+              "prompt": "你",
+              "correct": "nǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/cc1ac07db5f60128200ef2ce.wav",
+              "speechText": "你",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 8 zh ch sh r"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l02-w07",
+              "prompt": "他",
+              "correct": "tā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1a82c6be4a27258d578b7658.wav",
+              "speechText": "他",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 8 zh ch sh r"
+            }
+          ]
+        },
+        {
+          "id": "u03-l03",
+          "title": "拼音 9 ai ei ui",
+          "note": "结构待核验；字词来自旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w01",
+              "prompt": "水",
+              "correct": "shuǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/144ee0d906a65e54d1a60237.wav",
+              "speechText": "水",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w02",
+              "prompt": "白",
+              "correct": "bái",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/3bbbfb9fd19a7cb8dfbc3052.wav",
+              "speechText": "白",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w03",
+              "prompt": "皮",
+              "correct": "pí",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/8e4799980779f308e9ce3cdd.wav",
+              "speechText": "皮",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w04",
+              "prompt": "子",
+              "correct": "zi",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/4c023b546d4cdeedfaf77aae.wav",
+              "speechText": "子",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w05",
+              "prompt": "在",
+              "correct": "zài",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/538e1e659f0e0f4c9999a0f6.wav",
+              "speechText": "在",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w06",
+              "prompt": "小",
+              "correct": "xiǎo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f70a619cde0114c2e50e190e.wav",
+              "speechText": "小",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w07",
+              "prompt": "爱",
+              "correct": "ài",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1816451496277978281f4495.wav",
+              "speechText": "爱",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l03-w08",
+              "prompt": "吃",
+              "correct": "chī",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/bbcebc779d1467cbacee7bed.wav",
+              "speechText": "吃",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 9 ai ei ui"
+            }
+          ]
+        },
+        {
+          "id": "u03-l04",
+          "title": "拼音 10 ao ou iu",
+          "note": "结构待核验；字词来自旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w01",
+              "prompt": "鱼",
+              "correct": "yú",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/09e0c8c082528aa89862135c.wav",
+              "speechText": "鱼",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w02",
+              "prompt": "和",
+              "correct": "hé",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/07bab795b87396f8e990eb9d.wav",
+              "speechText": "和",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w03",
+              "prompt": "牛",
+              "correct": "niú",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/2aeca528dd55709759f05768.wav",
+              "speechText": "牛",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w04",
+              "prompt": "草",
+              "correct": "cǎo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a48f026735a422ab55b21741.wav",
+              "speechText": "草",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w05",
+              "prompt": "好",
+              "correct": "hǎo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/2d1bf551fe60ca9e1ed28dbc.wav",
+              "speechText": "好",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w06",
+              "prompt": "家",
+              "correct": "jiā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/2ac34079c0a8755ce75f6c10.wav",
+              "speechText": "家",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w07",
+              "prompt": "机",
+              "correct": "jī",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/b9d6ea1f705ce5b8c143241e.wav",
+              "speechText": "机",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            },
+            {
+              "id": "g1-chinese-2024-a-u03-l04-w08",
+              "prompt": "有",
+              "correct": "yǒu",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/e9df071a052f723461ed14db.wav",
+              "speechText": "有",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 10 ao ou iu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-2024-a-u04",
+      "title": "第四单元 · 汉语拼音三",
+      "note": "官方修订说明确认三个拼音单元；本单元课次边界待官方电子教材逐课复核",
+      "lessons": [
+        {
+          "id": "u04-l01",
+          "title": "拼音 11 ie üe er",
+          "note": "结构待核验；字词来自旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w01",
+              "prompt": "儿",
+              "correct": "ér",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/4142e78783a8a17edea67fc0.wav",
+              "speechText": "儿",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w02",
+              "prompt": "河",
+              "correct": "hé",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/7448b542b22b1448e55769c3.wav",
+              "speechText": "河",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w03",
+              "prompt": "入",
+              "correct": "rù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/38a614e2450e23b985046d1f.wav",
+              "speechText": "入",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w04",
+              "prompt": "校",
+              "correct": "xiào",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/87d4e8bfc9d0edfadc3f9bc5.wav",
+              "speechText": "校",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w05",
+              "prompt": "山",
+              "correct": "shān",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/16b060427aed0ef7871149d5.wav",
+              "speechText": "山",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w06",
+              "prompt": "田",
+              "correct": "tián",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a9c8a2cd3600c32afd103e91.wav",
+              "speechText": "田",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w07",
+              "prompt": "左",
+              "correct": "zuǒ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/fd0277065562ac7be06a6b4b.wav",
+              "speechText": "左",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l01-w08",
+              "prompt": "片",
+              "correct": "piàn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f3d732f16a10f46d6cc84919.wav",
+              "speechText": "片",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 11 ie üe er"
+            }
+          ]
+        },
+        {
+          "id": "u04-l02",
+          "title": "拼音 12 an en in un ün",
+          "note": "结构待核验；字词来自旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w01",
+              "prompt": "右",
+              "correct": "yòu",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/0baadb5340f71081ace8821b.wav",
+              "speechText": "右",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w02",
+              "prompt": "半",
+              "correct": "bàn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ec599d6403860e390f2ce6fd.wav",
+              "speechText": "半",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w03",
+              "prompt": "云",
+              "correct": "yún",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/27f144108d98c6d205acb9ec.wav",
+              "speechText": "云",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w04",
+              "prompt": "她",
+              "correct": "tā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/d4ad5416b5fad64a3ec6b15f.wav",
+              "speechText": "她",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w05",
+              "prompt": "老",
+              "correct": "lǎo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/0e09cfb43e8f4ce3be37b580.wav",
+              "speechText": "老",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w06",
+              "prompt": "师",
+              "correct": "shī",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/bbdce12cc8d9d1a96bd988e1.wav",
+              "speechText": "师",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w07",
+              "prompt": "文",
+              "correct": "wén",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/dd410c6c4a447414479b6ef6.wav",
+              "speechText": "文",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w08",
+              "prompt": "朵",
+              "correct": "duǒ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/38f88afd530f2d8fc40e2e75.wav",
+              "speechText": "朵",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l02-w09",
+              "prompt": "鹅",
+              "correct": "é",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/e679aaced5cc4fa1ce6fb7e4.wav",
+              "speechText": "鹅",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 12 an en in un ün"
+            }
+          ]
+        },
+        {
+          "id": "u04-l03",
+          "title": "拼音 13 ang eng ing ong",
+          "note": "结构待核验；字词来自旧版复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w01",
+              "prompt": "条",
+              "correct": "tiáo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/22706268c5913324c3b0fbee.wav",
+              "speechText": "条",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w02",
+              "prompt": "雨",
+              "correct": "yǔ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/e1780dec43112fbf6dc829aa.wav",
+              "speechText": "雨",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w03",
+              "prompt": "天",
+              "correct": "tiān",
+              "distractors": [
+                "dì",
+                "rén"
+              ],
+              "audio": "audio/generated/zh-CN/7946d85d0d4297fc17e83abb.wav",
+              "speechText": "天",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w04",
+              "prompt": "桥",
+              "correct": "qiáo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/cc5c22cdf781b9010b2e529e.wav",
+              "speechText": "桥",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w05",
+              "prompt": "去",
+              "correct": "qù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/596af3c815dc9b37b42ef3a6.wav",
+              "speechText": "去",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w06",
+              "prompt": "里",
+              "correct": "lǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/05e7c66cd9a724f982f1936e.wav",
+              "speechText": "里",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w07",
+              "prompt": "心",
+              "correct": "xīn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/bca979794aa25e472aab639c.wav",
+              "speechText": "心",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l03-w08",
+              "prompt": "中",
+              "correct": "zhōng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ae6201f8a04bd6eeb9b02613.wav",
+              "speechText": "中",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音 13 ang eng ing ong"
+            }
+          ]
+        },
+        {
+          "id": "u04-l04",
+          "title": "拼音儿歌 · 欢迎台湾小朋友",
+          "note": "人教社资料确认属于伴随拼音学习的儿歌，不是独立编号阅读课文；“家”“白”“皮”等字复用",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u04-l04-w01",
+              "prompt": "哥",
+              "correct": "gē",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/7acf9dd467a4af91bcf5384a.wav",
+              "speechText": "哥",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音儿歌 · 欢迎台湾小朋友"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l04-w02",
+              "prompt": "个",
+              "correct": "gè",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f427320c5c59b0609157643b.wav",
+              "speechText": "个",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音儿歌 · 欢迎台湾小朋友"
+            },
+            {
+              "id": "g1-chinese-2024-a-u04-l04-w03",
+              "prompt": "画",
+              "correct": "huà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/dcb7de23d3f61f80d20fa13c.wav",
+              "speechText": "画",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "拼音儿歌 · 欢迎台湾小朋友"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g1-chinese-2024-a-u05",
+      "title": "第五单元 · 阅读与识字",
+      "note": "官方修订说明确认阅读课文由 14 篇减为 10 篇；新增课文《两件宝》已记录，逐课目录待核验",
+      "lessons": [
+        {
+          "id": "u05-l01",
+          "title": "阅读 1 秋天",
+          "note": "官方修订说明确认拼音后第一课《秋天》保留",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w01",
+              "prompt": "秋",
+              "correct": "qiū",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/78086eb88390f343f9f26e6d.wav",
+              "speechText": "秋",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w02",
+              "prompt": "气",
+              "correct": "qì",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1143f774c882a75bc5bb4a30.wav",
+              "speechText": "气",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w03",
+              "prompt": "了",
+              "correct": "le",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/998194aa6cf2f5dade032444.wav",
+              "speechText": "了",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w04",
+              "prompt": "树",
+              "correct": "shù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/93f7b449e82bc25a58280869.wav",
+              "speechText": "树",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w05",
+              "prompt": "叶",
+              "correct": "yè",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/a06c88288fd76fe218ac86bb.wav",
+              "speechText": "叶",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w06",
+              "prompt": "片",
+              "correct": "piàn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f3d732f16a10f46d6cc84919.wav",
+              "speechText": "片",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w07",
+              "prompt": "大",
+              "correct": "dà",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/868d319489763d4561961fca.wav",
+              "speechText": "大",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w08",
+              "prompt": "飞",
+              "correct": "fēi",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/c4e8fe9be7db154060798635.wav",
+              "speechText": "飞",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w09",
+              "prompt": "会",
+              "correct": "huì",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/6d46d5182e2fc3c782f4098d.wav",
+              "speechText": "会",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l01-w10",
+              "prompt": "个",
+              "correct": "gè",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f427320c5c59b0609157643b.wav",
+              "speechText": "个",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 1 秋天"
+            }
+          ]
+        },
+        {
+          "id": "u05-l02",
+          "title": "阅读 2 小小的船",
+          "note": "旧版字词复用；课次顺序待核验",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w01",
+              "prompt": "的",
+              "correct": "de",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/deaf4711ce71e85db967ef43.wav",
+              "speechText": "的",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w02",
+              "prompt": "船",
+              "correct": "chuán",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/dc40081244931b8583267048.wav",
+              "speechText": "船",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w03",
+              "prompt": "两",
+              "correct": "liǎng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1bdd278eeae93eaf902f2903.wav",
+              "speechText": "两",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w04",
+              "prompt": "头",
+              "correct": "tóu",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/c0d35e3e82100079f8dac738.wav",
+              "speechText": "头",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w05",
+              "prompt": "在",
+              "correct": "zài",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/538e1e659f0e0f4c9999a0f6.wav",
+              "speechText": "在",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w06",
+              "prompt": "里",
+              "correct": "lǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/05e7c66cd9a724f982f1936e.wav",
+              "speechText": "里",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w07",
+              "prompt": "看",
+              "correct": "kàn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f5dcc9d65ac43b7bc4fa6b9c.wav",
+              "speechText": "看",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w08",
+              "prompt": "见",
+              "correct": "jiàn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/c8ab27de6e0ae59f10bea008.wav",
+              "speechText": "见",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w09",
+              "prompt": "闪",
+              "correct": "shǎn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/34c136fb1f615418092cdef5.wav",
+              "speechText": "闪",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l02-w10",
+              "prompt": "星",
+              "correct": "xīng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/75313fefacf1ee0a6f8921f9.wav",
+              "speechText": "星",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 2 小小的船"
+            }
+          ]
+        },
+        {
+          "id": "u05-l03",
+          "title": "阅读 3 江南",
+          "note": "旧版字词复用；课次顺序待核验",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w01",
+              "prompt": "江",
+              "correct": "jiāng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/e80a13aae7d166d6d6ee417a.wav",
+              "speechText": "江",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w02",
+              "prompt": "南",
+              "correct": "nán",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f8ad6427522906a4769a5695.wav",
+              "speechText": "南",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w03",
+              "prompt": "可",
+              "correct": "kě",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/72b0acb6472b261a81f924b4.wav",
+              "speechText": "可",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w04",
+              "prompt": "采",
+              "correct": "cǎi",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/906ced6e831bdcf1e9ff87b3.wav",
+              "speechText": "采",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w05",
+              "prompt": "莲",
+              "correct": "lián",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/d8295ca8875eeca9890cdfa8.wav",
+              "speechText": "莲",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w06",
+              "prompt": "鱼",
+              "correct": "yú",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/09e0c8c082528aa89862135c.wav",
+              "speechText": "鱼",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w07",
+              "prompt": "东",
+              "correct": "dōng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/741bdc8a8daa6b3b3a7efd50.wav",
+              "speechText": "东",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w08",
+              "prompt": "西",
+              "correct": "xī",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/14d15fd08b52ad0b5972e64b.wav",
+              "speechText": "西",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l03-w09",
+              "prompt": "北",
+              "correct": "běi",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/705861dad5b35d318641f653.wav",
+              "speechText": "北",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 3 江南"
+            }
+          ]
+        },
+        {
+          "id": "u05-l04",
+          "title": "阅读 4 四季",
+          "note": "旧版字词复用；课次顺序待核验",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w01",
+              "prompt": "尖",
+              "correct": "jiān",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/d1736175b3bc6f726174432a.wav",
+              "speechText": "尖",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w02",
+              "prompt": "说",
+              "correct": "shuō",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/0a0d8379bbefc3174c9e80eb.wav",
+              "speechText": "说",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w03",
+              "prompt": "春",
+              "correct": "chūn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/d754cbd22bba3b93e287a51c.wav",
+              "speechText": "春",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w04",
+              "prompt": "青",
+              "correct": "qīng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/eda21f82a94d6c71938d4961.wav",
+              "speechText": "青",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w05",
+              "prompt": "蛙",
+              "correct": "wā",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/430f231d0fff96fcf0e771be.wav",
+              "speechText": "蛙",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w06",
+              "prompt": "夏",
+              "correct": "xià",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/7918913d13160e1efd7688af.wav",
+              "speechText": "夏",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w07",
+              "prompt": "弯",
+              "correct": "wān",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/1d595849066d9b94787c5823.wav",
+              "speechText": "弯",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w08",
+              "prompt": "就",
+              "correct": "jiù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/ef2049e7ef7bee4a27b8d03e.wav",
+              "speechText": "就",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l04-w09",
+              "prompt": "冬",
+              "correct": "dōng",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/fbe1f7c9b8c81a3c82cabdb8.wav",
+              "speechText": "冬",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "阅读 4 四季"
+            }
+          ]
+        },
+        {
+          "id": "u05-l05",
+          "title": "识字 画",
+          "note": "旧版字词复用；课次顺序待核验",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u05-l05-w01",
+              "prompt": "水",
+              "correct": "shuǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/144ee0d906a65e54d1a60237.wav",
+              "speechText": "水",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 画"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l05-w02",
+              "prompt": "去",
+              "correct": "qù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/596af3c815dc9b37b42ef3a6.wav",
+              "speechText": "去",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 画"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l05-w03",
+              "prompt": "来",
+              "correct": "lái",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/f21dd1e6d81a77c0d55ccdc1.wav",
+              "speechText": "来",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 画"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l05-w04",
+              "prompt": "不",
+              "correct": "bù",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/d8d8e653de40f0b50bf39b5e.wav",
+              "speechText": "不",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 画"
+            }
+          ]
+        },
+        {
+          "id": "u05-l06",
+          "title": "识字 小书包",
+          "note": "旧版字词复用；课次顺序待核验",
+          "items": [
+            {
+              "id": "g1-chinese-2024-a-u05-l06-w01",
+              "prompt": "早",
+              "correct": "zǎo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/54d9a707d3c8af9d6318bbb0.wav",
+              "speechText": "早",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 小书包"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l06-w02",
+              "prompt": "书",
+              "correct": "shū",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/c453d1cdfed8f984337bc40e.wav",
+              "speechText": "书",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 小书包"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l06-w03",
+              "prompt": "刀",
+              "correct": "dāo",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/efc309baff15f5a29f75f3a6.wav",
+              "speechText": "刀",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 小书包"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l06-w04",
+              "prompt": "尺",
+              "correct": "chǐ",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/2126f1dda9e8dbf68f679c25.wav",
+              "speechText": "尺",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 小书包"
+            },
+            {
+              "id": "g1-chinese-2024-a-u05-l06-w05",
+              "prompt": "本",
+              "correct": "běn",
+              "distractors": [
+                "tiān",
+                "dì"
+              ],
+              "audio": "audio/generated/zh-CN/7831eab310e5742823ee16e0.wav",
+              "speechText": "本",
+              "speechLang": "zh-CN",
+              "games": [
+                "runner",
+                "listen",
+                "assemble",
+                "memory"
+              ],
+              "source": "旧版练习字词，重新核对归课（待教师终审）",
+              "reviewed": false,
+              "kind": "character",
+              "audioReview": "tts_preview_pending_teacher_review",
+              "sourceLesson": "识字 小书包"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": []
+}

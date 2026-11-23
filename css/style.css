@@ -1448,6 +1448,17 @@ body.map-active #app { height: 100%; }
   font-weight: 600;
 }
 .adventure-heading .adventure-progress b { color: #2e6148; font-size: 17px; }
+.alignment-status {
+  margin-top: 2px !important;
+  color: #8a6b35 !important;
+  font-weight: 600;
+}
+.detail-alignment {
+  margin: 4px 0 8px;
+  color: #8a6b35;
+  font-size: 11px;
+  line-height: 1.4;
+}
 .region-tabs {
   min-width: 0;
   min-height: 52px;

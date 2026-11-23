@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 SCREENSHOTS = ROOT / "docs" / "screenshots"
-OUTPUT = SCREENSHOTS / "0.7.0-pages-overview.png"
+OUTPUT = SCREENSHOTS / "0.8.0-pages-overview.png"
 
 PAGES = [
     ("游戏大厅", "home-1366x768.png"),
@@ -57,7 +57,7 @@ def main():
     title_font = load_font(25)
     label_font = load_font(17)
 
-    draw.text((LEFT, 18), "学习闯关乐园 0.7.0 · 全部前端页面实际截图", fill="#243c2d", font=title_font)
+    draw.text((LEFT, 18), "学习闯关乐园 0.8.0 · 全部前端页面实际截图", fill="#243c2d", font=title_font)
     draw.text(
         (LEFT, 50),
         "静态截图 · 1366×768，另有手机竖屏页；无录屏",
@@ -89,3 +89,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
