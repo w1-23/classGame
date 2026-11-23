@@ -1,0 +1,279 @@
+/* classGame v0.6.1 viewport patch; load AFTER css/style.css.
+   Baseline: c94daa9ea28c8e7dd63f08639a554889e80e13d5.
+   This is layout only: no page zoom, no transform scaling of a game scene. */
+:root {
+  --cg-gutter: clamp(12px, 1.5vw, 32px);
+  --cg-page-y: clamp(12px, 1.5vh, 24px);
+  --cg-gap: clamp(10px, 1.25vh, 18px);
+}
+
+/* HOME / CLASS LOBBY: use the application window, keeping readable controls. */
+body:not(.game-active):not(.map-active):not(.result-active) {
+  min-height: 100dvh;
+}
+body:not(.game-active):not(.map-active):not(.result-active) > #app {
+  width: 100%;
+  max-width: none;
+  min-height: calc(100dvh - 62px);
+  padding: var(--cg-page-y) var(--cg-gutter);
+}
+body:not(.game-active):not(.map-active):not(.result-active) > #app > .home {
+  min-height: calc(100dvh - 62px - 2 * var(--cg-page-y));
+  grid-template-rows: auto auto auto minmax(152px, 1fr) auto minmax(76px, .55fr);
+  gap: var(--cg-gap);
+}
+#app > .home > .hero {
+  grid-template-columns: minmax(0, 1fr) clamp(170px, 19vh, 280px);
+  padding: clamp(12px, 1.8vh, 24px) 8px;
+}
+#app > .home .mascot {
+  width: clamp(170px, 19vh, 280px);
+}
+#app > .home .hero h1 { font-size: clamp(34px, 3vw, 60px); }
+#app > .home .hero p { max-width: 68ch; font-size: clamp(15px, 1.1vw, 20px); }
+#app > .home .mode-card { min-height: clamp(100px, 12vh, 156px); }
+#app > .home .game-card { min-height: 76px; padding: clamp(12px, 1.8vh, 24px); }
+#app > .home .game-card > img { width: 48px; height: 48px; object-fit: contain; }
+#app > .home .game-card strong { font-size: clamp(18px, 1.45vw, 26px); }
+#app > .home .game-card small { font-size: clamp(13px, 1vw, 17px); line-height: 1.45; }
+#app > .home .game-card b { font-size: 16px; }
+#app > .home .section-title { margin: 0; }
+#app > .class-lobby {
+  min-height: calc(100dvh - 62px - 2 * var(--cg-page-y));
+  grid-template-rows: auto minmax(220px, 1fr) auto;
+  gap: var(--cg-gap);
+}
+#app > .class-lobby > .mode-grid { align-items: stretch; }
+#app > .class-lobby .mode-card { padding: clamp(24px, 3vw, 56px); }
+#app > .class-lobby .mode-card strong { font-size: clamp(24px, 2.2vw, 38px); }
+#app > .class-lobby .mode-card span { font-size: clamp(15px, 1.15vw, 20px); line-height: 1.65; }
+
+/* MAP: the landscape owns the remaining window; details stay a useful width. */
+body.map-active > #app { width: 100%; max-width: none; }
+body.map-active #app > .adventure-page {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  padding: clamp(10px, 1.5vh, 22px) var(--cg-gutter);
+  gap: clamp(8px, 1.2vh, 16px);
+  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+}
+body.map-active .adventure-page > .adventure-topbar { min-height: 56px; }
+body.map-active .adventure-brand strong { font-size: clamp(18px, 1.35vw, 25px); }
+body.map-active .adventure-selects select,
+body.map-active .adventure-selects button {
+  min-height: 44px;
+  font-size: clamp(13px, 1vw, 16px);
+}
+body.map-active .adventure-selects select { max-width: min(26vw, 400px); }
+body.map-active .adventure-heading h1 { font-size: clamp(28px, 2.5vw, 42px); }
+body.map-active .adventure-heading p { font-size: 13px; line-height: 1.5; }
+body.map-active .adventure-heading .adventure-progress { font-size: 14px !important; }
+body.map-active .region-tabs { min-height: 58px; }
+body.map-active .region-tab { min-height: 52px; }
+body.map-active .region-tab strong { font-size: clamp(13px, 1vw, 16px); }
+body.map-active .region-tab small { font-size: 12px; }
+body.map-active .adventure-body {
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr) clamp(300px, 23vw, 400px);
+  gap: clamp(12px, 1vw, 20px);
+}
+body.map-active .map-viewport {
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body.map-active .map-viewport > .map-canvas {
+  height: 100%;
+  min-height: var(--map-natural-height, 460px);
+}
+body.map-active .map-node {
+  width: clamp(44px, 3.3vw, 64px);
+  height: clamp(44px, 3.3vw, 64px);
+}
+body.map-active .map-node span { font-size: clamp(17px, 1.4vw, 24px); }
+body.map-active .map-hero {
+  width: clamp(48px, 3.6vw, 76px);
+  height: auto;
+  object-fit: contain;
+}
+body.map-active .map-here,
+body.map-active .map-landmark { font-size: clamp(11px, .9vw, 14px); }
+body.map-active .map-detail {
+  align-self: start;
+  max-height: 100%;
+  padding: clamp(14px, 1.2vw, 22px);
+}
+body.map-active .map-detail h2 { font-size: clamp(24px, 1.65vw, 32px); }
+body.map-active .detail-region,
+body.map-active .detail-unit { font-size: 13px; line-height: 1.5; }
+body.map-active .map-detail > .scene-preview {
+  min-height: 168px;
+  aspect-ratio: 1.6;
+}
+body.map-active .detail-stats dt,
+body.map-active .detail-stats dd { font-size: 13px; line-height: 1.5; }
+body.map-active .map-detail > button { min-height: 48px; font-size: 16px; }
+body.map-active .detail-hint { font-size: 12px; }
+body.map-active .map-legend { font-size: 13px; }
+
+/* GAMES: full scene, bounded learning boards. The runner already fills its stage. */
+body.game-active .game-frame { padding: 8px var(--cg-gutter) 12px; gap: 8px; }
+body.game-active .game-frame-bar { min-height: 60px; gap: 12px; }
+body.game-active .session-back,
+body.game-active .game-frame-actions > button { min-height: 44px; font-size: 15px; }
+body.game-active .session-score { max-width: 320px; font-size: 15px; }
+body.game-active .session-stage > .game-shell > .game-content { margin-inline: auto; }
+body.game-active .listen-content {
+  width: min(100%, 1440px);
+  grid-template-rows: auto minmax(180px, 1fr) auto auto auto;
+  align-content: stretch;
+  padding: clamp(12px, 2vh, 28px) clamp(8px, 1.5vw, 24px);
+}
+body.game-active .listen-content > .listen-scene {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+}
+body.game-active .listen-content .spirit-reveal img {
+  width: clamp(76px, 12vh, 144px);
+  height: clamp(76px, 12vh, 144px);
+  object-fit: contain;
+}
+body.game-active .assemble-content { width: min(100%, 1200px); gap: clamp(14px, 2.7vh, 36px); }
+body.game-active .assemble-content .slots { width: min(100%, 900px); flex-wrap: wrap; }
+body.game-active .assemble-content .letter,
+body.game-active .assemble-content .slot { min-width: 52px; min-height: 52px; }
+body.game-active .memory-grid { width: min(100%, 1440px); height: min(100%, 900px); }
+body.game-active .memory-card { font-size: clamp(18px, 1.6vw, 28px); }
+body.game-active .battle-content { width: min(100%, 1520px); padding-inline: clamp(8px, 2vw, 32px); }
+body.game-active .battle-content .team { padding: clamp(14px, 2vh, 28px); font-size: clamp(18px, 1.5vw, 26px); }
+body.game-active .battle-content .large-option { min-height: 80px; }
+body.game-active .poetry-content { width: min(100%, 1400px); }
+body.game-active .poetry-option-grid { width: min(100%, 1060px); }
+body.game-active .game-content .question-text { font-size: clamp(28px, 2.8vw, 44px); }
+body.game-active .game-content .large-option { font-size: clamp(20px, 1.6vw, 28px); }
+
+/* RESULTS: allow long reviews to scroll, instead of clipping their return buttons. */
+body.result-active > #app { overflow-y: auto; padding: var(--cg-page-y) var(--cg-gutter); }
+body.result-active #app > .result {
+  width: 100%;
+  max-width: 1680px;
+  height: auto;
+  min-height: 100%;
+  margin-inline: auto;
+  align-content: start;
+  gap: clamp(12px, 2vh, 28px);
+  padding-top: clamp(12px, 3vh, 36px);
+  padding-bottom: 18px;
+}
+body.result-active .review { font-size: clamp(13px, 1vw, 18px); }
+body.result-active .review th,
+body.result-active .review td { padding: clamp(8px, 1.2vh, 14px) 12px; }
+body.result-active .result > .dialog-actions { margin-top: 4px; }
+
+/* COMPACT / TABLET: controls may wrap; no content is made smaller by page scaling. */
+@media (max-width: 1100px) {
+  body.map-active .adventure-body { grid-template-columns: minmax(0, 1fr) 292px; }
+  body.map-active .adventure-topbar { flex-wrap: wrap; }
+  body.map-active .adventure-selects { flex: 1; }
+  body.map-active .adventure-selects select { max-width: 260px; }
+  body.map-active .adventure-brand small { display: none; }
+}
+
+/* NARROW OR SHORT: use an ordinary page scroll. Never hide the next action below a fixed grid. */
+@media (max-width: 760px), (max-height: 600px) {
+  body.map-active { height: auto; min-height: 100dvh; overflow-y: auto; }
+  body.map-active > #app { height: auto; min-height: 100dvh; }
+  body.map-active #app > .adventure-page {
+    height: auto;
+    min-height: 100dvh;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  body.map-active .adventure-page > .adventure-topbar {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  body.map-active .adventure-brand strong { display: block; font-size: 17px; }
+  body.map-active .adventure-brand > img { width: 32px; height: 32px; }
+  body.map-active .adventure-selects {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    width: 100%;
+    gap: 6px;
+  }
+  body.map-active .adventure-selects label { min-width: 0; width: 100%; }
+  body.map-active .adventure-selects select {
+    width: 100%; min-width: 0; max-width: none; min-height: 44px;
+    padding: 6px 20px 6px 7px; font-size: 12px;
+  }
+  body.map-active .adventure-selects button { min-height: 44px; padding: 6px 8px; font-size: 12px; }
+  body.map-active .book-static { max-width: none; min-height: 44px; font-size: 12px; }
+  body.map-active .adventure-heading { flex-wrap: wrap; gap: 4px; }
+  body.map-active .adventure-heading h1 { font-size: 27px; }
+  body.map-active .adventure-heading > div { flex-basis: 100%; }
+  body.map-active .adventure-heading p { max-width: 100%; font-size: 12px; white-space: normal; }
+  body.map-active .adventure-heading .adventure-progress {
+    max-width: 100%; font-size: 12px !important; white-space: normal;
+  }
+  body.map-active .region-tabs { min-height: 56px; grid-auto-columns: minmax(170px, 1fr); }
+  body.map-active .region-tab { min-height: 50px; }
+  body.map-active .region-tab strong { font-size: 13px; }
+  body.map-active .region-tab small { font-size: 11px; }
+  body.map-active .adventure-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; gap: 10px; }
+  body.map-active .map-viewport { height: clamp(360px, 55dvh, 560px); }
+  body.map-active .map-node { width: 44px; height: 44px; }
+  body.map-active .map-node span { font-size: 17px; }
+  body.map-active .map-hero { width: 48px; }
+  body.map-active .map-detail { height: auto; max-height: none; overflow: visible; padding: 14px; }
+  body.map-active .map-detail h2 { font-size: 24px; }
+  body.map-active .map-detail > .scene-preview { min-height: 170px; max-height: 240px; }
+  body.map-active .map-legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; }
+  body.map-active .map-footnote { display: block; flex-basis: 100%; margin-left: 0; }
+}
+
+@media (max-width: 760px) {
+  body:not(.game-active):not(.map-active):not(.result-active) > #app > .home,
+  #app > .class-lobby { min-height: 0; grid-template-rows: none; }
+  #app > .home > .hero { grid-template-columns: minmax(0, 1fr); padding: 16px 4px; }
+  #app > .home .mascot { width: 150px; }
+  #app > .home .mode-card { min-height: 116px; }
+  #app > .class-lobby .mode-card { min-height: 190px; padding: 22px; }
+  body.game-active .game-frame { padding: 6px; gap: 6px; }
+  body.game-active .game-frame-bar { min-height: 58px; gap: 6px; }
+  body.game-active .session-back,
+  body.game-active .game-frame-actions > button { min-height: 44px; padding: 6px 9px; font-size: 12px; }
+  body.game-active .session-stage { overflow-y: auto; }
+  body.game-active .session-stage > .game-shell { min-height: 100%; height: auto; overflow: visible; }
+  body.game-active .session-stage > .game-shell > .game-content { min-height: 100%; height: auto; overflow: visible; }
+  body.game-active .listen-content { grid-template-rows: auto minmax(200px, 1fr) auto auto auto; padding: 10px 4px; gap: 10px; }
+  body.game-active .listen-content > .listen-scene { min-height: 200px; }
+  body.game-active .game-content .question-text { font-size: clamp(24px, 6.8vw, 30px); }
+  body.game-active .game-content .large-option { min-height: 52px; font-size: 19px; }
+  body.game-active .assemble-content { padding: 28px 8px; gap: 22px; }
+  body.game-active .assemble-content .slots { gap: 5px; }
+  body.game-active .assemble-content .slot { min-width: 38px; min-height: 44px; }
+  body.game-active .assemble-content .letter { min-width: 44px; min-height: 44px; }
+  body.game-active .memory-content { padding: 10px 4px; gap: 12px; }
+  body.game-active .memory-grid { height: min(56dvh, 540px); grid-auto-rows: minmax(78px, 1fr); }
+  body.game-active .memory-card { font-size: 16px; }
+  body.game-active .battle-content { padding: 20px 6px; }
+  body.game-active .battle-content .team { padding: 10px 6px; font-size: 17px; }
+  body.game-active .poetry-content { padding: 28px 10px; }
+  body.result-active { height: auto; min-height: 100dvh; overflow-y: auto; }
+  body.result-active > #app { overflow: visible; }
+  body.result-active #app > .result { min-height: 0; padding-top: 16px; }
+  body.result-active .review { font-size: 12px; }
+  body.result-active .review th,
+  body.result-active .review td { padding: 8px 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.map-active .map-node { transition: none; }
+}

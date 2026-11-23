@@ -69,7 +69,11 @@ async function completeBeat(page) {
     if (!debug) break;
     const state = await page.evaluate(() => window.__learningGameDebug.beat.state());
     await page.evaluate(answer => window.__learningGameDebug.beat.choose(answer), state.correct);
-    await page.waitForTimeout(940);
+    await expect.poll(() => page.evaluate(previousIndex => {
+      if (document.querySelector('.result')) return true;
+      const next = window.__learningGameDebug?.beat?.state();
+      return Boolean(next && next.index > previousIndex && !next.locked);
+    }, state.index), { timeout: 6000 }).toBe(true);
   }
 }
 
@@ -135,8 +139,10 @@ test('all six game entries use one shared game frame', async ({ page }) => {
   expect(errors).toEqual([]);
 });
 
-test('all game pages fit the six target viewports without page scrolling', async ({ page }) => {
+test('game pages fit desktop windows and keep mobile actions reachable', async ({ page }) => {
+  await mkdir(screenshots, { recursive: true });
   const viewports = [
+    [2560, 1440],
     [1920, 1080],
     [1366, 768],
     [1280, 800],
@@ -164,12 +170,15 @@ test('all game pages fit the six target viewports without page scrolling', async
       const metrics = await page.evaluate(activeSelector => {
         const frame = document.querySelector('.game-frame')?.getBoundingClientRect();
         const content = document.querySelector(activeSelector)?.getBoundingClientRect();
+        const stage = document.querySelector('.session-stage');
         return {
           innerWidth,
           innerHeight,
           scrollWidth: document.documentElement.scrollWidth,
           scrollHeight: document.documentElement.scrollHeight,
           bodyScrollHeight: document.body.scrollHeight,
+          stageScrollWidth: stage.scrollWidth,
+          stageClientWidth: stage.clientWidth,
           headerDisplay: getComputedStyle(document.querySelector('header')).display,
           frame: frame ? { top: frame.top, right: frame.right, bottom: frame.bottom, left: frame.left } : null,
           content: content ? { top: content.top, right: content.right, bottom: content.bottom, left: content.left } : null
@@ -178,8 +187,12 @@ test('all game pages fit the six target viewports without page scrolling', async
       expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
       expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
       expect(metrics.bodyScrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+      expect(metrics.stageScrollWidth).toBeLessThanOrEqual(metrics.stageClientWidth + 1);
       expect(metrics.headerDisplay).toBe('none');
-      for (const box of [metrics.frame, metrics.content]) {
+      // The frame stays within the window at every size. Only the narrow
+      // session stage may scroll vertically; desktop content still must fit.
+      const boxes = width > 760 ? [metrics.frame, metrics.content] : [metrics.frame];
+      for (const box of boxes) {
         expect(box).not.toBeNull();
         expect(box.left).toBeGreaterThanOrEqual(-1);
         expect(box.top).toBeGreaterThanOrEqual(-1);
@@ -187,7 +200,33 @@ test('all game pages fit the six target viewports without page scrolling', async
         expect(box.bottom).toBeLessThanOrEqual(metrics.innerHeight + 1);
       }
       if (width === 390) {
+        expect(metrics.content).not.toBeNull();
+        expect(metrics.content.left).toBeGreaterThanOrEqual(-1);
+        expect(metrics.content.right).toBeLessThanOrEqual(metrics.innerWidth + 1);
+        const primaryControls = {
+          runner: ['.race-control'],
+          listen: ['#play'],
+          assemble: ['.letter', '#confirm'],
+          memory: ['.memory-card'],
+          beat: ['.poetry-option-grid button'],
+          battle: ['.option-grid button', '#teacher-correct']
+        };
+        for (const controlSelector of primaryControls[id]) {
+          const control = page.locator(controlSelector).last();
+          await control.scrollIntoViewIfNeeded();
+          await expect(control).toBeInViewport({ ratio: 1 });
+          // Trial uses real hit testing without answering a random question.
+          await control.click({ trial: true });
+        }
+        await expect(page.locator('#game-back')).toBeInViewport({ ratio: 1 });
+        await expect(page.locator('#game-pause')).toBeInViewport({ ratio: 1 });
         await page.screenshot({ path: `${screenshots}/mode-${id}-390x844.png`, fullPage: false });
+        await page.locator('#game-pause').click();
+        await expect(page.locator('#game-pause-panel')).toBeVisible();
+        await page.locator('#game-resume').click();
+        await expect(page.locator('#game-pause-panel')).toBeHidden();
+        await page.locator('#game-back').click();
+        await expect(page.locator('.adventure-page')).toBeVisible();
       }
     }
   }
@@ -323,7 +362,10 @@ test('poetry samples four cloze variants and reveals the full line after answeri
   expect(first.options).toContain(first.correct);
   await page.evaluate(answer => window.__learningGameDebug.beat.choose(answer), first.correct);
   await expect(page.locator('.poetry-feedback.correct')).toContainText('补全正确');
-  await page.waitForTimeout(960);
+  await expect(page.locator('.poetry-question .completed-blank')).toHaveText(first.correct);
+  await expect.poll(() => page.evaluate(() => window.__learningGameDebug?.beat?.state().index), {
+    timeout: 6000
+  }).toBe(first.index + 1);
   const second = await page.evaluate(() => window.__learningGameDebug.beat.state());
   expect(second.index).toBe(1);
   await completeBeat(page);

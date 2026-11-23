@@ -248,8 +248,8 @@ function renderHome() {
     <section class="home">
       <div class="hero">
         <div>
-          <h1>离线学习闯关乐园</h1>
-          <p>支持个人冒险与全班挑战，题目来自本地内容包，无需网络、账号或学生手机。</p>
+          <h1>今天，去哪里探险？</h1>
+          <p>选一片风景，认识新词语；带着伙伴，走向下一站。</p>
           <div class="stat-row">
             <span class="pill">当前内容：${currentPack.name}</span>
             <span class="pill">累计回合：${packProgress.rounds}</span>
@@ -260,7 +260,7 @@ function renderHome() {
       </div>
       <div class="mode-grid">
         <button class="mode-card" id="personal-mode"><strong>个人冒险</strong><span>先选关卡，再进入森林寻宝、听音、拼装或配对。</span></button>
-        <button class="mode-card warning" id="class-mode"><strong>全班挑战</strong><span>一块大屏主持，老师确认朗读与答案。</span></button>
+        <button class="mode-card warning" id="class-mode"><strong>全班挑战</strong><span>一起补全诗句、轮流答题，和同学分享发现。</span></button>
       </div>
       <h2 class="section-title">个人冒险</h2>
       <div class="game-grid personal-grid"></div>
@@ -271,19 +271,27 @@ function renderHome() {
   const classGrid = app.querySelector('.class-grid');
   GAME_META.forEach(game => {
     const descriptions = {
-      runner: '看题选路，一路寻宝',
-      listen: '听本地范读，找出正确内容',
-      assemble: '点击字母完成拼装',
-      memory: '翻牌配对，统计真实尝试次数',
-      beat: '从审核过的诗句变体中随机填空',
-      battle: '两组轮流答题，老师确认计分'
+      runner: '看懂题目，走过正确的小路',
+      listen: '听清一个词，认识一位小伙伴',
+      assemble: '字母落进格子，拼出完整单词',
+      memory: '翻一翻，为词语找到好伙伴',
+      beat: '补全一句诗，展开一幅小画卷',
+      battle: '蓝队黄队轮流，共同完成挑战'
     };
     const button = document.createElement('button');
     button.className = 'game-card';
     button.dataset.id = game.id;
+    const visual = {
+      runner: '<img src="assets/kenney/characters/adventurer-run1.png" alt="">',
+      listen: '<img src="assets/spirits/kenney/slime_normal_rest.png" alt="">',
+      assemble: '<i>A</i><i>B</i><i>C</i>',
+      memory: '<img src="assets/kenney/ui/star.png" alt=""><img src="assets/kenney/ui/star.png" alt="">',
+      beat: '<i>诗</i>',
+      battle: '<img src="assets/kenney/platformer/flag_blue_b.png" alt=""><img src="assets/kenney/platformer/flag_yellow_a.png" alt="">'
+    };
     button.innerHTML = `
-      <img src="${gameIcons[game.id]}" alt="">
-      <span><strong>${game.name}</strong><small>${descriptions[game.id]}</small></span>
+      <span class="game-card-visual visual-${game.id}" aria-hidden="true">${visual[game.id]}</span>
+      <span class="game-card-copy"><strong>${game.name}</strong><small>${descriptions[game.id]}</small></span>
       <b>选关</b>`;
     (game.type === 'personal' ? personalGrid : classGrid).appendChild(button);
   });
@@ -311,7 +319,7 @@ function renderClassLobby() {
       <div class="mode-grid">
         <button class="mode-card" id="class-beat">
           <strong>诗词填空闯关</strong>
-          <span>从审核过的诗句挖空题中随机抽取，答后展示完整诗句复习。</span>
+          <span>补全诗句，读一读完整的一句，发现诗里的风景。</span>
         </button>
         <button class="mode-card warning" id="class-battle">
           <strong>小组知识守护战</strong>
@@ -800,7 +808,7 @@ function renderAdventureMap(gameId) {
       <div class="region-tabs" role="tablist" aria-label="教材单元">${unitTabs}</div>
       <div class="adventure-body">
         <div class="map-viewport" style="--map-ratio:${MAP_WIDTH} / ${mapped.height}">
-          <div class="map-canvas theme-${selectedUnit.theme.id}" style="height:${mapped.height}px;background:${selectedUnit.theme.sky}">
+          <div class="map-canvas theme-${selectedUnit.theme.id}" style="--map-natural-height:${mapped.height}px;background:${selectedUnit.theme.sky}">
             <canvas class="map-art-canvas" aria-hidden="true"></canvas>
             ${landmarks}
             ${nodes}

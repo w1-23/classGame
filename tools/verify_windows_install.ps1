@@ -1,7 +1,7 @@
 param(
-    [string]$InstallerPath = "release\classGame-0.6.1-x64-setup.exe",
-    [string]$InstallDirectory = ".installer-test-0.6.1",
-    [string]$ScreenshotPath = "docs\screenshots\installed-0.6.1.png"
+    [string]$InstallerPath = "release\classGame-0.7.0-x64-setup.exe",
+    [string]$InstallDirectory = ".installer-test-0.7.0",
+    [string]$ScreenshotPath = "docs\screenshots\installed-0.7.0.png"
 )
 
 $ErrorActionPreference = "Stop"

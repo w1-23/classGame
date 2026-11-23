@@ -1,0 +1,174 @@
+/* A visual layer for c94daa9. Load after viewport-layout.css, before learning-feedback.css.
+   Existing assets only; no remote requests, score changes, or continuous decoration. */
+:root {
+  --cute-paper: #fffdf5;
+  --cute-ink: #294b39;
+  --cute-line: #d5dfce;
+  --cute-soft: #e6eedc;
+  --cute-gold: #dfb953;
+}
+
+/* The lobby reads as a place to start an adventure, with a distinct token for each game. */
+#app > .home > .hero { border: 0; border-radius: 24px; padding: 24px; background: #e3edd8; }
+#app > .home .hero h1 { color: var(--cute-ink); }
+#app > .home .hero p { color: #506951; }
+#app > .home .mascot {
+  position: relative; display: grid; place-items: end center;
+  width: min(100%, 220px); height: 180px; aspect-ratio: auto;
+  border: 1px solid #c9d8bf; border-radius: 24px;
+  background: linear-gradient(#d5eaf0 0 55%, #c0d8a6 55% 100%);
+  overflow: hidden;
+}
+#app > .home .mascot::before {
+  content: "一起出发吧！"; position: absolute; left: 14px; right: 14px; top: 12px;
+  padding: 5px 8px; border-radius: 12px; background: var(--cute-paper);
+  color: var(--cute-ink); font-size: 14px; font-weight: 700; text-align: center;
+}
+#app > .home .mascot-image { width: 96px; height: 128px; max-height: none; position: relative; }
+#app > .home .mode-card, #app > .class-lobby .mode-card { border-radius: 20px; box-shadow: 0 4px 0 #dce5d6; }
+#app > .home .mode-card:active, #app > .class-lobby .mode-card:active { box-shadow: inset 0 3px 0 #cbd7c5; }
+#app > .home .game-card { grid-template-columns: 72px minmax(0, 1fr) auto; border: 1px solid var(--cute-line); border-radius: 18px; background: var(--cute-paper); gap: 16px; }
+#app > .home .game-card:hover { background: #f2f7e9; border-color: #b8cba9; }
+#app > .home .game-card:active { box-shadow: inset 0 3px 0 #dce5d6; }
+#app > .home .game-card > .game-card-copy { display: grid; gap: 4px; min-width: 0; }
+#app > .home .game-card > .game-card-visual {
+  display: flex; justify-content: center; align-items: center; flex: 0 0 72px;
+  width: 72px; height: 72px; position: relative; overflow: hidden;
+  border-radius: 18px; background: #e4eedb;
+}
+.game-card-visual img { width: 50px; height: 60px; object-fit: contain; }
+.game-card-visual.visual-listen img { width: 52px; height: 52px; }
+.game-card-visual.visual-assemble { gap: 3px; }
+.game-card-visual.visual-assemble i {
+  display: grid; place-items: center; width: 23px; height: 32px; border-radius: 6px;
+  background: var(--cute-paper); border-bottom: 3px solid #c9b583; color: #355942;
+  font-size: 16px; font-style: normal; font-weight: 800;
+}
+.game-card-visual.visual-assemble i:nth-child(2) { transform: translateY(-5px); }
+.game-card-visual.visual-memory img {
+  width: 35px; height: 44px; padding: 8px; border-radius: 7px;
+  border: 1px solid #cbd7bc; background: var(--cute-paper);
+}
+.game-card-visual.visual-memory img:first-child { transform: translate(5px, 2px) rotate(-9deg); }
+.game-card-visual.visual-memory img:last-child { transform: translate(-5px, -3px) rotate(8deg); }
+.game-card-visual.visual-beat > i {
+  display: grid; place-items: center; width: 45px; height: 48px;
+  background: var(--cute-paper); border-block: 5px solid #c6ad7b; border-radius: 6px;
+  font: 700 24px "KaiTi", "STKaiti", serif; color: #315b43;
+}
+.game-card-visual.visual-battle img { width: 31px; height: 42px; }
+
+/* The large listening habitat remains separate from answer labels. */
+.listen-scene { --habitat-sky: #d9eef2; --habitat-grass: #c8dda9; border-radius: 24px; background: linear-gradient(var(--habitat-sky) 0 51%, var(--habitat-grass) 51%); }
+.listen-scene.theme-stream { --habitat-sky: #d8edf5; --habitat-grass: #b9d9c5; }
+.listen-scene.theme-mountain { --habitat-sky: #dfe7ef; --habitat-grass: #c3cead; }
+.listen-scene.theme-orchard { --habitat-sky: #f2e6c7; --habitat-grass: #d5dca7; }
+.listen-scene.theme-coast { --habitat-sky: #d9edf3; --habitat-grass: #c1e0e0; }
+.listen-scene.theme-snow { --habitat-sky: #dbe9f5; --habitat-grass: #e3eeed; }
+.listen-scene::before {
+  left: 2%; bottom: 5%; width: 18%; height: 75%; border-radius: 0;
+  background: url('../assets/map-art/raster/tree-slim@2x.png') center bottom / contain no-repeat;
+}
+.listen-scene::after {
+  right: 3%; bottom: 6%; width: 20%; height: 62%; border-radius: 0;
+  background: url('../assets/map-art/raster/tree-round@2x.png') center bottom / contain no-repeat;
+}
+.listen-scene.theme-orchard::before, .listen-scene.theme-orchard::after { background-image: url('../assets/map-art/raster/tree-autumn@2x.png'); }
+.listen-scene.theme-mountain::before, .listen-scene.theme-mountain::after { background-image: url('../assets/map-art/raster/pine@2x.png'); }
+.listen-scene.theme-snow::before, .listen-scene.theme-snow::after { background-image: url('../assets/map-art/raster/pine-snow@2x.png'); }
+.listen-scene.theme-coast::before, .listen-scene.theme-coast::after {
+  width: 16%; height: 25%; bottom: 7%;
+  background-image: url('../assets/map-art/vector/rock.svg');
+}
+.listen-scene .flat-primary { min-height: 50px; border-radius: 15px; box-shadow: 0 4px 0 #245569; padding-inline: 25px; }
+.listen-scene .flat-primary[data-state="playing"] { outline: 5px solid #ffffffa6; outline-offset: 5px; }
+.listen-audio-state { font-size: 13px; min-height: 27px; }
+.spirit-reveal strong { margin-top: 2px; padding: 4px 12px; font-size: 14px; }
+.spirit-reveal[data-spirit="fish-blue"] { border-radius: 50%; background: #bce2f2; padding: 8px 14px; }
+.spirit-party { gap: 9px; }
+.spirit-party > span { min-width: 72px; padding: 7px 9px; border-radius: 14px; background: var(--cute-paper); }
+.spirit-party img { width: 39px; height: 39px; }
+.spirit-party small { font-size: 11px; }
+.spirit-party > span { max-width: 150px; overflow-wrap: anywhere; }
+.spirit-party .spirit-word { font-size: 14px; color: #294e39; line-height: 1.4; }
+.spirit-party .spirit-name { color: #667b69; font-size: 10px; }
+
+/* Tactile cards use the same paper, frame, and pressed-state language. */
+.listen-content .large-option, .battle-content .large-option, .poetry-option-grid button {
+  border-radius: 15px; border: 2px solid var(--cute-line); background: var(--cute-paper);
+  box-shadow: 0 4px 0 var(--cute-line);
+}
+.listen-content .large-option:not(:disabled):active,
+.battle-content .large-option:not(:disabled):active,
+.poetry-option-grid button:not(:disabled):active { box-shadow: inset 0 3px 0 var(--cute-line); }
+.assemble-content {
+  border-radius: 24px; background: linear-gradient(#fffdf5ef, #fffdf5ef), url('../assets/map-art/raster/tree-slim@2x.png') right bottom / 130px auto no-repeat;
+  border: 1px solid var(--cute-line); padding-inline: clamp(12px, 2.5vw, 36px);
+}
+.assemble-content .slots { border-style: solid; border-color: #d6dfc8; padding: 14px; border-radius: 18px; background: #edf2e4; }
+.assemble-content .slot { border-radius: 11px; background: var(--cute-paper); }
+.assemble-content .letter { border: 1px solid #d4c59a; border-radius: 11px; background: #fff0c7; box-shadow: 0 4px 0 #d3c297; }
+.assemble-content .letter:disabled { box-shadow: none; }
+.memory-grid { gap: clamp(10px, 1.2vw, 18px); padding: 5px; }
+.memory-card { border: 2px solid var(--cute-line); border-radius: 17px; box-shadow: 0 4px 0 var(--cute-line); background-color: var(--cute-paper); }
+.memory-card:not(.flipped):not(.matched) { background-color: #fffdf5; background-size: 36px 34px; }
+.memory-card.matched { box-shadow: 0 3px 0 #8bb79b; }
+.memory-wave-label { min-height: 30px; padding: 5px 15px; font-size: 13px; }
+
+/* A restrained scroll gives poetry a place, without revealing the missing answer. */
+.poetry-shell { background: linear-gradient(#e2eee6, #d5e5cd); border-radius: 24px; }
+.poetry-content { position: relative; }
+.poetry-content::before, .poetry-content::after {
+  content: ""; position: absolute; bottom: 4%; width: 12%; height: 45%; pointer-events: none; opacity: .55;
+  background: url('../assets/map-art/raster/tree-slim@2x.png') center bottom / contain no-repeat;
+}
+.poetry-content::before { left: 1%; }
+.poetry-content::after { right: 1%; transform: scaleX(-1); }
+.poetry-content > * { position: relative; z-index: 1; }
+.poetry-context { color: #456149; }
+.poetry-question {
+  width: fit-content; max-width: 100%; padding: clamp(18px, 3vh, 34px) clamp(14px, 3vw, 42px);
+  background: var(--cute-paper); border-block: 8px solid #c3ae7d; border-radius: 11px;
+  box-shadow: 0 8px 16px #365a3b14;
+}
+.poetry-question em { color: #6d846b; }
+.poetry-question .completed-blank { display: inline-block; margin-inline: .12em; color: #2e684a; letter-spacing: .05em; }
+.poetry-feedback { min-height: 28px; font-size: clamp(15px, 1.3vw, 21px); }
+
+/* Teacher confirmation remains the only source of a team's progress. */
+.battle-arena { gap: 18px; }
+.battle-content .team { border-width: 2px; border-radius: 20px; }
+.battle-content .team > img { width: 48px; height: 48px; }
+.battle-content .team.active { box-shadow: 0 5px 0 #d7e2da; }
+.battle-content .team.active.team-amber { box-shadow: 0 5px 0 #ead9aa; }
+.battle-content .team-score { min-width: 40px; min-height: 32px; font-size: 17px; }
+.battle-content .selected-option { outline-color: var(--cute-gold); }
+.feedback { line-height: 1.55; }
+.result-hero { padding: 16px 25px; background: #edf3e6; border-radius: 24px; }
+.result .review { max-width: 1400px; }
+
+@media (max-width: 760px) {
+  #app > .home > .hero { padding: 20px 16px; }
+  #app > .home .mascot { width: 180px; height: 165px; justify-self: center; }
+  #app > .home .game-card { grid-template-columns: 58px minmax(0, 1fr) auto; gap: 10px; }
+  #app > .home .game-card > .game-card-visual { width: 58px; height: 60px; flex-basis: 58px; border-radius: 14px; }
+  .game-card-visual img { max-width: 46px; max-height: 54px; }
+  .game-card-visual.visual-assemble i { width: 17px; font-size: 13px; }
+  .game-card-visual.visual-memory img { width: 30px; }
+  .listen-scene::before { width: 19%; height: 62%; }
+  .listen-scene::after { width: 20%; height: 56%; }
+  .spirit-party > span { min-width: 62px; padding: 4px 7px; }
+  .spirit-party img { width: 32px; height: 32px; }
+  .assemble-content .slots { padding: 10px 6px; }
+  .memory-grid { gap: 9px; }
+  .memory-card { border-radius: 13px; }
+  .poetry-content::before, .poetry-content::after { width: 15%; height: 33%; }
+  .poetry-question { padding: 23px 12px; border-block-width: 6px; }
+  .battle-arena { gap: 9px; }
+  .battle-content .team > img { width: 36px; height: 36px; }
+  .result-hero { padding: 12px 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-card, .mode-card, .large-option, .letter, .memory-card { transition: none; }
+}

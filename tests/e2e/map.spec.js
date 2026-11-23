@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 
 const screenshots = 'docs/screenshots';
 const viewports = [
+  [2560, 1440],
   [1920, 1080],
   [1366, 768],
   [1280, 800],
@@ -164,12 +165,13 @@ test('all six map regions use their matching imported artwork', async ({ page })
   expect(hashes.size).toBe(6);
 });
 
-test('map fits every target viewport without page scrolling', async ({ page }) => {
+test('map fills desktop space and keeps mobile start and return reachable', async ({ page }) => {
   await mkdir(screenshots, { recursive: true });
   await openMap(page);
   for (const [width, height] of viewports) {
     await page.setViewportSize({ width, height });
     await page.waitForTimeout(100);
+    await page.evaluate(() => window.scrollTo(0, 0));
     const metrics = await page.evaluate(() => {
       const pageBox = document.querySelector('.adventure-page')?.getBoundingClientRect();
       const body = document.querySelector('.adventure-body')?.getBoundingClientRect();
@@ -182,22 +184,27 @@ test('map fits every target viewport without page scrolling', async ({ page }) =
         scrollHeight: document.documentElement.scrollHeight,
         bodyScrollHeight: document.body.scrollHeight,
         headerDisplay: getComputedStyle(document.querySelector('header')).display,
-        pageBox: pageBox && { top: pageBox.top, right: pageBox.right, bottom: pageBox.bottom, left: pageBox.left },
+        pageBox: pageBox && { top: pageBox.top, right: pageBox.right, bottom: pageBox.bottom, left: pageBox.left, width: pageBox.width },
         body: body && { top: body.top, right: body.right, bottom: body.bottom, left: body.left },
         viewport: viewport && { top: viewport.top, right: viewport.right, bottom: viewport.bottom, left: viewport.left },
         detail: detail && { top: detail.top, right: detail.right, bottom: detail.bottom, left: detail.left }
       };
     });
     expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
-    expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
-    expect(metrics.bodyScrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
     expect(metrics.headerDisplay).toBe('none');
     for (const box of [metrics.pageBox, metrics.body, metrics.viewport, metrics.detail]) {
       expect(box).not.toBeNull();
       expect(box.left).toBeGreaterThanOrEqual(-1);
       expect(box.top).toBeGreaterThanOrEqual(-1);
       expect(box.right).toBeLessThanOrEqual(metrics.innerWidth + 1);
-      expect(box.bottom).toBeLessThanOrEqual(metrics.innerHeight + 1);
+      if (width > 760) expect(box.bottom).toBeLessThanOrEqual(metrics.innerHeight + 1);
+    }
+    if (width > 760) {
+      expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+      expect(metrics.bodyScrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+      // Catch both the former 1440px page cap and the fixed-height map surface.
+      expect(metrics.pageBox.width).toBeGreaterThanOrEqual(metrics.innerWidth - 2);
+      expect(metrics.viewport.bottom).toBeGreaterThanOrEqual(metrics.body.bottom - 2);
     }
     if (width === 1366) {
       await page.screenshot({ path: `${screenshots}/map-1366x768.png`, fullPage: false });
@@ -214,6 +221,21 @@ test('map fits every target viewport without page scrolling', async ({ page }) =
       expect(currentVisibility).not.toBeNull();
       expect(currentVisibility.nodeTop).toBeGreaterThanOrEqual(currentVisibility.viewTop - 1);
       expect(currentVisibility.nodeBottom).toBeLessThanOrEqual(currentVisibility.viewBottom + 1);
+      const start = page.locator('#map-start');
+      await start.scrollIntoViewIfNeeded();
+      await expect(start).toBeInViewport({ ratio: 1 });
+      expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+      await start.click();
+      await expect(page.locator('.game-frame')).toBeVisible();
+      await expect(page.locator('#game-back')).toBeInViewport({ ratio: 1 });
+      await expect(page.locator('#game-pause')).toBeInViewport({ ratio: 1 });
+      await page.locator('#game-back').click();
+      await expect(page.locator('.adventure-page')).toBeVisible();
+      const back = page.locator('#adventure-back');
+      await back.scrollIntoViewIfNeeded();
+      await expect(back).toBeInViewport({ ratio: 1 });
+      await back.click();
+      await expect(page.locator('.home')).toBeVisible();
     }
   }
 });

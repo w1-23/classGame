@@ -1,6 +1,7 @@
 import { recordResult } from './storage.js';
 import { mountRunnerGame } from './runner-phaser.js';
 import { completionSound } from './audio.js';
+import { createLearningFeedback } from './learning-feedback.mjs';
 
 export const GAME_META = [
   { id: 'runner', name: '森林寻宝记', type: 'personal' },
@@ -18,6 +19,10 @@ function shuffle(list) {
     [result[index], result[next]] = [result[next], result[index]];
   }
   return result;
+}
+
+function escapeMarkup(value) {
+  return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 }
 
 function optionList(item) {
@@ -333,7 +338,9 @@ export function createListen(container, pack, audio, finish, session, options = 
   const answers = [];
   const wrongIds = [];
   const earnedSpirits = [];
+  const learnedWords = [];
   const nextDelay = createPausableDelay();
+  const feedbackFx = createLearningFeedback(container);
   let index = 0;
   let score = 0;
   let locked = false;
@@ -368,15 +375,17 @@ export function createListen(container, pack, audio, finish, session, options = 
   function partyMarkup() {
     if (!earnedSpirits.length) return '';
     return `<div class="spirit-party" aria-label="本局伙伴">
-      ${earnedSpirits.map(id => {
+      ${earnedSpirits.map((id, position) => {
         const spirit = spirits.find(candidate => candidate.id === id);
-        return `<span title="${spirit.label}"><img src="${spirit.idle}" alt=""><small>${spirit.label}</small></span>`;
+        const word = learnedWords[position];
+        return `<span title="${spirit.label}"><img src="${spirit.idle}" alt=""><b class="spirit-word">${escapeMarkup(word.correct)}</b><small>${escapeMarkup(word.prompt)}</small><small class="spirit-name">${spirit.label}</small></span>`;
       }).join('')}
     </div>`;
   }
 
   function show() {
     if (finished) return;
+    feedbackFx.cancel('question-changed');
     const item = items[index];
     locked = false;
     audioReady = false;
@@ -425,18 +434,22 @@ export function createListen(container, pack, audio, finish, session, options = 
           audio.effect('correct');
           const spirit = nextSpirit();
           earnedSpirits.push(spirit.id);
+          learnedWords.push({ correct: item.correct, prompt: item.prompt });
           partySlot.innerHTML = partyMarkup();
           spiritReveal.hidden = false;
+          spiritReveal.dataset.spirit = spirit.id;
           spiritReveal.querySelector('img').src = spirit.frames[0];
           spiritReveal.querySelector('strong').textContent = spirit.label;
-          let frame = 0;
-          const animation = setInterval(() => {
-            if (!paused) {
-              frame = (frame + 1) % spirit.frames.length;
-              spiritReveal.querySelector('img').src = spirit.frames[frame];
+          feedbackFx.trigger('reveal', {
+            targets: spiritReveal,
+            duration: 1000,
+            sprite: {
+              element: spiritReveal.querySelector('img'),
+              frames: spirit.frames,
+              idle: spirit.idle,
+              frameMs: 220
             }
-          }, 220);
-          setTimeout(() => clearInterval(animation), 1050);
+          });
           feedback.textContent = `答对了！发现了${spirit.label}。`;
         } else {
           wrongIds.push(item.id);
@@ -444,6 +457,7 @@ export function createListen(container, pack, audio, finish, session, options = 
           feedback.textContent = `需要复习：正确答案是「${item.correct}」`;
         }
         feedback.className = `feedback ${correct ? 'correct' : 'wrong'}`;
+        if (!correct) feedbackFx.trigger('review', { targets: feedback, duration: 300 });
         optionButtons.forEach(option => { option.disabled = true; });
         playButton.disabled = true;
         answers.push({ itemId: item.id, prompt: item.prompt, selected: value, correct: item.correct });
@@ -467,6 +481,7 @@ export function createListen(container, pack, audio, finish, session, options = 
     playButton.onclick = async () => {
       if (paused || locked) return;
       const request = ++playbackRequest;
+      audioReady = false;
       playButton.disabled = true;
       optionButtons.forEach(button => { button.disabled = true; });
       setAudioState('preparing', '正在准备读音…');
@@ -523,6 +538,7 @@ export function createListen(container, pack, audio, finish, session, options = 
   function complete() {
     if (finished) return;
     finished = true;
+    feedbackFx.cancel('complete');
     recordResult({ game: 'listen', packId: pack.id, levelId, score, total: items.length, wrongIds });
     audio.effect(completionSound(score, items.length));
     finish(resultView({
@@ -540,6 +556,7 @@ export function createListen(container, pack, audio, finish, session, options = 
       finished = true;
       playbackRequest += 1;
       nextDelay.cancel();
+      feedbackFx.destroy();
       audio.stopSpeech();
       if (window.__learningGameDebug?.listen) delete window.__learningGameDebug.listen;
     },
@@ -547,12 +564,14 @@ export function createListen(container, pack, audio, finish, session, options = 
       paused = true;
       playbackRequest += 1;
       nextDelay.pause();
+      feedbackFx.pause();
       audio.stopSpeech();
       container.classList.add('spirit-paused');
     },
     resume() {
       paused = false;
       nextDelay.resume();
+      feedbackFx.resume();
       container.classList.remove('spirit-paused');
       const debug = window.__learningGameDebug?.listen;
       if (debug) {
@@ -572,6 +591,7 @@ export function createAssemble(container, pack, audio, finish, session, options 
   const answers = [];
   const wrongIds = [];
   const nextDelay = createPausableDelay();
+  const feedbackFx = createLearningFeedback(container);
   let index = 0;
   let score = 0;
   let selected = [];
@@ -582,6 +602,7 @@ export function createAssemble(container, pack, audio, finish, session, options 
 
   function show() {
     if (finished) return;
+    feedbackFx.cancel('question-changed');
     const item = items[index];
     currentItem = item;
     selected = [];
@@ -609,6 +630,7 @@ export function createAssemble(container, pack, audio, finish, session, options 
     });
 
     const renderSlots = () => {
+      feedbackFx.cancel('slots-updated');
       slots.innerHTML = item.correct.split('').map((_, position) => `
         <button class="slot" type="button" data-position="${position}" ${selected[position] && !locked ? '' : 'disabled'}>${selected[position]?.letter || '·'}</button>
       `).join('');
@@ -630,6 +652,7 @@ export function createAssemble(container, pack, audio, finish, session, options 
         selected.push({ letter, position });
         button.disabled = true;
         renderSlots();
+        feedbackFx.trigger('slot', { targets: slots.children[selected.length - 1] });
       };
       letterBox.appendChild(button);
     });
@@ -653,6 +676,7 @@ export function createAssemble(container, pack, audio, finish, session, options 
       if (value.length !== item.correct.length) {
         feedback.className = 'feedback wrong';
         feedback.textContent = '请把完整答案拼好后再确认。';
+        feedbackFx.trigger('review', { targets: feedback, duration: 260 });
         return;
       }
       locked = true;
@@ -667,6 +691,10 @@ export function createAssemble(container, pack, audio, finish, session, options 
       }
       feedback.className = `feedback ${correct ? 'correct' : 'wrong'}`;
       feedback.textContent = correct ? '拼装正确！' : `需要复习：正确拼写是「${item.correct}」`;
+      feedbackFx.trigger(correct ? 'correct' : 'review', {
+        targets: [slots, feedback],
+        duration: correct ? 400 : 300
+      });
       answers.push({ itemId: item.id, prompt: item.prompt, selected: value, correct: item.correct });
       nextDelay.schedule(() => {
         index += 1;
@@ -703,6 +731,7 @@ export function createAssemble(container, pack, audio, finish, session, options 
   function complete() {
     if (finished) return;
     finished = true;
+    feedbackFx.cancel('complete');
     recordResult({ game: 'assemble', packId: pack.id, levelId, score, total: items.length, wrongIds });
     audio.effect(completionSound(score, items.length));
     finish(resultView({
@@ -718,16 +747,19 @@ export function createAssemble(container, pack, audio, finish, session, options 
     destroy() {
       finished = true;
       nextDelay.cancel();
+      feedbackFx.destroy();
       audio.stopSpeech();
       if (window.__learningGameDebug?.assemble) delete window.__learningGameDebug.assemble;
     },
     pause() {
       paused = true;
       nextDelay.pause();
+      feedbackFx.pause();
     },
     resume() {
       paused = false;
       nextDelay.resume();
+      feedbackFx.resume();
     }
   };
 }
@@ -738,6 +770,7 @@ export function createMemory(container, pack, audio, finish, session, options = 
   if (!plan?.waves?.length) throw new Error('记忆翻牌缺少本局分波计划。');
   const totalPairs = plan.pairCount;
   const flipDelay = createPausableDelay();
+  const feedbackFx = createLearningFeedback(container);
   const answers = [];
   const mistakeIds = new Set();
   let opened = [];
@@ -764,6 +797,7 @@ export function createMemory(container, pack, audio, finish, session, options = 
   function finishRound() {
     if (finished) return;
     finished = true;
+    feedbackFx.cancel('complete');
     const mistakes = Math.max(0, attempts - totalPairs);
     recordResult({
       game: 'memory',
@@ -799,6 +833,7 @@ export function createMemory(container, pack, audio, finish, session, options = 
   }
 
   function renderWave() {
+    feedbackFx.cancel('wave-changed');
     const wave = plan.waves[waveIndex];
     if (!wave) {
       finishRound();
@@ -838,6 +873,7 @@ export function createMemory(container, pack, audio, finish, session, options = 
           audio.effect('correct');
           feedback.className = 'feedback correct';
           feedback.textContent = `配对成功！还剩 ${totalPairs - matched} 对。`;
+          feedbackFx.trigger('pair', { targets: [first.button, second.button], duration: 400 });
           answers.push({ prompt: first.text, selected: second.text, correct: second.text });
           opened = [];
           updateMemorySession();
@@ -857,6 +893,7 @@ export function createMemory(container, pack, audio, finish, session, options = 
           opened = [];
           feedback.className = 'feedback wrong';
           feedback.textContent = '不是一对，记住位置，稍后再试。';
+          feedbackFx.trigger('review', { targets: [first.button, second.button], duration: 300 });
           flipDelay.schedule(() => {
             current.forEach(entry => {
               entry.button.textContent = '?';
@@ -902,15 +939,18 @@ export function createMemory(container, pack, audio, finish, session, options = 
     destroy() {
       finished = true;
       flipDelay.cancel();
+      feedbackFx.destroy();
       if (window.__learningGameDebug?.memory) delete window.__learningGameDebug.memory;
     },
     pause() {
       paused = true;
       flipDelay.pause();
+      feedbackFx.pause();
     },
     resume() {
       paused = false;
       flipDelay.resume();
+      feedbackFx.resume();
     }
   };
 }
@@ -936,6 +976,7 @@ export function createBeat(container, pack, audio, finish, session, options = {}
   const answers = [];
   const wrongIds = [];
   const nextDelay = createPausableDelay();
+  const feedbackFx = createLearningFeedback(container);
   let index = 0;
   let score = 0;
   let selected = '';
@@ -945,6 +986,7 @@ export function createBeat(container, pack, audio, finish, session, options = {}
 
   function draw() {
     if (finished) return;
+    feedbackFx.cancel('question-changed');
     const question = questions[index];
     selected = '';
     locked = false;
@@ -963,7 +1005,7 @@ export function createBeat(container, pack, audio, finish, session, options = {}
     const feedback = container.querySelector('.poetry-feedback');
     updateSession(session, {
       progress: `第 ${index + 1} / ${questions.length} 题`,
-      hint: '从审核过的诗句变体中随机抽题',
+      hint: '读懂前后句，补全诗句',
       score: `得分 ${score}`
     });
     optionGrid.querySelectorAll('[data-poem-answer]').forEach(button => {
@@ -980,6 +1022,14 @@ export function createBeat(container, pack, audio, finish, session, options = {}
           audio.effect('wrong');
         }
         optionGrid.querySelectorAll('button').forEach(option => { option.disabled = true; });
+        const completedLine = container.querySelector('.poetry-question');
+        const completedBlank = document.createElement('em');
+        completedBlank.className = 'completed-blank';
+        completedBlank.textContent = question.answer;
+        completedLine.replaceChildren(
+          document.createTextNode(question.before), completedBlank, document.createTextNode(question.after)
+        );
+        feedbackFx.trigger(correct ? 'correct' : 'review', { targets: completedBlank, duration: 400 });
         feedback.className = `feedback poetry-feedback ${correct ? 'correct' : 'wrong'}`;
         feedback.textContent = correct
           ? `补全正确：${question.lineText}`
@@ -994,7 +1044,7 @@ export function createBeat(container, pack, audio, finish, session, options = {}
           index += 1;
           if (index < questions.length) draw();
           else complete();
-        }, 900);
+        }, correct ? 1500 : 2400);
       };
     });
     window.__learningGameDebug = {
@@ -1019,6 +1069,7 @@ export function createBeat(container, pack, audio, finish, session, options = {}
   function complete() {
     if (finished) return;
     finished = true;
+    feedbackFx.cancel('complete');
     const reviewHtml = `
       <section class="poem-review">
         ${poems.map(poem => `
@@ -1045,15 +1096,18 @@ export function createBeat(container, pack, audio, finish, session, options = {}
     destroy() {
       finished = true;
       nextDelay.cancel();
+      feedbackFx.destroy();
       if (window.__learningGameDebug?.beat) delete window.__learningGameDebug.beat;
     },
     pause() {
       paused = true;
       nextDelay.pause();
+      feedbackFx.pause();
     },
     resume() {
       paused = false;
       nextDelay.resume();
+      feedbackFx.resume();
     }
   };
 }
@@ -1064,6 +1118,7 @@ export function createBattle(container, pack, audio, finish, session, options = 
   const answers = [];
   const wrongIds = [];
   const advanceDelay = createPausableDelay();
+  const feedbackFx = createLearningFeedback(container);
   let index = 0;
   let turn = 0;
   let score = [0, 0];
@@ -1090,7 +1145,7 @@ export function createBattle(container, pack, audio, finish, session, options = 
   const correctButton = container.querySelector('#teacher-correct');
   const wrongButton = container.querySelector('#teacher-wrong');
 
-  function updateTeams() {
+  function updateTeams(animateTurn = false) {
     container.querySelector('#team0').classList.toggle('active', turn === 0);
     container.querySelector('#team1').classList.toggle('active', turn === 1);
     container.querySelector('#team-score0').textContent = String(score[0]);
@@ -1098,6 +1153,7 @@ export function createBattle(container, pack, audio, finish, session, options = 
     const teamTotal = Math.max(1, Math.ceil(items.length / 2));
     container.querySelector('#team0 .energy span').style.width = `${score[0] / teamTotal * 100}%`;
     container.querySelector('#team1 .energy span').style.width = `${score[1] / teamTotal * 100}%`;
+    if (animateTurn) feedbackFx.trigger('turn', { targets: container.querySelector(`#team${turn} > img`), duration: 320 });
   }
 
   function show() {
@@ -1111,7 +1167,7 @@ export function createBattle(container, pack, audio, finish, session, options = 
     feedback.textContent = `请第 ${turn + 1} 组选择答案，再由老师确认。`;
     correctButton.disabled = false;
     wrongButton.disabled = false;
-    updateTeams();
+    updateTeams(true);
     updateSession(session, {
       progress: `第 ${index + 1} / ${items.length} 题 · 第 ${turn + 1} 组`,
       hint: '两组轮流答题，老师确认后计分',
@@ -1230,15 +1286,18 @@ export function createBattle(container, pack, audio, finish, session, options = 
     destroy() {
       finished = true;
       advanceDelay.cancel();
+      feedbackFx.destroy();
       if (window.__learningGameDebug?.battle) delete window.__learningGameDebug.battle;
     },
     pause() {
       paused = true;
       advanceDelay.pause();
+      feedbackFx.pause();
     },
     resume() {
       paused = false;
       advanceDelay.resume();
+      feedbackFx.resume();
     }
   };
 }

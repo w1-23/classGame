@@ -77,7 +77,7 @@ test('home keeps a calm visual baseline', async ({ page }) => {
   await mkdir(screenshots, { recursive: true });
   await page.setViewportSize({ width: 1366, height: 768 });
   await page.goto('/index.html');
-  await expect(page.getByRole('heading', { name: '离线学习闯关乐园' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '今天，去哪里探险？' })).toBeVisible();
   await expect(page.getByText('森林寻宝记')).toBeVisible();
   await expect(page.locator('header')).toBeVisible();
   await capturePage(page, `${screenshots}/home-1366x768.png`);

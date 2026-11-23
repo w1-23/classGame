@@ -1,0 +1,111 @@
+/* Presentation only. Load after css/style.css. No layout/score/progress ownership. */
+.learning-feedback-root {
+  --lf-forest: #2e684a;
+  --lf-mint: #dcefdc;
+  --lf-peach: #f9e8dd;
+  --lf-gold: #e4b84a;
+}
+
+/* Fast tactile response needs no JavaScript and never reveals an answer. */
+.learning-feedback-root button:not(:disabled) {
+  transition: box-shadow 120ms ease, border-color 120ms ease, background-color 120ms ease;
+}
+.learning-feedback-root button:not(:disabled):active {
+  box-shadow: inset 0 3px 0 rgba(35, 65, 43, .13);
+}
+.learning-feedback-root button:focus-visible {
+  outline: 3px solid #bc890e;
+  outline-offset: 3px;
+}
+
+.learning-feedback-root .lf-fx {
+  animation-duration: var(--lf-motion-ms, 400ms);
+  animation-timing-function: cubic-bezier(.22, .8, .3, 1);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+.learning-feedback-root .lf-press,
+.learning-feedback-root .lf-select,
+.learning-feedback-root .lf-slot { animation-name: lf-settle-a; }
+.learning-feedback-root .lf-press.lf-alt,
+.learning-feedback-root .lf-select.lf-alt,
+.learning-feedback-root .lf-slot.lf-alt { animation-name: lf-settle-b; }
+
+.learning-feedback-root .lf-correct,
+.learning-feedback-root .lf-pair,
+.learning-feedback-root .lf-complete { animation-name: lf-bloom-a; }
+.learning-feedback-root .lf-correct.lf-alt,
+.learning-feedback-root .lf-pair.lf-alt,
+.learning-feedback-root .lf-complete.lf-alt { animation-name: lf-bloom-b; }
+.learning-feedback-root .lf-correct,
+.learning-feedback-root .lf-pair { box-shadow: 0 0 0 3px rgba(71, 137, 82, .35); }
+
+.learning-feedback-root .lf-incorrect,
+.learning-feedback-root .lf-review {
+  animation-name: lf-soft-a;
+  box-shadow: 0 0 0 3px rgba(180, 114, 63, .26);
+}
+.learning-feedback-root .lf-incorrect.lf-alt,
+.learning-feedback-root .lf-review.lf-alt { animation-name: lf-soft-b; }
+
+.learning-feedback-root .lf-reveal,
+.learning-feedback-root .lf-turn { animation-name: lf-rise-a; }
+.learning-feedback-root .lf-reveal.lf-alt,
+.learning-feedback-root .lf-turn.lf-alt { animation-name: lf-rise-b; }
+.learning-feedback-root .lf-listen { animation-name: lf-soft-a; }
+.learning-feedback-root .lf-listen.lf-alt { animation-name: lf-soft-b; }
+
+/* Replace the old automatic arrival animation when this controller owns it. */
+.learning-feedback-root .spirit-reveal:not(.lf-fx) { animation: none; }
+.learning-feedback-root[data-lf-paused="true"] .lf-fx {
+  animation-play-state: paused;
+}
+
+/* Four small movements, each finite. No particles, flashing, or whole-screen shake. */
+@keyframes lf-settle-a {
+  from { transform: translateY(-3px); }
+  to { transform: translateY(0); }
+}
+@keyframes lf-settle-b {
+  from { transform: translateY(-3px); }
+  to { transform: translateY(0); }
+}
+@keyframes lf-bloom-a {
+  0%, 100% { transform: scale(1); }
+  45% { transform: scale(1.035); }
+}
+@keyframes lf-bloom-b {
+  0%, 100% { transform: scale(1); }
+  45% { transform: scale(1.035); }
+}
+@keyframes lf-soft-a {
+  from { opacity: .7; }
+  to { opacity: 1; }
+}
+@keyframes lf-soft-b {
+  from { opacity: .7; }
+  to { opacity: 1; }
+}
+@keyframes lf-rise-a {
+  from { opacity: .45; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes lf-rise-b {
+  from { opacity: .45; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Text, color, and existing check/cross icons remain when motion is reduced. */
+.learning-feedback-root[data-lf-motion="reduced"] .lf-fx,
+.learning-feedback-root[data-lf-motion="reduced"] button {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .learning-feedback-root .lf-fx,
+  .learning-feedback-root .spirit-reveal,
+  .learning-feedback-root button {
+    animation: none !important;
+    transition: none !important;
+  }
+}
