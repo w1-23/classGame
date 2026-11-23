@@ -13,3 +13,13 @@ docs/video/page@*.webm
 *.log
 *.tmp
 .http-server-*.pid
+android/
+android-www/
+android-mobile-build/
+capacitor.config.json
+java-test.lock
+build/green-deploy-stage/
+tools/FileCreateTest.java
+tools/build_android_release.mjs
+tools/prepare_mobile_web.mjs
+docs/screenshots/packaged-0.5.0-failure.png
