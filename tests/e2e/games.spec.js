@@ -226,6 +226,7 @@ test('every game can pause, resume and return to its level list', async ({ page 
 test('listen and assemble judge correct answers and advance', async ({ page }) => {
   await openLevel(page, 'listen');
   await page.waitForFunction(() => Boolean(window.__learningGameDebug?.listen));
+  await expect(page.locator('.audio-review-tag')).toHaveCount(0);
   expect(await page.locator('.three-grid button:not([disabled])').count()).toBe(0);
   await page.evaluate(() => window.__learningGameDebug.listen.play());
   await expect.poll(

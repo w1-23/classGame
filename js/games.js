@@ -392,9 +392,6 @@ export function createListen(container, pack, audio, finish, session, options = 
             </div>
             <button id="play" class="flat-primary" type="button">播放读音</button>
             <span class="listen-audio-state" id="listen-audio-state">等待播放</span>
-            ${String(item.audioReview || '').includes('pending')
-              ? '<span class="audio-review-tag">试听 · 待教师审核</span>'
-              : ''}
           </div>
           <div class="three-grid" aria-label="答案选项"></div>
           <div class="feedback"></div>

@@ -56,7 +56,7 @@ try {
     });
   } catch (error) {
     await page.screenshot({
-      path: path.resolve('docs/screenshots/packaged-0.6.0-failure.png'),
+      path: path.resolve('docs/screenshots/packaged-0.6.1-failure.png'),
       fullPage: true
     });
     const debugState = await page.evaluate(() => ({

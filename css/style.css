@@ -690,18 +690,6 @@ main {
 }
 .listen-audio-state[data-state="failed"] { color: #9c4038; background: #fff0ed; }
 .listen-audio-state[data-state="ended"] { color: #23643e; background: #ebf8ed; }
-.audio-review-tag {
-  position: absolute;
-  top: 9px;
-  right: 10px;
-  padding: 3px 8px;
-  color: #805d24;
-  border: 1px solid #ead5a2;
-  border-radius: 999px;
-  background: rgba(255, 249, 229, .94);
-  font-size: 10px;
-  font-weight: 700;
-}
 .spirit-reveal {
   position: relative;
   z-index: 3;
